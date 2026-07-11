@@ -1,0 +1,5 @@
+# Cloudflare Pages — MEM-AIVisdefect BI
+# Deploy from apps/bi; secrets set in Cloudflare dashboard / wrangler pages secret.
+name = "mem-aivisdefect-bi"
+compatibility_date = "2026-07-11"
+pages_build_output_dir = "dist"

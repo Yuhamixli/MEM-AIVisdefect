@@ -1,0 +1,145 @@
+{
+  "updated_at": "2026-07-11",
+  "source_of_truth": "docs/project-management/team-workstreams.md",
+  "doc_path": "docs/project-management/team-workstreams.md",
+  "knowledge_id": "team-workstreams",
+  "notes": "职能工作流（非人员名册）。已补 struct-eng；考核对齐申报书（召回≥80%/准确率≥85%/≥3类/50件）。名册回收后按能力画像初分。",
+  "workstreams": [
+    {
+      "id": "pm",
+      "name": "项目管理",
+      "suggested_headcount": "1",
+      "critical_path": true,
+      "capability": ["C_PM"],
+      "responsibility": "五节点进度、风险、纪要；对接课题管理者与张老师。"
+    },
+    {
+      "id": "m-coin",
+      "name": "财务 M币",
+      "suggested_headcount": "1",
+      "critical_path": true,
+      "capability": ["C_FIN"],
+      "responsibility": "账户预算、流水账、周消耗 ±20% 预警、reserve。"
+    },
+    {
+      "id": "intel",
+      "name": "情报与论文搜集",
+      "suggested_headcount": "1–2",
+      "critical_path": false,
+      "capability": ["C_WR", "C_DOM", "C_CV"],
+      "responsibility": "结构化情报、双周简报、反哺技术与汇报（禁止纯收藏夹）。"
+    },
+    {
+      "id": "market",
+      "name": "市场分析",
+      "suggested_headcount": "1",
+      "critical_path": false,
+      "capability": ["C_WR", "C_DOM"],
+      "responsibility": "电芯压条/外观检竞品对照、对外差异化口径。"
+    },
+    {
+      "id": "research",
+      "name": "调研",
+      "suggested_headcount": "1–2",
+      "critical_path": false,
+      "capability": ["C_WR", "C_DOM"],
+      "responsibility": "行业/市场/工艺调研成文，支撑范围与方案决策。"
+    },
+    {
+      "id": "req",
+      "name": "需求与变更",
+      "suggested_headcount": "1",
+      "critical_path": true,
+      "capability": ["C_PM", "C_WR"],
+      "responsibility": "需求基线（申报书考核）、变更评审秘书、验收标准。"
+    },
+    {
+      "id": "struct-eng",
+      "name": "结构/工艺工程师",
+      "suggested_headcount": "1–2",
+      "critical_path": true,
+      "capability": ["C_DOM"],
+      "responsibility": "电芯压条外观特性与允收；APQP 控制计划/特性清单映射七类缺陷。"
+    },
+    {
+      "id": "data",
+      "name": "数据与标注治理",
+      "suggested_headcount": "2–3",
+      "critical_path": true,
+      "capability": ["C_DATA"],
+      "responsibility": "七类定义卡、版本、规范、抽检、data 账户。"
+    },
+    {
+      "id": "algo-detect",
+      "name": "算法（检测/异常）",
+      "suggested_headcount": "2–3",
+      "critical_path": true,
+      "capability": ["C_CV"],
+      "responsibility": "先三类达标再扩七类；召回≥80%/准确率≥85% 门禁。"
+    },
+    {
+      "id": "algo-seg",
+      "name": "算法（分割/标注工具）",
+      "suggested_headcount": "1–2",
+      "critical_path": false,
+      "capability": ["C_SEG"],
+      "responsibility": "L3/L4 服务数据飞轮，非每帧在线。"
+    },
+    {
+      "id": "optics",
+      "name": "光学/硬件",
+      "suggested_headcount": "1–2",
+      "critical_path": true,
+      "capability": ["C_OPT"],
+      "responsibility": "图像采集方案（选型+拍摄规范）、成像评估、hardware 账户。"
+    },
+    {
+      "id": "fe-bi",
+      "name": "前端 / BI",
+      "suggested_headcount": "1–2",
+      "critical_path": true,
+      "capability": ["C_FE"],
+      "responsibility": "管理看板、知识页、检测结果展示、发布协同。"
+    },
+    {
+      "id": "integration",
+      "name": "系统集成与离线模块",
+      "suggested_headcount": "1",
+      "critical_path": true,
+      "capability": ["C_SYS"],
+      "responsibility": "离线模块封装、结构化输出、第三方试操检查单。"
+    },
+    {
+      "id": "quality",
+      "name": "质量度量",
+      "suggested_headcount": "0–1（常辅）",
+      "critical_path": false,
+      "capability": ["C_DATA", "C_CV"],
+      "responsibility": "50件评测协议；召回/准确率口径；内部 DR95% 冲刺表可选。"
+    },
+    {
+      "id": "reporting",
+      "name": "汇报 / 结题写作",
+      "suggested_headcount": "1–2（常兼）",
+      "critical_path": true,
+      "capability": ["C_WR"],
+      "responsibility": "周报、五节点材料、使用说明、结题成稿。"
+    },
+    {
+      "id": "feedback",
+      "name": "意见箱运营",
+      "suggested_headcount": "0–1（常辅）",
+      "critical_path": false,
+      "capability": ["C_PM"],
+      "responsibility": "inbox 检索、digest、催填；不自动改需求。"
+    },
+    {
+      "id": "agent-ops",
+      "name": "Agent 相关工作",
+      "suggested_headcount": "1（常兼）",
+      "critical_path": false,
+      "capability": ["C_PM", "C_FE", "C_WR"],
+      "responsibility": "PROMPT/控制面、意见箱 digest、.project-spec↔BI sync、知识库策展、会话交接；辅助管理不替代决策。"
+    }
+  ]
+}

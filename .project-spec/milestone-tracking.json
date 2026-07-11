@@ -1,0 +1,60 @@
+{
+  "updated_at": "2026-07-11",
+  "current_milestone": "kickoff",
+  "acceptance_source": "申报书",
+  "operation_plan": "docs/project-management/operation-plan-from-proposal.md",
+  "notes": "五节点对齐申报书。考核硬指标：采集方案×1；50件；≥3类；召回≥80%；准确率≥85%；使用说明×1。旧 M1–M6（mAP/DR95%产线）已废弃为硬门禁。",
+  "milestones": [
+    {
+      "id": "kickoff",
+      "name": "项目开题",
+      "date": "2026-07-12",
+      "criteria": "对象=电芯压条；七类缺陷与考核口径对齐；五节点与模块 WBS 宣贯；工作流落人启动",
+      "review": "开题",
+      "status": "in_progress",
+      "target_week": 0,
+      "completed_at": null
+    },
+    {
+      "id": "detailed_design",
+      "name": "详设评审",
+      "date": "2026-07-30",
+      "criteria": "采集方案初稿；缺陷定义卡骨架；先三类策略锁定；离线模块 I/O 草案；APQP/特性清单对接计划",
+      "review": "详设评审",
+      "status": "pending",
+      "target_week": 3,
+      "completed_at": null
+    },
+    {
+      "id": "midterm",
+      "name": "中期检查",
+      "date": "2026-08-15",
+      "criteria": "≥3类可演示检出；离线模块 MVP；50件测试方案就绪；使用说明大纲",
+      "review": "中期检查",
+      "status": "pending",
+      "target_week": 5,
+      "completed_at": null
+    },
+    {
+      "id": "completion",
+      "name": "项目完成",
+      "date": "2026-09-15",
+      "criteria": "采集方案定稿；三类达到召回≥80%、准确率≥85%；离线模块封装；使用说明可第三方试操",
+      "review": "完成验收准备",
+      "status": "pending",
+      "target_week": 9,
+      "completed_at": null
+    },
+    {
+      "id": "final_review",
+      "name": "结题评审",
+      "date": "2026-09-30",
+      "criteria": "50件正式测试报告；三份交付物齐套；材料归档",
+      "review": "结题评审",
+      "status": "pending",
+      "target_week": 11,
+      "completed_at": null
+    }
+  ],
+  "internal_stretch_note": "DR≥95%、FPR≤5%、更高 mAP 等为内部冲刺，不作为结题硬门禁"
+}

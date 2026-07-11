@@ -1,0 +1,57 @@
+# 依赖与构建
+node_modules/
+dist/
+build/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+
+# 环境与密钥
+.env
+.env.*
+!.env.example
+
+# 实验与模型产物
+mlruns/
+wandb/
+runs/
+outputs/
+*.pt
+*.pth
+*.onnx
+*.engine
+*.ckpt
+
+# 数据（原始/大数据不进 git；文档说明可进）
+docs/agent-knowledge-base/raw-data/inbox/**
+docs/agent-knowledge-base/raw-data/good/**
+docs/agent-knowledge-base/raw-data/defect/**
+!docs/agent-knowledge-base/raw-data/**/.gitkeep
+!docs/agent-knowledge-base/raw-data/**/README.md
+data/raw/
+data/processed/
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tif
+*.tiff
+*.mp4
+*.avi
+!docs/**/*.png
+!apps/**/*.svg
+
+# 系统与 IDE
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# 日志与临时
+*.log
+.tmp/
+tmp/

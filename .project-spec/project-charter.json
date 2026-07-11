@@ -1,0 +1,126 @@
+{
+  "project_id": "MEM-AIVisdefect",
+  "project_name": "新能源汽车电芯压条拉挤成型表面缺陷机器视觉检测",
+  "version": "0.3.0",
+  "created_at": "2026-07-11",
+  "updated_at": "2026-07-11",
+  "status": "planning",
+  "pmbok_process_group": "启动→规划",
+  "current_phase": "开题 — 申报书口径对齐",
+  "sponsor": null,
+  "project_manager": "AI Project Agent",
+  "academic_context": {
+    "program": "清华大学工程管理硕士（MEM）",
+    "advisor": "张老师、朱老师",
+    "cost_currency": "M币",
+    "cost_currency_note": "借鉴《工程管理导引》课程 M币实物化教学工具，作为本项目内部成本核算与资源调度货币"
+  },
+  "team": {
+    "size": 13,
+    "roles_assigned": false,
+    "roster_path": "docs/project-management/team-roster.md",
+    "note": "角色未分；待成员基本情况入库后按能力评估分配事项"
+  },
+  "stakeholders": {
+    "advisor": "张老师、朱老师（清华指导老师）",
+    "enterprise_partner": null,
+    "line_operators": null,
+    "review_experts": null
+  },
+  "background": {
+    "domain": "复合材料拉挤成型工艺表面缺陷检测",
+    "product": "新能源汽车电芯压条",
+    "applications": ["新能源汽车电芯压条"],
+    "status_quo": "七种表面缺陷完全人工目检；需支撑 SPC 与批次追溯；对接 APQP 控制计划与特性清单；外观特性尚未自动化",
+    "defect_types": [
+      {"id": "D01", "name": "裂纹", "slug": "crack", "severity": "critical"},
+      {"id": "D02", "name": "气泡", "slug": "bubble", "severity": "critical"},
+      {"id": "D03", "name": "缺纱", "slug": "missing_yarn", "severity": "major"},
+      {"id": "D04", "name": "划伤", "slug": "scratch", "severity": "major"},
+      {"id": "D05", "name": "异物", "slug": "foreign_matter", "severity": "major"},
+      {"id": "D06", "name": "发白", "slug": "whitening", "severity": "major"},
+      {"id": "D07", "name": "脏污", "slug": "contamination", "severity": "minor"}
+    ],
+    "priority_defect_strategy": "先三类（建议裂纹/气泡/划伤）达标，再扩展七类"
+  },
+  "objectives": {
+    "acceptance_source": "申报书（硬）",
+    "primary": [
+      {"metric": "recall", "name": "查全率(召回)", "target": 0.80, "unit": "ratio"},
+      {"metric": "accuracy", "name": "准确率", "target": 0.85, "unit": "ratio"},
+      {"metric": "defect_classes_detectable", "name": "可识别缺陷类数", "target": 3, "unit": "count", "note": "不少于三类"},
+      {"metric": "test_sample_size", "name": "测试样本量", "target": 50, "unit": "pieces"}
+    ],
+    "deliverables": [
+      "图像采集方案（硬件选型、拍摄规范）",
+      "缺陷定义卡 + 训练检测模型 + 离线检测模块（结构化输出）",
+      "第三方可独立操作的使用说明文档"
+    ],
+    "engineering": [
+      "离线检测模块输出结构化结果，利于 SPC 与批次追溯",
+      "对接 APQP 控制计划与特性清单（外观项）",
+      "本期不以在线产线闭环为硬性交付"
+    ],
+    "internal_stretch": {
+      "note": "旧仓库冲刺指标，非结题硬门禁",
+      "metrics": [
+        {"metric": "detection_rate", "target": 0.95, "unit": "ratio"},
+        {"metric": "false_positive_rate", "target": 0.05, "unit": "ratio", "direction": "lower_is_better"},
+        {"metric": "classification_accuracy_stretch", "target": 0.90, "unit": "ratio"}
+      ]
+    }
+  },
+  "proposed_tech_stack": {
+    "architecture": "四层级联愿景（异常筛查→开放词汇定位→分割→VLM标注）；本期验收以离线检测模块为主",
+    "layers": [
+      "L1 PatchCore 无监督异常筛查（可选冷启动）",
+      "L2 缺陷定位与类型（可蒸馏到轻量检测）",
+      "L3 SAM2 缺陷分割（按需）",
+      "L4 VLM 智能标注（离线数据飞轮）"
+    ],
+    "adr": "docs/02-tech-research/ADR-001-four-layer-vision-stack.md",
+    "verdict": "方向可保留为内部路线；申报考核对齐离线模块与三类指标"
+  },
+  "timeline": {
+    "planned_start": "2026-07-12",
+    "planned_end": "2026-09-30",
+    "operation_plan": "docs/project-management/operation-plan-from-proposal.md",
+    "gates": [
+      {"id": "kickoff", "name": "项目开题", "date": "2026-07-12"},
+      {"id": "detailed_design", "name": "详设评审", "date": "2026-07-30"},
+      {"id": "midterm", "name": "中期检查", "date": "2026-08-15"},
+      {"id": "completion", "name": "项目完成", "date": "2026-09-15"},
+      {"id": "final_review", "name": "结题评审", "date": "2026-09-30"}
+    ]
+  },
+  "constraints": {
+    "data_source": "项目负责人提供；入库路径 docs/agent-knowledge-base/raw-data/",
+    "data_status": "暂不紧急；详设前需启动样本计划",
+    "gpu_resources": "TBD",
+    "budget_currency": "M币",
+    "budget_total_m_coin": 700000,
+    "budget": "700000 M — 见 docs/project-management/m-coin-cost-system.md",
+    "deployment": "离线模块为主，非必须在线产线闭环"
+  },
+  "management_priority": [
+    "申报书范围与五节点里程碑",
+    "团队组织与分工机制（含结构/工艺）",
+    "M币成本与财务透明",
+    "风险与相关方（张老师、朱老师）沟通",
+    "BI 管理看板与知识库口径同步"
+  ],
+  "success_criteria": [
+    "一份图像采集方案",
+    "50 件测试：可识别不少于三类表面缺陷；查全率≥80%；准确率≥85%",
+    "一份第三方可独立操作的使用说明",
+    "离线检测模块输出结构化结果",
+    "文档归档；内部冲刺指标（如 DR≥95%）可选加测但不挡结题"
+  ],
+  "open_fields": [
+    "sponsor",
+    "stakeholders.enterprise_partner",
+    "team.roles",
+    "constraints.gpu_resources"
+  ],
+  "notes": "2026-07-11：按申报书切换应用对象为电芯压条、七类缺陷名单、五节点日期与考核指标；旧 DR≥95%/FPR≤5%/mAP 阶梯降为 internal_stretch。"
+}

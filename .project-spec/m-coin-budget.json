@@ -1,0 +1,18 @@
+{
+  "currency": "M",
+  "total_budget": 700000,
+  "updated_at": "2026-07-11",
+  "status": "allocated",
+  "accounts": {
+    "labor": {"budget": 350000, "spent": 0, "ratio": 0.50},
+    "compute": {"budget": 105000, "spent": 0, "ratio": 0.15},
+    "data": {"budget": 70000, "spent": 0, "ratio": 0.10},
+    "hardware": {"budget": 105000, "spent": 0, "ratio": 0.15},
+    "reserve": {"budget": 70000, "spent": 0, "ratio": 0.10, "requires_pm_approval": true}
+  },
+  "rules": {
+    "ledger_threshold_m": 50,
+    "reserve_approval": "project_manager",
+    "weekly_report_required": true
+  }
+}

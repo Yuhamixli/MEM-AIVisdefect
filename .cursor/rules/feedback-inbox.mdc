@@ -1,0 +1,17 @@
+---
+description: 项目管理会话须先扫意见箱 inbox
+globs:
+  - docs/feedback-inbox/**
+  - docs/project-management/**
+  - PROMPT.md
+alwaysApply: false
+---
+
+# 意见箱检索习惯
+
+做本仓库的**项目管理 / 规划 / 周报**类任务时：
+
+1. 先列出 `docs/feedback-inbox/inbox/` 下未处理文件（忽略 `*EXAMPLE*` 若仅作格式参考且管理者未要求消化）。
+2. 有新意见则先摘要：类型、作者、诉求、对范围/进度/M币的影响、建议处置。
+3. 需要落盘时写入 `docs/feedback-inbox/digests/`，处理后将原文移至 `processed/`。
+4. **不要**因单条意见自动改 `requirements.md` 或章程；只提建议，等课题管理者确认。

@@ -1,0 +1,82 @@
+{
+  "updated_at": "2026-07-11",
+  "risks": [
+    {
+      "id": "R1",
+      "description": "项目初期缺乏高质量缺陷数据",
+      "probability": "high",
+      "impact": "high",
+      "level": "critical",
+      "response": "分阶段收集+合成数据+迁移学习",
+      "trigger": "第2周数据集不足500张",
+      "status": "open",
+      "owner": null
+    },
+    {
+      "id": "R2",
+      "description": "算法在真实产线光照下退化",
+      "probability": "medium",
+      "impact": "high",
+      "level": "high",
+      "response": "采集中包含多种光照条件+数据增强+在线自适应",
+      "trigger": "产线测试DR<85%",
+      "status": "open",
+      "owner": null
+    },
+    {
+      "id": "R3",
+      "description": "硬件采购周期过长",
+      "probability": "medium",
+      "impact": "medium",
+      "level": "medium",
+      "response": "提前锁定选型+备选方案+租借/借用",
+      "trigger": "相机下单后超过3周未到货",
+      "status": "open",
+      "owner": null
+    },
+    {
+      "id": "R4",
+      "description": "团队成员技术路线分歧",
+      "probability": "low",
+      "impact": "medium",
+      "level": "medium",
+      "response": "设立技术决策记录(ADR)+导师仲裁",
+      "trigger": "并行路线超过2种且无收敛趋势",
+      "status": "open",
+      "owner": null
+    },
+    {
+      "id": "R5",
+      "description": "产线验证周期不足",
+      "probability": "high",
+      "impact": "high",
+      "level": "critical",
+      "response": "提前联系企业方排期+备选模拟环境",
+      "trigger": "中期前仍未确认产线访问时间",
+      "status": "open",
+      "owner": null
+    },
+    {
+      "id": "R6",
+      "description": "标注质量影响模型性能",
+      "probability": "medium",
+      "impact": "high",
+      "level": "high",
+      "response": "标注规范+10%抽检+定期轮换标注人员",
+      "trigger": "抽检合格率<90%",
+      "status": "open",
+      "owner": null
+    },
+    {
+      "id": "R7",
+      "description": "GPU资源不足",
+      "probability": "medium",
+      "impact": "medium",
+      "level": "medium",
+      "response": "提前抢占资源+云GPU备选+小模型先行",
+      "trigger": "训练等待时间>4h",
+      "status": "open",
+      "owner": null
+    }
+  ]
+}

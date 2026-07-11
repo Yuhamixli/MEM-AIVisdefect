@@ -1,0 +1,270 @@
+{
+  "updated_at": "2026-07-11",
+  "count": 33,
+  "items": [
+    {
+      "id": "progress-status",
+      "title": "当前进度状态",
+      "category": "项目管理",
+      "description": "每周更新的项目状态入口",
+      "source": "docs/agent-knowledge-base/progress-status.md",
+      "path": "/knowledge/progress-status.md"
+    },
+    {
+      "id": "todo",
+      "title": "课题运营 TODO",
+      "category": "项目管理",
+      "description": "按技术模块拆分的运营待办（对齐申报书）",
+      "source": "docs/project-management/TODO.md",
+      "path": "/knowledge/todo.md"
+    },
+    {
+      "id": "operation-plan",
+      "title": "课题运营计划（申报书）",
+      "category": "项目管理",
+      "description": "五节点、考核指标、模块 WBS 主口径",
+      "source": "docs/project-management/operation-plan-from-proposal.md",
+      "path": "/knowledge/operation-plan.md"
+    },
+    {
+      "id": "repo-todo",
+      "title": "仓库建设 TODO",
+      "category": "项目管理",
+      "description": "",
+      "source": "docs/project-management/REPO-TODO.md",
+      "path": "/knowledge/repo-todo.md"
+    },
+    {
+      "id": "wbs",
+      "title": "WBS 与 13 周节奏（旧）",
+      "category": "项目管理",
+      "description": "旧 13 周表；节点与考核以 operation-plan 为准",
+      "source": "docs/project-management/wbs-and-schedule.md",
+      "path": "/knowledge/wbs.md"
+    },
+    {
+      "id": "m-coin-system",
+      "title": "M币成本管理体系",
+      "category": "财务",
+      "description": "",
+      "source": "docs/project-management/m-coin-cost-system.md",
+      "path": "/knowledge/m-coin-system.md"
+    },
+    {
+      "id": "m-coin-ledger",
+      "title": "M币流水账",
+      "category": "财务",
+      "description": "",
+      "source": "docs/project-management/m-coin-ledger.md",
+      "path": "/knowledge/m-coin-ledger.md"
+    },
+    {
+      "id": "team-roster",
+      "title": "团队名册",
+      "category": "团队",
+      "description": "",
+      "source": "docs/project-management/team-roster.md",
+      "path": "/knowledge/team-roster.md"
+    },
+    {
+      "id": "bi-metrics",
+      "title": "BI 管理指标一页纸",
+      "category": "项目管理",
+      "description": "",
+      "source": "docs/project-management/bi-metrics-onepager.md",
+      "path": "/knowledge/bi-metrics.md"
+    },
+    {
+      "id": "requirements",
+      "title": "需求文档（初稿）",
+      "category": "范围与需求",
+      "description": "",
+      "source": "docs/03-requirements/requirements.md",
+      "path": "/knowledge/requirements.md"
+    },
+    {
+      "id": "risk-register",
+      "title": "风险登记册",
+      "category": "风险",
+      "description": "",
+      "source": "docs/risk-management/risk-register.md",
+      "path": "/knowledge/risk-register.md"
+    },
+    {
+      "id": "industry-research",
+      "title": "行业调研：市场与竞品",
+      "category": "调研",
+      "description": "",
+      "source": "docs/01-industry-research/2026-07-11-market-and-competitors.md",
+      "path": "/knowledge/industry-research.md"
+    },
+    {
+      "id": "adr-001",
+      "title": "ADR-001 四层视觉架构",
+      "category": "技术决策",
+      "description": "",
+      "source": "docs/02-tech-research/ADR-001-four-layer-vision-stack.md",
+      "path": "/knowledge/adr-001.md"
+    },
+    {
+      "id": "pultrusion-basics",
+      "title": "拉挤工艺基础",
+      "category": "领域知识",
+      "description": "",
+      "source": "docs/agent-knowledge-base/pultrusion-basics.md",
+      "path": "/knowledge/pultrusion-basics.md"
+    },
+    {
+      "id": "onboarding-guide",
+      "title": "新队员入门导读",
+      "category": "领域知识",
+      "description": "入门阅读顺序与 48h checklist",
+      "source": "docs/agent-knowledge-base/onboarding-guide.md",
+      "path": "/knowledge/onboarding-guide.md"
+    },
+    {
+      "id": "industry-background",
+      "title": "行业背景导读（入门）",
+      "category": "领域知识",
+      "description": "",
+      "source": "docs/agent-knowledge-base/industry-background.md",
+      "path": "/knowledge/industry-background.md"
+    },
+    {
+      "id": "industry-challenges",
+      "title": "项目行业难点",
+      "category": "领域知识",
+      "description": "工艺/数据/产线/组织难点与选战场",
+      "source": "docs/agent-knowledge-base/industry-challenges.md",
+      "path": "/knowledge/industry-challenges.md"
+    },
+    {
+      "id": "vision-tech-primer",
+      "title": "视觉检测技术导读（入门）",
+      "category": "领域知识",
+      "description": "",
+      "source": "docs/agent-knowledge-base/vision-tech-primer.md",
+      "path": "/knowledge/vision-tech-primer.md"
+    },
+    {
+      "id": "defect-catalog",
+      "title": "缺陷图谱 v0.2（申报书七类）",
+      "category": "领域知识",
+      "description": "",
+      "source": "docs/agent-knowledge-base/defect-catalog.md",
+      "path": "/knowledge/defect-catalog.md"
+    },
+    {
+      "id": "team-capability",
+      "title": "团队能力画像",
+      "category": "团队",
+      "description": "",
+      "source": "docs/project-management/team-capability-profile.md",
+      "path": "/knowledge/team-capability.md"
+    },
+    {
+      "id": "team-workstreams",
+      "title": "团队工作流 / 职能分工",
+      "category": "团队",
+      "description": "职能工作流、建议人数与关键路径；BI 源见 workstreams.json",
+      "source": "docs/project-management/team-workstreams.md",
+      "path": "/knowledge/team-workstreams.md"
+    },
+    {
+      "id": "change-control",
+      "title": "变更控制一页纸",
+      "category": "项目管理",
+      "description": "",
+      "source": "docs/project-management/change-control.md",
+      "path": "/knowledge/change-control.md"
+    },
+    {
+      "id": "kb-readme",
+      "title": "Agent 知识库说明",
+      "category": "领域知识",
+      "description": "",
+      "source": "docs/agent-knowledge-base/README.md",
+      "path": "/knowledge/kb-readme.md"
+    },
+    {
+      "id": "data-mgmt",
+      "title": "数据集管理计划",
+      "category": "数据",
+      "description": "",
+      "source": "docs/data-management/data-management-plan.md",
+      "path": "/knowledge/data-mgmt.md"
+    },
+    {
+      "id": "quality-metrics",
+      "title": "质量度量标准",
+      "category": "质量",
+      "description": "",
+      "source": "docs/quality/metrics-standard.md",
+      "path": "/knowledge/quality-metrics.md"
+    },
+    {
+      "id": "ip-strategy",
+      "title": "知识产权与专利布局",
+      "category": "附录",
+      "description": "",
+      "source": "docs/annex/ip-strategy.md",
+      "path": "/knowledge/ip-strategy.md"
+    },
+    {
+      "id": "meeting-brief-zhang",
+      "title": "见张老师汇报提纲",
+      "category": "沟通",
+      "description": "",
+      "source": "docs/05-reporting/2026-07-11-meeting-brief-zhang.md",
+      "path": "/knowledge/meeting-brief-zhang.md"
+    },
+    {
+      "id": "feedback-inbox",
+      "title": "意见与需求收集箱说明",
+      "category": "意见箱",
+      "description": "",
+      "source": "docs/feedback-inbox/README.md",
+      "path": "/knowledge/feedback-inbox.md"
+    },
+    {
+      "id": "prompt",
+      "title": "PROMPT 控制面（全文）",
+      "category": "控制面",
+      "description": "Agent 项目管理核心提示词",
+      "source": "PROMPT.md",
+      "path": "/knowledge/prompt.md"
+    },
+    {
+      "id": "readme",
+      "title": "仓库 README",
+      "category": "控制面",
+      "description": "",
+      "source": "README.md",
+      "path": "/knowledge/readme.md"
+    },
+    {
+      "id": "feedback-20260711-EXAMPLE-周会要看M币",
+      "title": "意见箱 · 20260711-EXAMPLE-周会要看M币",
+      "category": "意见箱",
+      "description": "inbox 未处理/示例条目",
+      "source": "docs/feedback-inbox/inbox/20260711-EXAMPLE-周会要看M币.md",
+      "path": "/knowledge/feedback-20260711-EXAMPLE-周会要看M币.md"
+    },
+    {
+      "id": "feedback-20260711-管理者-网站读写替代改Git",
+      "title": "意见箱 · 20260711-管理者-网站读写替代改Git",
+      "category": "意见箱",
+      "description": "inbox 未处理/示例条目",
+      "source": "docs/feedback-inbox/inbox/20260711-管理者-网站读写替代改Git.md",
+      "path": "/knowledge/feedback-20260711-管理者-网站读写替代改Git.md"
+    },
+    {
+      "id": "digest-20260711-bi-web-publish",
+      "title": "Digest · 20260711-bi-web-publish",
+      "category": "意见箱",
+      "description": "定期消化纪要",
+      "source": "docs/feedback-inbox/digests/20260711-bi-web-publish.md",
+      "path": "/knowledge/digest-20260711-bi-web-publish.md"
+    }
+  ]
+}

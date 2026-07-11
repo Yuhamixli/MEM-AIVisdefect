@@ -1,0 +1,9 @@
+{
+  "updated_at": "2026-07-11",
+  "tracking_tools": ["mlflow", "wandb", "tensorboard"],
+  "preferred_tool": null,
+  "experiments": [],
+  "dataset_versions": [],
+  "model_weights": [],
+  "notes": "尚无实验记录。首个基线实验建议编号 EXP-YYYYMMDD-001。"
+}
