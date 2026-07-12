@@ -54,6 +54,7 @@ export function OverviewPage({ data }: { data: BiSnapshot }) {
   const primary = data.charter.objectives?.primary ?? []
   const stretch = data.charter.objectives?.internal_stretch
   const product = data.charter.background?.product ?? '新能源汽车电芯压条'
+  const will = data.charter.evaluation_principles
 
   return (
     <>
@@ -73,6 +74,39 @@ export function OverviewPage({ data }: { data: BiSnapshot }) {
           ))}
         </div>
       </section>
+
+      {will?.summary ? (
+        <section className="card will-banner" style={{ marginBottom: 14 }}>
+          <div className="section-head" style={{ marginBottom: 8 }}>
+            <div>
+              <p className="eyebrow" style={{ margin: 0 }}>
+                管理意志 · {will.source ?? '指导老师'}
+              </p>
+              <h2 className="will-title">目的 &gt; 手段复杂度</h2>
+            </div>
+            <span className="pill will-pill">准确度 · 效率 · 成本</span>
+          </div>
+          <p style={{ margin: '0 0 10px' }}>{will.summary}</p>
+          <p className="muted" style={{ margin: 0, fontSize: '0.85rem' }}>
+            {will.operational_checks?.[0] ??
+              '选型与汇报前先问：提升了准确度/效率/成本中的哪一项？证据是什么？'}
+          </p>
+          <ul className="will-links">
+            <li>
+              <Link to="/knowledge/evaluation-principles">评价原则一页纸</Link>
+            </li>
+            <li>
+              <Link to="/knowledge/open-decisions">待沟通清单 OD-1～6</Link>
+            </li>
+            <li>
+              <Link to="/knowledge/meeting-zhang-20260711">张老师首次沟通纪要</Link>
+            </li>
+            <li>
+              <Link to="/knowledge/reporting-readme">会议/周报/阶段报告机制</Link>
+            </li>
+          </ul>
+        </section>
+      ) : null}
 
       <section className="grid-kpi">
         <article className="card kpi" style={{ animationDelay: '0.05s' }}>
@@ -236,16 +270,20 @@ export function OverviewPage({ data }: { data: BiSnapshot }) {
                 <span className="muted">五节点 + 模块看板</span>
               </li>
               <li>
+                <Link to="/knowledge/open-decisions">待沟通 / 待决议</Link>
+                <span className="muted">采集·处理·推理·机械·交付·节点</span>
+              </li>
+              <li>
+                <Link to="/knowledge/evaluation-principles">评价原则</Link>
+                <span className="muted">目的 &gt; 手段</span>
+              </li>
+              <li>
                 <Link to="/knowledge/operation-plan">运营计划（申报书）</Link>
                 <span className="muted">主口径文档</span>
               </li>
               <li>
                 <Link to="/knowledge/todo">模块化 TODO</Link>
                 <span className="muted">GATE / 模块任务</span>
-              </li>
-              <li>
-                <Link to="/knowledge">知识库</Link>
-                <span className="muted">需求 · 缺陷图谱 · 工作流</span>
               </li>
             </ul>
           </article>

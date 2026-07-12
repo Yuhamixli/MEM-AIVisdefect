@@ -38,7 +38,14 @@ export function KnowledgePage() {
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase()
-    const pinned = new Set(['operation-plan', 'todo', 'defect-catalog'])
+    const pinned = new Set([
+      'evaluation-principles',
+      'open-decisions',
+      'operation-plan',
+      'todo',
+      'defect-catalog',
+      'meeting-zhang-20260711',
+    ])
     return items
       .filter((item) => {
         if (category !== '全部' && item.category !== category) return false

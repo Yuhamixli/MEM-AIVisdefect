@@ -39,4 +39,8 @@
 
 ## 6. 需要决策的事项
 
-- 
+- （同步维护 `docs/project-management/open-decisions.md`）
+
+## 7. 评价原则自检
+
+对照 `docs/project-management/evaluation-principles.md`：本周投入是否主要服务准确度 / 效率 / 成本？有无「只加复杂度无证据」项？

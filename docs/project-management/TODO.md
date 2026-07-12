@@ -1,9 +1,9 @@
 # 课题运营 TODO（模块化）
 
-**更新**: 2026-07-11  
+**更新**: 2026-07-12  
 **主计划**: [`operation-plan-from-proposal.md`](./operation-plan-from-proposal.md)  
-**原则**: 考核以**申报书**为准（召回≥80% / 准确率≥85% / ≥3 类 / 50 件 / 三份交付物）；离线模块为主  
-**对照**: 仓库基建见 [`REPO-TODO.md`](./REPO-TODO.md)
+**原则**: 考核以**申报书**为准（召回≥80% / 准确率≥85% / ≥3 类 / 50 件 / 三份交付物）；离线模块为主；评价看准确度/效率/成本（[`evaluation-principles.md`](./evaluation-principles.md)）  
+**对照**: 仓库基建见 [`REPO-TODO.md`](./REPO-TODO.md)；待沟通议题见 [`open-decisions.md`](./open-decisions.md)
 
 > 旧 ID（T001…）映射见文末；新任务以模块前缀为主。
 
@@ -26,7 +26,7 @@
 - [ ] **GATE-K1** 宣贯对象=电芯压条；七类缺陷名单；考核硬指标（非旧 DR95%）
 - [ ] **GATE-K2** 五节点写入日历；主计划与 TODO 入口告知全员
 - [ ] **GATE-K3** 工作流 owner 初分启动（含 `struct-eng`）
-- [ ] **GATE-K4** 会后：张老师反馈记入章程/风险（兼容旧 T001/T002）
+- [x] **GATE-K4** 会后：张老师反馈记入原则/纪要/待决议清单（兼容旧 T001/T002；见 `evaluation-principles.md`）
 
 ### 详设评审 · 2026-07-30
 

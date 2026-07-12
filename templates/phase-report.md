@@ -30,3 +30,9 @@
 
 - [ ] 
 - [ ] 
+
+## 7. 评价原则对齐（张老师指导）
+
+- 本阶段对 **准确度 / 效率 / 成本** 的可验证贡献：  
+- 刻意未采用的复杂手段及原因：  
+- 参见 `docs/project-management/evaluation-principles.md`

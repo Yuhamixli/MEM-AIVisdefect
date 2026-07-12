@@ -1,9 +1,9 @@
 {
   "project_id": "MEM-AIVisdefect",
   "project_name": "新能源汽车电芯压条拉挤成型表面缺陷机器视觉检测",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "created_at": "2026-07-11",
-  "updated_at": "2026-07-11",
+  "updated_at": "2026-07-12",
   "status": "planning",
   "pmbok_process_group": "启动→规划",
   "current_phase": "开题 — 申报书口径对齐",
@@ -104,11 +104,25 @@
   },
   "management_priority": [
     "申报书范围与五节点里程碑",
+    "目的优先：准确度/效率/成本（手段复杂度非 KPI）",
     "团队组织与分工机制（含结构/工艺）",
     "M币成本与财务透明",
     "风险与相关方（张老师、朱老师）沟通",
     "BI 管理看板与知识库口径同步"
   ],
+  "evaluation_principles": {
+    "source": "张老师 2026-07-11 首次沟通",
+    "summary": "目的的价值大于手段的复杂度；价值体现在缺陷识别准确度、效率、成本；算法与花哨技术非主 KPI",
+    "value_dimensions": ["accuracy", "efficiency", "cost"],
+    "operational_checks": [
+      "选型与汇报前：提升了准确度/效率/成本中的哪一项？证据是什么？",
+      "算法复杂度本身不是 KPI"
+    ],
+    "doc_path": "docs/project-management/evaluation-principles.md",
+    "minutes_path": "docs/05-reporting/meetings/2026-07-11-zhang-first-meeting.md",
+    "open_decisions_path": "docs/project-management/open-decisions.md",
+    "note": "本字段为管理意志；不替代申报书硬指标，也不因单条意见自动改 requirements"
+  },
   "success_criteria": [
     "一份图像采集方案",
     "50 件测试：可识别不少于三类表面缺陷；查全率≥80%；准确率≥85%",
@@ -122,5 +136,5 @@
     "team.roles",
     "constraints.gpu_resources"
   ],
-  "notes": "2026-07-11：按申报书切换应用对象为电芯压条、七类缺陷名单、五节点日期与考核指标；旧 DR≥95%/FPR≤5%/mAP 阶梯降为 internal_stretch。"
+  "notes": "2026-07-11：按申报书切换应用对象为电芯压条、七类缺陷名单、五节点日期与考核指标；旧 DR≥95%/FPR≤5%/mAP 阶梯降为 internal_stretch。2026-07-12：写入张老师评价原则（evaluation_principles）；待沟通议题见 open-decisions.md。"
 }

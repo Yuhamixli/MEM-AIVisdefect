@@ -74,6 +74,17 @@ export interface ObjectiveMetric {
   direction?: string
 }
 
+export interface EvaluationPrinciples {
+  source?: string
+  summary?: string
+  value_dimensions?: string[]
+  operational_checks?: string[]
+  doc_path?: string
+  minutes_path?: string
+  open_decisions_path?: string
+  note?: string
+}
+
 export interface ProjectCharter {
   project_id: string
   project_name: string
@@ -85,6 +96,8 @@ export interface ProjectCharter {
     program?: string
     cost_currency?: string
   }
+  evaluation_principles?: EvaluationPrinciples
+  management_priority?: string[]
   team?: {
     size?: number
     roles_assigned?: boolean

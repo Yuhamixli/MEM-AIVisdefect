@@ -33,8 +33,17 @@ export function PlanPage({ data }: { data: BiSnapshot }) {
             <Link to="/knowledge/todo" className="text-link">
               模块化 TODO
             </Link>
+            {' · '}
+            <Link to="/knowledge/open-decisions" className="text-link">
+              待沟通清单
+            </Link>
             。模块状态暂为占位，待 TODO 勾选后同步。
           </p>
+          {data.charter.evaluation_principles?.summary ? (
+            <p className="will-inline muted" style={{ margin: '10px 0 0', fontSize: '0.85rem' }}>
+              选型对照：{data.charter.evaluation_principles.summary}
+            </p>
+          ) : null}
         </div>
       </section>
 

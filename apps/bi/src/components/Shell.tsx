@@ -8,7 +8,8 @@ export function Shell() {
           <p className="eyebrow">MEM-AIVisdefect · 电芯压条 · 拉挤外观检</p>
           <h1>项目健康看板</h1>
           <p className="sub">
-            申报书考核：查全率≥80% · 准确率≥85% · ≥3类 · 50件。五节点至 09-30；旧 DR95% 非考核。
+            申报书考核：查全率≥80% · 准确率≥85% · ≥3类 · 50件。评价看准确度/效率/成本（目的&gt;手段）。五节点至
+            09-30。
           </p>
         </div>
         <nav className="nav" aria-label="主导航">

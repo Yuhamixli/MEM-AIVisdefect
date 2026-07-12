@@ -1,6 +1,6 @@
 # 仓库建设待办（REPO TODO）
 
-**更新**: 2026-07-11  
+**更新**: 2026-07-12  
 **范围**: 本 Git 仓库要建成什么样（产品/基础设施），不是课题周任务本身  
 **对照**: 课题运营待办见 [`TODO.md`](./TODO.md)
 
@@ -29,8 +29,10 @@
 | R-A01 | 根 README 导航补全（双 TODO 入口） | 完成 | P0 | `README.md` |
 | R-A02 | `docs/` 各目录加简短 INDEX（人读） | 待办 | P1 | 各 `docs/*/README.md` |
 | R-A03 | 变更控制一页纸落库 | 完成 | P1 | `docs/project-management/change-control.md` |
-| R-A04 | 会议纪要目录约定 | 待办 | P2 | `docs/05-reporting/meetings/` |
+| R-A04 | 会议纪要目录约定 | 完成 | P2 | `docs/05-reporting/meetings/` |
 | R-A05 | PROMPT 与章程字段定期对账检查清单 | 待办 | P2 | `docs/agent-knowledge-base/` |
+| R-A06 | 评价原则一页纸（张老师：目的>手段） | 完成 | P0 | `evaluation-principles.md` |
+| R-A07 | 待沟通/待决议清单（手写议题落库） | 完成 | P0 | `open-decisions.md` |
 
 ## B — Agent 知识库
 
@@ -44,6 +46,7 @@
 | R-B05 | ADR 索引 | 待办 | P1 | `docs/02-tech-research/README.md` |
 | R-B06 | Agent「当前状态」单一入口强化 | 待办 | P0 | `progress-status.md` 或根 `STATUS.md` |
 | R-B07 | 意见与需求收集箱 + 定时消化约定 | 完成 | P0 | `docs/feedback-inbox/` |
+| R-B08 | 评估/接入 XnoAvi 能力（见 ADR-002） | 待办 | P1 | ADR-002 |
 
 ## C — 管理数据层（给 BI / Agent 用）
 
@@ -96,7 +99,7 @@
 |----|------|------|--------|----------|
 | R-G01 | `.gitignore` | 完成 | P0 | `.gitignore` |
 | R-G02 | README 仓库地图 | 完成 | P0 | `README.md` |
-| R-G03 | `.cursor/rules` 项目管理短规则 | 待办 | P1 | `.cursor/rules/` |
+| R-G03 | `.cursor/rules` 项目管理短规则 | 完成 | P1 | `feedback-inbox.mdc` + `project-comms.mdc` |
 | R-G04 | 贡献/提交约定 | 待办 | P2 | README 节或 `CONTRIBUTING.md` |
 | R-G05 | 基础 CI（可选） | 待办 | P2 | `.github/workflows/` |
 
@@ -133,6 +136,10 @@ P1:
 | R-0c | 本 REPO-TODO | 2026-07-11 |
 | R-D01–D07 | BI v0.1：Vite/React、总览/M币/团队、spec 同步 | 2026-07-11 |
 | R-D08–D11 | BI v0.2：Cloudflare 部署、知识库、意见箱口令表单 | 2026-07-11 |
+| R-A04 | 会议纪要目录 + 汇报 README/模板补强 | 2026-07-12 |
+| R-A06 | 评价原则一页纸 + 张老师会纪要 | 2026-07-12 |
+| R-A07 | 待沟通/待决议清单（手写议题落库） | 2026-07-12 |
+| R-G03 | 项目管理 Cursor 规则（意见箱 + 沟通纪要） | 2026-07-12 |
 
 ---
 

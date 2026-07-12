@@ -1,0 +1,18 @@
+---
+description: 项目管理会话检查会议纪要与待决议清单
+globs:
+  - docs/05-reporting/**
+  - docs/project-management/**
+  - PROMPT.md
+alwaysApply: false
+---
+
+# 沟通与决议检索习惯
+
+做本仓库的**项目管理 / 规划 / 周报 / 导师沟通**类任务时：
+
+1. 先扫 `docs/feedback-inbox/inbox/`（忽略 `*EXAMPLE*`，规则见 `feedback-inbox.mdc`）。
+2. 再读最近 1–2 份 `docs/05-reporting/meetings/*.md`，以及 `docs/project-management/open-decisions.md` 中仍为 `open` 的项。
+3. 选型或写汇报时对照 `docs/project-management/evaluation-principles.md`：先问准确度/效率/成本证据。
+4. 会后 24h 内落纪要；关闭议题时更新 `open-decisions.md` 决议栏。
+5. **不要**因单条意见自动改 `requirements.md` 或章程硬范围；原则类意志可写入原则/PROMPT/纪要。
