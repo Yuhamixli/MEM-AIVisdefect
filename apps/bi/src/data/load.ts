@@ -1,10 +1,18 @@
 import type { BiSnapshot } from './types'
 import type { KnowledgeIndex } from './knowledge'
 
+/** Resolve public asset under Vite `base` (e.g. `/MEM-AIVisdefect/` on GitHub Pages). */
+export function publicUrl(path: string): string {
+  const base = import.meta.env.BASE_URL
+  const cleaned = path.startsWith('/') ? path.slice(1) : path
+  return `${base}${cleaned}`
+}
+
 async function fetchJson<T>(path: string): Promise<T> {
-  const res = await fetch(path)
+  const url = publicUrl(path)
+  const res = await fetch(url)
   if (!res.ok) {
-    throw new Error(`Failed to load ${path}: ${res.status}`)
+    throw new Error(`Failed to load ${url}: ${res.status}`)
   }
   return res.json() as Promise<T>
 }
@@ -26,9 +34,10 @@ export async function loadKnowledgeIndex(): Promise<KnowledgeIndex> {
 }
 
 export async function loadKnowledgeMarkdown(path: string): Promise<string> {
-  const res = await fetch(path)
+  const url = publicUrl(path)
+  const res = await fetch(url)
   if (!res.ok) {
-    throw new Error(`Failed to load ${path}: ${res.status}`)
+    throw new Error(`Failed to load ${url}: ${res.status}`)
   }
   return res.text()
 }
