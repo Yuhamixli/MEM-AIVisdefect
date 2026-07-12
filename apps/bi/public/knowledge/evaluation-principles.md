@@ -41,4 +41,4 @@
 
 - 控制面：根目录 `PROMPT.md` §1.4  
 - 章程机器字段：`.project-spec/project-charter.json` → `evaluation_principles`  
-- 待沟通议题：[`open-decisions.md`](./open-decisions.md)（决议时对照本原则）
+- 待沟通议题：[`open-decisions.md`](./open-decisions.md)（**需求澄清 / 待决议清单**；默认决策卡按三轴填影响，**勿逐项 SWOT**；仅高耦合系统分叉做轻量方案对比）

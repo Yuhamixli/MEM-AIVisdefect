@@ -13,7 +13,7 @@
 
 ## 机制一览
 
-1. **会前**：议程可写在议题清单 [`../project-management/open-decisions.md`](../project-management/open-decisions.md) 或临时 brief。  
+1. **会前**：议程可写在议题清单 [`../project-management/open-decisions.md`](../project-management/open-decisions.md)（需求澄清范围；默认决策卡，勿逐项 SWOT）或临时 brief。  
 2. **会后 24h 内**：按 [`meetings/README.md`](./meetings/README.md) 写纪要（决议、待办、M币影响、原则对齐）。  
 3. **每周**：周报用 [`../../templates/weekly-report.md`](../../templates/weekly-report.md) → 写入 `daily/`。  
 4. **阶段门禁**：阶段报告用 [`../../templates/phase-report.md`](../../templates/phase-report.md) → 写入 `phase/`。  
