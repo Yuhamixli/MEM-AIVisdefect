@@ -6,7 +6,7 @@
 
 > **注意**：Cloud Agent 只解决「Cursor 算力在云上」；飞书事件仍需本桥进程在线（长连接）。关机后 `@` 不会回。真正 7×24 需把本服务部署到常开机器。
 >
-> **知识边界**：机器人答的是 **GitHub `main`**，不是飞书未入库草稿。飞书定稿必须同步进 `docs/agent-knowledge-base/` 并 push，见知识库 README「飞书 ↔ GitHub 知识同步」。
+> **知识边界**：机器人答的是 **GitHub `main`**。飞书定稿请 `npm run sync-docs` 进 `docs/agent-knowledge-base/feishu-sync/` 并 push。
 
 ## 快速开始
 
@@ -18,8 +18,6 @@ npm install
 npm start
 ```
 
-保持此进程在线（本机可访问公网即可，**不需要**公网回调 URL）。
-
 ### 环境变量
 
 | 变量 | 说明 |
@@ -27,38 +25,45 @@ npm start
 | `CURSOR_API_KEY` | [Cursor Dashboard → Integrations](https://cursor.com/dashboard/integrations) |
 | `FEISHU_APP_ID` / `FEISHU_APP_SECRET` | 飞书自建应用凭证 |
 | `CURSOR_RUNTIME` | `cloud`（默认）或 `local` |
-| `CURSOR_CLOUD_REPO` | Cloud Agent 仓库 URL |
-| `CURSOR_CLOUD_REF` | 默认 `main` |
-| `REPO_CWD` | 仅 local；默认仓库根 |
+| `CURSOR_CLOUD_REPO` / `CURSOR_CLOUD_REF` | Cloud Agent 仓库 |
 | `CURSOR_MODEL` | 默认 `composer-2.5` |
-| `REQUIRE_MENTION` | 群聊是否必须 @机器人，默认 `true` |
+| `REQUIRE_MENTION` | 群聊是否必须 @，默认 `true` |
+| `RECENT_CHAT_LIMIT` | @ 时附带最近群消息条数，默认 `40`；`0` 关闭 |
+| `FEISHU_SYNC_FOLDER_TOKEN` | `npm run sync-docs` 根文件夹 |
 
-### 飞书开放平台配置（一次性）
+### 飞书开放平台
 
-1. 应用 **MEM-AIVisdefect-Agent** → **事件与回调**
-2. 订阅方式选 **使用长连接接收事件**（先 `npm start` 再保存）
-3. 添加事件：`im.message.receive_v1`（接收消息）
-4. 权限：`im:message`、`im:message.group_at_msg`（或等价「获取与发送单聊/群组消息」）并发布版本
-5. 机器人能力已开启；机器人已在群「03组-拉挤外观检测」中
+1. 长连接 + 事件 `im.message.receive_v1`
+2. 权限：群 @ 消息、发消息；群聊历史（附带语境）；云文档只读（同步）
+3. 发布版本
 
 ### 用法
 
-- 群：`@MEM-AIVisdefect-Agent 双周报在哪个飞书目录？`
-- 私聊：直接发问题
-- 重置会话上下文：发 `重置` / `reset`
+- `@MEM-AIVisdefect-Agent 双周报在哪？` — 正式提问（会附带最近群聊语境）
+- 发 `重置` — 清空**你个人**的 Agent 会话
+- 只 @ 说明用法、无具体任务 — 短回提示，不跑 Cloud Agent
 
-同一群会复用同一个 Cursor `agentId`（存在 `.data/sessions.json`）。
+### 飞书文档 → Git
 
-## 设计要点
+```bash
+cd apps/feishu-cursor-bridge
+npm run sync-docs
+# → docs/agent-knowledge-base/feishu-sync/ (+ INDEX.md)
+git add ../../docs/agent-knowledge-base/feishu-sync
+git commit -m "Sync Feishu docs into knowledge base"
+git push
+```
 
-- 事件处理 **3 秒内返回**；Cursor 跑在后台，先回「处理中」再回结果
-- 默认 **只读回答**（system preamble）；明确说「改代码」才会动仓库
-- 符合 ADR-002：不整包上小诺 runtime，用 Cursor 控制面接飞书
+### 群聊上下文
+
+默认拉取该群最近约 40 条消息塞进 prompt（仅作语境，以当前问题为准）。  
+需 `im:message` / 历史只读权限；未开通则跳过附带，不影响回答仓库问题。
 
 ## 故障排查
 
 | 现象 | 处理 |
 |------|------|
-| `@` 无反应 | 确认本进程在跑 + 长连接已保存 + 事件已订阅 |
+| `@` 无响应 | 桥进程在线 + 长连接 + 事件已订阅 |
+| 群聊语境未附带 | 开通消息历史权限并发布版本 |
+| sync-docs 失败 | 开通云空间/云文档只读 |
 | Cursor 401 | 检查 `CURSOR_API_KEY` |
-| 文件夹空 | 与桥无关：成员需先加入企业再开共享盘 |

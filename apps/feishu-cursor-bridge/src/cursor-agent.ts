@@ -42,6 +42,11 @@ function baseOptions(): AgentOptions {
   };
 }
 
+export type RunCursorOptions = {
+  /** Optional recent group chat excerpt (already formatted). */
+  chatContext?: string;
+};
+
 /**
  * Run a Cursor agent (cloud by default) for this Feishu session.
  * Resumes prior agentId when present so follow-ups keep context.
@@ -49,8 +54,14 @@ function baseOptions(): AgentOptions {
 export async function runCursorAgent(
   sessionKey: string,
   userText: string,
+  options: RunCursorOptions = {},
 ): Promise<AgentReply> {
-  const prompt = `${SYSTEM_PREAMBLE}\n\n---\n用户问题：\n${userText}`;
+  const ctx = options.chatContext?.trim();
+  const prompt = [
+    SYSTEM_PREAMBLE,
+    ctx ? `\n---\n${ctx}\n` : "",
+    `---\n用户当前问题：\n${userText}`,
+  ].join("\n");
   const opts = baseOptions();
 
   const existing = getAgentId(sessionKey);
@@ -65,7 +76,7 @@ export async function runCursorAgent(
     setAgentId(sessionKey, agent.agentId);
     const run = await agent.send(prompt);
     console.log(
-      `[cursor] runtime=${config.runtime} agent=${agent.agentId} run=${run.id}`,
+      `[cursor] runtime=${config.runtime} agent=${agent.agentId} run=${run.id} ctxChars=${ctx?.length || 0}`,
     );
     const result = await run.wait();
 
@@ -92,7 +103,7 @@ export async function runCursorAgent(
     if (err instanceof CursorAgentError) {
       if (existing && /not found|AgentNotFound/i.test(err.message)) {
         clearAgentId(sessionKey);
-        return runCursorAgent(sessionKey, userText);
+        return runCursorAgent(sessionKey, userText, options);
       }
       throw err;
     }

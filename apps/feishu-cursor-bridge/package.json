@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "start": "tsx src/index.ts",
+    "sync-docs": "tsx scripts/sync-feishu-docs.ts",
     "typecheck": "tsc --noEmit"
   },
   "engines": {
