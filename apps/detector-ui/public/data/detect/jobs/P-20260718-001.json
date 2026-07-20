@@ -1,0 +1,34 @@
+{
+  "piece_id": "P-20260718-001",
+  "batch_id": "B-mock-01",
+  "faces": [
+    {
+      "face": "top",
+      "image": "/data/detect/images/placeholder-3200x1920.svg",
+      "image_size": [3200, 1920],
+      "defects": [
+        {
+          "defect_id": "d-001",
+          "slug": "crack",
+          "class_name": "裂纹",
+          "bbox": [812, 340, 220, 80],
+          "confidence": 0.87,
+          "severity_hint": "medium",
+          "review_status": "pending"
+        },
+        {
+          "defect_id": "d-002",
+          "slug": "bubble",
+          "class_name": "气泡",
+          "bbox": [1600, 900, 140, 140],
+          "confidence": 0.42,
+          "severity_hint": "low",
+          "review_status": "pending"
+        }
+      ]
+    }
+  ],
+  "detected_at": "2026-07-18T14:02:00+08:00",
+  "model_version": "yolo11s-seg-mock-v0",
+  "review_status": "pending"
+}

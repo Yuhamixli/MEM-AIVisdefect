@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-12",
-  "count": 39,
+  "updated_at": "2026-07-18",
+  "count": 40,
   "items": [
     {
       "id": "progress-status",
@@ -153,6 +153,14 @@
       "description": "",
       "source": "docs/agent-knowledge-base/vision-tech-primer.md",
       "path": "/knowledge/vision-tech-primer.md"
+    },
+    {
+      "id": "camera-layout-600mp-process",
+      "title": "过程版：600万卷帘面阵相机布置要点",
+      "category": "领域知识",
+      "description": "黄崇发/黄雨欣过程版摘要：分辨率二选一、物距、标定、光源DOE",
+      "source": "docs/agent-knowledge-base/camera-layout-600mp-process.md",
+      "path": "/knowledge/camera-layout-600mp-process.md"
     },
     {
       "id": "defect-catalog",

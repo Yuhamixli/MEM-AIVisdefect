@@ -3,9 +3,11 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import { Shell } from './components/Shell'
 import { loadBiSnapshot } from './data/load'
 import type { BiSnapshot } from './data/types'
+import { BiweeklyPage } from './pages/BiweeklyPage'
 import { BudgetPage } from './pages/BudgetPage'
 import { FeedbackPage } from './pages/FeedbackPage'
 import { KnowledgePage } from './pages/KnowledgePage'
+import { OpenDecisionsPage } from './pages/OpenDecisionsPage'
 import { OverviewPage } from './pages/OverviewPage'
 import { PlanPage } from './pages/PlanPage'
 import { TeamPage } from './pages/TeamPage'
@@ -60,6 +62,8 @@ export default function App() {
         <Route path="knowledge" element={<KnowledgePage />} />
         <Route path="knowledge/:docId" element={<KnowledgePage />} />
         <Route path="feedback" element={<FeedbackPage />} />
+        <Route path="open-decisions" element={<OpenDecisionsPage />} />
+        <Route path="biweekly" element={<BiweeklyPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
     </Routes>

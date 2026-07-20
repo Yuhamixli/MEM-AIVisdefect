@@ -19,6 +19,8 @@ export function Shell() {
           <NavLink to="/plan">计划</NavLink>
           <NavLink to="/budget">M币</NavLink>
           <NavLink to="/team">团队</NavLink>
+          <NavLink to="/open-decisions">未决</NavLink>
+          <NavLink to="/biweekly">双周报</NavLink>
           <NavLink to="/knowledge">知识</NavLink>
           <NavLink to="/feedback">意见箱</NavLink>
         </nav>

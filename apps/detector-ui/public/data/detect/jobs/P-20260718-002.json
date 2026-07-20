@@ -1,0 +1,25 @@
+{
+  "piece_id": "P-20260718-002",
+  "batch_id": "B-mock-01",
+  "faces": [
+    {
+      "face": "top",
+      "image": "/data/detect/images/placeholder-3200x1920.svg",
+      "image_size": [3200, 1920],
+      "defects": [
+        {
+          "defect_id": "d-010",
+          "slug": "scratch",
+          "class_name": "划伤",
+          "bbox": [400, 700, 480, 60],
+          "confidence": 0.91,
+          "severity_hint": "high",
+          "review_status": "confirmed"
+        }
+      ]
+    }
+  ],
+  "detected_at": "2026-07-18T14:08:00+08:00",
+  "model_version": "yolo11s-seg-mock-v0",
+  "review_status": "confirmed"
+}

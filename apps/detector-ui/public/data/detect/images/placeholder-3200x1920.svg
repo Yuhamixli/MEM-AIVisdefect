@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3200" height="1920" viewBox="0 0 3200 1920">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2a3340"/>
+      <stop offset="100%" stop-color="#4a5563"/>
+    </linearGradient>
+  </defs>
+  <rect width="3200" height="1920" fill="url(#g)"/>
+  <rect x="200" y="700" width="2800" height="520" rx="20" fill="#c8b89a" opacity="0.85"/>
+  <text x="1600" y="980" fill="#1f2933" font-size="72" text-anchor="middle" font-family="sans-serif">
+    mock � 3200�1920 � �$�P:
+  </text>
+</svg>

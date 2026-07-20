@@ -135,6 +135,13 @@ const CATALOG = [
     source: 'docs/agent-knowledge-base/vision-tech-primer.md',
   },
   {
+    id: 'camera-layout-600mp-process',
+    title: '过程版：600万卷帘面阵相机布置要点',
+    category: '领域知识',
+    source: 'docs/agent-knowledge-base/camera-layout-600mp-process.md',
+    description: '黄崇发/黄雨欣过程版摘要：分辨率二选一、物距、标定、光源DOE',
+  },
+  {
     id: 'defect-catalog',
     title: '缺陷图谱 v0.2（申报书七类）',
     category: '领域知识',

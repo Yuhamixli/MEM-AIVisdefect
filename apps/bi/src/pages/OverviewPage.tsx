@@ -96,7 +96,7 @@ export function OverviewPage({ data }: { data: BiSnapshot }) {
               <Link to="/knowledge/evaluation-principles">评价原则一页纸</Link>
             </li>
             <li>
-              <Link to="/knowledge/open-decisions">待沟通清单 OD-1～6</Link>
+              <Link to="/open-decisions">未决事项 OD-COM</Link>
             </li>
             <li>
               <Link to="/knowledge/meeting-zhang-20260711">张老师首次沟通纪要</Link>

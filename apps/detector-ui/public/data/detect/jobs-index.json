@@ -1,0 +1,24 @@
+{
+  "updated_at": "2026-07-18T16:40:00+08:00",
+  "note": "mock 数据；黄崇发真实样例到位后替换，不硬编码算法目录",
+  "jobs": [
+    {
+      "piece_id": "P-20260718-001",
+      "batch": "B-mock-01",
+      "faces": 1,
+      "defects": 2,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-07-18T14:02:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260718-002",
+      "batch": "B-mock-01",
+      "faces": 1,
+      "defects": 1,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-07-18T14:08:00+08:00",
+      "review_status": "confirmed"
+    }
+  ]
+}

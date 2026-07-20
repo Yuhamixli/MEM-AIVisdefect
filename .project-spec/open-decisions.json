@@ -1,0 +1,135 @@
+{
+  "updated_at": "2026-07-18",
+  "source": "Kimi open-decisions-log.md / OD-COM-01~16",
+  "synced_note": "页面显示本时间戳；台账更新后请改本文件并 npm run sync-data",
+  "decisions": [
+    {
+      "id": "OD-COM-01",
+      "topic": "粗检/精检是否写入中期正式范围",
+      "status": "discussing",
+      "owner": "范汝杰",
+      "due": "2026-08-15",
+      "summary": "D-03 群共识=任务书外增强线，待关单"
+    },
+    {
+      "id": "OD-COM-02",
+      "topic": "粗精两阶段实现形态",
+      "status": "discussing",
+      "owner": "范汝杰",
+      "due": "2026-08-15",
+      "summary": "倾向不同模型；对齐 ADR-001"
+    },
+    {
+      "id": "OD-COM-03",
+      "topic": "卷帘600万面阵 vs 全局快门+连续输送",
+      "status": "open",
+      "owner": "范汝杰",
+      "due": "2026-07-30",
+      "summary": "过程版=卷帘+走停走为基线；与机械传输耦合"
+    },
+    {
+      "id": "OD-COM-04",
+      "topic": "流水线五段现场参数需求",
+      "status": "open",
+      "owner": "范汝杰",
+      "due": "2026-07-30",
+      "summary": "填参@郭小川；线速/截面/节拍/工位空间"
+    },
+    {
+      "id": "OD-COM-05",
+      "topic": "曝光/光源/反光处理方案",
+      "status": "open",
+      "owner": "范汝杰",
+      "due": "2026-07-30",
+      "summary": "先 DOE 再冻结，不凭经验锁光源"
+    },
+    {
+      "id": "OD-COM-06",
+      "topic": "预处理是否必要",
+      "status": "open",
+      "owner": "范汝杰",
+      "due": "2026-08-15",
+      "summary": "默认不加预处理，有证据再加"
+    },
+    {
+      "id": "OD-COM-07",
+      "topic": "在线检测器选型与 DINO 退场条件",
+      "status": "open",
+      "owner": "范汝杰",
+      "due": "2026-08-15",
+      "summary": "草案@黄崇发；主检测器 50 件盲测达标后退场 DINO"
+    },
+    {
+      "id": "OD-COM-08",
+      "topic": "无监督拓展是否进本期考核叙事",
+      "status": "open",
+      "owner": "范汝杰",
+      "due": "2026-08-15",
+      "summary": "建议仅演示加分，不进承诺"
+    },
+    {
+      "id": "OD-COM-09",
+      "topic": "OK/NG 分拣与码垛是否进演示范围",
+      "status": "open",
+      "owner": "范汝杰",
+      "due": "2026-08-29",
+      "summary": "基线=仿真或看板演示，不实物联 PLC"
+    },
+    {
+      "id": "OD-COM-10",
+      "topic": "中期创新叙事定稿",
+      "status": "open",
+      "owner": "范汝杰",
+      "due": "2026-08-15",
+      "summary": "讲在线/近线/飞轮应用效果，不堆模型"
+    },
+    {
+      "id": "OD-COM-11",
+      "topic": "定义卡配图与允收标准冻结节奏",
+      "status": "open",
+      "owner": "范汝杰",
+      "due": "2026-07-30",
+      "summary": "共签@张岩松；骨架+配图≤07-30"
+    },
+    {
+      "id": "OD-COM-12",
+      "topic": "双周报分工与校友导师评价衔接",
+      "status": "open",
+      "owner": "范汝杰",
+      "due": "2026-07-24",
+      "summary": "D-05 截止 07-26 21:00；我方先成稿组员修订"
+    },
+    {
+      "id": "OD-COM-13",
+      "topic": "团队人数口径冻结",
+      "status": "open",
+      "owner": "范汝杰",
+      "due": "2026-07-24",
+      "summary": "冻结前按 13 人记账并标注待确认"
+    },
+    {
+      "id": "OD-COM-14",
+      "topic": "五节点与课程三阶段日期对齐",
+      "status": "open",
+      "owner": "范汝杰",
+      "due": "2026-07-30",
+      "summary": "中期 08-15 vs 课程 8.26-8.29；统一前双轨标注"
+    },
+    {
+      "id": "OD-COM-15",
+      "topic": "《工艺设计工作总结》归档存疑",
+      "status": "open",
+      "owner": "范汝杰",
+      "due": "2026-07-30",
+      "summary": "疑为缠绕气瓶工艺；@郭小川确认是否另有拉挤文件"
+    },
+    {
+      "id": "OD-COM-16",
+      "topic": "相机分辨率二选一与帧率核定",
+      "status": "open",
+      "owner": "范汝杰",
+      "due": "2026-07-30",
+      "summary": "草案@黄雨欣；3200×1920 vs 3072×2084"
+    }
+  ]
+}
