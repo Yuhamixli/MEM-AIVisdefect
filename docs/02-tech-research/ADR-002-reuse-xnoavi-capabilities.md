@@ -18,7 +18,7 @@ MEM-AIVisdefect 已具备 `PROMPT.md`、`docs/agent-knowledge-base/`、`docs/fee
 ## 2. 决策（结论先看）
 
 1. **不**整包引入 xnobot runtime（商网桥 / 司库 DuckDB / Evolution Swarm 与课题无关且部署重）。
-2. **优先复用** Cursor 控制面：skills / rules / handoff、知识分层约定、inbox → digest 流程；飞书侧用 `apps/feishu-cursor-bridge`（Cursor SDK 本地 Agent）接群机器人，**不**接小诺 gateway。
+2. **优先复用** Cursor 控制面：skills / rules / handoff、知识分层约定、inbox → digest 流程；飞书侧用 `apps/feishu-cursor-bridge`（Cursor SDK Cloud Agent）接群机器人，**不**接小诺 gateway。飞书云文档与 GitHub 知识库须按周对账（见 `docs/agent-knowledge-base/README.md`），避免机器人与协作盘版本不一致。
 3. **Phase 2 试点**轻量 RAG：用 xnobot knowledge ingest 指向本仓库知识目录（或等价独立 ingest），不绑 gateway。
 4. **裁剪引入** Agent Card：领域角色卡（标注 / 详设 / 实验）先落文档 + JSON，不接 spawn/crew gateway。
 5. **永久自建**缺陷检测领域：拉挤工艺、七类缺陷、ADR-001 视觉栈、光学方案、数据集、50 件测试、`detector-ui`。

@@ -33,6 +33,21 @@
 有数据后: 缺陷图谱配图、数据集版本
 ```
 
+## 飞书 ↔ GitHub 知识同步（必守）
+
+Cloud Agent / 飞书机器人**只读 GitHub `main`**；飞书云文档是人读写入口。两边必须定期对齐，避免边界与版本漂移。
+
+| 规则 | 说明 |
+|------|------|
+| **真相源** | 已定稿知识进 Git：`docs/agent-knowledge-base/`（及必要的 `docs/`）；飞书放协作草稿与会议材料 |
+| **飞书 → Git** | 方案/纪要/相机布置等定稿后，导出或摘录进仓库对应 md，并 `git push` |
+| **Git → 飞书** | 重要变更（ADR、缺陷定义、进度）同步到共享文件夹对应分类，或群内公告链接 |
+| **节奏** | 至少**每周一次**对账；重大评审前后各做一次；改 ADR / 缺陷目录当日同步 |
+| **共享盘** | https://bcndkrmo7f8n.feishu.cn/drive/folder/JviVfMA56lMkzhdVoZdcEVk9nBd |
+| **待办** | [`REPO-TODO` R-B09](../project-management/REPO-TODO.md) |
+
+镜像到 BI：改完知识 md 后执行 `cd apps/bi && npm run sync-data`。
+
 ## 与仓库建设
 
 知识库完善项见 [`../project-management/REPO-TODO.md`](../project-management/REPO-TODO.md) 轨道 B。

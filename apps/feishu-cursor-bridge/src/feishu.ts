@@ -101,17 +101,30 @@ export function parseReceiveEvent(
   if (!msg?.message_id || !msg.chat_id || !msg.content) return null;
   if (data.sender?.sender_type === "app") return null;
 
-  const mentionedBot = (msg.mentions || []).some(
-    (m) => m.id?.open_id === botOpenId,
-  );
+  const mentions = msg.mentions || [];
+  const mentionedBot = mentions.some((m) => {
+    const oid = m.id?.open_id;
+    const name = (m.name || "").toLowerCase();
+    // Feishu may tag bot mentions as app/bot, or by open_id / display name
+    const type = String(
+      (m as { mentioned_type?: string }).mentioned_type || "",
+    ).toLowerCase();
+    return (
+      oid === botOpenId ||
+      type === "app" ||
+      type === "bot" ||
+      name.includes("mem-aivisdefect") ||
+      name.includes("aivisdefect")
+    );
+  });
   const text = extractPlainText(msg.content, msg.message_type || "text");
-  if (!text) return null;
+  if (!text && !mentionedBot) return null;
 
   return {
     messageId: msg.message_id,
     chatId: msg.chat_id,
     chatType: msg.chat_type || "group",
-    text,
+    text: text || "(无文本)",
     mentionedBot,
     senderOpenId: data.sender?.sender_id?.open_id,
   };

@@ -83,14 +83,25 @@ async function main(): Promise<void> {
     "im.message.receive_v1": async (data) => {
       // Must not throw; Cursor work is async (Feishu 3s ACK).
       try {
+        console.log(
+          "[bridge] event im.message.receive_v1",
+          JSON.stringify(data).slice(0, 800),
+        );
         const incoming = parseReceiveEvent(
           data as Parameters<typeof parseReceiveEvent>[0],
           botOpenId,
         );
-        if (!incoming) return;
+        if (!incoming) {
+          console.log("[bridge] skip: parse returned null");
+          return;
+        }
+        console.log(
+          `[bridge] parsed chat=${incoming.chatType} mention=${incoming.mentionedBot} text=${incoming.text.slice(0, 80)}`,
+        );
 
         const isP2p = incoming.chatType === "p2p";
         if (!isP2p && config.requireMention && !incoming.mentionedBot) {
+          console.log("[bridge] skip: group message without @bot");
           return;
         }
 

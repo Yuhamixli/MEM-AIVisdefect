@@ -47,6 +47,7 @@
 | R-B06 | Agent「当前状态」单一入口强化 | 待办 | P0 | `progress-status.md` 或根 `STATUS.md` |
 | R-B07 | 意见与需求收集箱 + 定时消化约定 | 完成 | P0 | `docs/feedback-inbox/` |
 | R-B08 | 评估/接入 XnoAvi 能力（见 ADR-002） | 待办 | P1 | ADR-002 |
+| R-B09 | 飞书文档 ↔ GitHub 知识定期对账（防边界/版本漂移） | 进行中 | P0 | 知识库 README「飞书↔GitHub」；每周 + 评审节点 |
 
 ## C — 管理数据层（给 BI / Agent 用）
 
