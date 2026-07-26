@@ -10,6 +10,7 @@
     "start": "node dist/index.js",
     "watchdog": "node scripts/watchdog.mjs",
     "sync-docs": "tsx scripts/sync-feishu-docs.ts",
+    "push-docs": "tsx scripts/push-feishu-docs.ts",
     "typecheck": "tsc --noEmit"
   },
   "engines": {

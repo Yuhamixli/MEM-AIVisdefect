@@ -1,0 +1,30 @@
+{
+  "$schema_comment": "仓库 → 飞书自动推送清单。CI 在 main 变更命中 include 时执行 push-docs；无需手工上传。",
+  "version": 1,
+  "targetFolderEnv": "FEISHU_PUSH_FOLDER_TOKEN",
+  "targetFolderFallback": "JviVfMA56lMkzhdVoZdcEVk9nBd",
+  "stateFile": "docs/agent-knowledge-base/feishu-sync/PUSH_STATE.json",
+  "include": [
+    "docs/design/**/*.md",
+    "docs/design/**/*.docx",
+    "docs/02-tech-research/**/*.md",
+    "docs/project-management/**/*.md",
+    "docs/agent-knowledge-base/*.md"
+  ],
+  "exclude": [
+    "docs/agent-knowledge-base/feishu-sync/**",
+    "**/node_modules/**",
+    "**/.tmp*/**",
+    "**/_*/**",
+    "**/_*.md",
+    "**/_*.docx",
+    "**/_*.txt",
+    "**/_*.py",
+    "**/*-formal.docx",
+    "**/*-humanized.md",
+    "**/~$*",
+    "**/*.LNK"
+  ],
+  "titleMaxChars": 27,
+  "commitStateInCi": true
+}
