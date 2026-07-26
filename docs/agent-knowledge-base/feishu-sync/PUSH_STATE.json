@@ -1,22 +1,22 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-26T08:06:10.766Z",
+  "updatedAt": "2026-07-26T08:17:32.396Z",
   "files": {
     "docs/02-tech-research/ADR-001-four-layer-vision-stack.md": {
-      "sha256": "54de3aea3e94601d3a5d5ba65285e47d7a7816343c20a6784681627f735a894a",
-      "bytes": 6038,
+      "sha256": "cf4965baf259a0ad6fc8a9375750d20452fdbfa26052611936df0cc2a686e55d",
+      "bytes": 5913,
       "title": "ADR-001-four-layer-vis…842f",
-      "feishuToken": "YxUZdTPifoubx0xAWTLc3Qddnkh",
-      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/YxUZdTPifoubx0xAWTLc3Qddnkh",
-      "updatedAt": "2026-07-26T08:03:48.220Z"
+      "feishuToken": "HpzYdJpgwo4FYvxMkB4cscSanah",
+      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/HpzYdJpgwo4FYvxMkB4cscSanah",
+      "updatedAt": "2026-07-26T08:15:59.535Z"
     },
     "docs/02-tech-research/ADR-002-reuse-xnoavi-capabilities.md": {
-      "sha256": "c8a4a14817279717789b940b6e6944ef69e982ece9dd568cbdbc3c021277c577",
-      "bytes": 8129,
+      "sha256": "a10223a5916c10e7c8845b374362f6391d35552d25a9eeb4466ce47986eb9c8a",
+      "bytes": 7994,
       "title": "ADR-002-reuse-xnoavi-c…69e9",
-      "feishuToken": "ZgHgdIljAo44PxxAaVQcOF4XnWb",
-      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/ZgHgdIljAo44PxxAaVQcOF4XnWb",
-      "updatedAt": "2026-07-26T08:03:51.038Z"
+      "feishuToken": "NnI6dUp3uorksmxLB9qcXOfBnAd",
+      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/NnI6dUp3uorksmxLB9qcXOfBnAd",
+      "updatedAt": "2026-07-26T08:16:06.293Z"
     },
     "docs/design/03组_玻纤拉挤电芯压条_AI视觉检测_详细方案设计_编号目录整理版_算法软件修订.docx": {
       "sha256": "49b9bd57b2b039980b9e55a6195ac18135c929167aeb7bb3211ac2bd8f9143d4",
@@ -67,108 +67,108 @@
       "updatedAt": "2026-07-26T08:04:31.550Z"
     },
     "docs/project-management/REPO-TODO.md": {
-      "sha256": "69d3200b526db02f73941c3939b2d599097c63a5b6cce6fba323ac1766a6566e",
-      "bytes": 7615,
+      "sha256": "6096e71a25692a724a1b2f3ed3386722f95948b9282f729f32881bad8dabd3f2",
+      "bytes": 7463,
       "title": "REPO-TODO",
-      "feishuToken": "AEEwd2FEloeE6hxSm9xcs0z6nUg",
-      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/AEEwd2FEloeE6hxSm9xcs0z6nUg",
-      "updatedAt": "2026-07-26T08:04:35.992Z"
+      "feishuToken": "BjIadKOGAo6iY5xFZTYcOjgTnYf",
+      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/BjIadKOGAo6iY5xFZTYcOjgTnYf",
+      "updatedAt": "2026-07-26T08:16:12.359Z"
     },
     "docs/project-management/TODO.md": {
-      "sha256": "4c4f999853b9f9609305ec6e48c4d62f68178016b414306ca2f92d5608cec9c4",
-      "bytes": 11093,
+      "sha256": "52ad8f136f983050499da0a70ccd83a7dd928b89e45f00dbc69c010cf565b873",
+      "bytes": 10853,
       "title": "TODO",
-      "feishuToken": "FW4XdBTyJoI2tfxZtMycOYAynPh",
-      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/FW4XdBTyJoI2tfxZtMycOYAynPh",
-      "updatedAt": "2026-07-26T08:04:40.248Z"
+      "feishuToken": "G6VBdgbIZoDDGExzEBzcyO6DnMf",
+      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/G6VBdgbIZoDDGExzEBzcyO6DnMf",
+      "updatedAt": "2026-07-26T08:16:20.104Z"
     },
     "docs/project-management/bi-metrics-onepager.md": {
-      "sha256": "beacb072b6cd228b2c2a45ab2d161ea8656fc1ea5b20e28f1f8c65caf6cc22c1",
-      "bytes": 3953,
+      "sha256": "669d4041b6df13ddcdb39b013f7145acac935bd035f72f0023be28a229e18d62",
+      "bytes": 3849,
       "title": "bi-metrics-onepager",
-      "feishuToken": "UoUqd7eXhoHLmLx121AcaHrwngd",
-      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/UoUqd7eXhoHLmLx121AcaHrwngd",
-      "updatedAt": "2026-07-26T08:04:42.957Z"
+      "feishuToken": "OyvKdfOHIoUmc5xfUNkcxcFDnmh",
+      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/OyvKdfOHIoUmc5xfUNkcxcFDnmh",
+      "updatedAt": "2026-07-26T08:16:26.276Z"
     },
     "docs/project-management/change-control.md": {
-      "sha256": "eddf4b2dff43e7d79bb31c63199e7e1f355129b0ea19084b115f0471bb4f22e4",
-      "bytes": 2853,
+      "sha256": "fa3bd67b2e6cd2c16e350733cff2fde391984a167586fd7950306f5f1bd4f423",
+      "bytes": 2763,
       "title": "change-control",
-      "feishuToken": "ZBjldiiDGoncqXxiqr1ckj0Enbc",
-      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/ZBjldiiDGoncqXxiqr1ckj0Enbc",
-      "updatedAt": "2026-07-26T08:04:45.595Z"
+      "feishuToken": "XpHqdNXQ8oK4mMxXNXQcnkQWn3G",
+      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/XpHqdNXQ8oK4mMxXNXQcnkQWn3G",
+      "updatedAt": "2026-07-26T08:16:32.744Z"
     },
     "docs/project-management/evaluation-principles.md": {
-      "sha256": "c593fd21364d4903e75f6927c8f428e01c38949656d36c1152ea3314bfad038d",
-      "bytes": 1899,
+      "sha256": "4c6311fe5218b83868251db40ffe815f7e6e53fc57f4b3222b053c2ae72e9dc5",
+      "bytes": 1855,
       "title": "evaluation-principles",
-      "feishuToken": "TuPmdkD0eoILZ0xEh9icFSI9nMe",
-      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/TuPmdkD0eoILZ0xEh9icFSI9nMe",
-      "updatedAt": "2026-07-26T08:04:49.863Z"
+      "feishuToken": "ATHodjBu6oK5c4xwQlQcOFOSnJc",
+      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/ATHodjBu6oK5c4xwQlQcOFOSnJc",
+      "updatedAt": "2026-07-26T08:16:38.827Z"
     },
     "docs/project-management/m-coin-cost-system.md": {
-      "sha256": "96b369509491d96d617278879b9acc9ec070dcf6068bf5b2d1f6f32c383ce4ba",
-      "bytes": 2768,
+      "sha256": "c28326cdd233c1f3b45a6a6b31ff2eed785007964f93023ca135995398670149",
+      "bytes": 2700,
       "title": "m-coin-cost-system",
-      "feishuToken": "X3vcd57pNopEjAxKkwjcUIG8nQb",
-      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/X3vcd57pNopEjAxKkwjcUIG8nQb",
-      "updatedAt": "2026-07-26T08:04:52.538Z"
+      "feishuToken": "BTN7dBKm6okXg3xsJdacumcmnfe",
+      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/BTN7dBKm6okXg3xsJdacumcmnfe",
+      "updatedAt": "2026-07-26T08:16:47.037Z"
     },
     "docs/project-management/m-coin-ledger.md": {
-      "sha256": "f5559c55a594408f770fe545b04428746b7c47abeb19a76b13b5859044772c87",
-      "bytes": 955,
+      "sha256": "74c77ed20f1b79037fb1df9733cec61e0ea51a897fc255d8edeed95a54a77ec3",
+      "bytes": 931,
       "title": "m-coin-ledger",
-      "feishuToken": "JpjddR8y9ohchuxxfzMcnOJgn0X",
-      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/JpjddR8y9ohchuxxfzMcnOJgn0X",
-      "updatedAt": "2026-07-26T08:04:55.176Z"
+      "feishuToken": "LENNdKmQhoHUNTxIoOzcfEBdnZd",
+      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/LENNdKmQhoHUNTxIoOzcfEBdnZd",
+      "updatedAt": "2026-07-26T08:16:52.826Z"
     },
     "docs/project-management/open-decisions.md": {
-      "sha256": "dce25399021d5330bd54257eb3c475c2b1610b3f20e9d606af399808d23d0cce",
-      "bytes": 5664,
+      "sha256": "26ab0a6f01eb9673a05bed339343a60997ef772f4e8ecb19329368a812857bf1",
+      "bytes": 5555,
       "title": "open-decisions",
-      "feishuToken": "FEofdUwVkoBmP2x0Hq5c4tJLnAb",
-      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/FEofdUwVkoBmP2x0Hq5c4tJLnAb",
-      "updatedAt": "2026-07-26T08:04:57.709Z"
+      "feishuToken": "RHVIdjQQhoePuqxLRJTc8OLlnug",
+      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/RHVIdjQQhoePuqxLRJTc8OLlnug",
+      "updatedAt": "2026-07-26T08:16:58.987Z"
     },
     "docs/project-management/operation-plan-from-proposal.md": {
-      "sha256": "62ec9ec989f8f346bca082a67e0f8b5aff845afd2fc445017cfeae799711fb8a",
-      "bytes": 10572,
+      "sha256": "5ac07c0e9a58b931af269481acbcfae6ef55b9d36bc3a700ecfd01448f02358d",
+      "bytes": 10345,
       "title": "operation-plan-from-pr…a3d3",
-      "feishuToken": "EIyYdmfqboC4v8xcud3cMXlHnLX",
-      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/EIyYdmfqboC4v8xcud3cMXlHnLX",
-      "updatedAt": "2026-07-26T08:05:02.091Z"
+      "feishuToken": "BTXudruYSovJyCxwfaWcZZsfnlg",
+      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/BTXudruYSovJyCxwfaWcZZsfnlg",
+      "updatedAt": "2026-07-26T08:17:07.618Z"
     },
     "docs/project-management/team-capability-profile.md": {
-      "sha256": "8384adc674f8ab0d4c14ef2f7338146c027f24db4453522cefe4edb20d595960",
-      "bytes": 5699,
+      "sha256": "1c01696844f61fcdfd87708aaa5f67b44e03af82cfff2acdda5feebc1fe8f1c6",
+      "bytes": 5542,
       "title": "team-capability-profile",
-      "feishuToken": "RjZddFi5toWyitxGvgnciOCenTb",
-      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/RjZddFi5toWyitxGvgnciOCenTb",
-      "updatedAt": "2026-07-26T08:05:04.708Z"
+      "feishuToken": "EIyEdekfzokz5SxTBlhczoIAnUf",
+      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/EIyEdekfzokz5SxTBlhczoIAnUf",
+      "updatedAt": "2026-07-26T08:17:14.126Z"
     },
     "docs/project-management/team-roster.md": {
-      "sha256": "92f1b9d26289b9e99f8b7fe0fbf485a2333b6238cccfb8864f42ac01991872f1",
-      "bytes": 3289,
+      "sha256": "37f2e72af8f3fb0ce5b8ba4a4a4ec9c266a105f9f1f2522dc0bafdc7d3bb8f0a",
+      "bytes": 3232,
       "title": "team-roster",
-      "feishuToken": "AawTd0P1Wo7ZBkxQsr8cZyBKnlP",
-      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/AawTd0P1Wo7ZBkxQsr8cZyBKnlP",
-      "updatedAt": "2026-07-26T08:05:08.972Z"
+      "feishuToken": "RfvWd1QoaoPZxuxqYnYcGdRUntf",
+      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/RfvWd1QoaoPZxuxqYnYcGdRUntf",
+      "updatedAt": "2026-07-26T08:17:20.150Z"
     },
     "docs/project-management/team-workstreams.md": {
-      "sha256": "1f2e86d10c25c4976de49052e3d011ae1907f8f7e7f92f718caaa9fe5db224b3",
-      "bytes": 6505,
+      "sha256": "23a1e22af72aa3482df207c217713178fd08fbd11569a62ebbff32f4314b81a5",
+      "bytes": 6403,
       "title": "team-workstreams",
-      "feishuToken": "BbEVdXFyBotSmSx7wmkcJARknMc",
-      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/BbEVdXFyBotSmSx7wmkcJARknMc",
-      "updatedAt": "2026-07-26T08:05:11.622Z"
+      "feishuToken": "Dtb7drqANoVfAMxbRylc2O9Xn2y",
+      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/Dtb7drqANoVfAMxbRylc2O9Xn2y",
+      "updatedAt": "2026-07-26T08:17:26.035Z"
     },
     "docs/project-management/wbs-and-schedule.md": {
-      "sha256": "09780de6d26d50f365ff2f19863c9a292182cf963eb336839d7d1f64634223b0",
-      "bytes": 3884,
+      "sha256": "e10a1b0e847aea3c4f4c535320f242651410fcb0616bbb738d4fe64711a31a7b",
+      "bytes": 3785,
       "title": "wbs-and-schedule",
-      "feishuToken": "K91NdrNwaoetJ1xnsGDcVU2EnJf",
-      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/K91NdrNwaoetJ1xnsGDcVU2EnJf",
-      "updatedAt": "2026-07-26T08:05:14.229Z"
+      "feishuToken": "HoCCdfmAvoK1lGxUHcuck7pHnwc",
+      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/HoCCdfmAvoK1lGxUHcuck7pHnwc",
+      "updatedAt": "2026-07-26T08:17:32.395Z"
     }
   }
 }
