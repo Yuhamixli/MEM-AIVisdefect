@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<style>
+  html, body {
+    margin: 0; padding: 0;
+    background: #FFFFFF;
+    -webkit-font-smoothing: antialiased;
+  }
+  #root {
+    width: 1180px;
+    padding: 36px 40px 40px;
+    box-sizing: border-box;
+    font-family: "Microsoft YaHei", "DengXian", "SimHei", sans-serif;
+    color: #1A1D23;
+  }
+  h1 {
+    margin: 0 0 8px;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+  .sub {
+    margin: 0 0 18px;
+    font-size: 13.5px;
+    color: #5C6370;
+    line-height: 1.45;
+  }
+  .legend {
+    margin-bottom: 16px;
+  }
+  .frame {
+    border: 1px solid #E2E5EA;
+    border-radius: 12px;
+    background: #FFFFFF;
+    padding: 12px 8px 8px;
+  }
+</style>
+</head>
+<body>
+<div id="root">
+  <h1>全项目软件拓扑图</h1>
+  <p class="sub">MEM-AIVisdefect · 拉挤表面 AOI · 文件事实源 · 在线/近线/离线拆分（ADR-001）· 实心强调 = P0 硬交付</p>
+  <svg class="legend" width="1100" height="22" viewBox="0 0 1100 22">
+    <g transform="translate(255.0,0)">
+      <g transform="translate(0,0)">
+  <rect width="18" height="14" rx="3" y="1" fill="#DCEFE4" stroke="#178A4B"
+        stroke-width="1.5"/>
+  <text x="24" y="13" font-size="12" fill="#3A3F48"
+        font-family="Microsoft YaHei, DengXian, SimHei, sans-serif">P0 交付</text>
+</g><g transform="translate(118,0)">
+  <rect width="18" height="14" rx="3" y="1" fill="#FBFBFC" stroke="#8B919A"
+        stroke-width="1.5" stroke-dasharray="5 3.5"/>
+  <text x="24" y="13" font-size="12" fill="#3A3F48"
+        font-family="Microsoft YaHei, DengXian, SimHei, sans-serif">演进 / 虚线</text>
+</g><g transform="translate(236,0)">
+  <rect width="18" height="14" rx="3" y="1" fill="#E8F1F8" stroke="#3A6F9A"
+        stroke-width="1.5"/>
+  <text x="24" y="13" font-size="12" fill="#3A3F48"
+        font-family="Microsoft YaHei, DengXian, SimHei, sans-serif">数据层</text>
+</g><g transform="translate(354,0)">
+  <rect width="18" height="14" rx="3" y="1" fill="#FFF3DE" stroke="#B07A00"
+        stroke-width="1.5"/>
+  <text x="24" y="13" font-size="12" fill="#3A3F48"
+        font-family="Microsoft YaHei, DengXian, SimHei, sans-serif">应用层</text>
+</g><g transform="translate(472,0)">
+  <rect width="18" height="14" rx="3" y="1" fill="#F3F3F5" stroke="#8B919A"
+        stroke-width="1.5" stroke-dasharray="5 3.5"/>
+  <text x="24" y="13" font-size="12" fill="#3A3F48"
+        font-family="Microsoft YaHei, DengXian, SimHei, sans-serif">协作侧车</text>
+</g>
+    </g>
+  </svg>
+  <div class="frame">
+    <svg width="774" height="850" viewBox="0 0 774 850" role="img" aria-label="Software topology DAG"
+         style="display:block;margin:0 auto;">
+      <defs>
+        <marker id="arrowFwd" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M 0 1.2 L 8.5 5 L 0 8.8" fill="none" stroke="#6A7180" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </marker>
+        <marker id="arrowBack" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M 0 1.2 L 8.5 5 L 0 8.8" fill="none" stroke="#178A4B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </marker>
+      </defs>
+      <rect x="14.4" y="18.0" width="745.2" height="94.0" rx="8" fill="#F0F2F5" opacity="0.55"/><rect x="14.4" y="162.0" width="745.2" height="94.0" rx="8" fill="#F0F2F5" opacity="0.55"/><rect x="14.4" y="306.0" width="745.2" height="94.0" rx="8" fill="#F0F2F5" opacity="0.55"/><rect x="14.4" y="450.0" width="745.2" height="94.0" rx="8" fill="#F0F2F5" opacity="0.55"/><rect x="14.4" y="594.0" width="745.2" height="94.0" rx="8" fill="#F0F2F5" opacity="0.55"/><rect x="14.4" y="738.0" width="745.2" height="94.0" rx="8" fill="#F0F2F5" opacity="0.55"/>
+      <path d="M 262.0 98.0 C 262.0 137.0, 387.0 137.0, 387.0 176.0" fill="none" stroke="#6A7180" stroke-width="1.8" opacity="0.78" marker-end="url(#arrowFwd)"/><path d="M 387.0 242.0 C 387.0 281.0, 387.0 281.0, 387.0 320.0" fill="none" stroke="#6A7180" stroke-width="1.8" opacity="0.78" marker-end="url(#arrowFwd)"/><path d="M 387.0 386.0 C 387.0 425.0, 137.0 425.0, 137.0 464.0" fill="none" stroke="#6A7180" stroke-width="1.8" opacity="0.78" marker-end="url(#arrowFwd)"/><path d="M 387.0 386.0 C 387.0 425.0, 387.0 425.0, 387.0 464.0" fill="none" stroke="#6A7180" stroke-width="1.8" opacity="0.78" marker-end="url(#arrowFwd)"/><path d="M 137.0 530.0 C 137.0 569.0, 262.0 569.0, 262.0 608.0" fill="none" stroke="#6A7180" stroke-width="1.8" opacity="0.78" marker-end="url(#arrowFwd)"/><path d="M 262.0 674.0 C 262.0 713.0, 262.0 713.0, 262.0 752.0" fill="none" stroke="#6A7180" stroke-width="1.8" opacity="0.78" marker-end="url(#arrowFwd)"/><path d="M 387.0 530.0 C 387.0 569.0, 512.0 569.0, 512.0 608.0" fill="none" stroke="#6A7180" stroke-width="1.8" opacity="0.78" marker-end="url(#arrowFwd)"/><path d="M 262.0 752.0 C 206.0 752.0, 206.0 530.0, 387.0 530.0" fill="none" stroke="#178A4B" stroke-width="1.8" stroke-dasharray="6 4" opacity="0.92" marker-end="url(#arrowBack)"/><path d="M 512.0 674.0 C 512.0 713.0, 512.0 713.0, 512.0 752.0" fill="none" stroke="#6A7180" stroke-width="1.8" opacity="0.78" marker-end="url(#arrowFwd)"/><path d="M 387.0 386.0 C 387.0 425.0, 637.0 425.0, 637.0 464.0" fill="none" stroke="#6A7180" stroke-width="1.8" opacity="0.78" marker-end="url(#arrowFwd)"/><path d="M 512.0 98.0 C 512.0 281.0, 637.0 281.0, 637.0 464.0" fill="none" stroke="#6A7180" stroke-width="1.8" opacity="0.78" marker-end="url(#arrowFwd)"/>
+      <g transform="translate(157.0,32.0)">
+  <rect width="210" height="66" rx="8" fill="#FBFBFC"
+        stroke="#8B919A" stroke-width="1.35" stroke-dasharray="5 3.5"/>
+  <text x="105.0" y="27" text-anchor="middle" fill="#151820"
+        font-size="15.5" font-weight="650" font-family="Microsoft YaHei, DengXian, SimHei, sans-serif">五段线 + PLC</text>
+  <text x="105.0" y="48" text-anchor="middle" fill="#5C6370"
+        font-size="12.5" font-family="Microsoft YaHei, DengXian, SimHei, sans-serif">机械/触发 · 演进</text>
+</g><g transform="translate(407.0,32.0)">
+  <rect width="210" height="66" rx="8" fill="#F3F3F5"
+        stroke="#8B919A" stroke-width="1.35" stroke-dasharray="5 3.5"/>
+  <text x="105.0" y="27" text-anchor="middle" fill="#151820"
+        font-size="15.5" font-weight="650" font-family="Microsoft YaHei, DengXian, SimHei, sans-serif">飞书桥</text>
+  <text x="105.0" y="48" text-anchor="middle" fill="#5C6370"
+        font-size="12.5" font-family="Microsoft YaHei, DengXian, SimHei, sans-serif">协作侧车 · 非 AOI</text>
+</g><g transform="translate(282.0,176.0)">
+  <rect width="210" height="66" rx="8" fill="#FBFBFC"
+        stroke="#8B919A" stroke-width="1.35" stroke-dasharray="5 3.5"/>
+  <text x="105.0" y="27" text-anchor="middle" fill="#151820"
+        font-size="15.5" font-weight="650" font-family="Microsoft YaHei, DengXian, SimHei, sans-serif">受控成像</text>
+  <text x="105.0" y="48" text-anchor="middle" fill="#5C6370"
+        font-size="12.5" font-family="Microsoft YaHei, DengXian, SimHei, sans-serif">6MP 卷帘 + DOE 光源</text>
+</g><g transform="translate(282.0,320.0)">
+  <rect width="210" height="66" rx="8" fill="#E8F1F8"
+        stroke="#3A6F9A" stroke-width="1.5"/>
+  <text x="105.0" y="27" text-anchor="middle" fill="#151820"
+        font-size="15.5" font-weight="650" font-family="Microsoft YaHei, DengXian, SimHei, sans-serif">raw-data</text>
+  <text x="105.0" y="48" text-anchor="middle" fill="#5C6370"
+        font-size="12.5" font-family="Microsoft YaHei, DengXian, SimHei, sans-serif">版本化原图 · 文件事实源</text>
+</g><g transform="translate(32.0,464.0)">
+  <rect width="210" height="66" rx="8" fill="#FBFBFC"
+        stroke="#8B919A" stroke-width="1.35" stroke-dasharray="5 3.5"/>
+  <text x="105.0" y="27" text-anchor="middle" fill="#151820"
+        font-size="15.5" font-weight="650" font-family="Microsoft YaHei, DengXian, SimHei, sans-serif">在线 L1</text>
+  <text x="105.0" y="48" text-anchor="middle" fill="#5C6370"
+        font-size="12.5" font-family="Microsoft YaHei, DengXian, SimHei, sans-serif">PatchCore → 可选 YOLO</text>
+</g><g transform="translate(282.0,464.0)">
+  <rect width="210" height="66" rx="8" fill="#DCEFE4"
+        stroke="#178A4B" stroke-width="2.75"/>
+  <text x="105.0" y="27" text-anchor="middle" fill="#151820"
+        font-size="15.5" font-weight="650" font-family="Microsoft YaHei, DengXian, SimHei, sans-serif">离线检测模块</text>
+  <text x="105.0" y="48" text-anchor="middle" fill="#5C6370"
+        font-size="12.5" font-family="Microsoft YaHei, DengXian, SimHei, sans-serif">yolo11s-seg · P0 硬交付</text>
+</g><g transform="translate(532.0,464.0)">
+  <rect width="210" height="66" rx="8" fill="#FFF3DE"
+        stroke="#B07A00" stroke-width="1.5"/>
+  <text x="105.0" y="27" text-anchor="middle" fill="#151820"
+        font-size="15.5" font-weight="650" font-family="Microsoft YaHei, DengXian, SimHei, sans-serif">BI 看板</text>
+  <text x="105.0" y="48" text-anchor="middle" fill="#5C6370"
+        font-size="12.5" font-family="Microsoft YaHei, DengXian, SimHei, sans-serif">Cloudflare Pages</text>
+</g><g transform="translate(157.0,608.0)">
+  <rect width="210" height="66" rx="8" fill="#FBFBFC"
+        stroke="#8B919A" stroke-width="1.35" stroke-dasharray="5 3.5"/>
+  <text x="105.0" y="27" text-anchor="middle" fill="#151820"
+        font-size="15.5" font-weight="650" font-family="Microsoft YaHei, DengXian, SimHei, sans-serif">近线精修</text>
+  <text x="105.0" y="48" text-anchor="middle" fill="#5C6370"
+        font-size="12.5" font-family="Microsoft YaHei, DengXian, SimHei, sans-serif">DINO + SAM2 工具层</text>
+</g><g transform="translate(407.0,608.0)">
+  <rect width="210" height="66" rx="8" fill="#E8F1F8"
+        stroke="#3A6F9A" stroke-width="1.5"/>
+  <text x="105.0" y="27" text-anchor="middle" fill="#151820"
+        font-size="15.5" font-weight="650" font-family="Microsoft YaHei, DengXian, SimHei, sans-serif">result.json</text>
+  <text x="105.0" y="48" text-anchor="middle" fill="#5C6370"
+        font-size="12.5" font-family="Microsoft YaHei, DengXian, SimHei, sans-serif">+ overlay.jpg</text>
+</g><g transform="translate(157.0,752.0)">
+  <rect width="210" height="66" rx="8" fill="#FBFBFC"
+        stroke="#8B919A" stroke-width="1.35" stroke-dasharray="5 3.5"/>
+  <text x="105.0" y="27" text-anchor="middle" fill="#151820"
+        font-size="15.5" font-weight="650" font-family="Microsoft YaHei, DengXian, SimHei, sans-serif">数据飞轮 L4</text>
+  <text x="105.0" y="48" text-anchor="middle" fill="#5C6370"
+        font-size="12.5" font-family="Microsoft YaHei, DengXian, SimHei, sans-serif">VLM → 人工确认 → 反哺</text>
+</g><g transform="translate(407.0,752.0)">
+  <rect width="210" height="66" rx="8" fill="#FFF3DE"
+        stroke="#B07A00" stroke-width="1.5"/>
+  <text x="105.0" y="27" text-anchor="middle" fill="#151820"
+        font-size="15.5" font-weight="650" font-family="Microsoft YaHei, DengXian, SimHei, sans-serif">detector-ui</text>
+  <text x="105.0" y="48" text-anchor="middle" fill="#5C6370"
+        font-size="12.5" font-family="Microsoft YaHei, DengXian, SimHei, sans-serif">结果 / 复核</text>
+</g>
+    </svg>
+  </div>
+</div>
+</body>
+</html>
