@@ -1,0 +1,30 @@
+# Synology Container Manager / Docker Compose
+# 1) Copy .env.example → .env and fill secrets
+# 2) Project path on NAS e.g. /volume1/docker/feishu-cursor-bridge
+# 3) Container Manager → Project → Create from this compose file
+
+services:
+  feishu-bridge:
+    build: .
+    container_name: feishu-cursor-bridge
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      CURSOR_RUNTIME: cloud
+      HEALTH_PORT: "8787"
+      WATCHDOG_CHECK_MS: "30000"
+      WATCHDOG_FAILS: "3"
+      WATCHDOG_MAX_UPTIME_MS: "21600000" # 6h soft recycle
+    ports:
+      - "8787:8787"
+    volumes:
+      - bridge-data:/app/.data
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  bridge-data:

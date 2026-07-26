@@ -11,7 +11,7 @@ import {
 } from "./feishu.js";
 import { markEvent, markWsReady, startHealthServer } from "./health.js";
 import { helpNudge, isNonTaskMention } from "./intent.js";
-import { clearAgentId, clearSessionsIfModelChanged } from "./session-store.js";
+import { clearAgentId } from "./session-store.js";
 
 const client = createFeishuClient();
 const inFlight = new Set<string>();
@@ -66,19 +66,6 @@ async function handleUserMessage(params: {
       client,
       chatId,
       pick(["好，上下文清掉了，接着问就行。", "已重置，当新对话继续吧。"]),
-      messageId,
-    );
-    return;
-  }
-
-  // Answer from bridge config — do not let Cloud Agent invent from README defaults
-  if (
-    /什么模型|哪个模型|which\s*model|what\s*model/i.test(text.trim())
-  ) {
-    await replyText(
-      client,
-      chatId,
-      `当前配置的 Cloud Agent 模型是 \`${config.modelId}\`（环境变量 CURSOR_MODEL）。`,
       messageId,
     );
     return;
@@ -140,13 +127,6 @@ async function handleUserMessage(params: {
   }
 }
 
-process.on("uncaughtException", (err) => {
-  console.error("[bridge] uncaughtException", err);
-});
-process.on("unhandledRejection", (reason) => {
-  console.error("[bridge] unhandledRejection", reason);
-});
-
 async function main(): Promise<void> {
   startHealthServer(config.healthPort);
 
@@ -158,7 +138,6 @@ async function main(): Promise<void> {
   }
   console.log(`[bridge] model = ${config.modelId}`);
   console.log(`[bridge] requireMention = ${config.requireMention}`);
-  clearSessionsIfModelChanged(config.modelId);
 
   const botOpenId = await resolveBotOpenId(client);
   console.log(`[bridge] bot open_id = ${botOpenId}`);
@@ -186,16 +165,10 @@ async function main(): Promise<void> {
           `[bridge] parsed chat=${incoming.chatType} mention=${incoming.mentionedBot} text=${incoming.text.slice(0, 80)}`,
         );
 
-        // Group: require @bot when REQUIRE_MENTION=true.
-        // DM (p2p): every message is addressed to the bot — no @ needed.
-        const isP2p =
-          incoming.chatType === "p2p" || incoming.chatType === "private";
+        const isP2p = incoming.chatType === "p2p";
         if (!isP2p && config.requireMention && !incoming.mentionedBot) {
           console.log("[bridge] skip: group message without @bot");
           return;
-        }
-        if (isP2p) {
-          console.log("[bridge] p2p/DM — accept without mention");
         }
 
         void handleUserMessage({

@@ -4,8 +4,12 @@
 
 | 文件 | 说明 |
 |------|------|
-| [`pultrusion-aoi-demo-10s.mp4`](./pultrusion-aoi-demo-10s.mp4) | 约 10s 静帧快剪（备用） |
-| [`ai-video-prompt-pack.md`](./ai-video-prompt-pack.md) | **推荐**：可灵/Veo/Runway 图生视频 Prompt 包 |
-| `demo-01` … `demo-06` | 关键帧 PNG，给 AI 视频当首/尾帧 |
+| [`ai-video-prompt-pack.md`](./ai-video-prompt-pack.md) | **推荐**：可灵约 20s · **黑红** 图生视频 Prompt 包 |
+| `mem-aivisdefect-*-blackred.png`（5 张） | **本版成片**：品牌 / 环阵 / 产线HMI / HUD / **NG推出** |
+| `mem-aivisdefect-*.png`（无 blackred） | 旧黄版备份 |
+| `demo-01` … `demo-06` | 更早关键帧备份 |
 
-对外请标明概念示意。正式动态成片请按 Prompt 包用 **Kling 图生视频**生成。
+**默认可灵（分 4 次 · 4s/4s/3s/4s，勿用智能分镜）**：  
+`annular-tunnel` → `defect-hud`（AI）→ `line-hmi` → `reject`（短段）；片头片尾贴 `brand-hero`。详见 `ai-video-prompt-pack.md`。
+
+对外请标明概念示意。

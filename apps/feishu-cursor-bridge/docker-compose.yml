@@ -1,0 +1,49 @@
+# Synology Container Manager / Docker Compose
+# 1) Copy .env.example → .env and fill secrets
+# 2) Project path on NAS e.g. /volume1/docker/feishu-cursor-bridge
+# 3) Container Manager → Project → Create from this compose file
+#
+# Prefer image-baked dist/ (Dockerfile runs npm run build). Synology Project
+# "build" often recreates the container WITHOUT rebuilding the image, so we
+# also bind-mount ./src + ./scripts from the project dir — keep those files
+# in sync when deploying. Volume .data holds sessions + watchdog.log.
+
+services:
+  feishu-bridge:
+    build:
+      context: .
+      args:
+        # bump to force image rebuild when DSM skips cache
+        CACHEBUST: "20260725-crashfix"
+    container_name: feishu-cursor-bridge
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      CURSOR_RUNTIME: cloud
+      # Use bind-mounted ./src (DSM often skips image rebuild)
+      BRIDGE_ENTRY: src
+      HEALTH_PORT: "8787"
+      WATCHDOG_CHECK_MS: "30000"
+      WATCHDOG_FAILS: "3"
+      WATCHDOG_BACKOFF_MS: "5000"
+      WATCHDOG_BACKOFF_MAX_MS: "60000"
+      WATCHDOG_MAX_UPTIME_MS: "21600000" # 6h soft recycle
+      # Advisory only (watchdog soft-recycle on stale); does not flip health.ok
+      # 45m: refresh zombie Feishu WS when no events (mutex prevents 5s crash loop)
+      HEALTH_MAX_SILENT_MS: "2700000"
+    ports:
+      - "8787:8787"
+    volumes:
+      - bridge-data:/app/.data
+      # Ensure NAS-uploaded fixes apply even if DSM skips docker image rebuild
+      - ./src:/app/src:ro
+      - ./scripts:/app/scripts:ro
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  bridge-data:

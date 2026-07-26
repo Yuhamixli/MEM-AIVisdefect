@@ -6,8 +6,7 @@
   "description": "Feishu bot ↔ Cursor SDK bridge for MEM-AIVisdefect",
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "build": "tsc -p tsconfig.build.json",
-    "start": "node dist/index.js",
+    "start": "tsx src/index.ts",
     "watchdog": "node scripts/watchdog.mjs",
     "sync-docs": "tsx scripts/sync-feishu-docs.ts",
     "typecheck": "tsc --noEmit"
@@ -18,11 +17,11 @@
   "dependencies": {
     "@cursor/sdk": "^1.0.18",
     "@larksuiteoapi/node-sdk": "^1.55.0",
-    "dotenv": "^16.6.1",
-    "tsx": "^4.20.0"
+    "dotenv": "^16.6.1"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",
+    "tsx": "^4.20.0",
     "typescript": "^5.8.3"
   }
 }

@@ -1,5 +1,5 @@
 import { Agent, CursorAgentError, type AgentOptions } from "@cursor/sdk";
-import { buildSystemPreamble, config } from "./config.js";
+import { config, SYSTEM_PREAMBLE } from "./config.js";
 import { clearAgentId, getAgentId, setAgentId } from "./session-store.js";
 
 export type AgentReply = {
@@ -47,24 +47,6 @@ export type RunCursorOptions = {
   chatContext?: string;
 };
 
-function formatRunError(result: {
-  id: string;
-  status: string;
-  error?: { message?: string; code?: string } | null;
-  result?: string | null;
-}): string {
-  const detail =
-    result.error?.message ||
-    (typeof result.error === "string" ? result.error : "") ||
-    result.result?.trim() ||
-    "";
-  const code = result.error?.code ? ` code=${result.error.code}` : "";
-  const hint = detail
-    ? `\n原因：${detail.slice(0, 400)}`
-    : "\n（云端未返回具体原因，常见于瞬时故障或额度/模型限制；可发「重置」后重试。）";
-  return `Cursor Agent 运行失败（run=${result.id}${code}）。请稍后重试或换个问法。${hint}`;
-}
-
 /**
  * Run a Cursor agent (cloud by default) for this Feishu session.
  * Resumes prior agentId when present so follow-ups keep context.
@@ -72,17 +54,16 @@ function formatRunError(result: {
 export async function runCursorAgent(
   sessionKey: string,
   userText: string,
-  options: RunCursorOptions & { _retried?: boolean } = {},
+  options: RunCursorOptions = {},
 ): Promise<AgentReply> {
   const ctx = options.chatContext?.trim();
   const prompt = [
-    buildSystemPreamble(config.modelId),
+    SYSTEM_PREAMBLE,
     ctx ? `\n---\n${ctx}\n` : "",
     `---\n用户当前问题：\n${userText}`,
   ].join("\n");
   const opts = baseOptions();
 
-  // getAgentId already drops sessions bound to a different CURSOR_MODEL
   const existing = getAgentId(sessionKey);
   let agent = existing
     ? await Agent.resume(existing, opts)
@@ -90,52 +71,18 @@ export async function runCursorAgent(
         ...opts,
         name: `feishu:${sessionKey.slice(0, 24)}`,
       });
-  let skipClose = false;
 
   try {
     setAgentId(sessionKey, agent.agentId);
-    // Pass model on every send so resume cannot stick to a previous model.
-    const run = await agent.send(prompt, { model: { id: config.modelId } });
+    const run = await agent.send(prompt);
     console.log(
-      `[cursor] runtime=${config.runtime} model=${config.modelId} agent=${agent.agentId} run=${run.id} ctxChars=${ctx?.length || 0}`,
+      `[cursor] runtime=${config.runtime} agent=${agent.agentId} run=${run.id} ctxChars=${ctx?.length || 0}`,
     );
     const result = await run.wait();
-    console.log(
-      `[cursor] run done status=${result.status} resolvedModel=${JSON.stringify(result.model || null)}`,
-    );
 
     if (result.status === "error") {
-      const errResult = result as {
-        id: string;
-        requestId?: string;
-        error?: { message?: string; code?: string } | null;
-        model?: unknown;
-        durationMs?: number;
-      };
-      console.error(
-        "[cursor] run error",
-        JSON.stringify({
-          id: errResult.id,
-          requestId: errResult.requestId,
-          error: errResult.error ?? null,
-          model: errResult.model,
-          durationMs: errResult.durationMs,
-          keys: Object.keys(result),
-        }),
-      );
-      // Stale cloud session / bare SDK error: one clean retry
-      if (!options._retried) {
-        clearAgentId(sessionKey);
-        skipClose = true;
-        agent.close();
-        console.warn("[cursor] retrying with fresh agent…");
-        return runCursorAgent(sessionKey, userText, {
-          ...options,
-          _retried: true,
-        });
-      }
       return {
-        text: formatRunError(result),
+        text: `Cursor Agent 运行失败（run=${result.id}）。请稍后重试或换个问法。`,
         agentId: agent.agentId,
         runId: result.id,
         status: result.status,
@@ -156,14 +103,12 @@ export async function runCursorAgent(
     if (err instanceof CursorAgentError) {
       if (existing && /not found|AgentNotFound/i.test(err.message)) {
         clearAgentId(sessionKey);
-        skipClose = true;
-        agent.close();
         return runCursorAgent(sessionKey, userText, options);
       }
       throw err;
     }
     throw err;
   } finally {
-    if (!skipClose) agent.close();
+    agent.close();
   }
 }
