@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-26T08:17:32.396Z",
+  "updatedAt": "2026-07-26T08:28:26.736Z",
   "files": {
     "docs/02-tech-research/ADR-001-four-layer-vision-stack.md": {
       "sha256": "cf4965baf259a0ad6fc8a9375750d20452fdbfa26052611936df0cc2a686e55d",
@@ -27,12 +27,12 @@
       "updatedAt": "2026-07-26T08:03:57.172Z"
     },
     "docs/design/offline-module-interface.md": {
-      "sha256": "e9f8e3a450f95baa7de36d55b0b4bc97ab8d71491f2e89ad98158d35f666cd6c",
-      "bytes": 15464,
+      "sha256": "0e051aa30a8c9ec70680872a762bbae78f95728fce3ec9eb655cebc53348018c",
+      "bytes": 15030,
       "title": "offline-module-interface",
-      "feishuToken": "Mv8VdUvMhoJnDcxiWLNczcw6nne",
-      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/Mv8VdUvMhoJnDcxiWLNczcw6nne",
-      "updatedAt": "2026-07-26T08:04:13.045Z"
+      "feishuToken": "UymTdIIZ3omxXcxwlWrcOThDnkg",
+      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/UymTdIIZ3omxXcxwlWrcOThDnkg",
+      "updatedAt": "2026-07-26T08:28:14.178Z"
     },
     "docs/design/拉挤表面缺陷离线检测与近线精修实施方案.docx": {
       "sha256": "8c8f3776090271d65d872577ed9ce45543b0e8ff56ae7912c13286bbd1f7f426",
@@ -43,12 +43,12 @@
       "updatedAt": "2026-07-26T08:04:20.183Z"
     },
     "docs/design/拉挤表面缺陷离线检测与近线精修实施方案.md": {
-      "sha256": "91bdb5192a90cba418399d78b4cb2ddccee5f5be3893cae22df4ff0c56ea949c",
-      "bytes": 11949,
+      "sha256": "8dbcf8a116906cbbf9965fa60a49cd0bff1ded13c4267905bf4f8eac0949e42f",
+      "bytes": 11725,
       "title": "拉挤表面缺陷离线检测与近线精修实施方案",
-      "feishuToken": "IURAda6kRoYMyyxQgh6cKZ5Tn0b",
-      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/IURAda6kRoYMyyxQgh6cKZ5Tn0b",
-      "updatedAt": "2026-07-26T08:04:24.503Z"
+      "feishuToken": "GFRFdJrx4orH2ExwgescT3j1nAh",
+      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/GFRFdJrx4orH2ExwgescT3j1nAh",
+      "updatedAt": "2026-07-26T08:28:20.658Z"
     },
     "docs/design/拉挤表面缺陷离线检测与近线精修实施方案_20260726.docx": {
       "sha256": "1b62d695a483f8e776125f83af99beaa4155b2c9a917af2051aa3967fa675536",
@@ -59,12 +59,12 @@
       "updatedAt": "2026-07-26T08:04:28.893Z"
     },
     "docs/design/软件拓扑图.md": {
-      "sha256": "8188d77dfa697988b5c159a5d137be310774174747c3c8487e0dbee46aea0fae",
-      "bytes": 8078,
+      "sha256": "e62446fea11f7d6a179017dad0ba7f1c49ac4e7fa10883d27cb1281df7f1a729",
+      "bytes": 8110,
       "title": "软件拓扑图",
-      "feishuToken": "ICsCdnfDXoGaM9xSE4ScrHjunAV",
-      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/ICsCdnfDXoGaM9xSE4ScrHjunAV",
-      "updatedAt": "2026-07-26T08:04:31.550Z"
+      "feishuToken": "HBRmdnjcLoXGs8xHTuqcbB8En3e",
+      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/HBRmdnjcLoXGs8xHTuqcbB8En3e",
+      "updatedAt": "2026-07-26T08:28:26.735Z"
     },
     "docs/project-management/REPO-TODO.md": {
       "sha256": "6096e71a25692a724a1b2f3ed3386722f95948b9282f729f32881bad8dabd3f2",
