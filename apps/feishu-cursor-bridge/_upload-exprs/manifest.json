@@ -1,0 +1,102 @@
+[
+  {
+    "i": 0,
+    "rel": ".dockerignore",
+    "bytes": 100
+  },
+  {
+    "i": 1,
+    "rel": ".env",
+    "bytes": 648
+  },
+  {
+    "i": 2,
+    "rel": ".env.example",
+    "bytes": 1212
+  },
+  {
+    "i": 3,
+    "rel": ".npmrc",
+    "bytes": 160
+  },
+  {
+    "i": 4,
+    "rel": "docker-compose.yml",
+    "bytes": 1048
+  },
+  {
+    "i": 5,
+    "rel": "Dockerfile",
+    "bytes": 1028
+  },
+  {
+    "i": 6,
+    "rel": "docs/SYNOLOGY.md",
+    "bytes": 3364
+  },
+  {
+    "i": 7,
+    "rel": "package-lock.json",
+    "bytes": 128468
+  },
+  {
+    "i": 8,
+    "rel": "package.json",
+    "bytes": 876
+  },
+  {
+    "i": 9,
+    "rel": "scripts/sync-feishu-docs.ts",
+    "bytes": 8740
+  },
+  {
+    "i": 10,
+    "rel": "scripts/watchdog.mjs",
+    "bytes": 4384
+  },
+  {
+    "i": 11,
+    "rel": "src/chat-history.ts",
+    "bytes": 2944
+  },
+  {
+    "i": 12,
+    "rel": "src/config.ts",
+    "bytes": 3436
+  },
+  {
+    "i": 13,
+    "rel": "src/cursor-agent.ts",
+    "bytes": 4052
+  },
+  {
+    "i": 14,
+    "rel": "src/feishu.ts",
+    "bytes": 5684
+  },
+  {
+    "i": 15,
+    "rel": "src/health.ts",
+    "bytes": 1952
+  },
+  {
+    "i": 16,
+    "rel": "src/index.ts",
+    "bytes": 8504
+  },
+  {
+    "i": 17,
+    "rel": "src/intent.ts",
+    "bytes": 1588
+  },
+  {
+    "i": 18,
+    "rel": "src/session-store.ts",
+    "bytes": 1384
+  },
+  {
+    "i": 19,
+    "rel": "tsconfig.json",
+    "bytes": 456
+  }
+]

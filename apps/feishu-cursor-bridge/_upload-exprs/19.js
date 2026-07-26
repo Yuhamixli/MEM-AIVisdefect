@@ -1,0 +1,22 @@
+(async()=>{
+const token=SYNO.SDS.Session.SynoToken;
+const DEST="/docker/feishu-cursor-bridge";
+const name="tsconfig.json";
+const b64="ewogICJjb21waWxlck9wdGlvbnMiOiB7CiAgICAidGFyZ2V0IjogIkVTMjAyMiIsCiAgICAibW9kdWxlIjogIk5vZGVOZXh0IiwKICAgICJtb2R1bGVSZXNvbHV0aW9uIjogIk5vZGVOZXh0IiwKICAgICJvdXREaXIiOiAiZGlzdCIsCiAgICAicm9vdERpciI6ICJzcmMiLAogICAgInN0cmljdCI6IHRydWUsCiAgICAic2tpcExpYkNoZWNrIjogdHJ1ZSwKICAgICJlc01vZHVsZUludGVyb3AiOiB0cnVlLAogICAgInJlc29sdmVKc29uTW9kdWxlIjogdHJ1ZSwKICAgICJkZWNsYXJhdGlvbiI6IGZhbHNlLAogICAgIm5vRW1pdCI6IHRydWUKICB9LAogICJpbmNsdWRlIjogWyJzcmMvKiovKi50cyJdCn0K";
+const bin=Uint8Array.from(atob(b64),c=>c.charCodeAt(0));
+if(DEST!=='/docker/feishu-cursor-bridge'){
+  const parent=DEST.replace(/\/[^/]+$/,'');
+  const folder=DEST.split('/').pop();
+  await fetch('/webapi/entry.cgi?api=SYNO.FileStation.CreateFolder&version=2&method=create&folder_path='+encodeURIComponent(JSON.stringify(parent))+'&name='+encodeURIComponent(JSON.stringify(folder))+'&force_parent=true&SynoToken='+encodeURIComponent(token),{credentials:'include',headers:{'X-SYNO-TOKEN':token}});
+}
+const form=new FormData();
+form.set('api','SYNO.FileStation.Upload');
+form.set('version','2');
+form.set('method','upload');
+form.set('path',DEST);
+form.set('create_parents','true');
+form.set('overwrite','true');
+form.set('file',new Blob([bin]),name);
+const r=await fetch('/webapi/entry.cgi',{method:'POST',credentials:'include',headers:{'X-SYNO-TOKEN':token},body:form});
+return {rel:"tsconfig.json",...(await r.json())};
+})()
