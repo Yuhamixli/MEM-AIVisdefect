@@ -1,48 +1,58 @@
 # 飞书同步索引
 
-更新时间：2026-07-20T07:38:11.070Z
+更新时间：2026-07-27T04:43:21.060Z
 根文件夹 token：`JviVfMA56lMkzhdVoZdcEVk9nBd`
-成功：46 / 尝试：46
+成功：72 / 尝试：72
 
 ## 已同步
 
-- [过程版-600万相机布置要点](./05-采集与数据/过程版-600万相机布置要点.md) (`Y21Gd5br6oDKIBxLUyicP7qrnDb`, 1319 chars)
-- [过程版-600万卷帘面阵相机视觉布置方案](./05-采集与数据/过程版-600万卷帘面阵相机视觉布置方案.md) (`HdlOdomx8om0QExOpVYc5m0Nnxg`, 752 chars)
-- [缺陷定义卡](./05-采集与数据/缺陷定义卡.md) (`JFg2dpFi1oQMSGxPBFPcF9L7n9e`, 3949 chars)
-- [数据与标注规范](./05-采集与数据/数据与标注规范.md) (`GuqtdPrQzo6VQKxWwficbNHunqf`, 5086 chars)
-- [图像采集方案](./05-采集与数据/图像采集方案.md) (`JudUdMX0pooFSWxv7DXcDHkInvd`, 5696 chars)
-- [原始资料入库说明-微信与坚果云](./00-入口/原始资料入库说明-微信与坚果云.md) (`WIGnd57Seo1XLuxHeQpc98rOngg`, 504 chars)
-- [文档地图](./00-入口/文档地图.md) (`Ofted42udoDeyPxNAsac9XdhnCg`, 189 chars)
-- [00-从这里开始-文档入口](./00-入口/00-从这里开始-文档入口.md) (`MGW4dZQ7hoovQTxuw8ocpIMSnvb`, 721 chars)
-- [飞书空间搭建手册](./00-入口/飞书空间搭建手册.md) (`LrKZdpbOBorbLJx6rITcHhqqnVb`, 6357 chars)
-- [首批飞书云文档标题列表](./00-入口/首批飞书云文档标题列表.md) (`VVSXdcuQLowaJIx05tQcDOTdnWd`, 4206 chars)
-- [资料入库规范](./00-入口/资料入库规范.md) (`IVYOdbg4AotekhxDjh2cW6CQn0c`, 2521 chars)
-- [共享简报-写作前必读](./00-入口/共享简报-写作前必读.md) (`Md5fdaEpooxV1ux9YHNcsPb6n0c`, 5588 chars)
-- [README-文档地图与交付勾选清单](./00-入口/README-文档地图与交付勾选清单.md) (`Ixpmd1eeNofj9qxjgDWcYRpEnkc`, 3243 chars)
+- [20260723_基于600万彩色卷帘快门面阵相机的视觉布置方案](./03-技术方案/总布置方案/20260723_基于600万彩色卷帘快门面阵相机的视觉布置方案.md) (`MkKRdFcj7onwh1xgqSTcZ5qfn61`, 948 chars)
+- [软件拓扑图](./03-技术方案/软件拓扑图.md) (`HBRmdnjcLoXGs8xHTuqcbB8En3e`, 5275 chars)
+- [offline-module-interface](./03-技术方案/offline-module-interface.md) (`UymTdIIZ3omxXcxwlWrcOThDnkg`, 9505 chars)
+- [ADR-002-reuse-xnoavi-c…69e9](./03-技术方案/ADR-002-reuse-xnoavi-c…69e9.md) (`NnI6dUp3uorksmxLB9qcXOfBnAd`, 5048 chars)
+- [ADR-001-four-layer-vis…842f](./03-技术方案/ADR-001-four-layer-vis…842f.md) (`HpzYdJpgwo4FYvxMkB4cscSanah`, 2500 chars)
+- [03组_玻纤拉挤电芯压条_AI视觉检测_详细…3ed2](./03-技术方案/03组_玻纤拉挤电芯压条_AI视觉检测_详细…3ed2.md) (`RDStdtfEKoKm34xzECtcRvIUnde`, 13380 chars)
+- [离线检测模块接口schema](./03-技术方案/离线检测模块接口schema.md) (`AiX5de564oz0OwxKeG2cA5Crnmg`, 6734 chars)
+- [系统架构设计](./03-技术方案/系统架构设计.md) (`EOhldvBvKoPH5uxig14cxWOQn9c`, 6032 chars)
+- [任务书_基于机器视觉的复合材料拉挤制品表面缺陷检测（郭小川）](./01-项目总览/任务书与开题评审/任务书_基于机器视觉的复合材料拉挤制品表面缺陷检测（郭小川）.md) (`JdEedm0ROoUTkvxXv9VcL7cpnZd`, 523 chars)
+- [商业模式参考案例V1.0](./01-项目总览/课题全栈市场调研/商业模式参考案例V1.0.md) (`KaKgdzG9goStOFxipmEcolp7nde`, 1776 chars)
+- [team-capability-profile](./01-项目总览/team-capability-profile.md) (`EIyEdekfzokz5SxTBlhczoIAnUf`, 2461 chars)
 - [项目一页纸](./01-项目总览/项目一页纸.md) (`POsJdvxLson3wlxQuYYcsw9tn2c`, 355 chars)
+- [拉挤表面缺陷离线检测与近线精修实施方案_20260726(2)](./04-算法与模型/拉挤表面缺陷离线检测与近线精修实施方案_20260726(2).md) (`WNaodlWCwo7QAIxOviuc9NO1nQh`, 4248 chars)
+- [拉挤工艺缺陷检测三层智能检测方案](./04-算法与模型/拉挤工艺缺陷检测三层智能检测方案.md) (`Wtz1dmzw0oDOJXxpKLPcFAyQnpf`, 5069 chars)
+- [EfficientAD 完整实操教程](./04-算法与模型/EfficientAD 完整实操教程.md) (`CzEtd1eZYoFECoxgHH2cYVCNnJf`, 2089 chars)
+- [专业课笔记-YOLO-PatchCore-标注](./04-算法与模型/专业课笔记-YOLO-PatchCore-标注.md) (`AbT1dYso1oKzvdxRzPHcT15InPc`, 3095 chars)
+- [算法线包-环境SOP与实验计划](./04-算法与模型/算法线包-环境SOP与实验计划.md) (`MacNdC16PoDte0xItiPca0Lsnej`, 3538 chars)
 - [进度状态](./10-知识沉淀/进度状态.md) (`BurTdFv3ooUg1SxD3D9cDRv7n47`, 2577 chars)
 - [视觉技术导读v2](./10-知识沉淀/视觉技术导读v2.md) (`GQlMd98rAoG0RexV74cceyklnbg`, 2802 chars)
 - [行业难点](./10-知识沉淀/行业难点.md) (`MGp7d8k7Qo261WxbMlIcdpLvn3d`, 3642 chars)
 - [行业背景](./10-知识沉淀/行业背景.md) (`O268d25Tio3tujxHJJEcbsFknxg`, 3065 chars)
 - [拉挤工艺基础](./10-知识沉淀/拉挤工艺基础.md) (`RDtHdvYxUou2csxOt1Tcbf1Onfh`, 3488 chars)
 - [onboarding指南v2](./10-知识沉淀/onboarding指南v2.md) (`L74qdpFMQoXOsjx4OgXcpZCvn2d`, 3275 chars)
-- [论文专利卡片](./11-对外材料/论文专利卡片.md) (`HEx7d9TvpoPj2ixMAeIcUh9TnGh`, 2630 chars)
-- [BP提纲-给王权](./11-对外材料/BP提纲-给王权.md) (`LCfudaHQ7oCsrHxMTPncXqlxndf`, 2750 chars)
-- [流水线需求表模板](./07-现场与交付/流水线需求表模板.md) (`INFmd3iVeoZj4cxik6pctY2an8g`, 2831 chars)
-- [使用说明骨架](./07-现场与交付/使用说明骨架.md) (`MqM3dYpeHoivZmxTOZDcmqLRnff`, 4073 chars)
-- [专业课笔记-YOLO-PatchCore-标注](./04-算法与模型/专业课笔记-YOLO-PatchCore-标注.md) (`AbT1dYso1oKzvdxRzPHcT15InPc`, 3095 chars)
-- [算法线包-环境SOP与实验计划](./04-算法与模型/算法线包-环境SOP与实验计划.md) (`MacNdC16PoDte0xItiPca0Lsnej`, 3538 chars)
+- [00-从这里开始-文档入口](./00-入口/00-从这里开始-文档入口.md) (`MGW4dZQ7hoovQTxuw8ocpIMSnvb`, 721 chars)
+- [TODO](./00-入口/TODO.md) (`G6VBdgbIZoDDGExzEBzcyO6DnMf`, 5540 chars)
+- [REPO-TODO](./00-入口/REPO-TODO.md) (`BjIadKOGAo6iY5xFZTYcOjgTnYf`, 4105 chars)
+- [原始资料入库说明-微信与坚果云](./00-入口/原始资料入库说明-微信与坚果云.md) (`WIGnd57Seo1XLuxHeQpc98rOngg`, 504 chars)
+- [文档地图](./00-入口/文档地图.md) (`Ofted42udoDeyPxNAsac9XdhnCg`, 189 chars)
+- [飞书空间搭建手册](./00-入口/飞书空间搭建手册.md) (`LrKZdpbOBorbLJx6rITcHhqqnVb`, 6357 chars)
+- [首批飞书云文档标题列表](./00-入口/首批飞书云文档标题列表.md) (`VVSXdcuQLowaJIx05tQcDOTdnWd`, 4206 chars)
+- [资料入库规范](./00-入口/资料入库规范.md) (`IVYOdbg4AotekhxDjh2cW6CQn0c`, 2521 chars)
+- [共享简报-写作前必读](./00-入口/共享简报-写作前必读.md) (`Md5fdaEpooxV1ux9YHNcsPb6n0c`, 5588 chars)
+- [README-文档地图与交付勾选清单](./00-入口/README-文档地图与交付勾选清单.md) (`Ixpmd1eeNofj9qxjgDWcYRpEnkc`, 3243 chars)
 - [M币预算表](./08-项目管理/M币/M币预算表.md) (`GeFedI4SQoHabnxa5tLcd4jfn24`, 3879 chars)
-- [风险登记册](./08-项目管理/风险台账/风险登记册.md) (`D3rOd2M0boCfO4xyAhzc8acJnld`, 3657 chars)
 - [首次双周报草稿-Kimi版](./08-项目管理/双周报/首次双周报草稿-Kimi版.md) (`IrlMdsUEcoxz5dx6Zq9cV9dlnxg`, 4823 chars)
 - [首次双周报草稿（截止7-26）](./08-项目管理/双周报/首次双周报草稿（截止7-26）.md) (`Y1pddu5KYo8sb6xIvegc7iL5nVh`, 206 chars)
+- [风险登记册](./08-项目管理/风险台账/风险登记册.md) (`D3rOd2M0boCfO4xyAhzc8acJnld`, 3657 chars)
 - [WBS与双周里程碑](./08-项目管理/WBS/WBS与双周里程碑.md) (`WGXmduRq7oZ6wRxbs9Qcq8p8nuc`, 4425 chars)
+- [wbs-and-schedule](./08-项目管理/wbs-and-schedule.md) (`HoCCdfmAvoK1lGxUHcuck7pHnwc`, 1762 chars)
+- [team-workstreams](./08-项目管理/team-workstreams.md) (`Dtb7drqANoVfAMxbRylc2O9Xn2y`, 2734 chars)
+- [team-roster](./08-项目管理/team-roster.md) (`RfvWd1QoaoPZxuxqYnYcGdRUntf`, 1383 chars)
+- [operation-plan-from-pr…a3d3](./08-项目管理/operation-plan-from-pr…a3d3.md) (`BTXudruYSovJyCxwfaWcZZsfnlg`, 4409 chars)
+- [m-coin-ledger](./08-项目管理/m-coin-ledger.md) (`LENNdKmQhoHUNTxIoOzcfEBdnZd`, 590 chars)
+- [m-coin-cost-system](./08-项目管理/m-coin-cost-system.md) (`BTN7dBKm6okXg3xsJdacumcmnfe`, 1172 chars)
+- [change-control](./08-项目管理/change-control.md) (`XpHqdNXQ8oK4mMxXNXQcnkQWn3G`, 1160 chars)
 - [沟通管理计划](./08-项目管理/沟通管理计划.md) (`NNv1dWmjqotfEVxcPN6cPZNwnnf`, 3259 chars)
-- [离线检测模块接口schema](./03-技术方案/离线检测模块接口schema.md) (`AiX5de564oz0OwxKeG2cA5Crnmg`, 6734 chars)
-- [系统架构设计](./03-技术方案/系统架构设计.md) (`EOhldvBvKoPH5uxig14cxWOQn9c`, 6032 chars)
-- [需求规格书v3](./02-需求与验收/需求规格书v3.md) (`Rib7dN7YfoYskAxrUyxcQGmgnGh`, 5171 chars)
-- [未决事项清单-沟通管理日志](./02-需求与验收/未决事项清单-沟通管理日志.md) (`Nmn6dvjJqoBhMZxBO3ScuJaKnke`, 8704 chars)
-- [未决事项清单@范汝杰](./02-需求与验收/未决事项清单@范汝杰.md) (`FBybdtChroDjezxLhALcocN0nKx`, 504 chars)
+- [bi-metrics-onepager](./06-前端与BI/bi-metrics-onepager.md) (`OyvKdfOHIoUmc5xfUNkcxcFDnmh`, 1588 chars)
 - [26-联调检查单](./06-前端与BI/26-联调检查单.md) (`LSUDdpRxUoLQmZx3NNycU6BNnPg`, 6037 chars)
 - [25-程昱涵两周冲刺任务板](./06-前端与BI/25-程昱涵两周冲刺任务板.md) (`VTj0dzVQ7oqFvyxCiMmceb6lnui`, 4563 chars)
 - [24-技术选型建议](./06-前端与BI/24-技术选型建议.md) (`Vt6Vd3DcoouePrx6x6WcrSaQnog`, 3803 chars)
@@ -52,19 +62,185 @@
 - [20-检测结果展示UI规格](./06-前端与BI/20-检测结果展示UI规格.md) (`FEAUdRn6AoiQo7xU2pNcNKjHnsd`, 7311 chars)
 - [19-前端BI产品规格](./06-前端与BI/19-前端BI产品规格.md) (`AudKdVP05oCH5Kxix03cLZ23nWh`, 5771 chars)
 - [程昱涵-前端BI两周冲刺任务板](./06-前端与BI/程昱涵-前端BI两周冲刺任务板.md) (`ZGUDdU23noYqnSx5rXHc6Xsmntg`, 210 chars)
+- [open-decisions](./02-需求与验收/open-decisions.md) (`RHVIdjQQhoePuqxLRJTc8OLlnug`, 2372 chars)
+- [evaluation-principles](./02-需求与验收/evaluation-principles.md) (`ATHodjBu6oK5c4xwQlQcOFOSnJc`, 728 chars)
+- [需求规格书v3](./02-需求与验收/需求规格书v3.md) (`Rib7dN7YfoYskAxrUyxcQGmgnGh`, 5171 chars)
+- [未决事项清单-沟通管理日志](./02-需求与验收/未决事项清单-沟通管理日志.md) (`Nmn6dvjJqoBhMZxBO3ScuJaKnke`, 8704 chars)
+- [未决事项清单@范汝杰](./02-需求与验收/未决事项清单@范汝杰.md) (`FBybdtChroDjezxLhALcocN0nKx`, 504 chars)
+- [缺陷定义卡](./05-采集与数据/缺陷定义卡.md) (`VT3cdO4iuodgwLxIs2lcuMLJnjh`, 8286 chars)
+- [图像处理方案](./05-采集与数据/图像处理方案.md) (`IYkzdwQpXoeBTgxZMTncyRjFnLB`, 1485 chars)
+- [过程版-600万相机布置要点](./05-采集与数据/过程版-600万相机布置要点.md) (`Y21Gd5br6oDKIBxLUyicP7qrnDb`, 1319 chars)
+- [过程版-600万卷帘面阵相机视觉布置方案](./05-采集与数据/过程版-600万卷帘面阵相机视觉布置方案.md) (`HdlOdomx8om0QExOpVYc5m0Nnxg`, 752 chars)
+- [缺陷定义卡](./05-采集与数据/缺陷定义卡.md) (`JFg2dpFi1oQMSGxPBFPcF9L7n9e`, 3949 chars)
+- [数据与标注规范](./05-采集与数据/数据与标注规范.md) (`GuqtdPrQzo6VQKxWwficbNHunqf`, 5086 chars)
+- [图像采集方案](./05-采集与数据/图像采集方案.md) (`JudUdMX0pooFSWxv7DXcDHkInvd`, 5696 chars)
+- [论文专利卡片](./11-对外材料/论文专利卡片.md) (`HEx7d9TvpoPj2ixMAeIcUh9TnGh`, 2630 chars)
+- [BP提纲-给王权](./11-对外材料/BP提纲-给王权.md) (`LCfudaHQ7oCsrHxMTPncXqlxndf`, 2750 chars)
+- [流水线需求表模板](./07-现场与交付/流水线需求表模板.md) (`INFmd3iVeoZj4cxik6pctY2an8g`, 2831 chars)
+- [使用说明骨架](./07-现场与交付/使用说明骨架.md) (`MqM3dYpeHoivZmxTOZDcmqLRnff`, 4073 chars)
 
 ## 跳过 / 失败
 
-- 过程版-600万相机布置要点.md (file) — skip type=file
-- 过程版_基于600万彩色卷帘快门面阵相机的视觉布置方案.docx (file) — skip type=file
-- 项目计划及人员分工0711.xlsx (file) — skip type=file
-- 任务书-基于机器视觉的复合材料拉挤制品表面缺陷检测-范汝杰(1).docx (file) — skip type=file
-- 任务书_基于机器视觉的复合材料拉挤制品表面缺陷检测（郭小川）.docx (file) — skip type=file
-- 03_0711讨论材料_逐字稿与详细总结_合订本.docx (file) — skip type=file
-- 00_0711讨论材料_详细总结.docx (file) — skip type=file
+- 布置方案图2.jpg (file) — skip type=file
+- 布置方案图1.jpg (file) — skip type=file
+- 2026-07-12_复合材料拉挤表面缺陷视觉检测专利_成熟案例与路线分析.docx (file) — skip type=file
+- 03基于机器视觉的复合材料拉挤制品表面缺陷检测——以V公司为例4.0 (slides) — skip type=slides
+- 08-工眸方案技术评审.md (file) — skip type=file
+- 07-模型部署与轻量化.md (file) — skip type=file
+- 06-模型选型与训练.md (file) — skip type=file
+- 05-标注体系与数据闭环.md (file) — skip type=file
+- 04-尺寸定量测量方法.md (file) — skip type=file
+- 03-打光方案设计.md (file) — skip type=file
+- 02-图像采集系统设计.md (file) — skip type=file
+- 01-检测对象与缺陷定义标准.md (file) — skip type=file
+- 00-索引与总览.md (file) — skip type=file
+- 03组_玻纤拉挤电芯压条_AI视觉检测_详细方案设计_目录大纲.docx (file) — skip type=file
 - MEM分享 脱敏版.pdf (file) — skip type=file
 - MEM-AIVisdefect_行业调研与商业计划书_20260712.docx (file) — skip type=file
 - 2026-07-12_复合材料拉挤表面缺陷视觉检测_成熟案例与路线分析.docx (file) — skip type=file
+- 11组-基于视觉的工厂瑕疵品检测系统-BP-10.1(1) (slides) — skip type=slides
+- 小组M币分配规则说明书V2.0.pdf (file) — skip type=file
+- 小组M币分配表V2.0.xlsx (file) — skip type=file
+- 双周报20260726-第1次.xlsx (file) — skip type=file
+- 项目计划及待办事项跟进表.xlsx (file) — skip type=file
+- 20260725194203-清华MEM 03组周会-逐字稿文本-1.docx (file) — skip type=file
+- 20260718195212-清华MEM 03组周会-逐字稿文本-1.docx (file) — skip type=file
+- 7月25日.png (file) — skip type=file
+- 7月18日.png (file) — skip type=file
+- 03_0711讨论材料_逐字稿与详细总结_合订本.docx (file) — skip type=file
+- 00_0711讨论材料_详细总结.docx (file) — skip type=file
+- 0723_相机、产线布置-元宝纪要.txt (file) — skip type=file
+- 清华MEM03组周会-元宝纪要20260718.txt (file) — skip type=file
+- 文字记录-清华MEM 03组周会_20260718.docx (file) — skip type=file
+- 周会纪要2026018.docx (file) — skip type=file
+- 0722缺陷定义卡、推理模型会议纪要.docx (file) — skip type=file
+- IMG_7942.JPG (file) — skip type=file
+- IMG_7941.JPG (file) — skip type=file
+- 检验装置1.JPG (file) — skip type=file
+- IMG_8104.JPG (file) — skip type=file
+- IMG_8103.JPG (file) — skip type=file
+- IMG_8100.JPG (file) — skip type=file
+- IMG_8099.JPG (file) — skip type=file
+- IMG_8097.JPG (file) — skip type=file
+- IMG_8096.JPG (file) — skip type=file
+- IMG_8094.JPG (file) — skip type=file
+- 检验台.JPG (file) — skip type=file
+- IMG_7766.JPG (file) — skip type=file
+- IMG_7765.JPG (file) — skip type=file
+- IMG_7764.JPG (file) — skip type=file
+- IMG_7763.JPG (file) — skip type=file
+- IMG_7761.JPG (file) — skip type=file
+- IMG_7760.JPG (file) — skip type=file
+- IMG_7759.JPG (file) — skip type=file
+- IMG_7758.JPG (file) — skip type=file
+- IMG_7757.JPG (file) — skip type=file
+- IMG_7756.JPG (file) — skip type=file
+- IMG_7755.JPG (file) — skip type=file
+- IMG_7754.JPG (file) — skip type=file
+- IMG_7753.JPG (file) — skip type=file
+- IMG_7752.JPG (file) — skip type=file
+- IMG_7751.JPG (file) — skip type=file
+- IMG_7747.JPG (file) — skip type=file
+- IMG_7743.JPG (file) — skip type=file
+- IMG_7742.JPG (file) — skip type=file
+- IMG_7739.JPG (file) — skip type=file
+- IMG_7738.JPG (file) — skip type=file
+- IMG_7737.JPG (file) — skip type=file
+- IMG_7735.JPG (file) — skip type=file
+- IMG_7734.JPG (file) — skip type=file
+- IMG_7733.JPG (file) — skip type=file
+- IMG_7732.JPG (file) — skip type=file
+- IMG_7731.JPG (file) — skip type=file
+- IMG_7730.JPG (file) — skip type=file
+- IMG_7728.JPG (file) — skip type=file
+- IMG_7727.JPG (file) — skip type=file
+- IMG_7726.JPG (file) — skip type=file
+- IMG_7725.JPG (file) — skip type=file
+- IMG_7724.JPG (file) — skip type=file
+- IMG_7723.JPG (file) — skip type=file
+- IMG_7722.JPG (file) — skip type=file
+- IMG_7721.JPG (file) — skip type=file
+- IMG_7719.JPG (file) — skip type=file
+- IMG_7718.JPG (file) — skip type=file
+- IMG_7717.JPG (file) — skip type=file
+- IMG_7715.JPG (file) — skip type=file
+- IMG_7714.JPG (file) — skip type=file
+- IMG_7713.JPG (file) — skip type=file
+- IMG_7712.JPG (file) — skip type=file
+- IMG_7711.JPG (file) — skip type=file
+- IMG_7710.JPG (file) — skip type=file
+- IMG_7709.JPG (file) — skip type=file
+- IMG_7707.JPG (file) — skip type=file
+- IMG_7706.JPG (file) — skip type=file
+- IMG_7705.JPG (file) — skip type=file
+- IMG_7704.JPG (file) — skip type=file
+- IMG_7703.JPG (file) — skip type=file
+- IMG_7702.JPG (file) — skip type=file
+- IMG_7701.JPG (file) — skip type=file
+- IMG_7700.JPG (file) — skip type=file
+- IMG_7699.JPG (file) — skip type=file
+- IMG_7698.JPG (file) — skip type=file
+- IMG_7697.JPG (file) — skip type=file
+- IMG_7696.JPG (file) — skip type=file
+- IMG_7695.JPG (file) — skip type=file
+- IMG_7694.JPG (file) — skip type=file
+- IMG_7692.JPG (file) — skip type=file
+- IMG_7691.JPG (file) — skip type=file
+- IMG_7690.JPG (file) — skip type=file
+- IMG_7689.JPG (file) — skip type=file
+- IMG_7688.JPG (file) — skip type=file
+- IMG_7687.JPG (file) — skip type=file
+- IMG_7686.JPG (file) — skip type=file
+- IMG_7683.JPG (file) — skip type=file
+- IMG_7681.JPG (file) — skip type=file
+- IMG_7680.JPG (file) — skip type=file
+- IMG_7679.JPG (file) — skip type=file
+- IMG_7678.JPG (file) — skip type=file
+- IMG_7678.AAE (file) — skip type=file
+- IMG_7678 (3).AAE (file) — skip type=file
+- IMG_7677.JPG (file) — skip type=file
+- IMG_7677.AAE (file) — skip type=file
+- IMG_7677 (2).AAE (file) — skip type=file
+- IMG_7676.JPG (file) — skip type=file
+- IMG_7676.AAE (file) — skip type=file
+- IMG_7676 (1).AAE (file) — skip type=file
+- IMG_7675.JPG (file) — skip type=file
+- IMG_7674.JPG (file) — skip type=file
+- IMG_7673.JPG (file) — skip type=file
+- IMG_7809.JPG (file) — skip type=file
+- 2026-07-12_14-30-33.jpg (file) — skip type=file
+- 2026-07-12_14-30-31.jpg (file) — skip type=file
+- 2026-07-12_13-43-14.jpg (file) — skip type=file
+- 课题全过程影像&资料留存策划.docx (file) — skip type=file
+- 微信图片_20260705090855_1024_220.jpg (file) — skip type=file
+- 微信图片_20260705090802_1023_220.jpg (file) — skip type=file
+- 微信图片_20260705090801_1022_220.jpg (file) — skip type=file
+- 微信图片_20260705090800_1021_220.jpg (file) — skip type=file
+- 微信图片_20260705090759_1020_220.jpg (file) — skip type=file
+- 微信图片_20260705090758_1019_220.jpg (file) — skip type=file
+- 微信图片_20260705090757_1018_220.jpg (file) — skip type=file
+- 微信图片_20260705090756_1017_220.jpg (file) — skip type=file
+- 微信图片_20260705085233.jpg (file) — skip type=file
+- 微信图片_20260705085228.jpg (file) — skip type=file
+- 微信图片_20260705085225.jpg (file) — skip type=file
+- 微信图片_20260705085218.jpg (file) — skip type=file
+- 微信图片_20260705085215.jpg (file) — skip type=file
+- 微信图片_20260705085213.jpg (file) — skip type=file
+- 微信图片_20260705085209.jpg (file) — skip type=file
+- 微信图片_20260705085204.jpg (file) — skip type=file
+- 微信图片_20260705085201.jpg (file) — skip type=file
+- 微信图片_20260705085153.jpg (file) — skip type=file
+- 微信图片_20260705085150.jpg (file) — skip type=file
+- 微信图片_20260705085147.jpg (file) — skip type=file
+- 微信图片_20260705085143.jpg (file) — skip type=file
+- 微信图片_20260705085139.jpg (file) — skip type=file
+- 微信图片_20260705085135.jpg (file) — skip type=file
+- 微信图片_2026-07-05_085157_216.jpg (file) — skip type=file
+- 20260705085048.jpg (file) — skip type=file
+- 零件技术规格说明-缺陷定义PTS-00000267-1.3(1)(1).pdf (file) — skip type=file
+- 相机选型.jpg (file) — skip type=file
+- 过程版-600万相机布置要点.md (file) — skip type=file
+- 过程版_基于600万彩色卷帘快门面阵相机的视觉布置方案.docx (file) — skip type=file
 - ZL13_CN104730092B_缺陷检测方法_结果标识与批次追溯.pdf (file) — skip type=file
 - ZL12_CN116718607B_纤维料带在线质量监测方法.pdf (file) — skip type=file
 - ZL11_CN112907531B_多模态融合铺丝机复合材料表面缺陷检测系统.pdf (file) — skip type=file
