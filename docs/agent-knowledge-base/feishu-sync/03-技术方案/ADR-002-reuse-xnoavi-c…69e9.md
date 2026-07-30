@@ -1,6 +1,6 @@
 # ADR-002-reuse-xnoavi-c…69e9
 
-> 同步自飞书 · token=`NnI6dUp3uorksmxLB9qcXOfBnAd` · type=docx · 2026-07-29
+> 同步自飞书 · token=`NnI6dUp3uorksmxLB9qcXOfBnAd` · type=docx · 2026-07-30
 > 链接: https://bcndkrmo7f8n.feishu.cn/docx/NnI6dUp3uorksmxLB9qcXOfBnAd
 
 ADR-002-reuse-xnoavi-c…69e9
