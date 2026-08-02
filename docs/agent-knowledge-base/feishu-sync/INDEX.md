@@ -1,11 +1,12 @@
 # 飞书同步索引
 
-更新时间：2026-08-01T04:26:23.881Z
+更新时间：2026-08-02T04:29:39.580Z
 根文件夹 token：`JviVfMA56lMkzhdVoZdcEVk9nBd`
-成功：72 / 尝试：72
+成功：77 / 尝试：77
 
 ## 已同步
 
+- [玻纤拉挤电芯压条AI视觉检测系统设计方案20260801](./03-技术方案/详细方案设计报告/玻纤拉挤电芯压条AI视觉检测系统设计方案20260801.md) (`M7FpdWYgIoL4E1xnwdBcWr4xnng`, 27750 chars)
 - [20260723_基于600万彩色卷帘快门面阵相机的视觉布置方案](./03-技术方案/总布置方案/20260723_基于600万彩色卷帘快门面阵相机的视觉布置方案.md) (`MkKRdFcj7onwh1xgqSTcZ5qfn61`, 948 chars)
 - [软件拓扑图](./03-技术方案/软件拓扑图.md) (`HBRmdnjcLoXGs8xHTuqcbB8En3e`, 5275 chars)
 - [offline-module-interface](./03-技术方案/offline-module-interface.md) (`UymTdIIZ3omxXcxwlWrcOThDnkg`, 9505 chars)
@@ -14,10 +15,13 @@
 - [03组_玻纤拉挤电芯压条_AI视觉检测_详细…3ed2](./03-技术方案/03组_玻纤拉挤电芯压条_AI视觉检测_详细…3ed2.md) (`RDStdtfEKoKm34xzECtcRvIUnde`, 13380 chars)
 - [离线检测模块接口schema](./03-技术方案/离线检测模块接口schema.md) (`AiX5de564oz0OwxKeG2cA5Crnmg`, 6734 chars)
 - [系统架构设计](./03-技术方案/系统架构设计.md) (`EOhldvBvKoPH5uxig14cxWOQn9c`, 6032 chars)
-- [任务书_基于机器视觉的复合材料拉挤制品表面缺陷检测（郭小川）](./01-项目总览/任务书与开题评审/任务书_基于机器视觉的复合材料拉挤制品表面缺陷检测（郭小川）.md) (`JdEedm0ROoUTkvxXv9VcL7cpnZd`, 523 chars)
+- [一种玻纤拉挤电芯压条质量判定方法及系统](./01-项目总览/专利布局/一种玻纤拉挤电芯压条质量判定方法及系统.md) (`PXAbdeFocoNxAYxlc2rcBnl5ntc`, 4734 chars)
+- [调研报告](./01-项目总览/课题全栈市场调研/调研报告.md) (`AWBvdm1fDobBy7xNAM9cuh3Mnif`, 55342 chars)
 - [商业模式参考案例V1.0](./01-项目总览/课题全栈市场调研/商业模式参考案例V1.0.md) (`KaKgdzG9goStOFxipmEcolp7nde`, 1776 chars)
+- [任务书_基于机器视觉的复合材料拉挤制品表面缺陷检测（郭小川）](./01-项目总览/任务书与开题评审/任务书_基于机器视觉的复合材料拉挤制品表面缺陷检测（郭小川）.md) (`JdEedm0ROoUTkvxXv9VcL7cpnZd`, 523 chars)
 - [team-capability-profile](./01-项目总览/team-capability-profile.md) (`EIyEdekfzokz5SxTBlhczoIAnUf`, 2461 chars)
 - [项目一页纸](./01-项目总览/项目一页纸.md) (`POsJdvxLson3wlxQuYYcsw9tn2c`, 355 chars)
+- [工件表面缺陷检测模型测试报告](./04-算法与模型/工件表面缺陷检测模型测试报告.md) (`KigIdf9UUoMsITxF7Ebc36PRnzJ`, 6362 chars)
 - [拉挤表面缺陷离线检测与近线精修实施方案_20260726(2)](./04-算法与模型/拉挤表面缺陷离线检测与近线精修实施方案_20260726(2).md) (`WNaodlWCwo7QAIxOviuc9NO1nQh`, 4248 chars)
 - [拉挤工艺缺陷检测三层智能检测方案](./04-算法与模型/拉挤工艺缺陷检测三层智能检测方案.md) (`Wtz1dmzw0oDOJXxpKLPcFAyQnpf`, 5069 chars)
 - [EfficientAD 完整实操教程](./04-算法与模型/EfficientAD 完整实操教程.md) (`CzEtd1eZYoFECoxgHH2cYVCNnJf`, 2089 chars)
@@ -67,6 +71,7 @@
 - [需求规格书v3](./02-需求与验收/需求规格书v3.md) (`Rib7dN7YfoYskAxrUyxcQGmgnGh`, 5171 chars)
 - [未决事项清单-沟通管理日志](./02-需求与验收/未决事项清单-沟通管理日志.md) (`Nmn6dvjJqoBhMZxBO3ScuJaKnke`, 8704 chars)
 - [未决事项清单@范汝杰](./02-需求与验收/未决事项清单@范汝杰.md) (`FBybdtChroDjezxLhALcocN0nKx`, 504 chars)
+- [20260725194203-转写_清华MEM 03组周会-逐字稿文本-1](./09-会议与纪要/会议纪要逐字稿/20260725194203-转写_清华MEM 03组周会-逐字稿文本-1.md) (`PhyCdHg5foLz29xGRmxc66wUndh`, 10948 chars)
 - [缺陷定义卡](./05-采集与数据/缺陷定义卡.md) (`VT3cdO4iuodgwLxIs2lcuMLJnjh`, 8286 chars)
 - [图像处理方案](./05-采集与数据/图像处理方案.md) (`IYkzdwQpXoeBTgxZMTncyRjFnLB`, 1485 chars)
 - [过程版-600万相机布置要点](./05-采集与数据/过程版-600万相机布置要点.md) (`Y21Gd5br6oDKIBxLUyicP7qrnDb`, 1319 chars)
@@ -81,10 +86,11 @@
 
 ## 跳过 / 失败
 
+- 03组_玻纤拉挤电芯压条_AI视觉检测_详细方案设计_目录大纲.docx (file) — skip type=file
 - 布置方案图2.jpg (file) — skip type=file
 - 布置方案图1.jpg (file) — skip type=file
+- 机械结构专利.zip (file) — skip type=file
 - 2026-07-12_复合材料拉挤表面缺陷视觉检测专利_成熟案例与路线分析.docx (file) — skip type=file
-- 03基于机器视觉的复合材料拉挤制品表面缺陷检测——以V公司为例4.0 (slides) — skip type=slides
 - 08-工眸方案技术评审.md (file) — skip type=file
 - 07-模型部署与轻量化.md (file) — skip type=file
 - 06-模型选型与训练.md (file) — skip type=file
@@ -94,7 +100,7 @@
 - 02-图像采集系统设计.md (file) — skip type=file
 - 01-检测对象与缺陷定义标准.md (file) — skip type=file
 - 00-索引与总览.md (file) — skip type=file
-- 03组_玻纤拉挤电芯压条_AI视觉检测_详细方案设计_目录大纲.docx (file) — skip type=file
+- 03基于机器视觉的复合材料拉挤制品表面缺陷检测——以V公司为例4.0 (slides) — skip type=slides
 - MEM分享 脱敏版.pdf (file) — skip type=file
 - MEM-AIVisdefect_行业调研与商业计划书_20260712.docx (file) — skip type=file
 - 2026-07-12_复合材料拉挤表面缺陷视觉检测_成熟案例与路线分析.docx (file) — skip type=file
@@ -105,6 +111,7 @@
 - 项目计划及待办事项跟进表.xlsx (file) — skip type=file
 - 20260725194203-清华MEM 03组周会-逐字稿文本-1.docx (file) — skip type=file
 - 20260718195212-清华MEM 03组周会-逐字稿文本-1.docx (file) — skip type=file
+- 8月1日.png (file) — skip type=file
 - 7月25日.png (file) — skip type=file
 - 7月18日.png (file) — skip type=file
 - 03_0711讨论材料_逐字稿与详细总结_合订本.docx (file) — skip type=file
