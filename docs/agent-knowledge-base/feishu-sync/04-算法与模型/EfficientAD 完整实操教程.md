@@ -1,6 +1,6 @@
 # EfficientAD 完整实操教程
 
-> 同步自飞书 · token=`CzEtd1eZYoFECoxgHH2cYVCNnJf` · type=docx · 2026-08-02
+> 同步自飞书 · token=`CzEtd1eZYoFECoxgHH2cYVCNnJf` · type=docx · 2026-08-03
 > 链接: https://bcndkrmo7f8n.feishu.cn/docx/CzEtd1eZYoFECoxgHH2cYVCNnJf
 
 EfficientAD 完整实操教程

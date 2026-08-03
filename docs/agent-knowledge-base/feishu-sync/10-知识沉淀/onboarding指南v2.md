@@ -1,6 +1,6 @@
 # onboarding指南v2
 
-> 同步自飞书 · token=`L74qdpFMQoXOsjx4OgXcpZCvn2d` · type=docx · 2026-08-02
+> 同步自飞书 · token=`L74qdpFMQoXOsjx4OgXcpZCvn2d` · type=docx · 2026-08-03
 > 链接: https://bcndkrmo7f8n.feishu.cn/docx/L74qdpFMQoXOsjx4OgXcpZCvn2d
 
 onboarding指南v2
