@@ -1,12 +1,22 @@
 # 飞书同步索引
 
-更新时间：2026-08-03T04:36:55.986Z
+更新时间：2026-08-04T04:20:12.136Z
 根文件夹 token：`JviVfMA56lMkzhdVoZdcEVk9nBd`
 成功：77 / 尝试：77
 
 ## 已同步
 
-- [玻纤拉挤电芯压条AI视觉检测系统设计方案20260801](./03-技术方案/详细方案设计报告/玻纤拉挤电芯压条AI视觉检测系统设计方案20260801.md) (`M7FpdWYgIoL4E1xnwdBcWr4xnng`, 27750 chars)
+- [00-从这里开始-文档入口](./00-入口/00-从这里开始-文档入口.md) (`MGW4dZQ7hoovQTxuw8ocpIMSnvb`, 721 chars)
+- [TODO](./00-入口/TODO.md) (`G6VBdgbIZoDDGExzEBzcyO6DnMf`, 5540 chars)
+- [REPO-TODO](./00-入口/REPO-TODO.md) (`BjIadKOGAo6iY5xFZTYcOjgTnYf`, 4105 chars)
+- [原始资料入库说明-微信与坚果云](./00-入口/原始资料入库说明-微信与坚果云.md) (`WIGnd57Seo1XLuxHeQpc98rOngg`, 504 chars)
+- [文档地图](./00-入口/文档地图.md) (`Ofted42udoDeyPxNAsac9XdhnCg`, 189 chars)
+- [飞书空间搭建手册](./00-入口/飞书空间搭建手册.md) (`LrKZdpbOBorbLJx6rITcHhqqnVb`, 6357 chars)
+- [首批飞书云文档标题列表](./00-入口/首批飞书云文档标题列表.md) (`VVSXdcuQLowaJIx05tQcDOTdnWd`, 4206 chars)
+- [资料入库规范](./00-入口/资料入库规范.md) (`IVYOdbg4AotekhxDjh2cW6CQn0c`, 2521 chars)
+- [共享简报-写作前必读](./00-入口/共享简报-写作前必读.md) (`Md5fdaEpooxV1ux9YHNcsPb6n0c`, 5588 chars)
+- [README-文档地图与交付勾选清单](./00-入口/README-文档地图与交付勾选清单.md) (`Ixpmd1eeNofj9qxjgDWcYRpEnkc`, 3243 chars)
+- [玻纤拉挤电芯压条AI视觉检测系统设计方案20260801](./03-技术方案/详细方案设计报告/玻纤拉挤电芯压条AI视觉检测系统设计方案20260801.md) (`M7FpdWYgIoL4E1xnwdBcWr4xnng`, 27751 chars)
 - [20260723_基于600万彩色卷帘快门面阵相机的视觉布置方案](./03-技术方案/总布置方案/20260723_基于600万彩色卷帘快门面阵相机的视觉布置方案.md) (`MkKRdFcj7onwh1xgqSTcZ5qfn61`, 948 chars)
 - [软件拓扑图](./03-技术方案/软件拓扑图.md) (`HBRmdnjcLoXGs8xHTuqcbB8En3e`, 5275 chars)
 - [offline-module-interface](./03-技术方案/offline-module-interface.md) (`UymTdIIZ3omxXcxwlWrcOThDnkg`, 9505 chars)
@@ -33,16 +43,6 @@
 - [行业背景](./10-知识沉淀/行业背景.md) (`O268d25Tio3tujxHJJEcbsFknxg`, 3065 chars)
 - [拉挤工艺基础](./10-知识沉淀/拉挤工艺基础.md) (`RDtHdvYxUou2csxOt1Tcbf1Onfh`, 3488 chars)
 - [onboarding指南v2](./10-知识沉淀/onboarding指南v2.md) (`L74qdpFMQoXOsjx4OgXcpZCvn2d`, 3275 chars)
-- [00-从这里开始-文档入口](./00-入口/00-从这里开始-文档入口.md) (`MGW4dZQ7hoovQTxuw8ocpIMSnvb`, 721 chars)
-- [TODO](./00-入口/TODO.md) (`G6VBdgbIZoDDGExzEBzcyO6DnMf`, 5540 chars)
-- [REPO-TODO](./00-入口/REPO-TODO.md) (`BjIadKOGAo6iY5xFZTYcOjgTnYf`, 4105 chars)
-- [原始资料入库说明-微信与坚果云](./00-入口/原始资料入库说明-微信与坚果云.md) (`WIGnd57Seo1XLuxHeQpc98rOngg`, 504 chars)
-- [文档地图](./00-入口/文档地图.md) (`Ofted42udoDeyPxNAsac9XdhnCg`, 189 chars)
-- [飞书空间搭建手册](./00-入口/飞书空间搭建手册.md) (`LrKZdpbOBorbLJx6rITcHhqqnVb`, 6357 chars)
-- [首批飞书云文档标题列表](./00-入口/首批飞书云文档标题列表.md) (`VVSXdcuQLowaJIx05tQcDOTdnWd`, 4206 chars)
-- [资料入库规范](./00-入口/资料入库规范.md) (`IVYOdbg4AotekhxDjh2cW6CQn0c`, 2521 chars)
-- [共享简报-写作前必读](./00-入口/共享简报-写作前必读.md) (`Md5fdaEpooxV1ux9YHNcsPb6n0c`, 5588 chars)
-- [README-文档地图与交付勾选清单](./00-入口/README-文档地图与交付勾选清单.md) (`Ixpmd1eeNofj9qxjgDWcYRpEnkc`, 3243 chars)
 - [M币预算表](./08-项目管理/M币/M币预算表.md) (`GeFedI4SQoHabnxa5tLcd4jfn24`, 3879 chars)
 - [首次双周报草稿-Kimi版](./08-项目管理/双周报/首次双周报草稿-Kimi版.md) (`IrlMdsUEcoxz5dx6Zq9cV9dlnxg`, 4823 chars)
 - [首次双周报草稿（截止7-26）](./08-项目管理/双周报/首次双周报草稿（截止7-26）.md) (`Y1pddu5KYo8sb6xIvegc7iL5nVh`, 206 chars)
@@ -86,41 +86,6 @@
 
 ## 跳过 / 失败
 
-- 03组_玻纤拉挤电芯压条_AI视觉检测_详细方案设计_目录大纲.docx (file) — skip type=file
-- 布置方案图2.jpg (file) — skip type=file
-- 布置方案图1.jpg (file) — skip type=file
-- 机械结构专利.zip (file) — skip type=file
-- 2026-07-12_复合材料拉挤表面缺陷视觉检测专利_成熟案例与路线分析.docx (file) — skip type=file
-- 08-工眸方案技术评审.md (file) — skip type=file
-- 07-模型部署与轻量化.md (file) — skip type=file
-- 06-模型选型与训练.md (file) — skip type=file
-- 05-标注体系与数据闭环.md (file) — skip type=file
-- 04-尺寸定量测量方法.md (file) — skip type=file
-- 03-打光方案设计.md (file) — skip type=file
-- 02-图像采集系统设计.md (file) — skip type=file
-- 01-检测对象与缺陷定义标准.md (file) — skip type=file
-- 00-索引与总览.md (file) — skip type=file
-- 03基于机器视觉的复合材料拉挤制品表面缺陷检测——以V公司为例4.0 (slides) — skip type=slides
-- MEM分享 脱敏版.pdf (file) — skip type=file
-- MEM-AIVisdefect_行业调研与商业计划书_20260712.docx (file) — skip type=file
-- 2026-07-12_复合材料拉挤表面缺陷视觉检测_成熟案例与路线分析.docx (file) — skip type=file
-- 11组-基于视觉的工厂瑕疵品检测系统-BP-10.1(1) (slides) — skip type=slides
-- 小组M币分配规则说明书V2.0.pdf (file) — skip type=file
-- 小组M币分配表V2.0.xlsx (file) — skip type=file
-- 双周报20260726-第1次.xlsx (file) — skip type=file
-- 项目计划及待办事项跟进表.xlsx (file) — skip type=file
-- 20260725194203-清华MEM 03组周会-逐字稿文本-1.docx (file) — skip type=file
-- 20260718195212-清华MEM 03组周会-逐字稿文本-1.docx (file) — skip type=file
-- 8月1日.png (file) — skip type=file
-- 7月25日.png (file) — skip type=file
-- 7月18日.png (file) — skip type=file
-- 03_0711讨论材料_逐字稿与详细总结_合订本.docx (file) — skip type=file
-- 00_0711讨论材料_详细总结.docx (file) — skip type=file
-- 0723_相机、产线布置-元宝纪要.txt (file) — skip type=file
-- 清华MEM03组周会-元宝纪要20260718.txt (file) — skip type=file
-- 文字记录-清华MEM 03组周会_20260718.docx (file) — skip type=file
-- 周会纪要2026018.docx (file) — skip type=file
-- 0722缺陷定义卡、推理模型会议纪要.docx (file) — skip type=file
 - IMG_7942.JPG (file) — skip type=file
 - IMG_7941.JPG (file) — skip type=file
 - 检验装置1.JPG (file) — skip type=file
@@ -219,6 +184,41 @@
 - 2026-07-12_14-30-31.jpg (file) — skip type=file
 - 2026-07-12_13-43-14.jpg (file) — skip type=file
 - 课题全过程影像&资料留存策划.docx (file) — skip type=file
+- 03组_玻纤拉挤电芯压条_AI视觉检测_详细方案设计_目录大纲.docx (file) — skip type=file
+- 布置方案图2.jpg (file) — skip type=file
+- 布置方案图1.jpg (file) — skip type=file
+- 机械结构专利.zip (file) — skip type=file
+- 2026-07-12_复合材料拉挤表面缺陷视觉检测专利_成熟案例与路线分析.docx (file) — skip type=file
+- 08-工眸方案技术评审.md (file) — skip type=file
+- 07-模型部署与轻量化.md (file) — skip type=file
+- 06-模型选型与训练.md (file) — skip type=file
+- 05-标注体系与数据闭环.md (file) — skip type=file
+- 04-尺寸定量测量方法.md (file) — skip type=file
+- 03-打光方案设计.md (file) — skip type=file
+- 02-图像采集系统设计.md (file) — skip type=file
+- 01-检测对象与缺陷定义标准.md (file) — skip type=file
+- 00-索引与总览.md (file) — skip type=file
+- 03基于机器视觉的复合材料拉挤制品表面缺陷检测——以V公司为例4.0 (slides) — skip type=slides
+- MEM分享 脱敏版.pdf (file) — skip type=file
+- MEM-AIVisdefect_行业调研与商业计划书_20260712.docx (file) — skip type=file
+- 2026-07-12_复合材料拉挤表面缺陷视觉检测_成熟案例与路线分析.docx (file) — skip type=file
+- 11组-基于视觉的工厂瑕疵品检测系统-BP-10.1(1) (slides) — skip type=slides
+- 小组M币分配规则说明书V2.0.pdf (file) — skip type=file
+- 小组M币分配表V2.0.xlsx (file) — skip type=file
+- 双周报20260726-第1次.xlsx (file) — skip type=file
+- 项目计划及待办事项跟进表.xlsx (file) — skip type=file
+- 20260725194203-清华MEM 03组周会-逐字稿文本-1.docx (file) — skip type=file
+- 20260718195212-清华MEM 03组周会-逐字稿文本-1.docx (file) — skip type=file
+- 8月1日.png (file) — skip type=file
+- 7月25日.png (file) — skip type=file
+- 7月18日.png (file) — skip type=file
+- 03_0711讨论材料_逐字稿与详细总结_合订本.docx (file) — skip type=file
+- 00_0711讨论材料_详细总结.docx (file) — skip type=file
+- 0723_相机、产线布置-元宝纪要.txt (file) — skip type=file
+- 清华MEM03组周会-元宝纪要20260718.txt (file) — skip type=file
+- 文字记录-清华MEM 03组周会_20260718.docx (file) — skip type=file
+- 周会纪要2026018.docx (file) — skip type=file
+- 0722缺陷定义卡、推理模型会议纪要.docx (file) — skip type=file
 - 微信图片_20260705090855_1024_220.jpg (file) — skip type=file
 - 微信图片_20260705090802_1023_220.jpg (file) — skip type=file
 - 微信图片_20260705090801_1022_220.jpg (file) — skip type=file
