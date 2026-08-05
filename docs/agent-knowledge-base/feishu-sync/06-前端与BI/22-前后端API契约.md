@@ -1,6 +1,6 @@
 # 22-前后端API契约
 
-> 同步自飞书 · token=`JWcndhT0YoX0QLx9JJkc2Wl5nsh` · type=docx · 2026-08-04
+> 同步自飞书 · token=`JWcndhT0YoX0QLx9JJkc2Wl5nsh` · type=docx · 2026-08-05
 > 链接: https://bcndkrmo7f8n.feishu.cn/docx/JWcndhT0YoX0QLx9JJkc2Wl5nsh
 
 22-前后端API契约
