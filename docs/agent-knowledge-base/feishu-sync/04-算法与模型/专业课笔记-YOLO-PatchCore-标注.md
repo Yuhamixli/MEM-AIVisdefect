@@ -1,6 +1,6 @@
 # 专业课笔记-YOLO-PatchCore-标注
 
-> 同步自飞书 · token=`AbT1dYso1oKzvdxRzPHcT15InPc` · type=docx · 2026-08-04
+> 同步自飞书 · token=`AbT1dYso1oKzvdxRzPHcT15InPc` · type=docx · 2026-08-05
 > 链接: https://bcndkrmo7f8n.feishu.cn/docx/AbT1dYso1oKzvdxRzPHcT15InPc
 
 专业课笔记-YOLO-PatchCore-标注

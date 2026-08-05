@@ -1,6 +1,6 @@
 # BP提纲-给王权
 
-> 同步自飞书 · token=`LCfudaHQ7oCsrHxMTPncXqlxndf` · type=docx · 2026-08-04
+> 同步自飞书 · token=`LCfudaHQ7oCsrHxMTPncXqlxndf` · type=docx · 2026-08-05
 > 链接: https://bcndkrmo7f8n.feishu.cn/docx/LCfudaHQ7oCsrHxMTPncXqlxndf
 
 BP提纲-给王权
