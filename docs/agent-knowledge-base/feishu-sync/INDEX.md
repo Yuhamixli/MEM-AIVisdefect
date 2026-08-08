@@ -1,6 +1,6 @@
 # 飞书同步索引
 
-更新时间：2026-08-07T03:56:03.572Z
+更新时间：2026-08-08T02:59:26.309Z
 根文件夹 token：`JviVfMA56lMkzhdVoZdcEVk9nBd`
 成功：77 / 尝试：77
 
@@ -72,11 +72,11 @@
 - [未决事项清单-沟通管理日志](./02-需求与验收/未决事项清单-沟通管理日志.md) (`Nmn6dvjJqoBhMZxBO3ScuJaKnke`, 8704 chars)
 - [未决事项清单@范汝杰](./02-需求与验收/未决事项清单@范汝杰.md) (`FBybdtChroDjezxLhALcocN0nKx`, 504 chars)
 - [20260725194203-转写_清华MEM 03组周会-逐字稿文本-1](./09-会议与纪要/会议纪要逐字稿/20260725194203-转写_清华MEM 03组周会-逐字稿文本-1.md) (`PhyCdHg5foLz29xGRmxc66wUndh`, 10948 chars)
+- [缺陷定义卡](./05-采集与数据/缺陷定义卡.md) (`JFg2dpFi1oQMSGxPBFPcF9L7n9e`, 3949 chars)
 - [缺陷定义卡](./05-采集与数据/缺陷定义卡.md) (`VT3cdO4iuodgwLxIs2lcuMLJnjh`, 8286 chars)
 - [图像处理方案](./05-采集与数据/图像处理方案.md) (`IYkzdwQpXoeBTgxZMTncyRjFnLB`, 1485 chars)
 - [过程版-600万相机布置要点](./05-采集与数据/过程版-600万相机布置要点.md) (`Y21Gd5br6oDKIBxLUyicP7qrnDb`, 1319 chars)
 - [过程版-600万卷帘面阵相机视觉布置方案](./05-采集与数据/过程版-600万卷帘面阵相机视觉布置方案.md) (`HdlOdomx8om0QExOpVYc5m0Nnxg`, 752 chars)
-- [缺陷定义卡](./05-采集与数据/缺陷定义卡.md) (`JFg2dpFi1oQMSGxPBFPcF9L7n9e`, 3949 chars)
 - [数据与标注规范](./05-采集与数据/数据与标注规范.md) (`GuqtdPrQzo6VQKxWwficbNHunqf`, 5086 chars)
 - [图像采集方案](./05-采集与数据/图像采集方案.md) (`JudUdMX0pooFSWxv7DXcDHkInvd`, 5696 chars)
 - [论文专利卡片](./11-对外材料/论文专利卡片.md) (`HEx7d9TvpoPj2ixMAeIcUh9TnGh`, 2630 chars)
@@ -205,6 +205,10 @@
 - 11组-基于视觉的工厂瑕疵品检测系统-BP-10.1(1) (slides) — skip type=slides
 - 小组M币分配规则说明书V2.0.pdf (file) — skip type=file
 - 小组M币分配表V2.0.xlsx (file) — skip type=file
+- 质量系数打分记录表V3.0.xlsx (file) — skip type=file
+- 小组M币分配规则说明书V3.0 .pdf (file) — skip type=file
+- 小组M币分配规则说明书V3.0 .docx (file) — skip type=file
+- 小组M币分配表V3.0.xlsx (file) — skip type=file
 - 双周报20260726-第1次.xlsx (file) — skip type=file
 - 项目计划及待办事项跟进表.xlsx (file) — skip type=file
 - 20260725194203-清华MEM 03组周会-逐字稿文本-1.docx (file) — skip type=file
