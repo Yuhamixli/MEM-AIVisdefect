@@ -1,22 +1,24 @@
 # 飞书同步索引
 
-更新时间：2026-08-09T03:06:27.443Z
+更新时间：2026-08-10T03:16:25.483Z
 根文件夹 token：`JviVfMA56lMkzhdVoZdcEVk9nBd`
 成功：80 / 尝试：80
 
 ## 已同步
 
-- [20260808185008-清华MEM 03组周会-逐字稿文本-1](./09-会议与纪要/会议纪要/20260808185008-清华MEM 03组周会-逐字稿文本-1.md) (`WDHCdYjS0o6dAixADpCcUcBBnHc`, 40545 chars)
-- [20260725194203-转写_清华MEM 03组周会-逐字稿文本-1](./09-会议与纪要/会议纪要/20260725194203-转写_清华MEM 03组周会-逐字稿文本-1.md) (`PhyCdHg5foLz29xGRmxc66wUndh`, 10948 chars)
 - [BP初稿](./01-项目总览/课题全栈市场调研/BP初稿.md) (`Jcf9dZAWBoEFOVxfAMkcy0GInEh`, 2933 chars)
 - [调研报告](./01-项目总览/课题全栈市场调研/调研报告.md) (`AWBvdm1fDobBy7xNAM9cuh3Mnif`, 55342 chars)
 - [商业模式参考案例V1.0](./01-项目总览/课题全栈市场调研/商业模式参考案例V1.0.md) (`KaKgdzG9goStOFxipmEcolp7nde`, 1776 chars)
 - [一种玻纤拉挤电芯压条质量判定方法及系统](./01-项目总览/专利布局/一种玻纤拉挤电芯压条质量判定方法及系统.md) (`PXAbdeFocoNxAYxlc2rcBnl5ntc`, 4734 chars)
 - [任务书_基于机器视觉的复合材料拉挤制品表面缺陷检测（郭小川）](./01-项目总览/任务书与开题评审/任务书_基于机器视觉的复合材料拉挤制品表面缺陷检测（郭小川）.md) (`JdEedm0ROoUTkvxXv9VcL7cpnZd`, 523 chars)
-- [03组数据安全管理方案](./01-项目总览/03组数据安全管理方案.md) (`BNjcd0JShoOstAxK6CVcHAJCn4b`, 2357 chars)
+- [小组数据安全管理任务](./01-项目总览/小组数据安全管理任务.md) (`WotDd2Dj5oyaM2xYvJGcN35Bn4e`, 3144 chars)
 - [team-capability-profile](./01-项目总览/team-capability-profile.md) (`EIyEdekfzokz5SxTBlhczoIAnUf`, 2461 chars)
 - [项目一页纸](./01-项目总览/项目一页纸.md) (`POsJdvxLson3wlxQuYYcsw9tn2c`, 355 chars)
-- [00-从这里开始-文档入口](./00-入口/00-从这里开始-文档入口.md) (`MGW4dZQ7hoovQTxuw8ocpIMSnvb`, 721 chars)
+- [【已归档】小组数据安全管理任务-v0.2](./99-归档与原始材料/数据安全管理-旧稿/【已归档】小组数据安全管理任务-v0.2.md) (`Xbgydl8yxowOBmxJHqXcn7f7nKc`, 3141 chars)
+- [【已归档】03组数据安全管理方案-v0.1](./99-归档与原始材料/数据安全管理-旧稿/【已归档】03组数据安全管理方案-v0.1.md) (`BNjcd0JShoOstAxK6CVcHAJCn4b`, 2478 chars)
+- [20260808185008-清华MEM 03组周会-逐字稿文本-1](./09-会议与纪要/会议纪要/20260808185008-清华MEM 03组周会-逐字稿文本-1.md) (`WDHCdYjS0o6dAixADpCcUcBBnHc`, 40545 chars)
+- [20260725194203-转写_清华MEM 03组周会-逐字稿文本-1](./09-会议与纪要/会议纪要/20260725194203-转写_清华MEM 03组周会-逐字稿文本-1.md) (`PhyCdHg5foLz29xGRmxc66wUndh`, 10948 chars)
+- [00-从这里开始-文档入口](./00-入口/00-从这里开始-文档入口.md) (`MGW4dZQ7hoovQTxuw8ocpIMSnvb`, 808 chars)
 - [TODO](./00-入口/TODO.md) (`G6VBdgbIZoDDGExzEBzcyO6DnMf`, 5540 chars)
 - [REPO-TODO](./00-入口/REPO-TODO.md) (`BjIadKOGAo6iY5xFZTYcOjgTnYf`, 4105 chars)
 - [原始资料入库说明-微信与坚果云](./00-入口/原始资料入库说明-微信与坚果云.md) (`WIGnd57Seo1XLuxHeQpc98rOngg`, 504 chars)
@@ -84,11 +86,21 @@
 - [图像采集方案](./05-采集与数据/图像采集方案.md) (`JudUdMX0pooFSWxv7DXcDHkInvd`, 5696 chars)
 - [论文专利卡片](./11-对外材料/论文专利卡片.md) (`HEx7d9TvpoPj2ixMAeIcUh9TnGh`, 2630 chars)
 - [BP提纲-给王权](./11-对外材料/BP提纲-给王权.md) (`LCfudaHQ7oCsrHxMTPncXqlxndf`, 2750 chars)
-- [流水线需求表模板](./07-现场与交付/流水线需求表模板.md) (`INFmd3iVeoZj4cxik6pctY2an8g`, 2831 chars)
-- [使用说明骨架](./07-现场与交付/使用说明骨架.md) (`MqM3dYpeHoivZmxTOZDcmqLRnff`, 4073 chars)
 
 ## 跳过 / 失败
 
+- 08-工眸方案技术评审.md (file) — skip type=file
+- 07-模型部署与轻量化.md (file) — skip type=file
+- 06-模型选型与训练.md (file) — skip type=file
+- 05-标注体系与数据闭环.md (file) — skip type=file
+- 04-尺寸定量测量方法.md (file) — skip type=file
+- 03-打光方案设计.md (file) — skip type=file
+- 02-图像采集系统设计.md (file) — skip type=file
+- 01-检测对象与缺陷定义标准.md (file) — skip type=file
+- 00-索引与总览.md (file) — skip type=file
+- 机械结构专利.zip (file) — skip type=file
+- 2026-07-12_复合材料拉挤表面缺陷视觉检测专利_成熟案例与路线分析.docx (file) — skip type=file
+- 03基于机器视觉的复合材料拉挤制品表面缺陷检测——以V公司为例4.0 (slides) — skip type=slides
 - 周会纪要20260718.docx (file) — skip type=file
 - 20260801-清华MEM03组周会&详细设计方案内审-元宝纪要.txt (file) — skip type=file
 - 20260808185008-清华MEM 03组周会-纪要文本-1.docx (file) — skip type=file
@@ -104,18 +116,6 @@
 - 7月18日.png (file) — skip type=file
 - 03_0711讨论材料_逐字稿与详细总结_合订本.docx (file) — skip type=file
 - 00_0711讨论材料_详细总结.docx (file) — skip type=file
-- 08-工眸方案技术评审.md (file) — skip type=file
-- 07-模型部署与轻量化.md (file) — skip type=file
-- 06-模型选型与训练.md (file) — skip type=file
-- 05-标注体系与数据闭环.md (file) — skip type=file
-- 04-尺寸定量测量方法.md (file) — skip type=file
-- 03-打光方案设计.md (file) — skip type=file
-- 02-图像采集系统设计.md (file) — skip type=file
-- 01-检测对象与缺陷定义标准.md (file) — skip type=file
-- 00-索引与总览.md (file) — skip type=file
-- 机械结构专利.zip (file) — skip type=file
-- 2026-07-12_复合材料拉挤表面缺陷视觉检测专利_成熟案例与路线分析.docx (file) — skip type=file
-- 03基于机器视觉的复合材料拉挤制品表面缺陷检测——以V公司为例4.0 (slides) — skip type=slides
 - IMG_7942.JPG (file) — skip type=file
 - IMG_7941.JPG (file) — skip type=file
 - 检验装置1.JPG (file) — skip type=file
