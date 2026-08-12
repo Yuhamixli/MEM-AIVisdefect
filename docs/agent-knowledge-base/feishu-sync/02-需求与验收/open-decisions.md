@@ -1,6 +1,6 @@
 # open-decisions
 
-> 同步自飞书 · token=`RHVIdjQQhoePuqxLRJTc8OLlnug` · type=docx · 2026-08-11
+> 同步自飞书 · token=`RHVIdjQQhoePuqxLRJTc8OLlnug` · type=docx · 2026-08-12
 > 链接: https://bcndkrmo7f8n.feishu.cn/docx/RHVIdjQQhoePuqxLRJTc8OLlnug
 
 open-decisions
