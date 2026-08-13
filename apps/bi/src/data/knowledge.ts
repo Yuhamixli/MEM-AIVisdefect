@@ -9,6 +9,9 @@ export interface KnowledgeItem {
 
 export interface KnowledgeIndex {
   updated_at: string
+  feishu_pulled_at?: string | null
+  curated_count?: number
+  feishu_count?: number
   count: number
   items: KnowledgeItem[]
 }

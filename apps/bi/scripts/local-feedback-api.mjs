@@ -18,6 +18,11 @@ import {
   buildMarkdown,
   validateSubmitBody,
 } from '../functions/_lib/feedback.mjs'
+import {
+  buildReviewMarkdown,
+  buildReviewRelativePath,
+  validateReviewBody,
+} from '../functions/_lib/review.mjs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const repoRoot = join(__dirname, '../../..')
@@ -107,14 +112,65 @@ const server = createServer(async (req, res) => {
   if (req.method === 'OPTIONS') {
     res.writeHead(204, {
       'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'POST, OPTIONS',
+      'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
       'Access-Control-Allow-Headers': 'Content-Type, X-Write-Password',
     })
     res.end()
     return
   }
 
-  if (req.method !== 'POST' || req.url?.split('?')[0] !== '/api/feedback') {
+  const url = req.url?.split('?')[0] || ''
+
+  if (req.method === 'GET' && (url === '/api/feedback/health' || url === '/api/health')) {
+    sendJson(res, 200, {
+      ok: true,
+      repo_configured: Boolean(process.env.GITHUB_TOKEN && process.env.GITHUB_REPO) || localWrite,
+      branch: process.env.GITHUB_BRANCH || 'main',
+      local_write: localWrite,
+      ts: new Date().toISOString(),
+    })
+    return
+  }
+
+  if (req.method === 'POST' && url === '/api/review') {
+    const got = req.headers['x-write-password']
+    if (got !== writePassword) {
+      sendJson(res, 401, { ok: false, error: { code: 401, message: '口令错误' } })
+      return
+    }
+    let reviewBody
+    try {
+      reviewBody = await readBody(req)
+    } catch {
+      sendJson(res, 400, { ok: false, error: { code: 400, message: 'JSON 无效' } })
+      return
+    }
+    const validatedReview = validateReviewBody(reviewBody)
+    if (!validatedReview.ok) {
+      sendJson(res, validatedReview.status, { ok: false, error: validatedReview.error })
+      return
+    }
+    const reviewPath = buildReviewRelativePath(validatedReview.value)
+    const reviewMd = buildReviewMarkdown(validatedReview.value)
+    try {
+      if (localWrite) {
+        const abs = join(repoRoot, reviewPath)
+        mkdirSync(dirname(abs), { recursive: true })
+        writeFileSync(abs, reviewMd, 'utf8')
+      } else {
+        await writeViaGithub(reviewPath, reviewMd, validatedReview.value.reviewer || 'review')
+      }
+      sendJson(res, 200, { ok: true, file: reviewPath })
+    } catch (err) {
+      sendJson(res, 502, {
+        ok: false,
+        error: { code: 502, message: err instanceof Error ? err.message : String(err) },
+      })
+    }
+    return
+  }
+
+  if (req.method !== 'POST' || url !== '/api/feedback') {
     sendJson(res, 404, { error: 'Not found' })
     return
   }
@@ -180,6 +236,8 @@ const server = createServer(async (req, res) => {
 })
 
 server.listen(port, () => {
-  console.log(`[local-feedback-api] http://127.0.0.1:${port}/api/feedback`)
+  console.log(`[local-api] http://127.0.0.1:${port}/api/feedback`)
+  console.log(`[local-api] http://127.0.0.1:${port}/api/review`)
+  console.log(`[local-api] http://127.0.0.1:${port}/api/feedback/health`)
   console.log(`[local-feedback-api] WRITE_PASSWORD=${writePassword ? '(set)' : '(empty)'} LOCAL_WRITE=${localWrite ? '1' : '0'}`)
 })

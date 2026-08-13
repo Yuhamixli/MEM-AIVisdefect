@@ -1,0 +1,61 @@
+{
+  "piece_id": "P-20260731-042",
+  "batch_id": "B-03",
+  "faces": [
+    {
+      "face": "bottom",
+      "image": "/data/detect/images/placeholder-3200x1920.svg",
+      "image_size": [
+        3200,
+        1920
+      ],
+      "defects": [
+        {
+          "defect_id": "d-001",
+          "slug": "missing_yarn",
+          "class_name": "缺纱",
+          "bbox": [
+            267,
+            995,
+            104,
+            41
+          ],
+          "confidence": 0.77,
+          "severity": "medium",
+          "review_status": "pending"
+        },
+        {
+          "defect_id": "d-002",
+          "slug": "missing_yarn",
+          "class_name": "缺纱",
+          "bbox": [
+            794,
+            1038,
+            41,
+            82
+          ],
+          "confidence": 0.63,
+          "severity": "medium",
+          "review_status": "confirmed"
+        },
+        {
+          "defect_id": "d-003",
+          "slug": "whitening",
+          "class_name": "发白",
+          "bbox": [
+            2293,
+            1046,
+            112,
+            26
+          ],
+          "confidence": 0.58,
+          "severity": "medium",
+          "review_status": "pending"
+        }
+      ]
+    }
+  ],
+  "detected_at": "2026-07-31T09:10:00+08:00",
+  "model_version": "yolo11s-seg-mock-v0",
+  "review_status": "pending"
+}

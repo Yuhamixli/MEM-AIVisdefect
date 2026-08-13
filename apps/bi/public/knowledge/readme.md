@@ -32,7 +32,7 @@ docs/
   01–05, quality, …       调研、需求、汇报等
 templates/                纪要、周报、实验模板
 scripts/                  工具脚本（MLflow 等）
-apps/                     bi/（管理看板）· detector-ui（待建）
+apps/                     bi/ · detector-ui/ · feishu-cursor-bridge/（飞书↔Cursor SDK）
 ```
 
 ## 快速导航
@@ -43,6 +43,7 @@ apps/                     bi/（管理看板）· detector-ui（待建）
 | 课题 TODO | [`docs/project-management/TODO.md`](docs/project-management/TODO.md) |
 | 仓库 TODO | [`docs/project-management/REPO-TODO.md`](docs/project-management/REPO-TODO.md) |
 | BI 看板应用 | [`apps/bi/`](apps/bi/) | 本地：`cd apps/bi && npm i && npm run sync-data && npm run dev:api` + `npm run dev`；部署见该目录 README（Cloudflare Pages） |
+| 飞书 Cursor 桥 | [`apps/feishu-cursor-bridge/`](apps/feishu-cursor-bridge/) | `@机器人` → Cursor SDK 本地 Agent 读仓库后回群 |
 | 团队能力画像 | [`docs/project-management/team-capability-profile.md`](docs/project-management/team-capability-profile.md) |
 | 行业难点 | [`docs/agent-knowledge-base/industry-challenges.md`](docs/agent-knowledge-base/industry-challenges.md) |
 | 入门导读 | [`docs/agent-knowledge-base/onboarding-guide.md`](docs/agent-knowledge-base/onboarding-guide.md) |

@@ -5,12 +5,12 @@ import { loadBiSnapshot } from './data/load'
 import type { BiSnapshot } from './data/types'
 import { BiweeklyPage } from './pages/BiweeklyPage'
 import { BudgetPage } from './pages/BudgetPage'
-import { FeedbackPage } from './pages/FeedbackPage'
 import { KnowledgePage } from './pages/KnowledgePage'
 import { OpenDecisionsPage } from './pages/OpenDecisionsPage'
 import { OverviewPage } from './pages/OverviewPage'
 import { PlanPage } from './pages/PlanPage'
 import { TeamPage } from './pages/TeamPage'
+import { DetectPage } from './pages/DetectPage'
 
 export default function App() {
   const [data, setData] = useState<BiSnapshot | null>(null)
@@ -61,7 +61,8 @@ export default function App() {
         <Route path="team" element={<TeamPage data={data} />} />
         <Route path="knowledge" element={<KnowledgePage />} />
         <Route path="knowledge/:docId" element={<KnowledgePage />} />
-        <Route path="feedback" element={<FeedbackPage />} />
+        <Route path="feedback" element={<Navigate to="/" replace />} />
+        <Route path="detect" element={<DetectPage />} />
         <Route path="open-decisions" element={<OpenDecisionsPage />} />
         <Route path="biweekly" element={<BiweeklyPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />

@@ -18,6 +18,7 @@ export interface MilestoneTracking {
   operation_plan?: string
   notes?: string
   internal_stretch_note?: string
+  course_stages?: { id: string; name: string; date: string; end?: string }[]
   milestones: Milestone[]
 }
 
@@ -38,6 +39,13 @@ export interface MCoinBudget {
     ledger_threshold_m?: number
     reserve_approval?: string
     weekly_report_required?: boolean
+  }
+  per_capita?: {
+    headcount: number
+    amount: number
+    remainder_to_reserve: number
+    status: string
+    note: string
   }
 }
 
@@ -140,6 +148,7 @@ export interface Workstream {
   suggested_headcount: string
   critical_path: boolean
   responsibility: string
+  owners?: string[]
 }
 
 export interface WorkstreamsCatalog {

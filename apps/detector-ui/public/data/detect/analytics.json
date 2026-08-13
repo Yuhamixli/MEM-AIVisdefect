@@ -1,0 +1,2151 @@
+{
+  "schema_version": "1.0",
+  "source": "mock",
+  "updated_at": "2026-08-13T20:20:00+08:00",
+  "note": "mock 50 件演示集（含 4 件手搓叠加样例）；黄崇发真实样例到位后 npm run sync-results 替换",
+  "inspiration": [
+    "mrigankad/Ussop — industrial AOI KPI / Pareto / spatial scatter",
+    "Kiranism/next-shadcn-dashboard-starter — analytics card grid + table",
+    "hawkh/Chitti — pass/fail yield for NDT inspection"
+  ],
+  "image_size": [
+    3200,
+    1920
+  ],
+  "jobs": [
+    {
+      "piece_id": "P-20260718-001",
+      "batch_id": "B-mock-01",
+      "ts": "2026-07-18T14:02:00+08:00",
+      "faces": 2,
+      "defects": 2,
+      "review_status": "pending",
+      "max_confidence": 0.87,
+      "classes": [
+        "crack",
+        "bubble"
+      ],
+      "ng": true
+    },
+    {
+      "piece_id": "P-20260718-002",
+      "batch_id": "B-mock-01",
+      "ts": "2026-07-18T14:08:00+08:00",
+      "faces": 1,
+      "defects": 1,
+      "review_status": "confirmed",
+      "max_confidence": 0.91,
+      "classes": [
+        "scratch"
+      ],
+      "ng": true
+    },
+    {
+      "piece_id": "P-20260718-003",
+      "batch_id": "B-mock-01",
+      "ts": "2026-07-18T14:20:00+08:00",
+      "faces": 1,
+      "defects": 0,
+      "review_status": "pending",
+      "max_confidence": 0,
+      "classes": [],
+      "ng": false
+    },
+    {
+      "piece_id": "P-20260813-004",
+      "batch_id": "B-mock-02",
+      "ts": "2026-08-13T10:00:00+08:00",
+      "faces": 1,
+      "defects": 1,
+      "review_status": "pending",
+      "max_confidence": 0.66,
+      "classes": [
+        "scratch"
+      ],
+      "ng": true
+    },
+    {
+      "piece_id": "P-20260803-001",
+      "batch_id": "B-01",
+      "ts": "2026-08-03T13:49:00+08:00",
+      "faces": 1,
+      "defects": 0,
+      "review_status": "pending",
+      "max_confidence": 0,
+      "classes": [],
+      "ng": false
+    },
+    {
+      "piece_id": "P-20260801-002",
+      "batch_id": "B-01",
+      "ts": "2026-08-01T14:06:00+08:00",
+      "faces": 1,
+      "defects": 0,
+      "review_status": "pending",
+      "max_confidence": 0,
+      "classes": [],
+      "ng": false
+    },
+    {
+      "piece_id": "P-20260813-003",
+      "batch_id": "B-01",
+      "ts": "2026-08-13T09:36:00+08:00",
+      "faces": 1,
+      "defects": 2,
+      "review_status": "rejected",
+      "max_confidence": 0.77,
+      "classes": [
+        "bubble"
+      ],
+      "ng": true
+    },
+    {
+      "piece_id": "P-20260804-004",
+      "batch_id": "B-01",
+      "ts": "2026-08-04T14:32:00+08:00",
+      "faces": 1,
+      "defects": 0,
+      "review_status": "pending",
+      "max_confidence": 0,
+      "classes": [],
+      "ng": false
+    },
+    {
+      "piece_id": "P-20260806-005",
+      "batch_id": "B-01",
+      "ts": "2026-08-06T11:15:00+08:00",
+      "faces": 1,
+      "defects": 3,
+      "review_status": "pending",
+      "max_confidence": 0.93,
+      "classes": [
+        "bubble",
+        "crack"
+      ],
+      "ng": true
+    },
+    {
+      "piece_id": "P-20260813-006",
+      "batch_id": "B-01",
+      "ts": "2026-08-13T10:05:00+08:00",
+      "faces": 1,
+      "defects": 1,
+      "review_status": "confirmed",
+      "max_confidence": 0.82,
+      "classes": [
+        "contamination"
+      ],
+      "ng": true
+    },
+    {
+      "piece_id": "P-20260805-007",
+      "batch_id": "B-01",
+      "ts": "2026-08-05T13:59:00+08:00",
+      "faces": 1,
+      "defects": 1,
+      "review_status": "pending",
+      "max_confidence": 0.58,
+      "classes": [
+        "bubble"
+      ],
+      "ng": true
+    },
+    {
+      "piece_id": "P-20260807-008",
+      "batch_id": "B-01",
+      "ts": "2026-08-07T11:19:00+08:00",
+      "faces": 1,
+      "defects": 1,
+      "review_status": "pending",
+      "max_confidence": 0.61,
+      "classes": [
+        "bubble"
+      ],
+      "ng": true
+    },
+    {
+      "piece_id": "P-20260806-009",
+      "batch_id": "B-01",
+      "ts": "2026-08-06T11:59:00+08:00",
+      "faces": 1,
+      "defects": 0,
+      "review_status": "pending",
+      "max_confidence": 0,
+      "classes": [],
+      "ng": false
+    },
+    {
+      "piece_id": "P-20260811-010",
+      "batch_id": "B-01",
+      "ts": "2026-08-11T15:29:00+08:00",
+      "faces": 1,
+      "defects": 0,
+      "review_status": "pending",
+      "max_confidence": 0,
+      "classes": [],
+      "ng": false
+    },
+    {
+      "piece_id": "P-20260812-011",
+      "batch_id": "B-01",
+      "ts": "2026-08-12T14:21:00+08:00",
+      "faces": 1,
+      "defects": 2,
+      "review_status": "pending",
+      "max_confidence": 0.91,
+      "classes": [
+        "foreign_matter",
+        "whitening"
+      ],
+      "ng": true
+    },
+    {
+      "piece_id": "P-20260811-012",
+      "batch_id": "B-01",
+      "ts": "2026-08-11T16:57:00+08:00",
+      "faces": 1,
+      "defects": 0,
+      "review_status": "pending",
+      "max_confidence": 0,
+      "classes": [],
+      "ng": false
+    },
+    {
+      "piece_id": "P-20260804-013",
+      "batch_id": "B-01",
+      "ts": "2026-08-04T08:21:00+08:00",
+      "faces": 1,
+      "defects": 1,
+      "review_status": "pending",
+      "max_confidence": 0.94,
+      "classes": [
+        "missing_yarn"
+      ],
+      "ng": true
+    },
+    {
+      "piece_id": "P-20260806-014",
+      "batch_id": "B-01",
+      "ts": "2026-08-06T11:06:00+08:00",
+      "faces": 1,
+      "defects": 1,
+      "review_status": "rejected",
+      "max_confidence": 0.62,
+      "classes": [
+        "scratch"
+      ],
+      "ng": true
+    },
+    {
+      "piece_id": "P-20260807-015",
+      "batch_id": "B-01",
+      "ts": "2026-08-07T12:43:00+08:00",
+      "faces": 1,
+      "defects": 0,
+      "review_status": "pending",
+      "max_confidence": 0,
+      "classes": [],
+      "ng": false
+    },
+    {
+      "piece_id": "P-20260801-016",
+      "batch_id": "B-01",
+      "ts": "2026-08-01T14:41:00+08:00",
+      "faces": 1,
+      "defects": 3,
+      "review_status": "rejected",
+      "max_confidence": 0.94,
+      "classes": [
+        "scratch",
+        "crack",
+        "bubble"
+      ],
+      "ng": true
+    },
+    {
+      "piece_id": "P-20260808-017",
+      "batch_id": "B-01",
+      "ts": "2026-08-08T09:41:00+08:00",
+      "faces": 1,
+      "defects": 2,
+      "review_status": "rejected",
+      "max_confidence": 0.92,
+      "classes": [
+        "missing_yarn",
+        "scratch"
+      ],
+      "ng": true
+    },
+    {
+      "piece_id": "P-20260806-018",
+      "batch_id": "B-02",
+      "ts": "2026-08-06T13:03:00+08:00",
+      "faces": 1,
+      "defects": 3,
+      "review_status": "relabelled",
+      "max_confidence": 0.88,
+      "classes": [
+        "crack",
+        "contamination"
+      ],
+      "ng": true
+    },
+    {
+      "piece_id": "P-20260801-019",
+      "batch_id": "B-02",
+      "ts": "2026-08-01T16:44:00+08:00",
+      "faces": 1,
+      "defects": 0,
+      "review_status": "pending",
+      "max_confidence": 0,
+      "classes": [],
+      "ng": false
+    },
+    {
+      "piece_id": "P-20260808-020",
+      "batch_id": "B-02",
+      "ts": "2026-08-08T12:23:00+08:00",
+      "faces": 1,
+      "defects": 0,
+      "review_status": "pending",
+      "max_confidence": 0,
+      "classes": [],
+      "ng": false
+    },
+    {
+      "piece_id": "P-20260729-021",
+      "batch_id": "B-02",
+      "ts": "2026-07-29T14:29:00+08:00",
+      "faces": 1,
+      "defects": 0,
+      "review_status": "pending",
+      "max_confidence": 0,
+      "classes": [],
+      "ng": false
+    },
+    {
+      "piece_id": "P-20260730-022",
+      "batch_id": "B-02",
+      "ts": "2026-07-30T14:55:00+08:00",
+      "faces": 1,
+      "defects": 1,
+      "review_status": "rejected",
+      "max_confidence": 0.59,
+      "classes": [
+        "scratch"
+      ],
+      "ng": true
+    },
+    {
+      "piece_id": "P-20260803-023",
+      "batch_id": "B-02",
+      "ts": "2026-08-03T17:34:00+08:00",
+      "faces": 1,
+      "defects": 2,
+      "review_status": "pending",
+      "max_confidence": 0.99,
+      "classes": [
+        "bubble",
+        "crack"
+      ],
+      "ng": true
+    },
+    {
+      "piece_id": "P-20260810-024",
+      "batch_id": "B-02",
+      "ts": "2026-08-10T13:48:00+08:00",
+      "faces": 1,
+      "defects": 3,
+      "review_status": "pending",
+      "max_confidence": 0.66,
+      "classes": [
+        "crack"
+      ],
+      "ng": true
+    },
+    {
+      "piece_id": "P-20260806-025",
+      "batch_id": "B-02",
+      "ts": "2026-08-06T15:40:00+08:00",
+      "faces": 1,
+      "defects": 0,
+      "review_status": "pending",
+      "max_confidence": 0,
+      "classes": [],
+      "ng": false
+    },
+    {
+      "piece_id": "P-20260803-026",
+      "batch_id": "B-02",
+      "ts": "2026-08-03T16:21:00+08:00",
+      "faces": 1,
+      "defects": 0,
+      "review_status": "pending",
+      "max_confidence": 0,
+      "classes": [],
+      "ng": false
+    },
+    {
+      "piece_id": "P-20260813-027",
+      "batch_id": "B-02",
+      "ts": "2026-08-13T12:55:00+08:00",
+      "faces": 1,
+      "defects": 3,
+      "review_status": "relabelled",
+      "max_confidence": 0.83,
+      "classes": [
+        "bubble",
+        "foreign_matter",
+        "crack"
+      ],
+      "ng": true
+    },
+    {
+      "piece_id": "P-20260731-028",
+      "batch_id": "B-02",
+      "ts": "2026-07-31T12:56:00+08:00",
+      "faces": 1,
+      "defects": 0,
+      "review_status": "pending",
+      "max_confidence": 0,
+      "classes": [],
+      "ng": false
+    },
+    {
+      "piece_id": "P-20260813-029",
+      "batch_id": "B-02",
+      "ts": "2026-08-13T11:54:00+08:00",
+      "faces": 1,
+      "defects": 1,
+      "review_status": "pending",
+      "max_confidence": 0.72,
+      "classes": [
+        "crack"
+      ],
+      "ng": true
+    },
+    {
+      "piece_id": "P-20260803-030",
+      "batch_id": "B-02",
+      "ts": "2026-08-03T15:40:00+08:00",
+      "faces": 1,
+      "defects": 1,
+      "review_status": "rejected",
+      "max_confidence": 0.62,
+      "classes": [
+        "scratch"
+      ],
+      "ng": true
+    },
+    {
+      "piece_id": "P-20260806-031",
+      "batch_id": "B-02",
+      "ts": "2026-08-06T10:45:00+08:00",
+      "faces": 1,
+      "defects": 3,
+      "review_status": "pending",
+      "max_confidence": 0.92,
+      "classes": [
+        "missing_yarn",
+        "scratch",
+        "whitening"
+      ],
+      "ng": true
+    },
+    {
+      "piece_id": "P-20260730-032",
+      "batch_id": "B-02",
+      "ts": "2026-07-30T09:43:00+08:00",
+      "faces": 1,
+      "defects": 0,
+      "review_status": "pending",
+      "max_confidence": 0,
+      "classes": [],
+      "ng": false
+    },
+    {
+      "piece_id": "P-20260801-033",
+      "batch_id": "B-02",
+      "ts": "2026-08-01T15:53:00+08:00",
+      "faces": 1,
+      "defects": 3,
+      "review_status": "pending",
+      "max_confidence": 0.93,
+      "classes": [
+        "bubble",
+        "crack",
+        "foreign_matter"
+      ],
+      "ng": true
+    },
+    {
+      "piece_id": "P-20260730-034",
+      "batch_id": "B-02",
+      "ts": "2026-07-30T10:20:00+08:00",
+      "faces": 1,
+      "defects": 2,
+      "review_status": "rejected",
+      "max_confidence": 0.91,
+      "classes": [
+        "crack",
+        "whitening"
+      ],
+      "ng": true
+    },
+    {
+      "piece_id": "P-20260805-035",
+      "batch_id": "B-02",
+      "ts": "2026-08-05T08:24:00+08:00",
+      "faces": 1,
+      "defects": 1,
+      "review_status": "confirmed",
+      "max_confidence": 0.78,
+      "classes": [
+        "contamination"
+      ],
+      "ng": true
+    },
+    {
+      "piece_id": "P-20260806-036",
+      "batch_id": "B-03",
+      "ts": "2026-08-06T15:22:00+08:00",
+      "faces": 1,
+      "defects": 3,
+      "review_status": "relabelled",
+      "max_confidence": 0.93,
+      "classes": [
+        "crack",
+        "whitening",
+        "bubble"
+      ],
+      "ng": true
+    },
+    {
+      "piece_id": "P-20260811-037",
+      "batch_id": "B-03",
+      "ts": "2026-08-11T15:39:00+08:00",
+      "faces": 1,
+      "defects": 0,
+      "review_status": "pending",
+      "max_confidence": 0,
+      "classes": [],
+      "ng": false
+    },
+    {
+      "piece_id": "P-20260729-038",
+      "batch_id": "B-03",
+      "ts": "2026-07-29T16:37:00+08:00",
+      "faces": 1,
+      "defects": 0,
+      "review_status": "pending",
+      "max_confidence": 0,
+      "classes": [],
+      "ng": false
+    },
+    {
+      "piece_id": "P-20260811-039",
+      "batch_id": "B-03",
+      "ts": "2026-08-11T17:03:00+08:00",
+      "faces": 1,
+      "defects": 0,
+      "review_status": "pending",
+      "max_confidence": 0,
+      "classes": [],
+      "ng": false
+    },
+    {
+      "piece_id": "P-20260728-040",
+      "batch_id": "B-03",
+      "ts": "2026-07-28T08:38:00+08:00",
+      "faces": 1,
+      "defects": 2,
+      "review_status": "pending",
+      "max_confidence": 0.85,
+      "classes": [
+        "whitening",
+        "crack"
+      ],
+      "ng": true
+    },
+    {
+      "piece_id": "P-20260805-041",
+      "batch_id": "B-03",
+      "ts": "2026-08-05T13:27:00+08:00",
+      "faces": 1,
+      "defects": 1,
+      "review_status": "confirmed",
+      "max_confidence": 0.82,
+      "classes": [
+        "bubble"
+      ],
+      "ng": true
+    },
+    {
+      "piece_id": "P-20260731-042",
+      "batch_id": "B-03",
+      "ts": "2026-07-31T09:10:00+08:00",
+      "faces": 1,
+      "defects": 3,
+      "review_status": "pending",
+      "max_confidence": 0.77,
+      "classes": [
+        "missing_yarn",
+        "whitening"
+      ],
+      "ng": true
+    },
+    {
+      "piece_id": "P-20260813-043",
+      "batch_id": "B-03",
+      "ts": "2026-08-13T12:57:00+08:00",
+      "faces": 1,
+      "defects": 1,
+      "review_status": "confirmed",
+      "max_confidence": 0.73,
+      "classes": [
+        "scratch"
+      ],
+      "ng": true
+    },
+    {
+      "piece_id": "P-20260810-044",
+      "batch_id": "B-03",
+      "ts": "2026-08-10T16:54:00+08:00",
+      "faces": 1,
+      "defects": 0,
+      "review_status": "pending",
+      "max_confidence": 0,
+      "classes": [],
+      "ng": false
+    },
+    {
+      "piece_id": "P-20260806-045",
+      "batch_id": "B-03",
+      "ts": "2026-08-06T10:24:00+08:00",
+      "faces": 1,
+      "defects": 3,
+      "review_status": "pending",
+      "max_confidence": 0.94,
+      "classes": [
+        "crack",
+        "bubble",
+        "missing_yarn"
+      ],
+      "ng": true
+    },
+    {
+      "piece_id": "P-20260804-046",
+      "batch_id": "B-03",
+      "ts": "2026-08-04T17:01:00+08:00",
+      "faces": 1,
+      "defects": 1,
+      "review_status": "rejected",
+      "max_confidence": 0.55,
+      "classes": [
+        "scratch"
+      ],
+      "ng": true
+    },
+    {
+      "piece_id": "P-20260729-047",
+      "batch_id": "B-03",
+      "ts": "2026-07-29T17:58:00+08:00",
+      "faces": 1,
+      "defects": 3,
+      "review_status": "relabelled",
+      "max_confidence": 0.93,
+      "classes": [
+        "whitening",
+        "scratch",
+        "bubble"
+      ],
+      "ng": true
+    },
+    {
+      "piece_id": "P-20260802-048",
+      "batch_id": "B-03",
+      "ts": "2026-08-02T17:35:00+08:00",
+      "faces": 1,
+      "defects": 0,
+      "review_status": "pending",
+      "max_confidence": 0,
+      "classes": [],
+      "ng": false
+    },
+    {
+      "piece_id": "P-20260808-049",
+      "batch_id": "B-03",
+      "ts": "2026-08-08T15:00:00+08:00",
+      "faces": 1,
+      "defects": 0,
+      "review_status": "pending",
+      "max_confidence": 0,
+      "classes": [],
+      "ng": false
+    },
+    {
+      "piece_id": "P-20260802-050",
+      "batch_id": "B-03",
+      "ts": "2026-08-02T16:27:00+08:00",
+      "faces": 1,
+      "defects": 2,
+      "review_status": "pending",
+      "max_confidence": 0.76,
+      "classes": [
+        "whitening",
+        "contamination"
+      ],
+      "ng": true
+    }
+  ],
+  "defects": [
+    {
+      "piece_id": "P-20260718-001",
+      "batch_id": "B-mock-01",
+      "face": "top",
+      "ts": "2026-07-18T14:02:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "pending",
+      "ok": false,
+      "defect_id": "d-001",
+      "slug": "crack",
+      "class_name": "裂纹",
+      "bbox": [
+        812,
+        340,
+        220,
+        80
+      ],
+      "cx": 922,
+      "cy": 380,
+      "confidence": 0.87,
+      "severity": "medium",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260718-001",
+      "batch_id": "B-mock-01",
+      "face": "top",
+      "ts": "2026-07-18T14:02:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "pending",
+      "ok": false,
+      "defect_id": "d-002",
+      "slug": "bubble",
+      "class_name": "气泡",
+      "bbox": [
+        1600,
+        900,
+        140,
+        140
+      ],
+      "cx": 1670,
+      "cy": 970,
+      "confidence": 0.42,
+      "severity": "low",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260718-002",
+      "batch_id": "B-mock-01",
+      "face": "top",
+      "ts": "2026-07-18T14:08:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "confirmed",
+      "ok": false,
+      "defect_id": "d-010",
+      "slug": "scratch",
+      "class_name": "划伤",
+      "bbox": [
+        400,
+        700,
+        480,
+        60
+      ],
+      "cx": 640,
+      "cy": 730,
+      "confidence": 0.91,
+      "review_status": "confirmed"
+    },
+    {
+      "piece_id": "P-20260813-004",
+      "batch_id": "B-mock-02",
+      "face": "top",
+      "ts": "2026-08-13T10:00:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "pending",
+      "ok": false,
+      "defect_id": "d-020",
+      "slug": "scratch",
+      "class_name": "划伤",
+      "bbox": [
+        400,
+        700,
+        480,
+        60
+      ],
+      "cx": 640,
+      "cy": 730,
+      "confidence": 0.66,
+      "severity": "medium",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260813-003",
+      "batch_id": "B-01",
+      "face": "top",
+      "ts": "2026-08-13T09:36:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "rejected",
+      "ok": false,
+      "defect_id": "d-001",
+      "slug": "bubble",
+      "class_name": "气泡",
+      "bbox": [
+        757,
+        1087,
+        166,
+        78
+      ],
+      "cx": 840,
+      "cy": 1126,
+      "confidence": 0.77,
+      "severity": "high",
+      "review_status": "rejected"
+    },
+    {
+      "piece_id": "P-20260813-003",
+      "batch_id": "B-01",
+      "face": "top",
+      "ts": "2026-08-13T09:36:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "rejected",
+      "ok": false,
+      "defect_id": "d-002",
+      "slug": "bubble",
+      "class_name": "气泡",
+      "bbox": [
+        2011,
+        757,
+        218,
+        31
+      ],
+      "cx": 2120,
+      "cy": 772.5,
+      "confidence": 0.64,
+      "severity": "high",
+      "review_status": "confirmed"
+    },
+    {
+      "piece_id": "P-20260806-005",
+      "batch_id": "B-01",
+      "face": "top",
+      "ts": "2026-08-06T11:15:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "pending",
+      "ok": false,
+      "defect_id": "d-001",
+      "slug": "bubble",
+      "class_name": "气泡",
+      "bbox": [
+        1917,
+        822,
+        216,
+        55
+      ],
+      "cx": 2025,
+      "cy": 849.5,
+      "confidence": 0.65,
+      "severity": "high",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260806-005",
+      "batch_id": "B-01",
+      "face": "top",
+      "ts": "2026-08-06T11:15:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "pending",
+      "ok": false,
+      "defect_id": "d-002",
+      "slug": "bubble",
+      "class_name": "气泡",
+      "bbox": [
+        1448,
+        1195,
+        149,
+        33
+      ],
+      "cx": 1522.5,
+      "cy": 1211.5,
+      "confidence": 0.89,
+      "severity": "high",
+      "review_status": "confirmed"
+    },
+    {
+      "piece_id": "P-20260806-005",
+      "batch_id": "B-01",
+      "face": "top",
+      "ts": "2026-08-06T11:15:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "pending",
+      "ok": false,
+      "defect_id": "d-003",
+      "slug": "crack",
+      "class_name": "裂纹",
+      "bbox": [
+        2547,
+        974,
+        199,
+        44
+      ],
+      "cx": 2646.5,
+      "cy": 996,
+      "confidence": 0.93,
+      "severity": "high",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260813-006",
+      "batch_id": "B-01",
+      "face": "top",
+      "ts": "2026-08-13T10:05:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "confirmed",
+      "ok": false,
+      "defect_id": "d-001",
+      "slug": "contamination",
+      "class_name": "脏污",
+      "bbox": [
+        3003,
+        1019,
+        252,
+        33
+      ],
+      "cx": 3129,
+      "cy": 1035.5,
+      "confidence": 0.82,
+      "severity": "low",
+      "review_status": "confirmed"
+    },
+    {
+      "piece_id": "P-20260805-007",
+      "batch_id": "B-01",
+      "face": "top",
+      "ts": "2026-08-05T13:59:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "pending",
+      "ok": false,
+      "defect_id": "d-001",
+      "slug": "bubble",
+      "class_name": "气泡",
+      "bbox": [
+        1636,
+        994,
+        136,
+        72
+      ],
+      "cx": 1704,
+      "cy": 1030,
+      "confidence": 0.58,
+      "severity": "high",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260807-008",
+      "batch_id": "B-01",
+      "face": "top",
+      "ts": "2026-08-07T11:19:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "pending",
+      "ok": false,
+      "defect_id": "d-001",
+      "slug": "bubble",
+      "class_name": "气泡",
+      "bbox": [
+        2442,
+        847,
+        90,
+        57
+      ],
+      "cx": 2487,
+      "cy": 875.5,
+      "confidence": 0.61,
+      "severity": "high",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260812-011",
+      "batch_id": "B-01",
+      "face": "bottom",
+      "ts": "2026-08-12T14:21:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "pending",
+      "ok": false,
+      "defect_id": "d-001",
+      "slug": "foreign_matter",
+      "class_name": "异物",
+      "bbox": [
+        295,
+        798,
+        179,
+        30
+      ],
+      "cx": 384.5,
+      "cy": 813,
+      "confidence": 0.91,
+      "severity": "medium",
+      "review_status": "confirmed"
+    },
+    {
+      "piece_id": "P-20260812-011",
+      "batch_id": "B-01",
+      "face": "bottom",
+      "ts": "2026-08-12T14:21:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "pending",
+      "ok": false,
+      "defect_id": "d-002",
+      "slug": "whitening",
+      "class_name": "发白",
+      "bbox": [
+        2858,
+        1011,
+        247,
+        53
+      ],
+      "cx": 2981.5,
+      "cy": 1037.5,
+      "confidence": 0.64,
+      "severity": "medium",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260804-013",
+      "batch_id": "B-01",
+      "face": "top",
+      "ts": "2026-08-04T08:21:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "pending",
+      "ok": false,
+      "defect_id": "d-001",
+      "slug": "missing_yarn",
+      "class_name": "缺纱",
+      "bbox": [
+        887,
+        1083,
+        209,
+        24
+      ],
+      "cx": 991.5,
+      "cy": 1095,
+      "confidence": 0.94,
+      "severity": "medium",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260806-014",
+      "batch_id": "B-01",
+      "face": "top",
+      "ts": "2026-08-06T11:06:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "rejected",
+      "ok": false,
+      "defect_id": "d-001",
+      "slug": "scratch",
+      "class_name": "划伤",
+      "bbox": [
+        513,
+        964,
+        86,
+        82
+      ],
+      "cx": 556,
+      "cy": 1005,
+      "confidence": 0.62,
+      "severity": "medium",
+      "review_status": "rejected"
+    },
+    {
+      "piece_id": "P-20260801-016",
+      "batch_id": "B-01",
+      "face": "bottom",
+      "ts": "2026-08-01T14:41:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "rejected",
+      "ok": false,
+      "defect_id": "d-001",
+      "slug": "scratch",
+      "class_name": "划伤",
+      "bbox": [
+        198,
+        1124,
+        146,
+        52
+      ],
+      "cx": 271,
+      "cy": 1150,
+      "confidence": 0.94,
+      "severity": "medium",
+      "review_status": "rejected"
+    },
+    {
+      "piece_id": "P-20260801-016",
+      "batch_id": "B-01",
+      "face": "bottom",
+      "ts": "2026-08-01T14:41:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "rejected",
+      "ok": false,
+      "defect_id": "d-002",
+      "slug": "crack",
+      "class_name": "裂纹",
+      "bbox": [
+        329,
+        1006,
+        177,
+        38
+      ],
+      "cx": 417.5,
+      "cy": 1025,
+      "confidence": 0.84,
+      "severity": "high",
+      "review_status": "rejected"
+    },
+    {
+      "piece_id": "P-20260801-016",
+      "batch_id": "B-01",
+      "face": "bottom",
+      "ts": "2026-08-01T14:41:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "rejected",
+      "ok": false,
+      "defect_id": "d-003",
+      "slug": "bubble",
+      "class_name": "气泡",
+      "bbox": [
+        2391,
+        819,
+        222,
+        63
+      ],
+      "cx": 2502,
+      "cy": 850.5,
+      "confidence": 0.8,
+      "severity": "high",
+      "review_status": "confirmed"
+    },
+    {
+      "piece_id": "P-20260808-017",
+      "batch_id": "B-01",
+      "face": "top",
+      "ts": "2026-08-08T09:41:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "rejected",
+      "ok": false,
+      "defect_id": "d-001",
+      "slug": "missing_yarn",
+      "class_name": "缺纱",
+      "bbox": [
+        1602,
+        1017,
+        166,
+        18
+      ],
+      "cx": 1685,
+      "cy": 1026,
+      "confidence": 0.92,
+      "severity": "medium",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260808-017",
+      "batch_id": "B-01",
+      "face": "top",
+      "ts": "2026-08-08T09:41:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "rejected",
+      "ok": false,
+      "defect_id": "d-002",
+      "slug": "scratch",
+      "class_name": "划伤",
+      "bbox": [
+        2222,
+        944,
+        212,
+        60
+      ],
+      "cx": 2328,
+      "cy": 974,
+      "confidence": 0.83,
+      "severity": "medium",
+      "review_status": "rejected"
+    },
+    {
+      "piece_id": "P-20260806-018",
+      "batch_id": "B-02",
+      "face": "bottom",
+      "ts": "2026-08-06T13:03:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "relabelled",
+      "ok": false,
+      "defect_id": "d-001",
+      "slug": "crack",
+      "class_name": "裂纹",
+      "bbox": [
+        2723,
+        1128,
+        110,
+        89
+      ],
+      "cx": 2778,
+      "cy": 1172.5,
+      "confidence": 0.66,
+      "severity": "high",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260806-018",
+      "batch_id": "B-02",
+      "face": "bottom",
+      "ts": "2026-08-06T13:03:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "relabelled",
+      "ok": false,
+      "defect_id": "d-002",
+      "slug": "contamination",
+      "class_name": "脏污",
+      "bbox": [
+        1666,
+        788,
+        171,
+        107
+      ],
+      "cx": 1751.5,
+      "cy": 841.5,
+      "confidence": 0.62,
+      "severity": "low",
+      "review_status": "relabelled"
+    },
+    {
+      "piece_id": "P-20260806-018",
+      "batch_id": "B-02",
+      "face": "bottom",
+      "ts": "2026-08-06T13:03:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "relabelled",
+      "ok": false,
+      "defect_id": "d-003",
+      "slug": "crack",
+      "class_name": "裂纹",
+      "bbox": [
+        3004,
+        1135,
+        71,
+        105
+      ],
+      "cx": 3039.5,
+      "cy": 1187.5,
+      "confidence": 0.88,
+      "severity": "high",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260730-022",
+      "batch_id": "B-02",
+      "face": "top",
+      "ts": "2026-07-30T14:55:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "rejected",
+      "ok": false,
+      "defect_id": "d-001",
+      "slug": "scratch",
+      "class_name": "划伤",
+      "bbox": [
+        1278,
+        969,
+        89,
+        27
+      ],
+      "cx": 1322.5,
+      "cy": 982.5,
+      "confidence": 0.59,
+      "severity": "medium",
+      "review_status": "rejected"
+    },
+    {
+      "piece_id": "P-20260803-023",
+      "batch_id": "B-02",
+      "face": "top",
+      "ts": "2026-08-03T17:34:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "pending",
+      "ok": false,
+      "defect_id": "d-001",
+      "slug": "bubble",
+      "class_name": "气泡",
+      "bbox": [
+        1268,
+        904,
+        112,
+        41
+      ],
+      "cx": 1324,
+      "cy": 924.5,
+      "confidence": 0.68,
+      "severity": "high",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260803-023",
+      "batch_id": "B-02",
+      "face": "top",
+      "ts": "2026-08-03T17:34:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "pending",
+      "ok": false,
+      "defect_id": "d-002",
+      "slug": "crack",
+      "class_name": "裂纹",
+      "bbox": [
+        2145,
+        884,
+        42,
+        35
+      ],
+      "cx": 2166,
+      "cy": 901.5,
+      "confidence": 0.99,
+      "severity": "high",
+      "review_status": "confirmed"
+    },
+    {
+      "piece_id": "P-20260810-024",
+      "batch_id": "B-02",
+      "face": "bottom",
+      "ts": "2026-08-10T13:48:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "pending",
+      "ok": false,
+      "defect_id": "d-001",
+      "slug": "crack",
+      "class_name": "裂纹",
+      "bbox": [
+        2883,
+        1121,
+        198,
+        77
+      ],
+      "cx": 2982,
+      "cy": 1159.5,
+      "confidence": 0.59,
+      "severity": "high",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260810-024",
+      "batch_id": "B-02",
+      "face": "bottom",
+      "ts": "2026-08-10T13:48:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "pending",
+      "ok": false,
+      "defect_id": "d-002",
+      "slug": "crack",
+      "class_name": "裂纹",
+      "bbox": [
+        2702,
+        1164,
+        152,
+        57
+      ],
+      "cx": 2778,
+      "cy": 1192.5,
+      "confidence": 0.63,
+      "severity": "high",
+      "review_status": "confirmed"
+    },
+    {
+      "piece_id": "P-20260810-024",
+      "batch_id": "B-02",
+      "face": "bottom",
+      "ts": "2026-08-10T13:48:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "pending",
+      "ok": false,
+      "defect_id": "d-003",
+      "slug": "crack",
+      "class_name": "裂纹",
+      "bbox": [
+        1978,
+        748,
+        122,
+        100
+      ],
+      "cx": 2039,
+      "cy": 798,
+      "confidence": 0.66,
+      "severity": "high",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260813-027",
+      "batch_id": "B-02",
+      "face": "bottom",
+      "ts": "2026-08-13T12:55:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "relabelled",
+      "ok": false,
+      "defect_id": "d-001",
+      "slug": "bubble",
+      "class_name": "气泡",
+      "bbox": [
+        2795,
+        955,
+        183,
+        73
+      ],
+      "cx": 2886.5,
+      "cy": 991.5,
+      "confidence": 0.83,
+      "severity": "high",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260813-027",
+      "batch_id": "B-02",
+      "face": "bottom",
+      "ts": "2026-08-13T12:55:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "relabelled",
+      "ok": false,
+      "defect_id": "d-002",
+      "slug": "foreign_matter",
+      "class_name": "异物",
+      "bbox": [
+        2131,
+        1031,
+        229,
+        61
+      ],
+      "cx": 2245.5,
+      "cy": 1061.5,
+      "confidence": 0.83,
+      "severity": "medium",
+      "review_status": "relabelled"
+    },
+    {
+      "piece_id": "P-20260813-027",
+      "batch_id": "B-02",
+      "face": "bottom",
+      "ts": "2026-08-13T12:55:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "relabelled",
+      "ok": false,
+      "defect_id": "d-003",
+      "slug": "crack",
+      "class_name": "裂纹",
+      "bbox": [
+        751,
+        1192,
+        134,
+        68
+      ],
+      "cx": 818,
+      "cy": 1226,
+      "confidence": 0.58,
+      "severity": "high",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260813-029",
+      "batch_id": "B-02",
+      "face": "top",
+      "ts": "2026-08-13T11:54:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "pending",
+      "ok": false,
+      "defect_id": "d-001",
+      "slug": "crack",
+      "class_name": "裂纹",
+      "bbox": [
+        1635,
+        1029,
+        139,
+        38
+      ],
+      "cx": 1704.5,
+      "cy": 1048,
+      "confidence": 0.72,
+      "severity": "high",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260803-030",
+      "batch_id": "B-02",
+      "face": "bottom",
+      "ts": "2026-08-03T15:40:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "rejected",
+      "ok": false,
+      "defect_id": "d-001",
+      "slug": "scratch",
+      "class_name": "划伤",
+      "bbox": [
+        208,
+        1196,
+        202,
+        72
+      ],
+      "cx": 309,
+      "cy": 1232,
+      "confidence": 0.62,
+      "severity": "medium",
+      "review_status": "rejected"
+    },
+    {
+      "piece_id": "P-20260806-031",
+      "batch_id": "B-02",
+      "face": "bottom",
+      "ts": "2026-08-06T10:45:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "pending",
+      "ok": false,
+      "defect_id": "d-001",
+      "slug": "missing_yarn",
+      "class_name": "缺纱",
+      "bbox": [
+        1016,
+        846,
+        112,
+        73
+      ],
+      "cx": 1072,
+      "cy": 882.5,
+      "confidence": 0.57,
+      "severity": "medium",
+      "review_status": "confirmed"
+    },
+    {
+      "piece_id": "P-20260806-031",
+      "batch_id": "B-02",
+      "face": "bottom",
+      "ts": "2026-08-06T10:45:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "pending",
+      "ok": false,
+      "defect_id": "d-002",
+      "slug": "scratch",
+      "class_name": "划伤",
+      "bbox": [
+        2607,
+        843,
+        118,
+        89
+      ],
+      "cx": 2666,
+      "cy": 887.5,
+      "confidence": 0.92,
+      "severity": "medium",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260806-031",
+      "batch_id": "B-02",
+      "face": "bottom",
+      "ts": "2026-08-06T10:45:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "pending",
+      "ok": false,
+      "defect_id": "d-003",
+      "slug": "whitening",
+      "class_name": "发白",
+      "bbox": [
+        1639,
+        1195,
+        170,
+        54
+      ],
+      "cx": 1724,
+      "cy": 1222,
+      "confidence": 0.73,
+      "severity": "medium",
+      "review_status": "confirmed"
+    },
+    {
+      "piece_id": "P-20260801-033",
+      "batch_id": "B-02",
+      "face": "top",
+      "ts": "2026-08-01T15:53:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "pending",
+      "ok": false,
+      "defect_id": "d-001",
+      "slug": "bubble",
+      "class_name": "气泡",
+      "bbox": [
+        1126,
+        1112,
+        165,
+        62
+      ],
+      "cx": 1208.5,
+      "cy": 1143,
+      "confidence": 0.93,
+      "severity": "high",
+      "review_status": "confirmed"
+    },
+    {
+      "piece_id": "P-20260801-033",
+      "batch_id": "B-02",
+      "face": "top",
+      "ts": "2026-08-01T15:53:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "pending",
+      "ok": false,
+      "defect_id": "d-002",
+      "slug": "crack",
+      "class_name": "裂纹",
+      "bbox": [
+        2528,
+        1166,
+        253,
+        85
+      ],
+      "cx": 2654.5,
+      "cy": 1208.5,
+      "confidence": 0.66,
+      "severity": "high",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260801-033",
+      "batch_id": "B-02",
+      "face": "top",
+      "ts": "2026-08-01T15:53:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "pending",
+      "ok": false,
+      "defect_id": "d-003",
+      "slug": "foreign_matter",
+      "class_name": "异物",
+      "bbox": [
+        636,
+        1152,
+        174,
+        94
+      ],
+      "cx": 723,
+      "cy": 1199,
+      "confidence": 0.93,
+      "severity": "medium",
+      "review_status": "confirmed"
+    },
+    {
+      "piece_id": "P-20260730-034",
+      "batch_id": "B-02",
+      "face": "top",
+      "ts": "2026-07-30T10:20:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "rejected",
+      "ok": false,
+      "defect_id": "d-001",
+      "slug": "crack",
+      "class_name": "裂纹",
+      "bbox": [
+        1413,
+        951,
+        223,
+        33
+      ],
+      "cx": 1524.5,
+      "cy": 967.5,
+      "confidence": 0.91,
+      "severity": "high",
+      "review_status": "confirmed"
+    },
+    {
+      "piece_id": "P-20260730-034",
+      "batch_id": "B-02",
+      "face": "top",
+      "ts": "2026-07-30T10:20:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "rejected",
+      "ok": false,
+      "defect_id": "d-002",
+      "slug": "whitening",
+      "class_name": "发白",
+      "bbox": [
+        1876,
+        909,
+        175,
+        76
+      ],
+      "cx": 1963.5,
+      "cy": 947,
+      "confidence": 0.6,
+      "severity": "medium",
+      "review_status": "rejected"
+    },
+    {
+      "piece_id": "P-20260805-035",
+      "batch_id": "B-02",
+      "face": "bottom",
+      "ts": "2026-08-05T08:24:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "confirmed",
+      "ok": false,
+      "defect_id": "d-001",
+      "slug": "contamination",
+      "class_name": "脏污",
+      "bbox": [
+        1725,
+        1020,
+        89,
+        108
+      ],
+      "cx": 1769.5,
+      "cy": 1074,
+      "confidence": 0.78,
+      "severity": "low",
+      "review_status": "confirmed"
+    },
+    {
+      "piece_id": "P-20260806-036",
+      "batch_id": "B-03",
+      "face": "top",
+      "ts": "2026-08-06T15:22:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "relabelled",
+      "ok": false,
+      "defect_id": "d-001",
+      "slug": "crack",
+      "class_name": "裂纹",
+      "bbox": [
+        1393,
+        835,
+        249,
+        84
+      ],
+      "cx": 1517.5,
+      "cy": 877,
+      "confidence": 0.73,
+      "severity": "high",
+      "review_status": "relabelled"
+    },
+    {
+      "piece_id": "P-20260806-036",
+      "batch_id": "B-03",
+      "face": "top",
+      "ts": "2026-08-06T15:22:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "relabelled",
+      "ok": false,
+      "defect_id": "d-002",
+      "slug": "whitening",
+      "class_name": "发白",
+      "bbox": [
+        2043,
+        1048,
+        257,
+        46
+      ],
+      "cx": 2171.5,
+      "cy": 1071,
+      "confidence": 0.93,
+      "severity": "medium",
+      "review_status": "relabelled"
+    },
+    {
+      "piece_id": "P-20260806-036",
+      "batch_id": "B-03",
+      "face": "top",
+      "ts": "2026-08-06T15:22:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "relabelled",
+      "ok": false,
+      "defect_id": "d-003",
+      "slug": "bubble",
+      "class_name": "气泡",
+      "bbox": [
+        1243,
+        743,
+        102,
+        99
+      ],
+      "cx": 1294,
+      "cy": 792.5,
+      "confidence": 0.91,
+      "severity": "high",
+      "review_status": "relabelled"
+    },
+    {
+      "piece_id": "P-20260728-040",
+      "batch_id": "B-03",
+      "face": "bottom",
+      "ts": "2026-07-28T08:38:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "pending",
+      "ok": false,
+      "defect_id": "d-001",
+      "slug": "whitening",
+      "class_name": "发白",
+      "bbox": [
+        1069,
+        759,
+        91,
+        82
+      ],
+      "cx": 1114.5,
+      "cy": 800,
+      "confidence": 0.53,
+      "severity": "medium",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260728-040",
+      "batch_id": "B-03",
+      "face": "bottom",
+      "ts": "2026-07-28T08:38:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "pending",
+      "ok": false,
+      "defect_id": "d-002",
+      "slug": "crack",
+      "class_name": "裂纹",
+      "bbox": [
+        1766,
+        813,
+        252,
+        97
+      ],
+      "cx": 1892,
+      "cy": 861.5,
+      "confidence": 0.85,
+      "severity": "high",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260805-041",
+      "batch_id": "B-03",
+      "face": "top",
+      "ts": "2026-08-05T13:27:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "confirmed",
+      "ok": false,
+      "defect_id": "d-001",
+      "slug": "bubble",
+      "class_name": "气泡",
+      "bbox": [
+        2314,
+        825,
+        209,
+        70
+      ],
+      "cx": 2418.5,
+      "cy": 860,
+      "confidence": 0.82,
+      "severity": "high",
+      "review_status": "confirmed"
+    },
+    {
+      "piece_id": "P-20260731-042",
+      "batch_id": "B-03",
+      "face": "bottom",
+      "ts": "2026-07-31T09:10:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "pending",
+      "ok": false,
+      "defect_id": "d-001",
+      "slug": "missing_yarn",
+      "class_name": "缺纱",
+      "bbox": [
+        267,
+        995,
+        104,
+        41
+      ],
+      "cx": 319,
+      "cy": 1015.5,
+      "confidence": 0.77,
+      "severity": "medium",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260731-042",
+      "batch_id": "B-03",
+      "face": "bottom",
+      "ts": "2026-07-31T09:10:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "pending",
+      "ok": false,
+      "defect_id": "d-002",
+      "slug": "missing_yarn",
+      "class_name": "缺纱",
+      "bbox": [
+        794,
+        1038,
+        41,
+        82
+      ],
+      "cx": 814.5,
+      "cy": 1079,
+      "confidence": 0.63,
+      "severity": "medium",
+      "review_status": "confirmed"
+    },
+    {
+      "piece_id": "P-20260731-042",
+      "batch_id": "B-03",
+      "face": "bottom",
+      "ts": "2026-07-31T09:10:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "pending",
+      "ok": false,
+      "defect_id": "d-003",
+      "slug": "whitening",
+      "class_name": "发白",
+      "bbox": [
+        2293,
+        1046,
+        112,
+        26
+      ],
+      "cx": 2349,
+      "cy": 1059,
+      "confidence": 0.58,
+      "severity": "medium",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260813-043",
+      "batch_id": "B-03",
+      "face": "top",
+      "ts": "2026-08-13T12:57:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "confirmed",
+      "ok": false,
+      "defect_id": "d-001",
+      "slug": "scratch",
+      "class_name": "划伤",
+      "bbox": [
+        1153,
+        791,
+        156,
+        68
+      ],
+      "cx": 1231,
+      "cy": 825,
+      "confidence": 0.73,
+      "severity": "medium",
+      "review_status": "confirmed"
+    },
+    {
+      "piece_id": "P-20260806-045",
+      "batch_id": "B-03",
+      "face": "bottom",
+      "ts": "2026-08-06T10:24:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "pending",
+      "ok": false,
+      "defect_id": "d-001",
+      "slug": "crack",
+      "class_name": "裂纹",
+      "bbox": [
+        2519,
+        1148,
+        218,
+        38
+      ],
+      "cx": 2628,
+      "cy": 1167,
+      "confidence": 0.62,
+      "severity": "high",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260806-045",
+      "batch_id": "B-03",
+      "face": "bottom",
+      "ts": "2026-08-06T10:24:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "pending",
+      "ok": false,
+      "defect_id": "d-002",
+      "slug": "bubble",
+      "class_name": "气泡",
+      "bbox": [
+        378,
+        757,
+        219,
+        75
+      ],
+      "cx": 487.5,
+      "cy": 794.5,
+      "confidence": 0.94,
+      "severity": "high",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260806-045",
+      "batch_id": "B-03",
+      "face": "bottom",
+      "ts": "2026-08-06T10:24:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "pending",
+      "ok": false,
+      "defect_id": "d-003",
+      "slug": "missing_yarn",
+      "class_name": "缺纱",
+      "bbox": [
+        480,
+        1118,
+        204,
+        98
+      ],
+      "cx": 582,
+      "cy": 1167,
+      "confidence": 0.65,
+      "severity": "medium",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260804-046",
+      "batch_id": "B-03",
+      "face": "top",
+      "ts": "2026-08-04T17:01:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "rejected",
+      "ok": false,
+      "defect_id": "d-001",
+      "slug": "scratch",
+      "class_name": "划伤",
+      "bbox": [
+        1982,
+        822,
+        53,
+        40
+      ],
+      "cx": 2008.5,
+      "cy": 842,
+      "confidence": 0.55,
+      "severity": "medium",
+      "review_status": "rejected"
+    },
+    {
+      "piece_id": "P-20260729-047",
+      "batch_id": "B-03",
+      "face": "bottom",
+      "ts": "2026-07-29T17:58:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "relabelled",
+      "ok": false,
+      "defect_id": "d-001",
+      "slug": "whitening",
+      "class_name": "发白",
+      "bbox": [
+        1843,
+        900,
+        122,
+        67
+      ],
+      "cx": 1904,
+      "cy": 933.5,
+      "confidence": 0.84,
+      "severity": "medium",
+      "review_status": "confirmed"
+    },
+    {
+      "piece_id": "P-20260729-047",
+      "batch_id": "B-03",
+      "face": "bottom",
+      "ts": "2026-07-29T17:58:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "relabelled",
+      "ok": false,
+      "defect_id": "d-002",
+      "slug": "scratch",
+      "class_name": "划伤",
+      "bbox": [
+        2853,
+        1183,
+        244,
+        41
+      ],
+      "cx": 2975,
+      "cy": 1203.5,
+      "confidence": 0.65,
+      "severity": "medium",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260729-047",
+      "batch_id": "B-03",
+      "face": "bottom",
+      "ts": "2026-07-29T17:58:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "relabelled",
+      "ok": false,
+      "defect_id": "d-003",
+      "slug": "bubble",
+      "class_name": "气泡",
+      "bbox": [
+        2901,
+        1111,
+        231,
+        67
+      ],
+      "cx": 3016.5,
+      "cy": 1144.5,
+      "confidence": 0.93,
+      "severity": "high",
+      "review_status": "relabelled"
+    },
+    {
+      "piece_id": "P-20260802-050",
+      "batch_id": "B-03",
+      "face": "bottom",
+      "ts": "2026-08-02T16:27:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "pending",
+      "ok": false,
+      "defect_id": "d-001",
+      "slug": "whitening",
+      "class_name": "发白",
+      "bbox": [
+        2725,
+        764,
+        178,
+        72
+      ],
+      "cx": 2814,
+      "cy": 800,
+      "confidence": 0.76,
+      "severity": "medium",
+      "review_status": "confirmed"
+    },
+    {
+      "piece_id": "P-20260802-050",
+      "batch_id": "B-03",
+      "face": "bottom",
+      "ts": "2026-08-02T16:27:00+08:00",
+      "model_version": "yolo11s-seg-mock-v0",
+      "piece_review": "pending",
+      "ok": false,
+      "defect_id": "d-002",
+      "slug": "contamination",
+      "class_name": "脏污",
+      "bbox": [
+        277,
+        744,
+        230,
+        100
+      ],
+      "cx": 392,
+      "cy": 794,
+      "confidence": 0.55,
+      "severity": "low",
+      "review_status": "pending"
+    }
+  ]
+}

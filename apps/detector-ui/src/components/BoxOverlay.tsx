@@ -1,84 +1,105 @@
-import { useMemo, useState } from 'react'
-
-export interface DefectBox {
-  defect_id: string
-  slug: string
-  class_name?: string
-  bbox: [number, number, number, number]
-  confidence: number
-  review_status: string
-}
-
-const SLUG_COLOR: Record<string, string> = {
-  crack: '#e11d48',
-  bubble: '#2563eb',
-  missing_yarn: '#d97706',
-  scratch: '#7c3aed',
-  foreign_matter: '#059669',
-  whitening: '#0891b2',
-  contamination: '#ea580c',
-}
+import { useEffect, useState } from 'react'
+import { classColor, isKnownSlug } from '../lib/catalog'
+import type { Defect } from '../lib/types'
 
 export function BoxOverlay({
   imageSrc,
   imageSize,
   defects,
   activeId,
+  showBoxes,
+  showMasks,
   onSelect,
 }: {
   imageSrc: string
   imageSize: [number, number]
-  defects: DefectBox[]
+  defects: Defect[]
   activeId?: string | null
+  showBoxes: boolean
+  showMasks: boolean
   onSelect?: (id: string) => void
 }) {
-  const [natural, setNatural] = useState<{ w: number; h: number } | null>(null)
+  const [missing, setMissing] = useState(false)
   const [iw, ih] = imageSize
 
-  const sorted = useMemo(
-    () => [...defects].sort((a, b) => a.confidence - b.confidence),
-    [defects],
-  )
+  useEffect(() => {
+    setMissing(false)
+  }, [imageSrc])
+
+  const hasAnyMask = defects.some((d) => (d.mask?.length ?? 0) >= 3)
 
   return (
     <div className="overlay-wrap">
-      <img
-        src={imageSrc}
-        alt="检测原图"
-        className="overlay-img"
-        onLoad={(e) => {
-          const img = e.currentTarget
-          setNatural({ w: img.clientWidth, h: img.clientHeight })
-        }}
-      />
-      {natural
-        ? sorted.map((d) => {
-            const [x, y, w, h] = d.bbox
-            const left = (x / iw) * natural.w
-            const top = (y / ih) * natural.h
-            const width = (w / iw) * natural.w
-            const height = (h / ih) * natural.h
-            const color = SLUG_COLOR[d.slug] ?? '#f8fafc'
-            const active = activeId === d.defect_id
-            return (
-              <button
-                key={d.defect_id}
-                type="button"
-                className={`bbox${active ? ' bbox-active' : ''}`}
-                style={{
-                  left,
-                  top,
-                  width,
-                  height,
-                  borderColor: color,
-                  boxShadow: active ? `0 0 0 2px ${color}` : undefined,
-                }}
-                title={`${d.class_name ?? d.slug} ${d.confidence.toFixed(2)}`}
-                onClick={() => onSelect?.(d.defect_id)}
-              />
-            )
-          })
-        : null}
+      {missing || !imageSrc ? (
+        <div className="img-missing" style={{ aspectRatio: `${iw} / ${ih}` }}>
+          图像缺失
+        </div>
+      ) : (
+        <img
+          src={imageSrc}
+          alt="检测原图"
+          className="overlay-img"
+          onError={() => setMissing(true)}
+        />
+      )}
+      <svg
+        className="overlay-svg"
+        viewBox={`0 0 ${iw} ${ih}`}
+        preserveAspectRatio="none"
+        aria-hidden="true"
+      >
+        {showMasks && hasAnyMask
+          ? defects.map((d) => {
+              if (!d.mask || d.mask.length < 3) return null
+              const color = classColor(d.slug)
+              return (
+                <polygon
+                  key={`m-${d.defect_id}`}
+                  points={d.mask.map(([x, y]) => `${x},${y}`).join(' ')}
+                  fill={color}
+                  fillOpacity={0.35}
+                  stroke={color}
+                  strokeWidth={activeId === d.defect_id ? 4 : 2}
+                  vectorEffect="non-scaling-stroke"
+                  onClick={() => onSelect?.(d.defect_id)}
+                  style={{ cursor: 'pointer' }}
+                />
+              )
+            })
+          : null}
+        {showBoxes
+          ? defects.map((d) => {
+              const [x, y, w, h] = d.bbox
+              const color = isKnownSlug(d.slug) ? classColor(d.slug) : '#94a3b8'
+              const active = activeId === d.defect_id
+              return (
+                <g key={`b-${d.defect_id}`} onClick={() => onSelect?.(d.defect_id)} style={{ cursor: 'pointer' }}>
+                  <rect
+                    x={x}
+                    y={y}
+                    width={w}
+                    height={h}
+                    fill="transparent"
+                    stroke={color}
+                    strokeWidth={active ? 4 : 2}
+                    vectorEffect="non-scaling-stroke"
+                  />
+                  {active ? (
+                    <text
+                      x={x}
+                      y={Math.max(24, y - 8)}
+                      fill={color}
+                      fontSize={Math.max(28, ih * 0.018)}
+                      fontFamily="IBM Plex Sans, sans-serif"
+                    >
+                      {d.class_name ?? d.slug}
+                    </text>
+                  ) : null}
+                </g>
+              )
+            })
+          : null}
+      </svg>
     </div>
   )
 }

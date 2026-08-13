@@ -1,0 +1,25 @@
+{
+  "piece_id": "P-20260813-004",
+  "batch_id": "B-mock-02",
+  "faces": [
+    {
+      "face": "top",
+      "image": "/data/detect/images/missing-intentionally.jpg",
+      "image_size": [3200, 1920],
+      "defects": [
+        {
+          "defect_id": "d-020",
+          "slug": "scratch",
+          "class_name": "划伤",
+          "bbox": [400, 700, 480, 60],
+          "confidence": 0.66,
+          "severity": "medium",
+          "review_status": "pending"
+        }
+      ]
+    }
+  ],
+  "detected_at": "2026-08-13T10:00:00+08:00",
+  "model_version": "yolo11s-seg-mock-v0",
+  "review_status": "pending"
+}

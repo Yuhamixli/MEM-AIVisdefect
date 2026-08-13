@@ -1,4 +1,4 @@
-import { copyFileSync, existsSync, mkdirSync, readdirSync, writeFileSync } from 'node:fs'
+import { copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join, relative } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -279,6 +279,87 @@ for (const item of CATALOG) {
   console.log(`know  ${item.id}`)
 }
 
+const FEISHU_CAT = {
+  '00-入口': '飞书·入口',
+  '01-项目总览': '飞书·总览',
+  '02-需求与验收': '飞书·需求',
+  '03-技术方案': '飞书·方案',
+  '04-算法与模型': '飞书·算法',
+  '05-采集与数据': '飞书·采集',
+  '06-前端与BI': '飞书·前端',
+  '07-现场与交付': '飞书·现场',
+  '08-项目管理': '飞书·管理',
+  '09-会议与纪要': '飞书·会议',
+  '10-知识沉淀': '飞书·沉淀',
+  '11-对外材料': '飞书·对外',
+}
+
+const SKIP_MD = new Set(['INDEX.md', 'README.md'])
+
+function slugId(relPosix) {
+  const raw = `fs-${relPosix.replace(/\.md$/i, '')}`
+    .replace(/[^a-zA-Z0-9\u4e00-\u9fff-]+/g, '-')
+    .replace(/-+/g, '-')
+    .replace(/^-|-$/g, '')
+  return raw.slice(0, 96)
+}
+
+function walkFeishuMd(dir, rel = '') {
+  /** @type {{ abs: string, rel: string, title: string, category: string }[]} */
+  const out = []
+  if (!existsSync(dir)) return out
+  for (const ent of readdirSync(dir, { withFileTypes: true })) {
+    if (ent.name.startsWith('.') || ent.name.startsWith('99-')) continue
+    const abs = join(dir, ent.name)
+    const nextRel = rel ? `${rel}/${ent.name}` : ent.name
+    if (ent.isDirectory()) {
+      out.push(...walkFeishuMd(abs, nextRel))
+      continue
+    }
+    if (!ent.name.endsWith('.md') || SKIP_MD.has(ent.name)) continue
+    const top = nextRel.split('/')[0]
+    out.push({
+      abs,
+      rel: nextRel,
+      title: ent.name.replace(/\.md$/i, ''),
+      category: FEISHU_CAT[top] ?? '飞书同步',
+    })
+  }
+  return out
+}
+
+function feishuPulledAt(dir) {
+  const idx = join(dir, 'INDEX.md')
+  if (!existsSync(idx)) return null
+  const m = readFileSync(idx, 'utf8').match(/更新时间：([0-9T:.Z-]+)/)
+  return m ? m[1].slice(0, 10) : null
+}
+
+const usedIds = new Set(index.map((i) => i.id))
+const feishuRoot = join(root, 'docs/agent-knowledge-base/feishu-sync')
+const feishuDocs = walkFeishuMd(feishuRoot)
+const pulledAt = feishuPulledAt(feishuRoot)
+for (const doc of feishuDocs) {
+  let id = slugId(doc.rel)
+  if (usedIds.has(id)) {
+    let n = 2
+    while (usedIds.has(`${id}-${n}`)) n += 1
+    id = `${id}-${n}`
+  }
+  usedIds.add(id)
+  const outName = `${id}.md`
+  copyFileSync(doc.abs, join(knowledgeDir, outName))
+  index.push({
+    id,
+    title: doc.title,
+    category: doc.category,
+    description: pulledAt ? `飞书镜像 · 拉取 ${pulledAt}` : '飞书镜像',
+    source: `docs/agent-knowledge-base/feishu-sync/${doc.rel}`,
+    path: `/knowledge/${outName}`,
+  })
+  console.log(`fs    ${doc.rel}`)
+}
+
 // 3) auto-include feedback inbox items (except templates)
 const inboxDir = join(root, 'docs/feedback-inbox/inbox')
 if (existsSync(inboxDir)) {
@@ -321,8 +402,25 @@ writeFileSync(
   JSON.stringify(
     {
       updated_at: new Date().toISOString().slice(0, 10),
+      feishu_pulled_at: pulledAt,
+      curated_count: CATALOG.length,
+      feishu_count: feishuDocs.length,
       count: index.length,
       items: index,
+    },
+    null,
+    2,
+  ),
+)
+
+writeFileSync(
+  join(dataDir, 'sync-meta.json'),
+  JSON.stringify(
+    {
+      synced_at: new Date().toISOString(),
+      knowledge_count: index.length,
+      feishu_pulled_at: pulledAt,
+      feishu_count: feishuDocs.length,
     },
     null,
     2,

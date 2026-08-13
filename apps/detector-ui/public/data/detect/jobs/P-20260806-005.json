@@ -1,0 +1,61 @@
+{
+  "piece_id": "P-20260806-005",
+  "batch_id": "B-01",
+  "faces": [
+    {
+      "face": "top",
+      "image": "/data/detect/images/placeholder-3200x1920.svg",
+      "image_size": [
+        3200,
+        1920
+      ],
+      "defects": [
+        {
+          "defect_id": "d-001",
+          "slug": "bubble",
+          "class_name": "气泡",
+          "bbox": [
+            1917,
+            822,
+            216,
+            55
+          ],
+          "confidence": 0.65,
+          "severity": "high",
+          "review_status": "pending"
+        },
+        {
+          "defect_id": "d-002",
+          "slug": "bubble",
+          "class_name": "气泡",
+          "bbox": [
+            1448,
+            1195,
+            149,
+            33
+          ],
+          "confidence": 0.89,
+          "severity": "high",
+          "review_status": "confirmed"
+        },
+        {
+          "defect_id": "d-003",
+          "slug": "crack",
+          "class_name": "裂纹",
+          "bbox": [
+            2547,
+            974,
+            199,
+            44
+          ],
+          "confidence": 0.93,
+          "severity": "high",
+          "review_status": "pending"
+        }
+      ]
+    }
+  ],
+  "detected_at": "2026-08-06T11:15:00+08:00",
+  "model_version": "yolo11s-seg-mock-v0",
+  "review_status": "pending"
+}

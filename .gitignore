@@ -55,3 +55,7 @@ data/processed/
 *.log
 .tmp/
 tmp/
+
+# NAS 静态包（由 npm run pack-nas 生成）
+apps/bi/nas/html/
+apps/bi/nas/cloudflared.exe

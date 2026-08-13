@@ -4,6 +4,8 @@ import { ACCOUNT_LABELS, budgetExecutionRate } from '../data/load'
 export function BudgetPage({ data }: { data: BiSnapshot }) {
   const rate = budgetExecutionRate(data.budget)
   const entries = Object.entries(data.budget.accounts)
+  const pc = data.budget.per_capita
+  const pending = pc?.status === 'pending_confirmation'
 
   return (
     <>
@@ -82,6 +84,37 @@ export function BudgetPage({ data }: { data: BiSnapshot }) {
             })}
           </tbody>
         </table>
+      </article>
+
+      <article className="card" style={{ marginTop: 14 }}>
+        <div className="section-head">
+          <h2 style={{ margin: 0 }}>按人头均分</h2>
+          <span className="pill pending">{pending ? '口径待确认' : '已确认'}</span>
+        </div>
+        {pc ? (
+          <>
+            <div className="grid-kpi" style={{ marginTop: 12 }}>
+              <div className="kpi">
+                <div className="label">编制人数</div>
+                <div className="value">{pc.headcount}</div>
+              </div>
+              <div className="kpi">
+                <div className="label">人均额度</div>
+                <div className="value">{pc.amount.toLocaleString()} M</div>
+              </div>
+              <div className="kpi">
+                <div className="label">尾差入 reserve</div>
+                <div className="value">{pc.remainder_to_reserve} M</div>
+              </div>
+            </div>
+            <p className="muted">{pc.note}</p>
+            <p className="muted" style={{ fontSize: '0.85rem' }}>
+              个人子账户未公开前只显示汇总均值，不点名。课程公式（小组得分 × 完成度 × 难度 × 人数系数）无外部输入，整卡不自动计算。
+            </p>
+          </>
+        ) : (
+          <p className="muted">无数据</p>
+        )}
       </article>
     </>
   )

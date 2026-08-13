@@ -13,7 +13,8 @@
           "class_name": "裂纹",
           "bbox": [812, 340, 220, 80],
           "confidence": 0.87,
-          "severity_hint": "medium",
+          "severity": "medium",
+          "mask": [[812, 380], [860, 340], [1032, 355], [1000, 410], [840, 420]],
           "review_status": "pending"
         },
         {
@@ -22,10 +23,17 @@
           "class_name": "气泡",
           "bbox": [1600, 900, 140, 140],
           "confidence": 0.42,
-          "severity_hint": "low",
+          "severity": "low",
+          "mask": [[1670, 900], [1740, 940], [1720, 1030], [1640, 1040], [1600, 980]],
           "review_status": "pending"
         }
       ]
+    },
+    {
+      "face": "bottom",
+      "image": "/data/detect/images/placeholder-3200x1920.svg",
+      "image_size": [3200, 1920],
+      "defects": []
     }
   ],
   "detected_at": "2026-07-18T14:02:00+08:00",

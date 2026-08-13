@@ -7,7 +7,6 @@
   </defs>
   <rect width="3200" height="1920" fill="url(#g)"/>
   <rect x="200" y="700" width="2800" height="520" rx="20" fill="#c8b89a" opacity="0.85"/>
-  <text x="1600" y="980" fill="#1f2933" font-size="72" text-anchor="middle" font-family="sans-serif">
-    mock � 3200�1920 � �$�P:
-  </text>
+  <text x="1600" y="940" fill="#1f2933" font-size="64" text-anchor="middle" font-family="sans-serif">mock 3200 x 1920</text>
+  <text x="1600" y="1020" fill="#3d4a57" font-size="40" text-anchor="middle" font-family="sans-serif">pultrusion bar placeholder</text>
 </svg>

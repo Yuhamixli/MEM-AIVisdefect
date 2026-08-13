@@ -1,0 +1,5 @@
+{
+  "confidence_low_threshold": 0.5,
+  "confidence_review_threshold": 0.7,
+  "bi_url": "http://127.0.0.1:5173"
+}

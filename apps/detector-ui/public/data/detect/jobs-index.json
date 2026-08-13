@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-07-18T16:40:00+08:00",
-  "note": "mock 数据；黄崇发真实样例到位后替换，不硬编码算法目录",
+  "updated_at": "2026-08-13T20:20:00+08:00",
+  "note": "mock 50 件演示集（含 4 件手搓叠加样例）；黄崇发真实样例到位后 npm run sync-results 替换",
   "jobs": [
     {
       "piece_id": "P-20260718-001",
       "batch": "B-mock-01",
-      "faces": 1,
+      "faces": 2,
       "defects": 2,
       "model_version": "yolo11s-seg-mock-v0",
       "ts": "2026-07-18T14:02:00+08:00",
@@ -19,6 +19,474 @@
       "model_version": "yolo11s-seg-mock-v0",
       "ts": "2026-07-18T14:08:00+08:00",
       "review_status": "confirmed"
+    },
+    {
+      "piece_id": "P-20260718-003",
+      "batch": "B-mock-01",
+      "faces": 1,
+      "defects": 0,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-07-18T14:20:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260813-004",
+      "batch": "B-mock-02",
+      "faces": 1,
+      "defects": 1,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-13T10:00:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260803-001",
+      "batch": "B-01",
+      "faces": 1,
+      "defects": 0,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-03T13:49:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260801-002",
+      "batch": "B-01",
+      "faces": 1,
+      "defects": 0,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-01T14:06:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260813-003",
+      "batch": "B-01",
+      "faces": 1,
+      "defects": 2,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-13T09:36:00+08:00",
+      "review_status": "rejected"
+    },
+    {
+      "piece_id": "P-20260804-004",
+      "batch": "B-01",
+      "faces": 1,
+      "defects": 0,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-04T14:32:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260806-005",
+      "batch": "B-01",
+      "faces": 1,
+      "defects": 3,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-06T11:15:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260813-006",
+      "batch": "B-01",
+      "faces": 1,
+      "defects": 1,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-13T10:05:00+08:00",
+      "review_status": "confirmed"
+    },
+    {
+      "piece_id": "P-20260805-007",
+      "batch": "B-01",
+      "faces": 1,
+      "defects": 1,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-05T13:59:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260807-008",
+      "batch": "B-01",
+      "faces": 1,
+      "defects": 1,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-07T11:19:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260806-009",
+      "batch": "B-01",
+      "faces": 1,
+      "defects": 0,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-06T11:59:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260811-010",
+      "batch": "B-01",
+      "faces": 1,
+      "defects": 0,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-11T15:29:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260812-011",
+      "batch": "B-01",
+      "faces": 1,
+      "defects": 2,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-12T14:21:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260811-012",
+      "batch": "B-01",
+      "faces": 1,
+      "defects": 0,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-11T16:57:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260804-013",
+      "batch": "B-01",
+      "faces": 1,
+      "defects": 1,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-04T08:21:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260806-014",
+      "batch": "B-01",
+      "faces": 1,
+      "defects": 1,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-06T11:06:00+08:00",
+      "review_status": "rejected"
+    },
+    {
+      "piece_id": "P-20260807-015",
+      "batch": "B-01",
+      "faces": 1,
+      "defects": 0,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-07T12:43:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260801-016",
+      "batch": "B-01",
+      "faces": 1,
+      "defects": 3,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-01T14:41:00+08:00",
+      "review_status": "rejected"
+    },
+    {
+      "piece_id": "P-20260808-017",
+      "batch": "B-01",
+      "faces": 1,
+      "defects": 2,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-08T09:41:00+08:00",
+      "review_status": "rejected"
+    },
+    {
+      "piece_id": "P-20260806-018",
+      "batch": "B-02",
+      "faces": 1,
+      "defects": 3,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-06T13:03:00+08:00",
+      "review_status": "relabelled"
+    },
+    {
+      "piece_id": "P-20260801-019",
+      "batch": "B-02",
+      "faces": 1,
+      "defects": 0,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-01T16:44:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260808-020",
+      "batch": "B-02",
+      "faces": 1,
+      "defects": 0,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-08T12:23:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260729-021",
+      "batch": "B-02",
+      "faces": 1,
+      "defects": 0,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-07-29T14:29:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260730-022",
+      "batch": "B-02",
+      "faces": 1,
+      "defects": 1,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-07-30T14:55:00+08:00",
+      "review_status": "rejected"
+    },
+    {
+      "piece_id": "P-20260803-023",
+      "batch": "B-02",
+      "faces": 1,
+      "defects": 2,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-03T17:34:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260810-024",
+      "batch": "B-02",
+      "faces": 1,
+      "defects": 3,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-10T13:48:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260806-025",
+      "batch": "B-02",
+      "faces": 1,
+      "defects": 0,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-06T15:40:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260803-026",
+      "batch": "B-02",
+      "faces": 1,
+      "defects": 0,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-03T16:21:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260813-027",
+      "batch": "B-02",
+      "faces": 1,
+      "defects": 3,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-13T12:55:00+08:00",
+      "review_status": "relabelled"
+    },
+    {
+      "piece_id": "P-20260731-028",
+      "batch": "B-02",
+      "faces": 1,
+      "defects": 0,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-07-31T12:56:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260813-029",
+      "batch": "B-02",
+      "faces": 1,
+      "defects": 1,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-13T11:54:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260803-030",
+      "batch": "B-02",
+      "faces": 1,
+      "defects": 1,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-03T15:40:00+08:00",
+      "review_status": "rejected"
+    },
+    {
+      "piece_id": "P-20260806-031",
+      "batch": "B-02",
+      "faces": 1,
+      "defects": 3,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-06T10:45:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260730-032",
+      "batch": "B-02",
+      "faces": 1,
+      "defects": 0,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-07-30T09:43:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260801-033",
+      "batch": "B-02",
+      "faces": 1,
+      "defects": 3,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-01T15:53:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260730-034",
+      "batch": "B-02",
+      "faces": 1,
+      "defects": 2,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-07-30T10:20:00+08:00",
+      "review_status": "rejected"
+    },
+    {
+      "piece_id": "P-20260805-035",
+      "batch": "B-02",
+      "faces": 1,
+      "defects": 1,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-05T08:24:00+08:00",
+      "review_status": "confirmed"
+    },
+    {
+      "piece_id": "P-20260806-036",
+      "batch": "B-03",
+      "faces": 1,
+      "defects": 3,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-06T15:22:00+08:00",
+      "review_status": "relabelled"
+    },
+    {
+      "piece_id": "P-20260811-037",
+      "batch": "B-03",
+      "faces": 1,
+      "defects": 0,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-11T15:39:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260729-038",
+      "batch": "B-03",
+      "faces": 1,
+      "defects": 0,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-07-29T16:37:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260811-039",
+      "batch": "B-03",
+      "faces": 1,
+      "defects": 0,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-11T17:03:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260728-040",
+      "batch": "B-03",
+      "faces": 1,
+      "defects": 2,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-07-28T08:38:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260805-041",
+      "batch": "B-03",
+      "faces": 1,
+      "defects": 1,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-05T13:27:00+08:00",
+      "review_status": "confirmed"
+    },
+    {
+      "piece_id": "P-20260731-042",
+      "batch": "B-03",
+      "faces": 1,
+      "defects": 3,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-07-31T09:10:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260813-043",
+      "batch": "B-03",
+      "faces": 1,
+      "defects": 1,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-13T12:57:00+08:00",
+      "review_status": "confirmed"
+    },
+    {
+      "piece_id": "P-20260810-044",
+      "batch": "B-03",
+      "faces": 1,
+      "defects": 0,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-10T16:54:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260806-045",
+      "batch": "B-03",
+      "faces": 1,
+      "defects": 3,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-06T10:24:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260804-046",
+      "batch": "B-03",
+      "faces": 1,
+      "defects": 1,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-04T17:01:00+08:00",
+      "review_status": "rejected"
+    },
+    {
+      "piece_id": "P-20260729-047",
+      "batch": "B-03",
+      "faces": 1,
+      "defects": 3,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-07-29T17:58:00+08:00",
+      "review_status": "relabelled"
+    },
+    {
+      "piece_id": "P-20260802-048",
+      "batch": "B-03",
+      "faces": 1,
+      "defects": 0,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-02T17:35:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260808-049",
+      "batch": "B-03",
+      "faces": 1,
+      "defects": 0,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-08T15:00:00+08:00",
+      "review_status": "pending"
+    },
+    {
+      "piece_id": "P-20260802-050",
+      "batch": "B-03",
+      "faces": 1,
+      "defects": 2,
+      "model_version": "yolo11s-seg-mock-v0",
+      "ts": "2026-08-02T16:27:00+08:00",
+      "review_status": "pending"
     }
   ]
 }
