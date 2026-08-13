@@ -3,7 +3,8 @@
 | 方向 | 命令 | 触发 | 说明 |
 |------|------|------|------|
 | **飞书 → 仓库** | `npm run sync-docs` | 人工 / 需要时 | 拉取共享盘 docx 正文为 Markdown，供检索 |
-| **仓库 → 飞书** | `npm run push-docs` | **GitHub Action 自动** | 按清单把仓库文档导入为飞书云文档 |
+| **仓库 → 飞书** | `npm run push-docs` | **GitHub Action 自动** | 按清单把仓库文档导入为飞书云文档（按 `folderRoutes` 落入 NN 子文件夹，不堆根目录） |
+| **整理共享盘** | `npm run tidy-drive` / `tidy-drive:apply` | **每周六 CI** + 需要时 | 清扫根目录散落文件；确保 `00`–`99` 规范文件夹存在 |
 
 约定不变：**仓库是文档之源**；飞书是协作阅读面。批注定稿后仍应回写仓库（或只在仓库改、靠 push 刷新飞书）。
 
@@ -25,6 +26,20 @@
 
 手动全量重推：Actions → Push docs to Feishu → Run workflow → force=true。
 
+每日自动整理：Actions → Tidy Feishu drive（每天 08:30 北京时间；也可手动 Run workflow）。另可配 Cursor Automation 同频复检。
+
+### 组员怎么传文件（少规则、可执行）
+
+**默认：丢进 `98-待整理/`，不要堆根目录。** 周整理脚本 / Automation 会按文件名归位。
+
+| 场景 | 怎么做 |
+|------|--------|
+| 照片、视频、会议录音、不确定归哪 | → `98-待整理/` |
+| 明确的工作文档（规格、未决、双周报…） | 直接放对应 `NN-…` 文件夹；命名见《资料入库规范》 |
+| 仓库已有的 md | **不要手工传飞书**，靠 `push-docs` 自动进子文件夹 |
+
+应用只能移动**它有管理权限**的文件。成员上传后若整理 403，请对该文件/文件夹给应用「可管理」，或手工拖到目标夹。
+
 ## 本地命令
 
 ```bash
@@ -42,6 +57,10 @@ npm run push-docs -- --force
 
 # 只推一个路径
 npm run push-docs -- --only=docs/design/offline-module-interface.md
+
+# 预览 / 执行共享盘根目录整理
+npm run tidy-drive
+npm run tidy-drive:apply
 ```
 
 清单：[`docs/feishu-push-manifest.json`](../../feishu-push-manifest.json)  
