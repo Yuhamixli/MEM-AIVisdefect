@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-13T08:40:31.870Z",
+  "updatedAt": "2026-08-13T13:53:20.113Z",
   "files": {
     "docs/02-tech-research/ADR-001-four-layer-vision-stack.md": {
       "sha256": "cf4965baf259a0ad6fc8a9375750d20452fdbfa26052611936df0cc2a686e55d",
@@ -67,20 +67,20 @@
       "updatedAt": "2026-07-26T08:28:26.735Z"
     },
     "docs/project-management/REPO-TODO.md": {
-      "sha256": "6096e71a25692a724a1b2f3ed3386722f95948b9282f729f32881bad8dabd3f2",
-      "bytes": 7463,
+      "sha256": "bb35ab87ab26e2ed09ba51800aa2f26b4fb3273d5ebf36a20063b1fcabf17643",
+      "bytes": 7560,
       "title": "REPO-TODO",
-      "feishuToken": "BjIadKOGAo6iY5xFZTYcOjgTnYf",
-      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/BjIadKOGAo6iY5xFZTYcOjgTnYf",
-      "updatedAt": "2026-07-26T08:16:12.359Z"
+      "feishuToken": "EbPLd9eDyoM6ctxjvHNc06igngf",
+      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/EbPLd9eDyoM6ctxjvHNc06igngf",
+      "updatedAt": "2026-08-13T13:53:12.413Z"
     },
     "docs/project-management/TODO.md": {
-      "sha256": "52ad8f136f983050499da0a70ccd83a7dd928b89e45f00dbc69c010cf565b873",
-      "bytes": 10853,
+      "sha256": "1f016c20a3bca79b9b2b3efc8a55c6bb65c573b2a0331b35250b151d389dd864",
+      "bytes": 10896,
       "title": "TODO",
-      "feishuToken": "G6VBdgbIZoDDGExzEBzcyO6DnMf",
-      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/G6VBdgbIZoDDGExzEBzcyO6DnMf",
-      "updatedAt": "2026-07-26T08:16:20.104Z"
+      "feishuToken": "Tbm8deQj1oK7GkxWNKOcdesYn7d",
+      "feishuUrl": "https://bcndkrmo7f8n.feishu.cn/docx/Tbm8deQj1oK7GkxWNKOcdesYn7d",
+      "updatedAt": "2026-08-13T13:53:20.112Z"
     },
     "docs/project-management/bi-metrics-onepager.md": {
       "sha256": "669d4041b6df13ddcdb39b013f7145acac935bd035f72f0023be28a229e18d62",
