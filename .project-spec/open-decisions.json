@@ -1,7 +1,8 @@
 {
   "updated_at": "2026-07-18",
+  "last_reviewed_at": "2026-08-13",
   "source": "Kimi open-decisions-log.md / OD-COM-01~16",
-  "synced_note": "页面显示本时间戳；台账更新后请改本文件并 npm run sync-data",
+  "synced_note": "2026-08-13 对照飞书《未决事项清单@范汝杰》：条目仍全部未关单，未伪造决议。逾期未关单在泳道标红。",
   "decisions": [
     {
       "id": "OD-COM-01",

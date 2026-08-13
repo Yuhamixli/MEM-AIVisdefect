@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
+import { DetectTeaser } from '../components/DetectTeaser'
 import type { BiSnapshot } from '../data/types'
-import { OPS_MODULES } from '../data/types'
 import { budgetExecutionRate, openRiskCounts } from '../data/load'
 
 function healthTone(snapshot: BiSnapshot): { label: string; className: string } {
@@ -207,6 +207,24 @@ export function OverviewPage({ data }: { data: BiSnapshot }) {
               </div>
             ))}
           </div>
+          {(data.milestones.course_stages ?? []).length > 0 ? (
+            <>
+              <p className="muted" style={{ margin: '10px 0 4px', fontSize: '0.78rem' }}>
+                课程三阶段（与项目中期 08-15 错位，不在页面调和）
+              </p>
+              <div className="course-rail">
+                {(data.milestones.course_stages ?? []).map((s) => (
+                  <div key={s.id} className="course-node">
+                    <div className="course-label">{s.name}</div>
+                    <div className="course-date">
+                      {s.date.slice(5)}
+                      {s.end ? `–${s.end.slice(5)}` : ''}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </>
+          ) : null}
           <div className="milestone-list" style={{ marginTop: 16 }}>
             {data.milestones.milestones.map((m) => (
               <div
@@ -245,26 +263,27 @@ export function OverviewPage({ data }: { data: BiSnapshot }) {
             </div>
           </article>
 
-          <article className="card" style={{ animationDelay: '0.34s' }}>
-            <div className="section-head">
-              <h2 style={{ margin: 0 }}>模块进度（占位）</h2>
-              <Link to="/knowledge/todo" className="text-link">
-                TODO →
-              </Link>
-            </div>
-            <div className="module-grid">
-              {OPS_MODULES.map((mod) => (
-                <div key={mod.id} className="module-chip">
-                  <span className="module-name">{mod.name}</span>
-                  <span className="pill pending">未开始</span>
-                </div>
-              ))}
-            </div>
-          </article>
+          <DetectTeaser />
 
-          <article className="card ops-links" style={{ animationDelay: '0.38s' }}>
+          <article className="card ops-links" style={{ animationDelay: '0.34s' }}>
             <h2>运营入口</h2>
             <ul className="link-list">
+              <li>
+                <Link to="/detect">检测分析</Link>
+                <span className="muted">门禁 · Pareto · 分区热力 · mock 50 件</span>
+              </li>
+              <li>
+                <a href="http://127.0.0.1:5174">detector-ui 检测结果</a>
+                <span className="muted">本地 5174 · 公网待部署</span>
+              </li>
+              <li>
+                <Link to="/open-decisions">未决事项泳道</Link>
+                <span className="muted">飞书 08-13 仍未关单 · 逾期标红</span>
+              </li>
+              <li>
+                <Link to="/biweekly">双周报归档</Link>
+                <span className="muted">本期草稿入口</span>
+              </li>
               <li>
                 <Link to="/plan">运营 / 计划</Link>
                 <span className="muted">五节点 + 模块看板</span>

@@ -94,6 +94,20 @@ async function createGithubFile(env, path, markdown, author) {
   })
 }
 
+export async function onRequestGet(context) {
+  const env = context.env || {}
+  const missing = ['WRITE_PASSWORD', 'GITHUB_TOKEN', 'GITHUB_REPO'].filter((k) => !env[k])
+  if (missing.length > 0) {
+    return json(503, { ok: false, repo_configured: false, missing, ts: new Date().toISOString() })
+  }
+  return json(200, {
+    ok: true,
+    repo_configured: true,
+    branch: env.GITHUB_BRANCH || 'main',
+    ts: new Date().toISOString(),
+  })
+}
+
 /** @param {EventContext} context */
 export async function onRequestPost(context) {
   const { request, env } = context

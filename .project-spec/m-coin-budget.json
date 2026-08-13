@@ -14,5 +14,12 @@
     "ledger_threshold_m": 50,
     "reserve_approval": "project_manager",
     "weekly_report_required": true
+  },
+  "per_capita": {
+    "headcount": 13,
+    "amount": 53846,
+    "remainder_to_reserve": 2,
+    "status": "pending_confirmation",
+    "note": "口径待确认 · 70万/13人=53,846 M，尾差 2 M 入 reserve。个人子账户未决@范汝杰前只显示汇总均值，不点名。"
   }
 }

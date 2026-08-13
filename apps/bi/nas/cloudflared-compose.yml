@@ -1,0 +1,12 @@
+# 24h public HTTPS for BI (Cloudflare quick tunnel — no account).
+# Logs: ./logs/cloudflared.log  (contains https://*.trycloudflare.com)
+services:
+  tunnel:
+    image: docker.m.daocloud.io/cloudflare/cloudflared:latest
+    container_name: mem-bi-cloudflared
+    restart: unless-stopped
+    user: "0:0"
+    network_mode: host
+    command: tunnel --no-autoupdate --logfile /data/cloudflared.log --url http://127.0.0.1:80
+    volumes:
+      - ./logs:/data

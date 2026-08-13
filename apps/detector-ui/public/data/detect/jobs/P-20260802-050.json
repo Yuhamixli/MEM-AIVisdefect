@@ -1,0 +1,47 @@
+{
+  "piece_id": "P-20260802-050",
+  "batch_id": "B-03",
+  "faces": [
+    {
+      "face": "bottom",
+      "image": "/data/detect/images/placeholder-3200x1920.svg",
+      "image_size": [
+        3200,
+        1920
+      ],
+      "defects": [
+        {
+          "defect_id": "d-001",
+          "slug": "whitening",
+          "class_name": "发白",
+          "bbox": [
+            2725,
+            764,
+            178,
+            72
+          ],
+          "confidence": 0.76,
+          "severity": "medium",
+          "review_status": "confirmed"
+        },
+        {
+          "defect_id": "d-002",
+          "slug": "contamination",
+          "class_name": "脏污",
+          "bbox": [
+            277,
+            744,
+            230,
+            100
+          ],
+          "confidence": 0.55,
+          "severity": "low",
+          "review_status": "pending"
+        }
+      ]
+    }
+  ],
+  "detected_at": "2026-08-02T16:27:00+08:00",
+  "model_version": "yolo11s-seg-mock-v0",
+  "review_status": "pending"
+}

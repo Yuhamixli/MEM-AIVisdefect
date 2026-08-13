@@ -1,9 +1,12 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// GitHub Pages project site: https://<user>.github.io/MEM-AIVisdefect/
+const env = (globalThis as { process?: { env?: Record<string, string | undefined> } }).process?.env
+
+// GitHub Pages + Synology Web Station both serve under /MEM-AIVisdefect/.
+// Override with VITE_BASE=./ for a NAS nginx root (port 8088).
 export default defineConfig({
-  base: '/MEM-AIVisdefect/',
+  base: env?.VITE_BASE || '/MEM-AIVisdefect/',
   plugins: [react()],
   server: {
     port: 5173,

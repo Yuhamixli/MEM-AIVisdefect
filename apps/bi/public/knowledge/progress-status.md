@@ -1,31 +1,48 @@
 # 当前进度状态
 
-**更新**: 2026-07-12  
-**工作重心**: 管理意志同步（评价原则）+ 会议/待决议机制 + 开题对齐
+**更新**: 2026-08-13  
+**工作重心**: 详设方案内审 + 检测看板演示 + 未决催关  
+**数据分层**: 本页是仓库策展入口。飞书云文档 8 月材料已镜像到 `feishu-sync/`（最近拉取 2026-08-13）；飞书《进度状态》正文本身仍停在 **2026-07-18**，未伪造 8 月周报叙事。
 
 ```yaml
-pmbok_process_group: 规划
-current_phase: 开题 — 申报书口径对齐
-current_milestone: kickoff — in_progress
-week: 1
+pmbok_process_group: 执行
+current_phase: 详设内审 / 中期准备（课程节点 08-26～08-29）
+current_milestone: midterm — 08-15 申报书节点 vs 课程 8 月底，双轨标注（OD-COM-14 未关）
+week: 5
 budget_total_m: 700000
 budget_spent_m: 0
+feishu_progress_doc: 2026-07-18
+feishu_mirror_pulled: 2026-08-13
 ```
 
-## 本轮完成
+## 8 月已入库（飞书镜像，知识库可检索）
 
-- [x] 张老师评价原则落库：`evaluation-principles.md` + PROMPT §1.4 + 章程 `evaluation_principles`
-- [x] 会议纪要机制：`docs/05-reporting/meetings/`（R-A04）
-- [x] 待沟通议题：`open-decisions.md`（OD-1～OD-6）
-- [x] 会纪要：`2026-07-11-zhang-first-meeting.md`
-- [x] BI 总览挂载管理意志条 + 知识库置顶同步；待 Pages 部署
+| 日期 | 材料 | 知识库分类 |
+|------|------|------------|
+| 08-01 | 《玻纤拉挤电芯压条AI视觉检测系统设计方案20260801》 | 飞书·方案 |
+| 08-01 | 周会&详细设计方案内审（飞书侧多为 docx/txt，同步脚本跳过二进制） | — |
+| 08-08 | 清华 MEM 03 组周会逐字稿 | 飞书·会议 |
+| 07-26 | 拉挤表面缺陷离线检测与近线精修实施方案 | 飞书·算法 |
+| 07-25 | 周会逐字稿 | 飞书·会议 |
 
-## 你正在做
+BI 知识页同时挂「仓库定稿」与「飞书镜像」。Cloud Agent / 看板**读仓库**；飞书是人协作面。要对账：`cd apps/feishu-cursor-bridge && npm run sync-docs`，再 `cd apps/bi && npm run sync-data`。
 
-- 开题门禁 GATE-K*；按 `open-decisions.md` 逐项沟通关闭
-- ADR-002（XnoAvi 复用）评估进行中
+## 本轮可见进展（仓库侧，08-13）
+
+- 检测分析页（mock 50 件）：门禁 / 帕累托 / 分区 / 热力；查全率与准确率仍待金标准
+- detector-ui 复核链路；NAS Web Station 发布只读看板
+- 未决 OD-COM-01～16：**飞书 08-13 仍全部未关单**，逾期 9 条标红，未伪造决议
+
+## 飞书进度正文停在 7/18 时记下的事实
+
+开题评 B；ADR-001/002 已落库；OD-COM 扩到 16 条；详设门禁原目标 07-30（多项已逾期未关）。完整原文见知识库「飞书·沉淀 / 进度状态」。
+
+## 正在做
+
+- 详细设计方案内审（08-08 周会：身份识别/Hold 态/验收分层有争议，待负责人合稿）
+- 50 件金标准与定义卡冻结（OD-COM-11）
+- 硬件耦合项关单：相机/输送、分辨率、流水线参数、光源 DOE（OD-COM-03/04/05/16）
 
 ## 给新队员
 
-从 [`onboarding-guide.md`](./onboarding-guide.md) 开始；必读评价原则  
-[`../project-management/evaluation-principles.md`](../project-management/evaluation-principles.md)。
+从 [`onboarding-guide.md`](./onboarding-guide.md) 开始；必读评价原则。想法走变更控制，不要私下改范围。最近节点：中期 08-15（申报书）与课程阶段 08-26～08-29（口径未对齐）。

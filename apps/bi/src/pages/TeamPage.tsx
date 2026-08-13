@@ -9,6 +9,9 @@ export function TeamPage({ data }: { data: BiSnapshot }) {
   const catalog = data.workstreams
   const streams = catalog.workstreams ?? []
   const criticalCount = streams.filter((w) => w.critical_path).length
+  const ungappedCritical = streams.filter(
+    (w) => w.critical_path && (!w.owners || w.owners.length === 0),
+  )
   const knowledgeId = catalog.knowledge_id ?? 'team-workstreams'
   const docPath = catalog.doc_path ?? 'docs/project-management/team-workstreams.md'
 
@@ -40,6 +43,23 @@ export function TeamPage({ data }: { data: BiSnapshot }) {
           <div className="hint">{data.charter.academic_context?.program}</div>
         </article>
       </section>
+
+      {ungappedCritical.length > 0 ? (
+        <article className="card gap-alert" style={{ marginBottom: 14 }}>
+          <h2>关键路径缺口</h2>
+          <p className="muted" style={{ marginTop: 0 }}>
+            {ungappedCritical.length} 条关键路径尚无 owner。优先补人或降范围，不自动改分工。
+          </p>
+          <ul className="gap-list">
+            {ungappedCritical.map((w) => (
+              <li key={w.id}>
+                <strong>{w.name}</strong>
+                <span className="muted"> {w.id}</span>
+              </li>
+            ))}
+          </ul>
+        </article>
+      ) : null}
 
       <article className="card" style={{ marginBottom: 14 }}>
         <div className="workstream-head">

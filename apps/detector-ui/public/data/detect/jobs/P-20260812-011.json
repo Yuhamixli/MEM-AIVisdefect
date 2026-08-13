@@ -1,0 +1,47 @@
+{
+  "piece_id": "P-20260812-011",
+  "batch_id": "B-01",
+  "faces": [
+    {
+      "face": "bottom",
+      "image": "/data/detect/images/placeholder-3200x1920.svg",
+      "image_size": [
+        3200,
+        1920
+      ],
+      "defects": [
+        {
+          "defect_id": "d-001",
+          "slug": "foreign_matter",
+          "class_name": "异物",
+          "bbox": [
+            295,
+            798,
+            179,
+            30
+          ],
+          "confidence": 0.91,
+          "severity": "medium",
+          "review_status": "confirmed"
+        },
+        {
+          "defect_id": "d-002",
+          "slug": "whitening",
+          "class_name": "发白",
+          "bbox": [
+            2858,
+            1011,
+            247,
+            53
+          ],
+          "confidence": 0.64,
+          "severity": "medium",
+          "review_status": "pending"
+        }
+      ]
+    }
+  ],
+  "detected_at": "2026-08-12T14:21:00+08:00",
+  "model_version": "yolo11s-seg-mock-v0",
+  "review_status": "pending"
+}

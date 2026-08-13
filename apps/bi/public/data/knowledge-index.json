@@ -1,6 +1,9 @@
 {
-  "updated_at": "2026-07-18",
-  "count": 40,
+  "updated_at": "2026-08-13",
+  "feishu_pulled_at": "2026-08-13",
+  "curated_count": 37,
+  "feishu_count": 81,
+  "count": 121,
   "items": [
     {
       "id": "progress-status",
@@ -297,6 +300,654 @@
       "description": "",
       "source": "README.md",
       "path": "/knowledge/readme.md"
+    },
+    {
+      "id": "fs-00-入口-00-从这里开始-文档入口",
+      "title": "00-从这里开始-文档入口",
+      "category": "飞书·入口",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/00-入口/00-从这里开始-文档入口.md",
+      "path": "/knowledge/fs-00-入口-00-从这里开始-文档入口.md"
+    },
+    {
+      "id": "fs-00-入口-README-文档地图与交付勾选清单",
+      "title": "README-文档地图与交付勾选清单",
+      "category": "飞书·入口",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/00-入口/README-文档地图与交付勾选清单.md",
+      "path": "/knowledge/fs-00-入口-README-文档地图与交付勾选清单.md"
+    },
+    {
+      "id": "fs-00-入口-REPO-TODO",
+      "title": "REPO-TODO",
+      "category": "飞书·入口",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/00-入口/REPO-TODO.md",
+      "path": "/knowledge/fs-00-入口-REPO-TODO.md"
+    },
+    {
+      "id": "fs-00-入口-TODO",
+      "title": "TODO",
+      "category": "飞书·入口",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/00-入口/TODO.md",
+      "path": "/knowledge/fs-00-入口-TODO.md"
+    },
+    {
+      "id": "fs-00-入口-共享简报-写作前必读",
+      "title": "共享简报-写作前必读",
+      "category": "飞书·入口",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/00-入口/共享简报-写作前必读.md",
+      "path": "/knowledge/fs-00-入口-共享简报-写作前必读.md"
+    },
+    {
+      "id": "fs-00-入口-原始资料入库说明-微信与坚果云",
+      "title": "原始资料入库说明-微信与坚果云",
+      "category": "飞书·入口",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/00-入口/原始资料入库说明-微信与坚果云.md",
+      "path": "/knowledge/fs-00-入口-原始资料入库说明-微信与坚果云.md"
+    },
+    {
+      "id": "fs-00-入口-文档地图",
+      "title": "文档地图",
+      "category": "飞书·入口",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/00-入口/文档地图.md",
+      "path": "/knowledge/fs-00-入口-文档地图.md"
+    },
+    {
+      "id": "fs-00-入口-资料入库规范",
+      "title": "资料入库规范",
+      "category": "飞书·入口",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/00-入口/资料入库规范.md",
+      "path": "/knowledge/fs-00-入口-资料入库规范.md"
+    },
+    {
+      "id": "fs-00-入口-飞书空间搭建手册",
+      "title": "飞书空间搭建手册",
+      "category": "飞书·入口",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/00-入口/飞书空间搭建手册.md",
+      "path": "/knowledge/fs-00-入口-飞书空间搭建手册.md"
+    },
+    {
+      "id": "fs-00-入口-首批飞书云文档标题列表",
+      "title": "首批飞书云文档标题列表",
+      "category": "飞书·入口",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/00-入口/首批飞书云文档标题列表.md",
+      "path": "/knowledge/fs-00-入口-首批飞书云文档标题列表.md"
+    },
+    {
+      "id": "fs-01-项目总览-03组数据安全管理方案",
+      "title": "03组数据安全管理方案",
+      "category": "飞书·总览",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/01-项目总览/03组数据安全管理方案.md",
+      "path": "/knowledge/fs-01-项目总览-03组数据安全管理方案.md"
+    },
+    {
+      "id": "fs-01-项目总览-team-capability-profile",
+      "title": "team-capability-profile",
+      "category": "飞书·总览",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/01-项目总览/team-capability-profile.md",
+      "path": "/knowledge/fs-01-项目总览-team-capability-profile.md"
+    },
+    {
+      "id": "fs-01-项目总览-专利布局-一种玻纤拉挤电芯压条质量判定方法及系统",
+      "title": "一种玻纤拉挤电芯压条质量判定方法及系统",
+      "category": "飞书·总览",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/01-项目总览/专利布局/一种玻纤拉挤电芯压条质量判定方法及系统.md",
+      "path": "/knowledge/fs-01-项目总览-专利布局-一种玻纤拉挤电芯压条质量判定方法及系统.md"
+    },
+    {
+      "id": "fs-01-项目总览-任务书与开题评审-任务书-基于机器视觉的复合材料拉挤制品表面缺陷检测-郭小川",
+      "title": "任务书_基于机器视觉的复合材料拉挤制品表面缺陷检测（郭小川）",
+      "category": "飞书·总览",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/01-项目总览/任务书与开题评审/任务书_基于机器视觉的复合材料拉挤制品表面缺陷检测（郭小川）.md",
+      "path": "/knowledge/fs-01-项目总览-任务书与开题评审-任务书-基于机器视觉的复合材料拉挤制品表面缺陷检测-郭小川.md"
+    },
+    {
+      "id": "fs-01-项目总览-小组数据安全管理任务",
+      "title": "小组数据安全管理任务",
+      "category": "飞书·总览",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/01-项目总览/小组数据安全管理任务.md",
+      "path": "/knowledge/fs-01-项目总览-小组数据安全管理任务.md"
+    },
+    {
+      "id": "fs-01-项目总览-课题全栈市场调研-BP初稿",
+      "title": "BP初稿",
+      "category": "飞书·总览",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/01-项目总览/课题全栈市场调研/BP初稿.md",
+      "path": "/knowledge/fs-01-项目总览-课题全栈市场调研-BP初稿.md"
+    },
+    {
+      "id": "fs-01-项目总览-课题全栈市场调研-商业模式参考案例V1-0",
+      "title": "商业模式参考案例V1.0",
+      "category": "飞书·总览",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/01-项目总览/课题全栈市场调研/商业模式参考案例V1.0.md",
+      "path": "/knowledge/fs-01-项目总览-课题全栈市场调研-商业模式参考案例V1-0.md"
+    },
+    {
+      "id": "fs-01-项目总览-课题全栈市场调研-调研报告",
+      "title": "调研报告",
+      "category": "飞书·总览",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/01-项目总览/课题全栈市场调研/调研报告.md",
+      "path": "/knowledge/fs-01-项目总览-课题全栈市场调研-调研报告.md"
+    },
+    {
+      "id": "fs-01-项目总览-项目一页纸",
+      "title": "项目一页纸",
+      "category": "飞书·总览",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/01-项目总览/项目一页纸.md",
+      "path": "/knowledge/fs-01-项目总览-项目一页纸.md"
+    },
+    {
+      "id": "fs-02-需求与验收-evaluation-principles",
+      "title": "evaluation-principles",
+      "category": "飞书·需求",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/02-需求与验收/evaluation-principles.md",
+      "path": "/knowledge/fs-02-需求与验收-evaluation-principles.md"
+    },
+    {
+      "id": "fs-02-需求与验收-open-decisions",
+      "title": "open-decisions",
+      "category": "飞书·需求",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/02-需求与验收/open-decisions.md",
+      "path": "/knowledge/fs-02-需求与验收-open-decisions.md"
+    },
+    {
+      "id": "fs-02-需求与验收-未决事项清单-沟通管理日志",
+      "title": "未决事项清单-沟通管理日志",
+      "category": "飞书·需求",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/02-需求与验收/未决事项清单-沟通管理日志.md",
+      "path": "/knowledge/fs-02-需求与验收-未决事项清单-沟通管理日志.md"
+    },
+    {
+      "id": "fs-02-需求与验收-未决事项清单-范汝杰",
+      "title": "未决事项清单@范汝杰",
+      "category": "飞书·需求",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/02-需求与验收/未决事项清单@范汝杰.md",
+      "path": "/knowledge/fs-02-需求与验收-未决事项清单-范汝杰.md"
+    },
+    {
+      "id": "fs-02-需求与验收-需求规格书v3",
+      "title": "需求规格书v3",
+      "category": "飞书·需求",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/02-需求与验收/需求规格书v3.md",
+      "path": "/knowledge/fs-02-需求与验收-需求规格书v3.md"
+    },
+    {
+      "id": "fs-03-技术方案-03组-玻纤拉挤电芯压条-AI视觉检测-详细-3ed2",
+      "title": "03组_玻纤拉挤电芯压条_AI视觉检测_详细…3ed2",
+      "category": "飞书·方案",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/03-技术方案/03组_玻纤拉挤电芯压条_AI视觉检测_详细…3ed2.md",
+      "path": "/knowledge/fs-03-技术方案-03组-玻纤拉挤电芯压条-AI视觉检测-详细-3ed2.md"
+    },
+    {
+      "id": "fs-03-技术方案-ADR-001-four-layer-vis-842f",
+      "title": "ADR-001-four-layer-vis…842f",
+      "category": "飞书·方案",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/03-技术方案/ADR-001-four-layer-vis…842f.md",
+      "path": "/knowledge/fs-03-技术方案-ADR-001-four-layer-vis-842f.md"
+    },
+    {
+      "id": "fs-03-技术方案-ADR-002-reuse-xnoavi-c-69e9",
+      "title": "ADR-002-reuse-xnoavi-c…69e9",
+      "category": "飞书·方案",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/03-技术方案/ADR-002-reuse-xnoavi-c…69e9.md",
+      "path": "/knowledge/fs-03-技术方案-ADR-002-reuse-xnoavi-c-69e9.md"
+    },
+    {
+      "id": "fs-03-技术方案-offline-module-interface",
+      "title": "offline-module-interface",
+      "category": "飞书·方案",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/03-技术方案/offline-module-interface.md",
+      "path": "/knowledge/fs-03-技术方案-offline-module-interface.md"
+    },
+    {
+      "id": "fs-03-技术方案-总布置方案-20260723-基于600万彩色卷帘快门面阵相机的视觉布置方案",
+      "title": "20260723_基于600万彩色卷帘快门面阵相机的视觉布置方案",
+      "category": "飞书·方案",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/03-技术方案/总布置方案/20260723_基于600万彩色卷帘快门面阵相机的视觉布置方案.md",
+      "path": "/knowledge/fs-03-技术方案-总布置方案-20260723-基于600万彩色卷帘快门面阵相机的视觉布置方案.md"
+    },
+    {
+      "id": "fs-03-技术方案-离线检测模块接口schema",
+      "title": "离线检测模块接口schema",
+      "category": "飞书·方案",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/03-技术方案/离线检测模块接口schema.md",
+      "path": "/knowledge/fs-03-技术方案-离线检测模块接口schema.md"
+    },
+    {
+      "id": "fs-03-技术方案-系统架构设计",
+      "title": "系统架构设计",
+      "category": "飞书·方案",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/03-技术方案/系统架构设计.md",
+      "path": "/knowledge/fs-03-技术方案-系统架构设计.md"
+    },
+    {
+      "id": "fs-03-技术方案-详细方案设计报告-玻纤拉挤电芯压条AI视觉检测系统设计方案20260801",
+      "title": "玻纤拉挤电芯压条AI视觉检测系统设计方案20260801",
+      "category": "飞书·方案",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/03-技术方案/详细方案设计报告/玻纤拉挤电芯压条AI视觉检测系统设计方案20260801.md",
+      "path": "/knowledge/fs-03-技术方案-详细方案设计报告-玻纤拉挤电芯压条AI视觉检测系统设计方案20260801.md"
+    },
+    {
+      "id": "fs-03-技术方案-软件拓扑图",
+      "title": "软件拓扑图",
+      "category": "飞书·方案",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/03-技术方案/软件拓扑图.md",
+      "path": "/knowledge/fs-03-技术方案-软件拓扑图.md"
+    },
+    {
+      "id": "fs-04-算法与模型-EfficientAD-完整实操教程",
+      "title": "EfficientAD 完整实操教程",
+      "category": "飞书·算法",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/04-算法与模型/EfficientAD 完整实操教程.md",
+      "path": "/knowledge/fs-04-算法与模型-EfficientAD-完整实操教程.md"
+    },
+    {
+      "id": "fs-04-算法与模型-专业课笔记-YOLO-PatchCore-标注",
+      "title": "专业课笔记-YOLO-PatchCore-标注",
+      "category": "飞书·算法",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/04-算法与模型/专业课笔记-YOLO-PatchCore-标注.md",
+      "path": "/knowledge/fs-04-算法与模型-专业课笔记-YOLO-PatchCore-标注.md"
+    },
+    {
+      "id": "fs-04-算法与模型-工件表面缺陷检测模型测试报告",
+      "title": "工件表面缺陷检测模型测试报告",
+      "category": "飞书·算法",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/04-算法与模型/工件表面缺陷检测模型测试报告.md",
+      "path": "/knowledge/fs-04-算法与模型-工件表面缺陷检测模型测试报告.md"
+    },
+    {
+      "id": "fs-04-算法与模型-拉挤工艺缺陷检测三层智能检测方案",
+      "title": "拉挤工艺缺陷检测三层智能检测方案",
+      "category": "飞书·算法",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/04-算法与模型/拉挤工艺缺陷检测三层智能检测方案.md",
+      "path": "/knowledge/fs-04-算法与模型-拉挤工艺缺陷检测三层智能检测方案.md"
+    },
+    {
+      "id": "fs-04-算法与模型-拉挤表面缺陷离线检测与近线精修实施方案-20260726-2",
+      "title": "拉挤表面缺陷离线检测与近线精修实施方案_20260726(2)",
+      "category": "飞书·算法",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/04-算法与模型/拉挤表面缺陷离线检测与近线精修实施方案_20260726(2).md",
+      "path": "/knowledge/fs-04-算法与模型-拉挤表面缺陷离线检测与近线精修实施方案-20260726-2.md"
+    },
+    {
+      "id": "fs-04-算法与模型-算法线包-环境SOP与实验计划",
+      "title": "算法线包-环境SOP与实验计划",
+      "category": "飞书·算法",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/04-算法与模型/算法线包-环境SOP与实验计划.md",
+      "path": "/knowledge/fs-04-算法与模型-算法线包-环境SOP与实验计划.md"
+    },
+    {
+      "id": "fs-05-采集与数据-图像处理方案",
+      "title": "图像处理方案",
+      "category": "飞书·采集",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/05-采集与数据/图像处理方案.md",
+      "path": "/knowledge/fs-05-采集与数据-图像处理方案.md"
+    },
+    {
+      "id": "fs-05-采集与数据-图像采集方案",
+      "title": "图像采集方案",
+      "category": "飞书·采集",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/05-采集与数据/图像采集方案.md",
+      "path": "/knowledge/fs-05-采集与数据-图像采集方案.md"
+    },
+    {
+      "id": "fs-05-采集与数据-数据与标注规范",
+      "title": "数据与标注规范",
+      "category": "飞书·采集",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/05-采集与数据/数据与标注规范.md",
+      "path": "/knowledge/fs-05-采集与数据-数据与标注规范.md"
+    },
+    {
+      "id": "fs-05-采集与数据-缺陷定义卡",
+      "title": "缺陷定义卡",
+      "category": "飞书·采集",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/05-采集与数据/缺陷定义卡.md",
+      "path": "/knowledge/fs-05-采集与数据-缺陷定义卡.md"
+    },
+    {
+      "id": "fs-05-采集与数据-过程版-600万卷帘面阵相机视觉布置方案",
+      "title": "过程版-600万卷帘面阵相机视觉布置方案",
+      "category": "飞书·采集",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/05-采集与数据/过程版-600万卷帘面阵相机视觉布置方案.md",
+      "path": "/knowledge/fs-05-采集与数据-过程版-600万卷帘面阵相机视觉布置方案.md"
+    },
+    {
+      "id": "fs-05-采集与数据-过程版-600万相机布置要点",
+      "title": "过程版-600万相机布置要点",
+      "category": "飞书·采集",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/05-采集与数据/过程版-600万相机布置要点.md",
+      "path": "/knowledge/fs-05-采集与数据-过程版-600万相机布置要点.md"
+    },
+    {
+      "id": "fs-06-前端与BI-19-前端BI产品规格",
+      "title": "19-前端BI产品规格",
+      "category": "飞书·前端",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/06-前端与BI/19-前端BI产品规格.md",
+      "path": "/knowledge/fs-06-前端与BI-19-前端BI产品规格.md"
+    },
+    {
+      "id": "fs-06-前端与BI-20-检测结果展示UI规格",
+      "title": "20-检测结果展示UI规格",
+      "category": "飞书·前端",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/06-前端与BI/20-检测结果展示UI规格.md",
+      "path": "/knowledge/fs-06-前端与BI-20-检测结果展示UI规格.md"
+    },
+    {
+      "id": "fs-06-前端与BI-21-管理看板规格",
+      "title": "21-管理看板规格",
+      "category": "飞书·前端",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/06-前端与BI/21-管理看板规格.md",
+      "path": "/knowledge/fs-06-前端与BI-21-管理看板规格.md"
+    },
+    {
+      "id": "fs-06-前端与BI-22-前后端API契约",
+      "title": "22-前后端API契约",
+      "category": "飞书·前端",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/06-前端与BI/22-前后端API契约.md",
+      "path": "/knowledge/fs-06-前端与BI-22-前后端API契约.md"
+    },
+    {
+      "id": "fs-06-前端与BI-23-意见箱提交流程",
+      "title": "23-意见箱提交流程",
+      "category": "飞书·前端",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/06-前端与BI/23-意见箱提交流程.md",
+      "path": "/knowledge/fs-06-前端与BI-23-意见箱提交流程.md"
+    },
+    {
+      "id": "fs-06-前端与BI-24-技术选型建议",
+      "title": "24-技术选型建议",
+      "category": "飞书·前端",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/06-前端与BI/24-技术选型建议.md",
+      "path": "/knowledge/fs-06-前端与BI-24-技术选型建议.md"
+    },
+    {
+      "id": "fs-06-前端与BI-25-程昱涵两周冲刺任务板",
+      "title": "25-程昱涵两周冲刺任务板",
+      "category": "飞书·前端",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/06-前端与BI/25-程昱涵两周冲刺任务板.md",
+      "path": "/knowledge/fs-06-前端与BI-25-程昱涵两周冲刺任务板.md"
+    },
+    {
+      "id": "fs-06-前端与BI-26-联调检查单",
+      "title": "26-联调检查单",
+      "category": "飞书·前端",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/06-前端与BI/26-联调检查单.md",
+      "path": "/knowledge/fs-06-前端与BI-26-联调检查单.md"
+    },
+    {
+      "id": "fs-06-前端与BI-bi-metrics-onepager",
+      "title": "bi-metrics-onepager",
+      "category": "飞书·前端",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/06-前端与BI/bi-metrics-onepager.md",
+      "path": "/knowledge/fs-06-前端与BI-bi-metrics-onepager.md"
+    },
+    {
+      "id": "fs-06-前端与BI-程昱涵-前端BI两周冲刺任务板",
+      "title": "程昱涵-前端BI两周冲刺任务板",
+      "category": "飞书·前端",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/06-前端与BI/程昱涵-前端BI两周冲刺任务板.md",
+      "path": "/knowledge/fs-06-前端与BI-程昱涵-前端BI两周冲刺任务板.md"
+    },
+    {
+      "id": "fs-07-现场与交付-使用说明骨架",
+      "title": "使用说明骨架",
+      "category": "飞书·现场",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/07-现场与交付/使用说明骨架.md",
+      "path": "/knowledge/fs-07-现场与交付-使用说明骨架.md"
+    },
+    {
+      "id": "fs-07-现场与交付-流水线需求表模板",
+      "title": "流水线需求表模板",
+      "category": "飞书·现场",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/07-现场与交付/流水线需求表模板.md",
+      "path": "/knowledge/fs-07-现场与交付-流水线需求表模板.md"
+    },
+    {
+      "id": "fs-08-项目管理-change-control",
+      "title": "change-control",
+      "category": "飞书·管理",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/08-项目管理/change-control.md",
+      "path": "/knowledge/fs-08-项目管理-change-control.md"
+    },
+    {
+      "id": "fs-08-项目管理-m-coin-cost-system",
+      "title": "m-coin-cost-system",
+      "category": "飞书·管理",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/08-项目管理/m-coin-cost-system.md",
+      "path": "/knowledge/fs-08-项目管理-m-coin-cost-system.md"
+    },
+    {
+      "id": "fs-08-项目管理-m-coin-ledger",
+      "title": "m-coin-ledger",
+      "category": "飞书·管理",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/08-项目管理/m-coin-ledger.md",
+      "path": "/knowledge/fs-08-项目管理-m-coin-ledger.md"
+    },
+    {
+      "id": "fs-08-项目管理-M币-M币预算表",
+      "title": "M币预算表",
+      "category": "飞书·管理",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/08-项目管理/M币/M币预算表.md",
+      "path": "/knowledge/fs-08-项目管理-M币-M币预算表.md"
+    },
+    {
+      "id": "fs-08-项目管理-operation-plan-from-pr-a3d3",
+      "title": "operation-plan-from-pr…a3d3",
+      "category": "飞书·管理",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/08-项目管理/operation-plan-from-pr…a3d3.md",
+      "path": "/knowledge/fs-08-项目管理-operation-plan-from-pr-a3d3.md"
+    },
+    {
+      "id": "fs-08-项目管理-team-roster",
+      "title": "team-roster",
+      "category": "飞书·管理",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/08-项目管理/team-roster.md",
+      "path": "/knowledge/fs-08-项目管理-team-roster.md"
+    },
+    {
+      "id": "fs-08-项目管理-team-workstreams",
+      "title": "team-workstreams",
+      "category": "飞书·管理",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/08-项目管理/team-workstreams.md",
+      "path": "/knowledge/fs-08-项目管理-team-workstreams.md"
+    },
+    {
+      "id": "fs-08-项目管理-WBS-WBS与双周里程碑",
+      "title": "WBS与双周里程碑",
+      "category": "飞书·管理",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/08-项目管理/WBS/WBS与双周里程碑.md",
+      "path": "/knowledge/fs-08-项目管理-WBS-WBS与双周里程碑.md"
+    },
+    {
+      "id": "fs-08-项目管理-wbs-and-schedule",
+      "title": "wbs-and-schedule",
+      "category": "飞书·管理",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/08-项目管理/wbs-and-schedule.md",
+      "path": "/knowledge/fs-08-项目管理-wbs-and-schedule.md"
+    },
+    {
+      "id": "fs-08-项目管理-双周报-首次双周报草稿-Kimi版",
+      "title": "首次双周报草稿-Kimi版",
+      "category": "飞书·管理",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/08-项目管理/双周报/首次双周报草稿-Kimi版.md",
+      "path": "/knowledge/fs-08-项目管理-双周报-首次双周报草稿-Kimi版.md"
+    },
+    {
+      "id": "fs-08-项目管理-双周报-首次双周报草稿-截止7-26",
+      "title": "首次双周报草稿（截止7-26）",
+      "category": "飞书·管理",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/08-项目管理/双周报/首次双周报草稿（截止7-26）.md",
+      "path": "/knowledge/fs-08-项目管理-双周报-首次双周报草稿-截止7-26.md"
+    },
+    {
+      "id": "fs-08-项目管理-沟通管理计划",
+      "title": "沟通管理计划",
+      "category": "飞书·管理",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/08-项目管理/沟通管理计划.md",
+      "path": "/knowledge/fs-08-项目管理-沟通管理计划.md"
+    },
+    {
+      "id": "fs-08-项目管理-风险台账-风险登记册",
+      "title": "风险登记册",
+      "category": "飞书·管理",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/08-项目管理/风险台账/风险登记册.md",
+      "path": "/knowledge/fs-08-项目管理-风险台账-风险登记册.md"
+    },
+    {
+      "id": "fs-09-会议与纪要-会议纪要-20260725194203-转写-清华MEM-03组周会-逐字稿文本-1",
+      "title": "20260725194203-转写_清华MEM 03组周会-逐字稿文本-1",
+      "category": "飞书·会议",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/09-会议与纪要/会议纪要/20260725194203-转写_清华MEM 03组周会-逐字稿文本-1.md",
+      "path": "/knowledge/fs-09-会议与纪要-会议纪要-20260725194203-转写-清华MEM-03组周会-逐字稿文本-1.md"
+    },
+    {
+      "id": "fs-09-会议与纪要-会议纪要-20260808185008-清华MEM-03组周会-逐字稿文本-1",
+      "title": "20260808185008-清华MEM 03组周会-逐字稿文本-1",
+      "category": "飞书·会议",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/09-会议与纪要/会议纪要/20260808185008-清华MEM 03组周会-逐字稿文本-1.md",
+      "path": "/knowledge/fs-09-会议与纪要-会议纪要-20260808185008-清华MEM-03组周会-逐字稿文本-1.md"
+    },
+    {
+      "id": "fs-09-会议与纪要-会议纪要逐字稿-20260725194203-转写-清华MEM-03组周会-逐字稿文本-1",
+      "title": "20260725194203-转写_清华MEM 03组周会-逐字稿文本-1",
+      "category": "飞书·会议",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/09-会议与纪要/会议纪要逐字稿/20260725194203-转写_清华MEM 03组周会-逐字稿文本-1.md",
+      "path": "/knowledge/fs-09-会议与纪要-会议纪要逐字稿-20260725194203-转写-清华MEM-03组周会-逐字稿文本-1.md"
+    },
+    {
+      "id": "fs-10-知识沉淀-onboarding指南v2",
+      "title": "onboarding指南v2",
+      "category": "飞书·沉淀",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/10-知识沉淀/onboarding指南v2.md",
+      "path": "/knowledge/fs-10-知识沉淀-onboarding指南v2.md"
+    },
+    {
+      "id": "fs-10-知识沉淀-拉挤工艺基础",
+      "title": "拉挤工艺基础",
+      "category": "飞书·沉淀",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/10-知识沉淀/拉挤工艺基础.md",
+      "path": "/knowledge/fs-10-知识沉淀-拉挤工艺基础.md"
+    },
+    {
+      "id": "fs-10-知识沉淀-行业背景",
+      "title": "行业背景",
+      "category": "飞书·沉淀",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/10-知识沉淀/行业背景.md",
+      "path": "/knowledge/fs-10-知识沉淀-行业背景.md"
+    },
+    {
+      "id": "fs-10-知识沉淀-行业难点",
+      "title": "行业难点",
+      "category": "飞书·沉淀",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/10-知识沉淀/行业难点.md",
+      "path": "/knowledge/fs-10-知识沉淀-行业难点.md"
+    },
+    {
+      "id": "fs-10-知识沉淀-视觉技术导读v2",
+      "title": "视觉技术导读v2",
+      "category": "飞书·沉淀",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/10-知识沉淀/视觉技术导读v2.md",
+      "path": "/knowledge/fs-10-知识沉淀-视觉技术导读v2.md"
+    },
+    {
+      "id": "fs-10-知识沉淀-进度状态",
+      "title": "进度状态",
+      "category": "飞书·沉淀",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/10-知识沉淀/进度状态.md",
+      "path": "/knowledge/fs-10-知识沉淀-进度状态.md"
+    },
+    {
+      "id": "fs-11-对外材料-BP提纲-给王权",
+      "title": "BP提纲-给王权",
+      "category": "飞书·对外",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/11-对外材料/BP提纲-给王权.md",
+      "path": "/knowledge/fs-11-对外材料-BP提纲-给王权.md"
+    },
+    {
+      "id": "fs-11-对外材料-论文专利卡片",
+      "title": "论文专利卡片",
+      "category": "飞书·对外",
+      "description": "飞书镜像 · 拉取 2026-08-13",
+      "source": "docs/agent-knowledge-base/feishu-sync/11-对外材料/论文专利卡片.md",
+      "path": "/knowledge/fs-11-对外材料-论文专利卡片.md"
     },
     {
       "id": "feedback-20260711-EXAMPLE-周会要看M币",
