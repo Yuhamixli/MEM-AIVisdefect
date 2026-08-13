@@ -1,0 +1,54 @@
+name: Tidy Feishu drive
+
+# 每天 00:30 UTC（北京时间 08:30）清扫共享盘根目录与 98-待整理。
+on:
+  schedule:
+    - cron: "30 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tidy-feishu-drive
+  cancel-in-progress: false
+
+jobs:
+  tidy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/feishu-cursor-bridge
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: apps/feishu-cursor-bridge/package-lock.json
+
+      - name: Check Feishu secrets
+        id: secrets
+        env:
+          APP_ID: ${{ secrets.FEISHU_APP_ID }}
+          APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
+        run: |
+          if [ -z "$APP_ID" ] || [ -z "$APP_SECRET" ]; then
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::FEISHU_APP_ID / FEISHU_APP_SECRET 未配置，跳过整理。"
+          else
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Install
+        if: steps.secrets.outputs.configured == 'true'
+        run: npm ci
+
+      - name: Tidy drive
+        if: steps.secrets.outputs.configured == 'true'
+        env:
+          FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
+          FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
+          FEISHU_SYNC_FOLDER_TOKEN: ${{ secrets.FEISHU_SYNC_FOLDER_TOKEN }}
+        run: npm run tidy-drive:apply

@@ -25,6 +25,12 @@
     "**/~$*",
     "**/*.LNK"
   ],
+  "folderRoutes": [
+    { "match": "docs/02-tech-research/**", "folder": "03-技术方案" },
+    { "match": "docs/design/**", "folder": "03-技术方案" },
+    { "match": "docs/project-management/**", "folder": "08-项目管理" },
+    { "match": "docs/agent-knowledge-base/**", "folder": "00-入口" }
+  ],
   "titleMaxChars": 27,
   "commitStateInCi": true
 }

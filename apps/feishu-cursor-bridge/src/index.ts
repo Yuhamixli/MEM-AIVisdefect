@@ -9,12 +9,49 @@ import {
   replyText,
   resolveBotOpenId,
 } from "./feishu.js";
+import {
+  ensureConversationLog,
+  logConversation,
+} from "./conversation-log.js";
 import { markEvent, markWsReady, startHealthServer } from "./health.js";
 import { helpNudge, isNonTaskMention } from "./intent.js";
 import { clearAgentId, clearSessionsIfModelChanged } from "./session-store.js";
+import { rememberName, resolveUserName } from "./user-names.js";
 
 const client = createFeishuClient();
 const inFlight = new Set<string>();
+
+async function replyLogged(
+  params: {
+    chatId: string;
+    chatType: string;
+    messageId?: string;
+    senderOpenId?: string;
+    senderName?: string;
+    sessionKey: string;
+    kind: string;
+    agentId?: string;
+    runId?: string;
+    status?: string;
+  },
+  text: string,
+): Promise<void> {
+  await replyText(client, params.chatId, text, params.messageId);
+  logConversation({
+    direction: "out",
+    chatType: params.chatType,
+    chatId: params.chatId,
+    messageId: params.messageId,
+    senderOpenId: params.senderOpenId,
+    senderName: params.senderName,
+    sessionKey: params.sessionKey,
+    text,
+    kind: params.kind,
+    agentId: params.agentId,
+    runId: params.runId,
+    status: params.status,
+  });
+}
 
 function pick<T>(items: T[]): T {
   return items[Math.floor(Math.random() * items.length)]!;
@@ -54,19 +91,45 @@ async function handleUserMessage(params: {
   chatType: string;
   text: string;
   senderOpenId?: string;
+  senderName?: string;
 }): Promise<void> {
-  const { chatId, messageId, text, senderOpenId } = params;
+  const { chatId, messageId, text, senderOpenId, chatType } = params;
   const key = sessionKey(chatId, senderOpenId);
+  if (params.senderName) {
+    rememberName(senderOpenId, params.senderName, "event");
+  }
+  const senderName =
+    params.senderName ||
+    (await resolveUserName(client, senderOpenId, {
+      chatId,
+      hintName: params.senderName,
+    }));
+  const base = {
+    chatId,
+    chatType,
+    messageId,
+    senderOpenId,
+    senderName,
+    sessionKey: key,
+  };
+
+  const loggedIn = logConversation({
+    direction: "in",
+    ...base,
+    text,
+    kind: "user",
+  });
+  console.log(
+    `[conv-log] inbound ok=${loggedIn} session=${key} name=${senderName || "-"} chatType=${chatType} text=${text.slice(0, 60)}`,
+  );
 
   if (/^(重置|reset|新会话)$/i.test(text.trim())) {
     clearAgentId(key);
     // Also clear legacy chat-wide session if present
     clearAgentId(chatId);
-    await replyText(
-      client,
-      chatId,
+    await replyLogged(
+      { ...base, kind: "reset" },
       pick(["好，上下文清掉了，接着问就行。", "已重置，当新对话继续吧。"]),
-      messageId,
     );
     return;
   }
@@ -75,11 +138,9 @@ async function handleUserMessage(params: {
   if (
     /什么模型|哪个模型|which\s*model|what\s*model/i.test(text.trim())
   ) {
-    await replyText(
-      client,
-      chatId,
+    await replyLogged(
+      { ...base, kind: "model" },
       `当前配置的 Cloud Agent 模型是 \`${config.modelId}\`（环境变量 CURSOR_MODEL）。`,
-      messageId,
     );
     return;
   }
@@ -87,26 +148,24 @@ async function handleUserMessage(params: {
   // Meta / empty @ — do NOT call Cloud Agent (prevents topic drift)
   if (isNonTaskMention(text)) {
     console.log(`[bridge] non-task ping, nudge only: ${text.slice(0, 60)}`);
-    await replyText(client, chatId, helpNudge(), messageId);
+    await replyLogged({ ...base, kind: "nudge" }, helpNudge());
     return;
   }
 
   if (inFlight.has(key) || inFlight.has(chatId)) {
-    await replyText(
-      client,
-      chatId,
+    await replyLogged(
+      { ...base, kind: "busy" },
       pick([
         "上一条还在查，稍等我回完再问～",
         "正在忙前一个问题，请等一下再 @ 我。",
       ]),
-      messageId,
     );
     return;
   }
 
   inFlight.add(key);
   try {
-    await replyText(client, chatId, ackMessage(text), messageId);
+    await replyLogged({ ...base, kind: "ack" }, ackMessage(text));
 
     let chatContext = "";
     if (config.recentChatLimit > 0) {
@@ -120,7 +179,16 @@ async function handleUserMessage(params: {
     }
 
     const reply = await runCursorAgent(key, text, { chatContext });
-    await replyText(client, chatId, reply.text, messageId);
+    await replyLogged(
+      {
+        ...base,
+        kind: "agent",
+        agentId: reply.agentId,
+        runId: reply.runId,
+        status: reply.status,
+      },
+      reply.text,
+    );
   } catch (err) {
     const detail =
       err instanceof CursorAgentError
@@ -129,11 +197,9 @@ async function handleUserMessage(params: {
           ? err.message
           : String(err);
     console.error("[bridge] error", err);
-    await replyText(
-      client,
-      chatId,
+    await replyLogged(
+      { ...base, kind: "error" },
       `抱歉，这次没查成：${detail}\n你可以换个说法再试，或发「重置」开新会话。`,
-      messageId,
     ).catch(() => {});
   } finally {
     inFlight.delete(key);
@@ -148,6 +214,7 @@ process.on("unhandledRejection", (reason) => {
 });
 
 async function main(): Promise<void> {
+  ensureConversationLog();
   startHealthServer(config.healthPort);
 
   console.log(`[bridge] runtime = ${config.runtime}`);
@@ -158,6 +225,9 @@ async function main(): Promise<void> {
   }
   console.log(`[bridge] model = ${config.modelId}`);
   console.log(`[bridge] requireMention = ${config.requireMention}`);
+  console.log(
+    `[bridge] convLog=${config.conversationLogEnabled} dataDir=${config.dataDir}`,
+  );
   clearSessionsIfModelChanged(config.modelId);
 
   const botOpenId = await resolveBotOpenId(client);
@@ -204,6 +274,7 @@ async function main(): Promise<void> {
           chatType: incoming.chatType,
           text: incoming.text,
           senderOpenId: incoming.senderOpenId,
+          senderName: incoming.senderName,
         });
       } catch (err) {
         console.error("[bridge] event handler error", err);

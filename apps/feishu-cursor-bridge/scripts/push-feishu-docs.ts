@@ -36,6 +36,8 @@ type Manifest = {
   stateFile: string;
   include: string[];
   exclude: string[];
+  /** Repo path glob → Feishu top-level folder name (keeps root clean). */
+  folderRoutes?: { match: string; folder: string }[];
   titleMaxChars: number;
   commitStateInCi?: boolean;
 };
@@ -321,6 +323,77 @@ async function deleteFile(token: string, fileToken: string): Promise<void> {
   }
 }
 
+async function listDriveFolder(
+  token: string,
+  folderToken: string,
+): Promise<{ name?: string; token?: string; type?: string }[]> {
+  const files: { name?: string; token?: string; type?: string }[] = [];
+  let pageToken = "";
+  do {
+    const url = new URL("https://open.feishu.cn/open-apis/drive/v1/files");
+    url.searchParams.set("folder_token", folderToken);
+    url.searchParams.set("page_size", "50");
+    if (pageToken) url.searchParams.set("page_token", pageToken);
+    const res = await fetch(url, {
+      headers: { Authorization: `Bearer ${token}` },
+    });
+    const data = (await res.json()) as {
+      code?: number;
+      msg?: string;
+      data?: {
+        files?: { name?: string; token?: string; type?: string }[];
+        next_page_token?: string;
+        has_more?: boolean;
+      };
+    };
+    if (data.code && data.code !== 0) {
+      throw new Error(`drive list failed: ${data.code} ${data.msg}`);
+    }
+    files.push(...(data.data?.files || []));
+    pageToken = data.data?.has_more ? data.data.next_page_token || "" : "";
+  } while (pageToken);
+  return files;
+}
+
+function routeFolderName(rel: string, manifest: Manifest): string | null {
+  const routes = manifest.folderRoutes || [];
+  const normalized = rel.replace(/\\/g, "/");
+  for (const r of routes) {
+    if (globToRegExp(r.match).test(normalized)) return r.folder;
+  }
+  return null;
+}
+
+async function resolvePushFolderToken(
+  tenant: string,
+  rootFolder: string,
+  rel: string,
+  manifest: Manifest,
+  cache: Map<string, string>,
+): Promise<{ token: string; label: string }> {
+  const folderName = routeFolderName(rel, manifest);
+  if (!folderName) {
+    return { token: rootFolder, label: "(root)" };
+  }
+  if (cache.has(folderName)) {
+    return { token: cache.get(folderName)!, label: folderName };
+  }
+  const files = await listDriveFolder(tenant, rootFolder);
+  for (const f of files) {
+    if (f.type === "folder" && f.name && f.token) {
+      cache.set(f.name, f.token);
+    }
+  }
+  const hit = cache.get(folderName);
+  if (!hit) {
+    console.warn(
+      `  warn: folder "${folderName}" missing under root; falling back to root`,
+    );
+    return { token: rootFolder, label: "(root)" };
+  }
+  return { token: hit, label: folderName };
+}
+
 function extOf(rel: string): "md" | "docx" | "doc" | null {
   const lower = rel.toLowerCase();
   if (lower.endsWith(".md") || lower.endsWith(".markdown")) return "md";
@@ -354,6 +427,7 @@ async function main(): Promise<void> {
     tenant = await getTenantToken(appId!, appSecret!);
   }
 
+  const folderCache = new Map<string, string>();
   let pushed = 0;
   let skipped = 0;
   let failed = 0;
@@ -374,7 +448,8 @@ async function main(): Promise<void> {
 
     const title = feishuTitle(rel, manifest.titleMaxChars);
     const importName = `${title}.${ext === "md" ? "md" : ext}`;
-    console.log(`[push] ${rel} → "${title}" (${bytes} bytes)`);
+    const routedName = routeFolderName(rel, manifest) || "(root)";
+    console.log(`[push] ${rel} → ${routedName}/ "${title}" (${bytes} bytes)`);
 
     if (dryRun) {
       pushed += 1;
@@ -382,13 +457,20 @@ async function main(): Promise<void> {
     }
 
     try {
+      const dest = await resolvePushFolderToken(
+        tenant,
+        folder,
+        rel,
+        manifest,
+        folderCache,
+      );
       const fileToken = await uploadForImport(tenant, abs, importName, ext === "md" ? "md" : ext);
       const ticket = await createImportTask(
         tenant,
         fileToken,
         ext === "md" ? "md" : ext,
         title,
-        folder,
+        dest.token,
       );
       const imported = await pollImport(tenant, ticket);
 

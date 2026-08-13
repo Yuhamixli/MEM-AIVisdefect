@@ -23,6 +23,8 @@ services:
       CURSOR_RUNTIME: cloud
       # Use bind-mounted ./src (DSM often skips image rebuild)
       BRIDGE_ENTRY: src
+      DATA_DIR: /app/.data
+      CONVERSATION_LOG: "true"
       HEALTH_PORT: "8787"
       WATCHDOG_CHECK_MS: "30000"
       WATCHDOG_FAILS: "3"
@@ -39,6 +41,8 @@ services:
       # Ensure NAS-uploaded fixes apply even if DSM skips docker image rebuild
       - ./src:/app/src:ro
       - ./scripts:/app/scripts:ro
+      # Admin UI token (create admin.token beside compose; do not commit)
+      - ./admin.token:/app/admin.token:ro
     logging:
       driver: json-file
       options:

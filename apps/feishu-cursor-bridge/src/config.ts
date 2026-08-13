@@ -1,3 +1,4 @@
+import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import dotenv from "dotenv";
@@ -15,6 +16,21 @@ function bool(name: string, fallback: boolean): boolean {
   const v = process.env[name]?.trim().toLowerCase();
   if (v === undefined || v === "") return fallback;
   return v === "1" || v === "true" || v === "yes";
+}
+
+/** ADMIN_TOKEN env, or sibling admin.token file (Synology sometimes blocks .env overwrite). */
+function loadAdminToken(): string {
+  const fromEnv = process.env.ADMIN_TOKEN?.trim();
+  if (fromEnv) return fromEnv;
+  for (const rel of ["../admin.token", "../.data/admin-token"]) {
+    try {
+      const t = fs.readFileSync(path.resolve(__dirname, rel), "utf8").trim();
+      if (t) return t;
+    } catch {
+      /* missing */
+    }
+  }
+  return "";
 }
 
 const runtime = (process.env.CURSOR_RUNTIME?.trim().toLowerCase() || "cloud") as
@@ -40,7 +56,13 @@ export const config = {
   /** Recent group messages to attach to each Cloud Agent prompt (0 = off). */
   recentChatLimit: Number(process.env.RECENT_CHAT_LIMIT || 40) || 0,
   healthPort: Number(process.env.HEALTH_PORT || 8787) || 8787,
-  dataDir: path.resolve(__dirname, "../.data"),
+  dataDir: path.resolve(
+    process.env.DATA_DIR?.trim() || path.join(__dirname, "../.data"),
+  ),
+  /** Bearer / ?token= for /admin/conversations (empty = admin UI off). */
+  adminToken: loadAdminToken(),
+  /** Persist every user↔bot turn under .data/conversations/ */
+  conversationLogEnabled: bool("CONVERSATION_LOG", true),
 };
 
 export function buildSystemPreamble(modelId: string): string {
