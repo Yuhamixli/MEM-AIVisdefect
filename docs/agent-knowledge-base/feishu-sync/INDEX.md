@@ -1,11 +1,34 @@
 # 飞书同步索引
 
-更新时间：2026-08-13T13:41:21.100Z
+更新时间：2026-08-14T03:28:27.414Z
 根文件夹 token：`JviVfMA56lMkzhdVoZdcEVk9nBd`
 成功：80 / 尝试：80
 
 ## 已同步
 
+- [00-从这里开始-文档入口](./00-入口/00-从这里开始-文档入口.md) (`MGW4dZQ7hoovQTxuw8ocpIMSnvb`, 808 chars)
+- [原始资料入库说明-微信与坚果云](./00-入口/原始资料入库说明-微信与坚果云.md) (`WIGnd57Seo1XLuxHeQpc98rOngg`, 504 chars)
+- [文档地图](./00-入口/文档地图.md) (`Ofted42udoDeyPxNAsac9XdhnCg`, 189 chars)
+- [飞书空间搭建手册](./00-入口/飞书空间搭建手册.md) (`LrKZdpbOBorbLJx6rITcHhqqnVb`, 6357 chars)
+- [首批飞书云文档标题列表](./00-入口/首批飞书云文档标题列表.md) (`VVSXdcuQLowaJIx05tQcDOTdnWd`, 4206 chars)
+- [资料入库规范](./00-入口/资料入库规范.md) (`IVYOdbg4AotekhxDjh2cW6CQn0c`, 2521 chars)
+- [共享简报-写作前必读](./00-入口/共享简报-写作前必读.md) (`Md5fdaEpooxV1ux9YHNcsPb6n0c`, 5588 chars)
+- [README-文档地图与交付勾选清单](./00-入口/README-文档地图与交付勾选清单.md) (`Ixpmd1eeNofj9qxjgDWcYRpEnkc`, 3243 chars)
+- [M币预算表](./08-项目管理/M币/M币预算表.md) (`GeFedI4SQoHabnxa5tLcd4jfn24`, 3879 chars)
+- [首次双周报草稿-Kimi版](./08-项目管理/双周报/首次双周报草稿-Kimi版.md) (`IrlMdsUEcoxz5dx6Zq9cV9dlnxg`, 4823 chars)
+- [首次双周报草稿（截止7-26）](./08-项目管理/双周报/首次双周报草稿（截止7-26）.md) (`Y1pddu5KYo8sb6xIvegc7iL5nVh`, 206 chars)
+- [风险登记册](./08-项目管理/风险台账/风险登记册.md) (`D3rOd2M0boCfO4xyAhzc8acJnld`, 3657 chars)
+- [WBS与双周里程碑](./08-项目管理/WBS/WBS与双周里程碑.md) (`WGXmduRq7oZ6wRxbs9Qcq8p8nuc`, 4425 chars)
+- [TODO](./08-项目管理/TODO.md) (`Tbm8deQj1oK7GkxWNKOcdesYn7d`, 5567 chars)
+- [REPO-TODO](./08-项目管理/REPO-TODO.md) (`EbPLd9eDyoM6ctxjvHNc06igngf`, 4160 chars)
+- [wbs-and-schedule](./08-项目管理/wbs-and-schedule.md) (`HoCCdfmAvoK1lGxUHcuck7pHnwc`, 1762 chars)
+- [team-workstreams](./08-项目管理/team-workstreams.md) (`Dtb7drqANoVfAMxbRylc2O9Xn2y`, 2734 chars)
+- [team-roster](./08-项目管理/team-roster.md) (`RfvWd1QoaoPZxuxqYnYcGdRUntf`, 1383 chars)
+- [operation-plan-from-pr…a3d3](./08-项目管理/operation-plan-from-pr…a3d3.md) (`BTXudruYSovJyCxwfaWcZZsfnlg`, 4409 chars)
+- [m-coin-ledger](./08-项目管理/m-coin-ledger.md) (`LENNdKmQhoHUNTxIoOzcfEBdnZd`, 590 chars)
+- [m-coin-cost-system](./08-项目管理/m-coin-cost-system.md) (`BTN7dBKm6okXg3xsJdacumcmnfe`, 1172 chars)
+- [change-control](./08-项目管理/change-control.md) (`XpHqdNXQ8oK4mMxXNXQcnkQWn3G`, 1160 chars)
+- [沟通管理计划](./08-项目管理/沟通管理计划.md) (`NNv1dWmjqotfEVxcPN6cPZNwnnf`, 3259 chars)
 - [BP初稿](./01-项目总览/课题全栈市场调研/BP初稿.md) (`Jcf9dZAWBoEFOVxfAMkcy0GInEh`, 2933 chars)
 - [调研报告](./01-项目总览/课题全栈市场调研/调研报告.md) (`AWBvdm1fDobBy7xNAM9cuh3Mnif`, 55342 chars)
 - [商业模式参考案例V1.0](./01-项目总览/课题全栈市场调研/商业模式参考案例V1.0.md) (`KaKgdzG9goStOFxipmEcolp7nde`, 1776 chars)
@@ -18,16 +41,6 @@
 - [【已归档】03组数据安全管理方案-v0.1](./99-归档与原始材料/数据安全管理-旧稿/【已归档】03组数据安全管理方案-v0.1.md) (`BNjcd0JShoOstAxK6CVcHAJCn4b`, 2478 chars)
 - [20260808185008-清华MEM 03组周会-逐字稿文本-1](./09-会议与纪要/会议纪要/20260808185008-清华MEM 03组周会-逐字稿文本-1.md) (`WDHCdYjS0o6dAixADpCcUcBBnHc`, 40545 chars)
 - [20260725194203-转写_清华MEM 03组周会-逐字稿文本-1](./09-会议与纪要/会议纪要/20260725194203-转写_清华MEM 03组周会-逐字稿文本-1.md) (`PhyCdHg5foLz29xGRmxc66wUndh`, 10948 chars)
-- [00-从这里开始-文档入口](./00-入口/00-从这里开始-文档入口.md) (`MGW4dZQ7hoovQTxuw8ocpIMSnvb`, 808 chars)
-- [TODO](./00-入口/TODO.md) (`G6VBdgbIZoDDGExzEBzcyO6DnMf`, 5540 chars)
-- [REPO-TODO](./00-入口/REPO-TODO.md) (`BjIadKOGAo6iY5xFZTYcOjgTnYf`, 4105 chars)
-- [原始资料入库说明-微信与坚果云](./00-入口/原始资料入库说明-微信与坚果云.md) (`WIGnd57Seo1XLuxHeQpc98rOngg`, 504 chars)
-- [文档地图](./00-入口/文档地图.md) (`Ofted42udoDeyPxNAsac9XdhnCg`, 189 chars)
-- [飞书空间搭建手册](./00-入口/飞书空间搭建手册.md) (`LrKZdpbOBorbLJx6rITcHhqqnVb`, 6357 chars)
-- [首批飞书云文档标题列表](./00-入口/首批飞书云文档标题列表.md) (`VVSXdcuQLowaJIx05tQcDOTdnWd`, 4206 chars)
-- [资料入库规范](./00-入口/资料入库规范.md) (`IVYOdbg4AotekhxDjh2cW6CQn0c`, 2521 chars)
-- [共享简报-写作前必读](./00-入口/共享简报-写作前必读.md) (`Md5fdaEpooxV1ux9YHNcsPb6n0c`, 5588 chars)
-- [README-文档地图与交付勾选清单](./00-入口/README-文档地图与交付勾选清单.md) (`Ixpmd1eeNofj9qxjgDWcYRpEnkc`, 3243 chars)
 - [玻纤拉挤电芯压条AI视觉检测系统设计方案20260801](./03-技术方案/详细方案设计报告/玻纤拉挤电芯压条AI视觉检测系统设计方案20260801.md) (`M7FpdWYgIoL4E1xnwdBcWr4xnng`, 27751 chars)
 - [20260723_基于600万彩色卷帘快门面阵相机的视觉布置方案](./03-技术方案/总布置方案/20260723_基于600万彩色卷帘快门面阵相机的视觉布置方案.md) (`MkKRdFcj7onwh1xgqSTcZ5qfn61`, 948 chars)
 - [软件拓扑图](./03-技术方案/软件拓扑图.md) (`HBRmdnjcLoXGs8xHTuqcbB8En3e`, 5275 chars)
@@ -49,19 +62,6 @@
 - [行业背景](./10-知识沉淀/行业背景.md) (`O268d25Tio3tujxHJJEcbsFknxg`, 3065 chars)
 - [拉挤工艺基础](./10-知识沉淀/拉挤工艺基础.md) (`RDtHdvYxUou2csxOt1Tcbf1Onfh`, 3488 chars)
 - [onboarding指南v2](./10-知识沉淀/onboarding指南v2.md) (`L74qdpFMQoXOsjx4OgXcpZCvn2d`, 3275 chars)
-- [M币预算表](./08-项目管理/M币/M币预算表.md) (`GeFedI4SQoHabnxa5tLcd4jfn24`, 3879 chars)
-- [首次双周报草稿-Kimi版](./08-项目管理/双周报/首次双周报草稿-Kimi版.md) (`IrlMdsUEcoxz5dx6Zq9cV9dlnxg`, 4823 chars)
-- [首次双周报草稿（截止7-26）](./08-项目管理/双周报/首次双周报草稿（截止7-26）.md) (`Y1pddu5KYo8sb6xIvegc7iL5nVh`, 206 chars)
-- [风险登记册](./08-项目管理/风险台账/风险登记册.md) (`D3rOd2M0boCfO4xyAhzc8acJnld`, 3657 chars)
-- [WBS与双周里程碑](./08-项目管理/WBS/WBS与双周里程碑.md) (`WGXmduRq7oZ6wRxbs9Qcq8p8nuc`, 4425 chars)
-- [wbs-and-schedule](./08-项目管理/wbs-and-schedule.md) (`HoCCdfmAvoK1lGxUHcuck7pHnwc`, 1762 chars)
-- [team-workstreams](./08-项目管理/team-workstreams.md) (`Dtb7drqANoVfAMxbRylc2O9Xn2y`, 2734 chars)
-- [team-roster](./08-项目管理/team-roster.md) (`RfvWd1QoaoPZxuxqYnYcGdRUntf`, 1383 chars)
-- [operation-plan-from-pr…a3d3](./08-项目管理/operation-plan-from-pr…a3d3.md) (`BTXudruYSovJyCxwfaWcZZsfnlg`, 4409 chars)
-- [m-coin-ledger](./08-项目管理/m-coin-ledger.md) (`LENNdKmQhoHUNTxIoOzcfEBdnZd`, 590 chars)
-- [m-coin-cost-system](./08-项目管理/m-coin-cost-system.md) (`BTN7dBKm6okXg3xsJdacumcmnfe`, 1172 chars)
-- [change-control](./08-项目管理/change-control.md) (`XpHqdNXQ8oK4mMxXNXQcnkQWn3G`, 1160 chars)
-- [沟通管理计划](./08-项目管理/沟通管理计划.md) (`NNv1dWmjqotfEVxcPN6cPZNwnnf`, 3259 chars)
 - [bi-metrics-onepager](./06-前端与BI/bi-metrics-onepager.md) (`OyvKdfOHIoUmc5xfUNkcxcFDnmh`, 1588 chars)
 - [26-联调检查单](./06-前端与BI/26-联调检查单.md) (`LSUDdpRxUoLQmZx3NNycU6BNnPg`, 6037 chars)
 - [25-程昱涵两周冲刺任务板](./06-前端与BI/25-程昱涵两周冲刺任务板.md) (`VTj0dzVQ7oqFvyxCiMmceb6lnui`, 4563 chars)
@@ -89,6 +89,14 @@
 
 ## 跳过 / 失败
 
+- 小组M币分配规则说明书V2.0.pdf (file) — skip type=file
+- 小组M币分配表V2.0.xlsx (file) — skip type=file
+- 质量系数打分记录表V3.0.xlsx (file) — skip type=file
+- 小组M币分配规则说明书V3.0 .pdf (file) — skip type=file
+- 小组M币分配规则说明书V3.0 .docx (file) — skip type=file
+- 小组M币分配表V3.0.xlsx (file) — skip type=file
+- 双周报20260726-第1次.xlsx (file) — skip type=file
+- 项目计划及待办事项跟进表.xlsx (file) — skip type=file
 - 08-工眸方案技术评审.md (file) — skip type=file
 - 07-模型部署与轻量化.md (file) — skip type=file
 - 06-模型选型与训练.md (file) — skip type=file
@@ -222,14 +230,6 @@
 - MEM-AIVisdefect_行业调研与商业计划书_20260712.docx (file) — skip type=file
 - 2026-07-12_复合材料拉挤表面缺陷视觉检测_成熟案例与路线分析.docx (file) — skip type=file
 - 11组-基于视觉的工厂瑕疵品检测系统-BP-10.1(1) (slides) — skip type=slides
-- 小组M币分配规则说明书V2.0.pdf (file) — skip type=file
-- 小组M币分配表V2.0.xlsx (file) — skip type=file
-- 质量系数打分记录表V3.0.xlsx (file) — skip type=file
-- 小组M币分配规则说明书V3.0 .pdf (file) — skip type=file
-- 小组M币分配规则说明书V3.0 .docx (file) — skip type=file
-- 小组M币分配表V3.0.xlsx (file) — skip type=file
-- 双周报20260726-第1次.xlsx (file) — skip type=file
-- 项目计划及待办事项跟进表.xlsx (file) — skip type=file
 - 微信图片_20260705090855_1024_220.jpg (file) — skip type=file
 - 微信图片_20260705090802_1023_220.jpg (file) — skip type=file
 - 微信图片_20260705090801_1022_220.jpg (file) — skip type=file
