@@ -1,6 +1,6 @@
 # 飞书同步索引
 
-更新时间：2026-08-15T02:18:20.929Z
+更新时间：2026-08-16T02:25:23.409Z
 根文件夹 token：`JviVfMA56lMkzhdVoZdcEVk9nBd`
 成功：80 / 尝试：80
 
@@ -109,6 +109,7 @@
 - 机械结构专利.zip (file) — skip type=file
 - 2026-07-12_复合材料拉挤表面缺陷视觉检测专利_成熟案例与路线分析.docx (file) — skip type=file
 - 03基于机器视觉的复合材料拉挤制品表面缺陷检测——以V公司为例4.0 (slides) — skip type=slides
+- 0815清华MEM03组周会-元宝纪要.txt (file) — skip type=file
 - 方案设计评审小组内部讨论-元宝纪要.txt (file) — skip type=file
 - 周会纪要20260718.docx (file) — skip type=file
 - 20260801-清华MEM03组周会&详细设计方案内审-元宝纪要.txt (file) — skip type=file
@@ -119,6 +120,7 @@
 - 清华MEM03组周会-元宝纪要20260718.txt (file) — skip type=file
 - 文字记录-清华MEM 03组周会_20260718.docx (file) — skip type=file
 - 0722缺陷定义卡、推理模型会议纪要.docx (file) — skip type=file
+- 0815参会人.png (file) — skip type=file
 - 8月8日.png (file) — skip type=file
 - 8月1日.png (file) — skip type=file
 - 7月25日.png (file) — skip type=file
