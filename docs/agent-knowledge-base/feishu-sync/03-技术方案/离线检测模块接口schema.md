@@ -1,6 +1,6 @@
 # 离线检测模块接口schema
 
-> 同步自飞书 · token=`AiX5de564oz0OwxKeG2cA5Crnmg` · type=docx · 2026-08-16
+> 同步自飞书 · token=`AiX5de564oz0OwxKeG2cA5Crnmg` · type=docx · 2026-08-17
 > 链接: https://bcndkrmo7f8n.feishu.cn/docx/AiX5de564oz0OwxKeG2cA5Crnmg
 
 离线检测模块接口schema
