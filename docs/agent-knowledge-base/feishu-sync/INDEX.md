@@ -1,6 +1,6 @@
 # 飞书同步索引
 
-更新时间：2026-08-17T02:24:18.678Z
+更新时间：2026-08-18T02:20:12.503Z
 根文件夹 token：`JviVfMA56lMkzhdVoZdcEVk9nBd`
 成功：80 / 尝试：80
 
@@ -91,9 +91,9 @@
 
 - 小组M币分配规则说明书V2.0.pdf (file) — skip type=file
 - 小组M币分配表V2.0.xlsx (file) — skip type=file
-- 质量系数打分记录表V3.0.xlsx (file) — skip type=file
 - 小组M币分配规则说明书V3.0 .pdf (file) — skip type=file
 - 小组M币分配规则说明书V3.0 .docx (file) — skip type=file
+- 质量系数打分记录表V3.0.xlsx (file) — skip type=file
 - 小组M币分配表V3.0.xlsx (file) — skip type=file
 - 双周报20260726-第1次.xlsx (file) — skip type=file
 - 项目计划及待办事项跟进表.xlsx (file) — skip type=file
