@@ -1,6 +1,6 @@
 # 飞书同步索引
 
-更新时间：2026-08-19T02:22:42.838Z
+更新时间：2026-08-20T02:22:24.290Z
 根文件夹 token：`JviVfMA56lMkzhdVoZdcEVk9nBd`
 成功：80 / 尝试：80
 
@@ -89,6 +89,42 @@
 
 ## 跳过 / 失败
 
+- 机械结构专利.zip (file) — skip type=file
+- 一种玻纤拉挤电芯压条质量判定方法及系统的相近专利.zip (file) — skip type=file
+- 08-工眸方案技术评审.md (file) — skip type=file
+- 07-模型部署与轻量化.md (file) — skip type=file
+- 06-模型选型与训练.md (file) — skip type=file
+- 05-标注体系与数据闭环.md (file) — skip type=file
+- 04-尺寸定量测量方法.md (file) — skip type=file
+- 03-打光方案设计.md (file) — skip type=file
+- 02-图像采集系统设计.md (file) — skip type=file
+- 01-检测对象与缺陷定义标准.md (file) — skip type=file
+- 00-索引与总览.md (file) — skip type=file
+- 玻纤拉挤电芯压条-汇报V2版.pdf (file) — skip type=file
+- T021-玻纤拉挤电芯压条AI视觉检测系统设计方案20260731.docx (file) — skip type=file
+- T028-双周报考核0809.png (file) — skip type=file
+- T027-BP初稿.docx (file) — skip type=file
+- T026-03组M币分配规则确认 .xlsx (file) — skip type=file
+- T024-方案设计评审（公司）会议结论.pdf (file) — skip type=file
+- T023-AI工具分享.png (file) — skip type=file
+- T022-详细设计方案内审-元宝纪要.txt (file) — skip type=file
+- T019-会议管理.png (file) — skip type=file
+- T018-飞书群组.png (file) — skip type=file
+- T017-双周报考核0726.png (file) — skip type=file
+- T016-商业模式参考案例V1.0.docx (file) — skip type=file
+- T015-M币规则.zip (file) — skip type=file
+- T014-玻纤拉挤电芯压条_AI视觉检测_详细方案设计_编号目录整理版.docx (file) — skip type=file
+- T013-EfficientAD 完整实操教程.docx (file) — skip type=file
+- T012-图像处理方案.doc (file) — skip type=file
+- T011-基于600万彩色卷帘快门面阵相机的视觉布置方案.docx (file) — skip type=file
+- T010-复合材料拉挤制品表面缺陷检测线布置方案.doc (file) — skip type=file
+- T008-缺陷定义卡.docx (file) — skip type=file
+- T007-复合材料拉挤制品表面缺陷检测线布置方案.doc (file) — skip type=file
+- T006-拉挤工艺缺陷检测三层智能检测方案.docx (file) — skip type=file
+- T005-相机&光源讨论-元宝纪要.txt (file) — skip type=file
+- T004--离线接口草案？需确认-offline-module-interface.docx (file) — skip type=file
+- T003-缺陷定义卡初稿.docx (file) — skip type=file
+- T001-项目计划及待办事项跟进表.xlsx (file) — skip type=file
 - 小组M币分配规则说明书V2.0.pdf (file) — skip type=file
 - 小组M币分配表V2.0.xlsx (file) — skip type=file
 - 小组M币分配规则说明书V3.0 .pdf (file) — skip type=file
