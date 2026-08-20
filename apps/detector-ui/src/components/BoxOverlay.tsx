@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { classColor, isKnownSlug } from '../lib/catalog'
+import { assetUrl } from '../lib/paths'
 import type { Defect } from '../lib/types'
 
 export function BoxOverlay({
@@ -19,24 +20,25 @@ export function BoxOverlay({
   showMasks: boolean
   onSelect?: (id: string) => void
 }) {
+  const src = assetUrl(imageSrc)
   const [missing, setMissing] = useState(false)
   const [iw, ih] = imageSize
 
   useEffect(() => {
     setMissing(false)
-  }, [imageSrc])
+  }, [src])
 
   const hasAnyMask = defects.some((d) => (d.mask?.length ?? 0) >= 3)
 
   return (
     <div className="overlay-wrap">
-      {missing || !imageSrc ? (
+      {missing || !src ? (
         <div className="img-missing" style={{ aspectRatio: `${iw} / ${ih}` }}>
           图像缺失
         </div>
       ) : (
         <img
-          src={imageSrc}
+          src={src}
           alt="检测原图"
           className="overlay-img"
           onError={() => setMissing(true)}

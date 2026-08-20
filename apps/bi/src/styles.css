@@ -1462,6 +1462,52 @@ button {
 .pill.confirmed { background: rgba(47, 107, 58, 0.12); color: var(--ok); }
 .pill.rejected { background: rgba(163, 59, 43, 0.12); color: var(--bad); }
 .pill.relabelled { background: rgba(36, 113, 163, 0.12); color: #2471a3; }
+.pill.outcome-tp { background: rgba(47, 107, 58, 0.12); color: var(--ok); }
+.pill.outcome-tn { background: rgba(15, 107, 92, 0.1); color: #0f6b5c; }
+.pill.outcome-fp { background: rgba(196, 92, 38, 0.12); color: #c45c26; }
+.pill.outcome-fn { background: rgba(163, 59, 43, 0.14); color: var(--bad); }
+
+.cm-wrap { overflow-x: auto; }
+.cm-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 8px;
+  font-size: 0.85rem;
+}
+.cm-table th {
+  font-weight: 600;
+  color: var(--muted);
+  text-align: center;
+}
+.cm-table td {
+  border-radius: 12px;
+  padding: 12px 10px;
+  text-align: center;
+  min-width: 140px;
+}
+.cm-table td span {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+.cm-table td b {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.cm-table td em {
+  display: block;
+  font-style: normal;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+.cm-tp { background: rgba(47, 107, 58, 0.12); }
+.cm-tn { background: rgba(15, 107, 92, 0.08); }
+.cm-fp { background: rgba(196, 92, 38, 0.14); }
+.cm-fn { background: rgba(163, 59, 43, 0.14); }
 
 @media (max-width: 900px) {
   .detect-grid,

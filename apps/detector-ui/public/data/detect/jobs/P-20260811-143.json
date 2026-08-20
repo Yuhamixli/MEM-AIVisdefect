@@ -1,0 +1,21 @@
+{
+  "piece_id": "P-20260811-143",
+  "batch_id": "B-03",
+  "faces": [
+    {
+      "face": "top",
+      "image": "/data/detect/images/placeholder-3200x1920.svg",
+      "image_size": [
+        3200,
+        1920
+      ],
+      "defects": []
+    }
+  ],
+  "detected_at": "2026-08-11T16:52:00+08:00",
+  "model_version": "yolo11s-seg-mock-v0",
+  "review_status": "pending",
+  "gold_ng": false,
+  "pred_ng": false,
+  "outcome": "tn"
+}

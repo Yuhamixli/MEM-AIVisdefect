@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { REVIEW_LABEL } from '../lib/catalog'
+import { publicUrl } from '../lib/paths'
 import { mergeJob } from '../lib/reviewStore'
 import type { JobRow, JobsIndex, UiConfig } from '../lib/types'
 
@@ -12,7 +13,7 @@ export function JobsPage({ config }: { config: UiConfig }) {
   const [tick, setTick] = useState(0)
 
   useEffect(() => {
-    fetch('/data/detect/jobs-index.json')
+    fetch(publicUrl('/data/detect/jobs-index.json'))
       .then((r) => {
         if (!r.ok) throw new Error(`数据未同步（HTTP ${r.status}），请跑 npm run sync-results`)
         return r.json() as Promise<JobsIndex>
@@ -96,7 +97,7 @@ function JobIndexRow({ row, threshold }: { row: JobRow; threshold: number }) {
   const [merged, setMerged] = useState(row)
 
   useEffect(() => {
-    fetch(`/data/detect/jobs/${row.piece_id}.json`)
+    fetch(publicUrl(`/data/detect/jobs/${row.piece_id}.json`))
       .then((r) => (r.ok ? r.json() : null))
       .then((job) => {
         if (!job) return

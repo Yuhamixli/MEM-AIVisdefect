@@ -1,0 +1,77 @@
+{
+  "piece_id": "P-20260730-132",
+  "batch_id": "B-02",
+  "faces": [
+    {
+      "face": "bottom",
+      "image": "/data/detect/images/placeholder-3200x1920.svg",
+      "image_size": [
+        3200,
+        1920
+      ],
+      "defects": [
+        {
+          "defect_id": "d-001",
+          "slug": "whitening",
+          "class_name": "发白",
+          "bbox": [
+            2061,
+            987,
+            130,
+            50
+          ],
+          "confidence": 0.86,
+          "severity": "medium",
+          "review_status": "pending",
+          "match": "tp"
+        },
+        {
+          "defect_id": "d-002",
+          "slug": "bubble",
+          "class_name": "气泡",
+          "bbox": [
+            2943,
+            1054,
+            239,
+            87
+          ],
+          "confidence": 0.77,
+          "severity": "high",
+          "review_status": "confirmed",
+          "match": "tp"
+        }
+      ]
+    },
+    {
+      "face": "left",
+      "image": "/data/detect/images/placeholder-3200x1920.svg",
+      "image_size": [
+        3200,
+        1920
+      ],
+      "defects": [
+        {
+          "defect_id": "d-003",
+          "slug": "crack",
+          "class_name": "裂纹",
+          "bbox": [
+            2417,
+            750,
+            235,
+            87
+          ],
+          "confidence": 0.79,
+          "severity": "high",
+          "review_status": "confirmed",
+          "match": "tp"
+        }
+      ]
+    }
+  ],
+  "detected_at": "2026-07-30T08:15:00+08:00",
+  "model_version": "yolo11s-seg-mock-v0",
+  "review_status": "pending",
+  "gold_ng": true,
+  "pred_ng": true,
+  "outcome": "tp"
+}

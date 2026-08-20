@@ -16,7 +16,7 @@ export function DetectTeaser() {
         }
         const s = summarize(d)
         setLabel(
-          `${s.pieces} 件 · 良率 ${(s.yieldRate * 100).toFixed(0)}% · 缺陷 ${s.defects} · 待复核 ${s.pending}`,
+          `${s.pieces} 件 · DR ${((s.instance?.recall ?? 0) * 100).toFixed(1)}% · Acc ${((s.piece?.accuracy ?? 0) * 100).toFixed(1)}%`,
         )
       })
       .catch(() => setLabel('无数据'))
@@ -32,7 +32,7 @@ export function DetectTeaser() {
       </div>
       <p className="detect-teaser-metric">{label}</p>
       <p className="muted" style={{ margin: 0, fontSize: '0.82rem' }}>
-        mock 50 件 · Pareto · 分区 · 热力 · 金标准门禁灰显
+        mock 盲测 · 检测率 ≥99% · 准确率门禁 85% · Wilson 95% CI
       </p>
     </article>
   )

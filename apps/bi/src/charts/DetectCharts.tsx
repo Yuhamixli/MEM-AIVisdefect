@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { DETECT_CLASS } from '../data/detect'
-import type { ClassStat, DetectDefectRow } from '../data/detect'
+import type { ClassStat, DetectDefectRow, FnCase } from '../data/detect'
 
 export function ParetoChart({
   rows,
@@ -230,10 +230,12 @@ export function SpatialMap({
   defects,
   size,
   selectedSlug,
+  misses,
 }: {
   defects: DetectDefectRow[]
   size: [number, number]
   selectedSlug?: string | null
+  misses?: FnCase[]
 }) {
   const [hover, setHover] = useState<DetectDefectRow | null>(null)
   const [iw, ih] = size
@@ -262,6 +264,22 @@ export function SpatialMap({
             />
           )
         })}
+        {(misses ?? []).map((m) => (
+          <g key={`fn-${m.piece_id}-${m.slug}`}>
+            <circle
+              cx={m.cx}
+              cy={m.cy}
+              r="28"
+              fill="none"
+              stroke="#a33b2b"
+              strokeWidth="6"
+              strokeDasharray="12 8"
+            />
+            <text x={m.cx} y={m.cy - 36} textAnchor="middle" fill="#a33b2b" fontSize="32">
+              FN
+            </text>
+          </g>
+        ))}
       </svg>
       {hover ? (
         <div className="spatial-tip">
@@ -340,5 +358,156 @@ export function HeatMatrix({
         </tbody>
       </table>
     </div>
+  )
+}
+
+export function ConfusionMatrix({
+  tp,
+  tn,
+  fp,
+  fn,
+}: {
+  tp: number
+  tn: number
+  fp: number
+  fn: number
+}) {
+  return (
+    <div className="cm-wrap">
+      <table className="cm-table">
+        <thead>
+          <tr>
+            <th />
+            <th>模型 NG</th>
+            <th>模型 OK</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>金标准 NG</th>
+            <td className="cm-tp">
+              <span>TP</span>
+              <b>{tp}</b>
+              <em>真检出</em>
+            </td>
+            <td className="cm-fn">
+              <span>FN</span>
+              <b>{fn}</b>
+              <em>fail-accepted 漏检放行</em>
+            </td>
+          </tr>
+          <tr>
+            <th>金标准 OK</th>
+            <td className="cm-fp">
+              <span>FP</span>
+              <b>{fp}</b>
+              <em>fail-rejected 过杀拒收</em>
+            </td>
+            <td className="cm-tn">
+              <span>TN</span>
+              <b>{tn}</b>
+              <em>真阴性</em>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  )
+}
+
+export function CiBars({
+  rows,
+}: {
+  rows: { label: string; p: number; lo: number; hi: number; target?: number }[]
+}) {
+  const W = 560
+  const H = 28 + rows.length * 36
+  const pl = 118
+  const pr = 56
+  const iw = W - pl - pr
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} className="chart-svg" role="img" aria-label="Wilson 95% 置信区间">
+      <line x1={pl} y1={8} x2={pl} y2={H - 8} stroke="#c9c2b4" />
+      {[0, 0.5, 0.8, 0.85, 0.99, 1].map((t) => (
+        <g key={t}>
+          <line x1={pl + t * iw} y1={8} x2={pl + t * iw} y2={H - 8} stroke="#ece8de" />
+          <text x={pl + t * iw} y={H - 2} textAnchor="middle" fontSize="9" fill="#6b7a86">
+            {(t * 100).toFixed(0)}%
+          </text>
+        </g>
+      ))}
+      {rows.map((r, i) => {
+        const y = 18 + i * 36
+        const xLo = pl + r.lo * iw
+        const xHi = pl + r.hi * iw
+        const xP = pl + r.p * iw
+        return (
+          <g key={r.label}>
+            <text x={pl - 8} y={y + 4} textAnchor="end" fontSize="11" fill="#3d4f5c">
+              {r.label}
+            </text>
+            <line x1={xLo} y1={y} x2={xHi} y2={y} stroke="#0f6b5c" strokeWidth="3" />
+            <circle cx={xP} cy={y} r="5" fill="#0f6b5c" />
+            {r.target != null ? (
+              <line
+                x1={pl + r.target * iw}
+                y1={y - 10}
+                x2={pl + r.target * iw}
+                y2={y + 10}
+                stroke="#c45c26"
+                strokeDasharray="3 2"
+              />
+            ) : null}
+            <text x={W - pr + 6} y={y + 4} fontSize="10" fill="#14212b">
+              {(r.p * 100).toFixed(1)}%
+            </text>
+          </g>
+        )
+      })}
+    </svg>
+  )
+}
+
+export function ReliabilityChart({
+  bins,
+}: {
+  bins: { mid: number; empirical: number; n: number }[]
+}) {
+  const W = 400
+  const H = 220
+  const pl = 36
+  const pb = 28
+  const pt = 12
+  const pr = 12
+  const iw = W - pl - pr
+  const ih = H - pt - pb
+  const pts = bins
+    .filter((b) => b.n > 0)
+    .map((b) => `${pl + b.mid * iw},${pt + ih * (1 - b.empirical)}`)
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} className="chart-svg" role="img" aria-label="置信度校准">
+      <line x1={pl} y1={pt + ih} x2={pl + iw} y2={pt} stroke="#c9c2b4" strokeDasharray="4 4" />
+      <text x={pl + iw - 4} y={pt + 12} textAnchor="end" fontSize="10" fill="#6b7a86">
+        理想校准
+      </text>
+      {pts.length > 1 ? (
+        <polyline points={pts.join(' ')} fill="none" stroke="#0f6b5c" strokeWidth="2" />
+      ) : null}
+      {bins.map((b) =>
+        b.n ? (
+          <circle
+            key={b.mid}
+            cx={pl + b.mid * iw}
+            cy={pt + ih * (1 - b.empirical)}
+            r={3 + Math.min(6, Math.sqrt(b.n))}
+            fill="#0f6b5c"
+            fillOpacity={0.85}
+          />
+        ) : null,
+      )}
+      <text x={pl} y={H - 6} fontSize="10" fill="#6b7a86">
+        横轴=模型置信度 · 纵轴=该档经验精确率
+      </text>
+    </svg>
   )
 }

@@ -2,7 +2,12 @@
 
 管理看板：进度 / 风险 / M币 / 团队 / **检测分析** / 项目知识库。质量 KPI 无金标准时灰显。
 
-**队员用法**：打开已发布网站，重点看「检测」。
+**队员用法**：打开 [GitHub Pages](https://yuhamixli.github.io/MEM-AIVisdefect/) ，重点看「检测」。
+
+- 看板：https://yuhamixli.github.io/MEM-AIVisdefect/#/
+- 检测分析：https://yuhamixli.github.io/MEM-AIVisdefect/#/detect
+
+校园网打不开时，改用局域网 NAS。自定义域名以后再说。
 
 ## 本地启动
 
@@ -33,7 +38,7 @@ npm run dev         # http://localhost:5173   /api 代理到上面
 | `/biweekly` | 双周报归档 |
 | `/knowledge` | 项目知识库浏览 |
 
-检测结果展示见 [`apps/detector-ui`](../detector-ui/)（本地 5174）。薄后端：`POST /api/review`、`GET /api/feedback/health`（意见箱页已下线，API 仍保留）。
+检测结果展示见 [`apps/detector-ui`](../detector-ui/)（本地 `http://127.0.0.1:5174/detector-ui/#/`，NAS `/detector-ui/index.html#/`）。薄后端：`POST /api/review`、`GET /api/feedback/health`（意见箱页已下线，API 仍保留）。
 
 ## 同步
 
@@ -56,23 +61,33 @@ cd apps/bi
 npm run build:nas
 ```
 
-把 `nas/html/MEM-AIVisdefect/` 整目录拷到 NAS 共享文件夹 **web**：
+把 `nas/html/MEM-AIVisdefect/` 整目录拷到 NAS 共享文件夹 **web**，并把 detector-ui 拷到 **web/detector-ui/**：
 
-- File Station：`/web/MEM-AIVisdefect/`
+```bash
+cd apps/detector-ui
+npm run build:nas   # 写入 apps/bi/nas/html/detector-ui/
+```
+
+- File Station：`/web/MEM-AIVisdefect/` 与 `/web/detector-ui/`
 - 或 Container Manager：把 `nas/`（含 `html/`）放到 `/docker/mem-aivisdefect-bi`，用其中的 `docker-compose.yml` 映射 **8088**
 
 队员打开：
 
-- 局域网：http://192.168.1.82/MEM-AIVisdefect/#/detect
-- 校外（Cloudflare 快速隧道，NAS 容器 `mem-aivisdefect-tunnel` 24h）：  
-  https://subscription-phones-own-kansas.trycloudflare.com/MEM-AIVisdefect/index.html#/detect  
-  （目录 URL 会被 Web Station 301 到 http，请带 `index.html`。容器重启后主机名会变，日志在 Container Manager → 该项目。）
+- 局域网看板：http://192.168.1.82/MEM-AIVisdefect/#/detect
+- 局域网检测结果：http://192.168.1.82/detector-ui/index.html#/
 
-QuickConnect ID 是 `zoologist`，但 **不能** 直接挂自定义 Web Station；本机公网 IP 走了代理，DDNS/端口转发进不来。校园网若打不开 `trycloudflare.com`，改用国内穿透（cpolar）或 Cloudflare 命名隧道固定域名。
+NAS 这份是只读看板。复核写入仍走本机 `dev:api`。不要再用已失效的 trycloudflare 链接。
 
-NAS 这份是只读看板。复核写入仍走 Cloudflare Functions / 本地 `dev:api`。
+## 部署（GitHub Pages · 当前对外地址）
 
-## 部署（Cloudflare Pages）
+推到 `main` 后由 [`.github/workflows/deploy-bi.yml`](../../.github/workflows/deploy-bi.yml) 执行：`sync-data` → `build` → Pages。
+
+- https://yuhamixli.github.io/MEM-AIVisdefect/
+- https://yuhamixli.github.io/MEM-AIVisdefect/#/detect
+
+线上包以最后一次成功的 Deploy BI 为准。校园网打不开时用上面的 NAS。自定义域名先搁置；以后若再做，用 `npm run build:web` 和 `deploy-aliyun-oss.yml`。
+
+## 部署（Cloudflare Pages · 意见箱写回，可选）
 
 1. 在 Cloudflare 创建 Pages 项目（建议名 `mem-aivisdefect-bi`），构建输出目录 `dist`，Functions 目录为仓库内 `apps/bi/functions`。
 2. 配置 Pages 环境变量 / secrets：
@@ -83,8 +98,6 @@ NAS 这份是只读看板。复核写入仍走 Cloudflare Functions / 本地 `de
 3. GitHub 仓库 secrets（供 Actions）：
    - `CLOUDFLARE_API_TOKEN`
    - `CLOUDFLARE_ACCOUNT_ID`
-4. 推送后由 [`.github/workflows/deploy-bi.yml`](../../.github/workflows/deploy-bi.yml) 执行：`sync-data` → `build` → `pages deploy`。
-5. 公开 URL 确定后写回根 `README.md` 与本文件。
 
 本地默认口令：`dev-password`（仅 `dev:api`）。生产口令只放 Cloudflare，不要提交仓库。
 

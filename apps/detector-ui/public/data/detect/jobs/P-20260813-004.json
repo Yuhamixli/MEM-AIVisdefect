@@ -5,21 +5,33 @@
     {
       "face": "top",
       "image": "/data/detect/images/missing-intentionally.jpg",
-      "image_size": [3200, 1920],
+      "image_size": [
+        3200,
+        1920
+      ],
       "defects": [
         {
           "defect_id": "d-020",
           "slug": "scratch",
           "class_name": "划伤",
-          "bbox": [400, 700, 480, 60],
+          "bbox": [
+            400,
+            700,
+            480,
+            60
+          ],
           "confidence": 0.66,
           "severity": "medium",
-          "review_status": "pending"
+          "review_status": "pending",
+          "match": "tp"
         }
       ]
     }
   ],
   "detected_at": "2026-08-13T10:00:00+08:00",
   "model_version": "yolo11s-seg-mock-v0",
-  "review_status": "pending"
+  "review_status": "pending",
+  "gold_ng": true,
+  "pred_ng": true,
+  "outcome": "tp"
 }

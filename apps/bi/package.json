@@ -11,7 +11,8 @@
     "sync-data": "node scripts/sync-spec.mjs && node scripts/generate-detect-mock.mjs",
     "gen-detect-mock": "node scripts/generate-detect-mock.mjs",
     "pack-nas": "node scripts/pack-nas.mjs",
-    "build:nas": "npm run build && npm run pack-nas"
+    "build:nas": "npm run build && npm run pack-nas",
+    "build:web": "node scripts/pack-web.mjs"
   },
   "dependencies": {
     "react": "^19.1.0",

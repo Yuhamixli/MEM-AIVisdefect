@@ -1,0 +1,102 @@
+{
+  "piece_id": "P-20260730-115",
+  "batch_id": "B-01",
+  "faces": [
+    {
+      "face": "right",
+      "image": "/data/detect/images/placeholder-3200x1920.svg",
+      "image_size": [
+        3200,
+        1920
+      ],
+      "defects": [
+        {
+          "defect_id": "d-001",
+          "slug": "missing_yarn",
+          "class_name": "缺纱",
+          "bbox": [
+            253,
+            894,
+            113,
+            92
+          ],
+          "confidence": 0.86,
+          "severity": "medium",
+          "review_status": "relabelled",
+          "match": "tp"
+        },
+        {
+          "defect_id": "d-002",
+          "slug": "crack",
+          "class_name": "裂纹",
+          "bbox": [
+            2528,
+            1166,
+            253,
+            85
+          ],
+          "confidence": 0.81,
+          "severity": "high",
+          "review_status": "confirmed",
+          "match": "tp"
+        }
+      ]
+    },
+    {
+      "face": "top",
+      "image": "/data/detect/images/placeholder-3200x1920.svg",
+      "image_size": [
+        3200,
+        1920
+      ],
+      "defects": [
+        {
+          "defect_id": "d-003",
+          "slug": "foreign_matter",
+          "class_name": "异物",
+          "bbox": [
+            636,
+            1152,
+            174,
+            94
+          ],
+          "confidence": 0.95,
+          "severity": "medium",
+          "review_status": "rejected",
+          "match": "tp"
+        }
+      ]
+    },
+    {
+      "face": "bottom",
+      "image": "/data/detect/images/placeholder-3200x1920.svg",
+      "image_size": [
+        3200,
+        1920
+      ],
+      "defects": [
+        {
+          "defect_id": "d-004",
+          "slug": "crack",
+          "class_name": "裂纹",
+          "bbox": [
+            1758,
+            969,
+            82,
+            28
+          ],
+          "confidence": 0.86,
+          "severity": "high",
+          "review_status": "relabelled",
+          "match": "tp"
+        }
+      ]
+    }
+  ],
+  "detected_at": "2026-07-30T15:28:00+08:00",
+  "model_version": "yolo11s-seg-mock-v0",
+  "review_status": "rejected",
+  "gold_ng": true,
+  "pred_ng": true,
+  "outcome": "tp"
+}

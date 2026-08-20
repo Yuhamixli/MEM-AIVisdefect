@@ -1,0 +1,62 @@
+{
+  "piece_id": "P-20260810-121",
+  "batch_id": "B-02",
+  "faces": [
+    {
+      "face": "left",
+      "image": "/data/detect/images/placeholder-3200x1920.svg",
+      "image_size": [
+        3200,
+        1920
+      ],
+      "defects": [
+        {
+          "defect_id": "d-001",
+          "slug": "whitening",
+          "class_name": "发白",
+          "bbox": [
+            1087,
+            804,
+            102,
+            54
+          ],
+          "confidence": 0.83,
+          "severity": "medium",
+          "review_status": "pending",
+          "match": "tp"
+        }
+      ]
+    },
+    {
+      "face": "right",
+      "image": "/data/detect/images/placeholder-3200x1920.svg",
+      "image_size": [
+        3200,
+        1920
+      ],
+      "defects": [
+        {
+          "defect_id": "d-002",
+          "slug": "crack",
+          "class_name": "裂纹",
+          "bbox": [
+            1992,
+            1025,
+            87,
+            23
+          ],
+          "confidence": 0.82,
+          "severity": "high",
+          "review_status": "confirmed",
+          "match": "tp"
+        }
+      ]
+    }
+  ],
+  "detected_at": "2026-08-10T15:58:00+08:00",
+  "model_version": "yolo11s-seg-mock-v0",
+  "review_status": "pending",
+  "gold_ng": true,
+  "pred_ng": true,
+  "outcome": "tp"
+}
