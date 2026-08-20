@@ -1,0 +1,63 @@
+name: Deploy China site
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - 'apps/bi/**'
+      - 'apps/detector-ui/**'
+      - '.project-spec/**'
+      - 'docs/**'
+      - '.github/workflows/deploy-aliyun-oss.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: aliyun-oss
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    if: ${{ vars.OSS_BUCKET != '' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: |
+            apps/bi/package-lock.json
+            apps/detector-ui/package-lock.json
+
+      - name: Install BI
+        working-directory: apps/bi
+        run: npm ci
+
+      - name: Install detector-ui
+        working-directory: apps/detector-ui
+        run: npm ci
+
+      - name: Build site (BI at / + detector-ui)
+        working-directory: apps/bi
+        run: npm run build:web
+
+      - name: Install ossutil
+        run: |
+          curl -fsSL -o ossutil https://gosspublic.alicdn.com/ossutil/1.7.19/ossutil64
+          chmod +x ossutil
+
+      - name: Upload to OSS Hong Kong
+        env:
+          OSS_ACCESS_KEY_ID: ${{ secrets.OSS_ACCESS_KEY_ID }}
+          OSS_ACCESS_KEY_SECRET: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
+          OSS_BUCKET: ${{ vars.OSS_BUCKET }}
+          OSS_ENDPOINT: ${{ vars.OSS_ENDPOINT }}
+        run: |
+          test -n "$OSS_ACCESS_KEY_ID"
+          test -n "$OSS_ACCESS_KEY_SECRET"
+          test -n "$OSS_BUCKET"
+          ENDPOINT="${OSS_ENDPOINT:-oss-cn-hongkong.aliyuncs.com}"
+          ./ossutil -e "$ENDPOINT" -i "$OSS_ACCESS_KEY_ID" -k "$OSS_ACCESS_KEY_SECRET" \
+            cp -rf apps/bi/web-dist/ "oss://${OSS_BUCKET}/" \
+            --meta Cache-Control:no-cache

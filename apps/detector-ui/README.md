@@ -11,7 +11,14 @@ npm run sync-results   # 若仓库根 detect-output/ 有黄崇发样例则转换
 npm run dev
 ```
 
-打开 http://127.0.0.1:5174 — 与 BI（5173）端口错开。复核写接口复用 BI 的 `npm run dev:api`（8788，口令 `dev-password`）。
+打开 http://127.0.0.1:5174/detector-ui/#/ — 与 BI（5173）端口错开。复核写接口复用 BI 的 `npm run dev:api`（8788，口令 `dev-password`）。
+
+国内自定义域名（与看板同域）：`https://你的域名/detector-ui/index.html#/`，由 `apps/bi` 的 `npm run build:web` 打进 `web-dist/detector-ui/`。
+
+NAS Web Station（与看板同机）：
+
+- 局域网：http://192.168.1.82/detector-ui/index.html#/
+- 目录 URL 会被 301，请带 `index.html`。NAS 静态站只读；复核写入仍走本机 `dev:api` / localStorage。
 
 | 路由 | 内容 |
 |------|------|

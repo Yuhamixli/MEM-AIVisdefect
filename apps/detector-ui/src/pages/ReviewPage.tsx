@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { classNameZh, REVIEW_LABEL } from '../lib/catalog'
+import { publicUrl } from '../lib/paths'
 import { mergeJob } from '../lib/reviewStore'
 import type { JobDetail, JobsIndex, UiConfig } from '../lib/types'
 
@@ -22,12 +23,12 @@ export function ReviewPage({ config }: { config: UiConfig }) {
   useEffect(() => {
     let cancelled = false
     async function load() {
-      const idxRes = await fetch('/data/detect/jobs-index.json')
+      const idxRes = await fetch(publicUrl('/data/detect/jobs-index.json'))
       if (!idxRes.ok) throw new Error(`HTTP ${idxRes.status}`)
       const idx = (await idxRes.json()) as JobsIndex
       const jobs = await Promise.all(
         idx.jobs.map(async (row) => {
-          const r = await fetch(`/data/detect/jobs/${row.piece_id}.json`)
+          const r = await fetch(publicUrl(`/data/detect/jobs/${row.piece_id}.json`))
           if (!r.ok) return null
           return r.json() as Promise<JobDetail>
         }),

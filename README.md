@@ -42,7 +42,7 @@ apps/                     bi/ · detector-ui/ · feishu-cursor-bridge/（飞书�
 | AI Agent 控制面 | [`PROMPT.md`](PROMPT.md) |
 | 课题 TODO | [`docs/project-management/TODO.md`](docs/project-management/TODO.md) |
 | 仓库 TODO | [`docs/project-management/REPO-TODO.md`](docs/project-management/REPO-TODO.md) |
-| BI 看板应用 | [`apps/bi/`](apps/bi/) | 本地：`cd apps/bi && npm i && npm run sync-data && npm run dev:api` + `npm run dev`；部署见该目录 README（Cloudflare Pages） |
+| BI 看板应用 | [`apps/bi/`](apps/bi/) | 已发布：https://yuhamixli.github.io/MEM-AIVisdefect/ ；本地见该目录 README |
 | 飞书 Cursor 桥 | [`apps/feishu-cursor-bridge/`](apps/feishu-cursor-bridge/) | `@机器人` → Cursor SDK 本地 Agent 读仓库后回群 |
 | 团队能力画像 | [`docs/project-management/team-capability-profile.md`](docs/project-management/team-capability-profile.md) |
 | 行业难点 | [`docs/agent-knowledge-base/industry-challenges.md`](docs/agent-knowledge-base/industry-challenges.md) |
@@ -54,7 +54,7 @@ apps/                     bi/ · detector-ui/ · feishu-cursor-bridge/（飞书�
 
 ## 当前阶段
 
-**规划** — 管理底座已起；BI 支持知识免登浏览与意见箱口令填写；待配置 Cloudflare secrets 后公布公开 URL。
+**规划** — 管理底座已起；BI 支持知识免登浏览。对外先用 GitHub Pages：https://yuhamixli.github.io/MEM-AIVisdefect/ 。自定义域名暂缓。
 
 | 项 | 值 |
 |----|-----|

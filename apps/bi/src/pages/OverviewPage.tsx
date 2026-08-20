@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { DetectTeaser } from '../components/DetectTeaser'
 import type { BiSnapshot } from '../data/types'
 import { budgetExecutionRate, openRiskCounts } from '../data/load'
+import { detectorUiUrl } from '../lib/urls'
 
 function healthTone(snapshot: BiSnapshot): { label: string; className: string } {
   const risks = openRiskCounts(snapshot.risks)
@@ -150,7 +151,7 @@ export function OverviewPage({ data }: { data: BiSnapshot }) {
       <section className="card acceptance-kpi" style={{ animationDelay: '0.22s', marginBottom: 14 }}>
         <div className="section-head">
           <h2 style={{ margin: 0 }}>考核 KPI（申报书 · 硬）</h2>
-          <span className="pill pending">待测 · 无实验数据</span>
+          <span className="pill">mock 盲测 · 见检测页</span>
         </div>
         <div className="grid-kpi acceptance-grid" style={{ marginBottom: 0 }}>
           {primary.map((m) => (
@@ -162,7 +163,7 @@ export function OverviewPage({ data }: { data: BiSnapshot }) {
           ))}
         </div>
         <p className="muted" style={{ margin: '12px 0 0', fontSize: '0.85rem' }}>
-          交付：采集方案 + 定义卡/模型/离线模块 + 使用说明。无实验数据前不点亮实测值。
+          申报书硬指标仍以金标准 50 件为准。检测页已用 mock 盲测点亮检测率 / 准确率 / Wilson CI，非正式验收。
         </p>
 
         <div className="stretch-block">
@@ -273,8 +274,8 @@ export function OverviewPage({ data }: { data: BiSnapshot }) {
                 <span className="muted">门禁 · Pareto · 分区热力 · mock 50 件</span>
               </li>
               <li>
-                <a href="http://127.0.0.1:5174">detector-ui 检测结果</a>
-                <span className="muted">本地 5174 · 公网待部署</span>
+                <a href={detectorUiUrl('/')}>detector-ui 检测结果</a>
+                <span className="muted">同机 /detector-ui/ · mock 50 件</span>
               </li>
               <li>
                 <Link to="/open-decisions">未决事项泳道</Link>

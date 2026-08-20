@@ -1,4 +1,5 @@
 import type { UiConfig } from './types'
+import { publicUrl } from './paths'
 
 const DEFAULTS: UiConfig = {
   confidence_low_threshold: 0.5,
@@ -11,7 +12,7 @@ let cached: UiConfig | null = null
 export async function loadUiConfig(): Promise<UiConfig> {
   if (cached) return cached
   try {
-    const res = await fetch('/detector-ui.config.json')
+    const res = await fetch(publicUrl('/detector-ui.config.json'))
     if (!res.ok) {
       cached = DEFAULTS
       return cached

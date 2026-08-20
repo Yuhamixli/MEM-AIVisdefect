@@ -8,6 +8,8 @@ export const DETECT_CLASS: Record<string, { zh: string; color: string; severity:
   contamination: { zh: '脏污', color: '#6E2C00', severity: '一般' },
 }
 
+export type ConfusionKey = 'tp' | 'tn' | 'fp' | 'fn'
+
 export interface DetectJobRow {
   piece_id: string
   batch_id: string
@@ -18,6 +20,9 @@ export interface DetectJobRow {
   max_confidence: number
   classes: string[]
   ng: boolean
+  gold_ng?: boolean
+  pred_ng?: boolean
+  outcome?: ConfusionKey
 }
 
 export interface DetectDefectRow {
@@ -37,6 +42,19 @@ export interface DetectDefectRow {
   confidence?: number
   severity?: string
   review_status?: string
+  match?: 'tp' | 'fp'
+}
+
+export interface FnCase {
+  piece_id: string
+  batch_id: string
+  face: string
+  slug: string
+  class_name: string
+  cx: number
+  cy: number
+  severity?: string
+  note?: string
 }
 
 export interface DetectAnalytics {
@@ -48,6 +66,80 @@ export interface DetectAnalytics {
   image_size: [number, number]
   jobs: DetectJobRow[]
   defects: DetectDefectRow[]
+  fn_cases?: FnCase[]
+  protocol?: {
+    piece_target: number
+    class_target: number
+    taskbook_recall: number
+    taskbook_accuracy: number
+    internal_recall: number
+    threshold: number
+    ci: string
+  }
+}
+
+export interface WilsonInterval {
+  k: number
+  n: number
+  p: number
+  lo: number
+  hi: number
+}
+
+export function wilson(k: number, n: number, z = 1.95996398454): WilsonInterval {
+  if (n <= 0) return { k, n, p: 0, lo: 0, hi: 0 }
+  const p = k / n
+  const z2 = z * z
+  const den = 1 + z2 / n
+  const centre = (p + z2 / (2 * n)) / den
+  const half = (z * Math.sqrt((p * (1 - p) + z2 / (4 * n)) / n)) / den
+  return { k, n, p, lo: Math.max(0, centre - half), hi: Math.min(1, centre + half) }
+}
+
+export function confusionMetrics(tp: number, tn: number, fp: number, fn: number) {
+  const n = tp + tn + fp + fn
+  const pos = tp + fn
+  const neg = tn + fp
+  const predPos = tp + fp
+  const predNeg = tn + fn
+  const recall = pos ? tp / pos : 0
+  const specificity = neg ? tn / neg : 0
+  const precision = predPos ? tp / predPos : 0
+  const npv = predNeg ? tn / predNeg : 0
+  const accuracy = n ? (tp + tn) / n : 0
+  const fpr = neg ? fp / neg : 0
+  const far = pos ? fn / pos : 0
+  const frr = neg ? fp / neg : 0
+  const f1 = precision + recall ? (2 * precision * recall) / (precision + recall) : 0
+  const mccDen = Math.sqrt(predPos * pos * predNeg * neg)
+  const mcc = mccDen ? (tp * tn - fp * fn) / mccDen : 0
+  const youden = recall + specificity - 1
+  return {
+    tp,
+    tn,
+    fp,
+    fn,
+    n,
+    recall,
+    specificity,
+    precision,
+    npv,
+    accuracy,
+    fpr,
+    far,
+    frr,
+    f1,
+    mcc,
+    youden,
+    ci: {
+      recall: wilson(tp, pos),
+      accuracy: wilson(tp + tn, n),
+      precision: wilson(tp, predPos),
+      specificity: wilson(tn, neg),
+      far: wilson(fn, pos),
+      frr: wilson(fp, neg),
+    },
+  }
 }
 
 export interface ClassStat {
@@ -204,6 +296,56 @@ export function summarize(doc: DetectAnalytics) {
 
   const slugsHit = new Set(defs.map((d) => d.slug).filter(Boolean))
 
+  const pieceBox = { tp: 0, tn: 0, fp: 0, fn: 0 }
+  for (const j of doc.jobs) {
+    const key = j.outcome ?? (j.gold_ng ? (j.ng ? 'tp' : 'fn') : j.ng ? 'fp' : 'tn')
+    pieceBox[key] += 1
+  }
+  const ids = new Set(doc.jobs.map((j) => j.piece_id))
+  const fnCases = (doc.fn_cases ?? []).filter((c) => ids.has(c.piece_id))
+  const instTp = defs.filter((d) => (d.match ?? 'tp') === 'tp').length
+  const instFp = defs.filter((d) => d.match === 'fp').length
+  const instFn = fnCases.length
+  const instTn = doc.jobs
+    .filter((j) => j.outcome === 'tn')
+    .reduce((s, j) => s + Math.max(1, j.faces), 0)
+  const instance = confusionMetrics(instTp, instTn, instFp, instFn)
+  const piece = confusionMetrics(pieceBox.tp, pieceBox.tn, pieceBox.fp, pieceBox.fn)
+
+  const byClassEval = byClassUnsorted.map((c) => {
+    const tp = defs.filter((d) => d.slug === c.slug && (d.match ?? 'tp') === 'tp').length
+    const fp = defs.filter((d) => d.slug === c.slug && d.match === 'fp').length
+    const fn = fnCases.filter((x) => x.slug === c.slug).length
+    const rec = wilson(tp, tp + fn)
+    const prec = wilson(tp, tp + fp)
+    return { ...c, tp, fp, fn, recall: rec.p, recallCi: rec, precision: prec.p, precisionCi: prec }
+  })
+
+  const calib = Array.from({ length: 5 }, (_, i) => ({
+    lo: i / 5,
+    hi: (i + 1) / 5,
+    n: 0,
+    tp: 0,
+  }))
+  for (const d of defs) {
+    const c = d.confidence ?? 0
+    const idx = Math.min(4, Math.max(0, Math.floor(c * 5)))
+    calib[idx].n += 1
+    if ((d.match ?? 'tp') === 'tp') calib[idx].tp += 1
+  }
+  const reliability = calib.map((b) => ({
+    ...b,
+    mid: (b.lo + b.hi) / 2,
+    empirical: b.n ? b.tp / b.n : 0,
+  }))
+
+  const protoSrc = doc.protocol
+  const pieceTarget = protoSrc?.piece_target ?? 50
+  const classTarget = protoSrc?.class_target ?? 3
+  const taskbookRecall = protoSrc?.taskbook_recall ?? 0.8
+  const taskbookAccuracy = protoSrc?.taskbook_accuracy ?? 0.85
+  const internalRecall = protoSrc?.internal_recall ?? 0.99
+
   return {
     pieces,
     ng,
@@ -225,12 +367,20 @@ export function summarize(doc: DetectAnalytics) {
     classBatch,
     byDpp,
     topNg,
+    piece,
+    instance,
+    byClassEval,
+    reliability,
+    fnCases,
     protocol: {
-      pieceTarget: 50,
-      classTarget: 3,
+      pieceTarget,
+      classTarget,
       classesHit: slugsHit.size,
-      recall: null as number | null,
-      accuracy: null as number | null,
+      recall: instance.recall,
+      accuracy: piece.accuracy,
+      taskbookRecall,
+      taskbookAccuracy,
+      internalRecall,
     },
   }
 }

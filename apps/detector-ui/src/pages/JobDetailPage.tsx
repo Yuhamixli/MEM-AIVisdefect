@@ -10,6 +10,7 @@ import {
 } from '../lib/catalog'
 import { confBand } from '../lib/config'
 import { downloadCsv, jobsToCsv, stamp } from '../lib/csv'
+import { publicUrl } from '../lib/paths'
 import { mergeJob, upsertOverride } from '../lib/reviewStore'
 import type { Defect, JobDetail, ReviewOverride, UiConfig } from '../lib/types'
 
@@ -30,7 +31,7 @@ export function JobDetailPage({ config }: { config: UiConfig }) {
 
   useEffect(() => {
     if (!pieceId) return
-    fetch(`/data/detect/jobs/${pieceId}.json`)
+    fetch(publicUrl(`/data/detect/jobs/${pieceId}.json`))
       .then((r) => {
         if (!r.ok) throw new Error(`HTTP ${r.status}`)
         return r.json() as Promise<JobDetail>

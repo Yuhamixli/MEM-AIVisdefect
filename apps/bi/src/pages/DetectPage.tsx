@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
-import { Donut, HBar, HeatMatrix, Histogram, ParetoChart, SpatialMap, YieldTrend } from '../charts/DetectCharts'
+import { Donut, HBar, HeatMatrix, Histogram, ParetoChart, SpatialMap, YieldTrend, ConfusionMatrix, CiBars, ReliabilityChart } from '../charts/DetectCharts'
 import { publicUrl } from '../data/load'
-import { DETECT_CLASS, summarize, type DetectAnalytics } from '../data/detect'
+import { DETECT_CLASS, summarize, type ConfusionKey, type DetectAnalytics } from '../data/detect'
+import { detectorUiUrl } from '../lib/urls'
 
 const REVIEW_ZH: Record<string, string> = {
   pending: '待复核',
@@ -10,12 +11,28 @@ const REVIEW_ZH: Record<string, string> = {
   relabelled: '改判',
 }
 
+const OUTCOME_ZH: Record<ConfusionKey, string> = {
+  tp: 'TP 真检出',
+  tn: 'TN 真阴',
+  fp: 'FP 过杀',
+  fn: 'FN 漏检',
+}
+
+function pct(p: number, d = 1) {
+  return `${(p * 100).toFixed(d)}%`
+}
+
+function ciText(w: { lo: number; hi: number }) {
+  return `${(w.lo * 100).toFixed(1)}–${(w.hi * 100).toFixed(1)}%`
+}
+
 export function DetectPage() {
   const [doc, setDoc] = useState<DetectAnalytics | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [batch, setBatch] = useState('all')
   const [classSlug, setClassSlug] = useState<string | null>(null)
   const [review, setReview] = useState('all')
+  const [outcome, setOutcome] = useState('all')
   const [q, setQ] = useState('')
 
   useEffect(() => {
@@ -33,6 +50,7 @@ export function DetectPage() {
     const jobs = doc.jobs.filter((j) => {
       if (batch !== 'all' && j.batch_id !== batch) return false
       if (review !== 'all' && j.review_status !== review) return false
+      if (outcome !== 'all' && j.outcome !== outcome) return false
       if (classSlug && !j.classes.includes(classSlug)) return false
       return true
     })
@@ -42,7 +60,7 @@ export function DetectPage() {
       jobs,
       defects: doc.defects.filter((d) => ids.has(d.piece_id) && (!classSlug || d.slug === classSlug)),
     }
-  }, [doc, batch, classSlug, review])
+  }, [doc, batch, classSlug, review, outcome])
 
   const stats = filtered ? summarize(filtered) : null
   const batches = [...new Set(doc?.jobs.map((j) => j.batch_id) ?? [])]
@@ -76,10 +94,11 @@ export function DetectPage() {
     <>
       <section className="card detect-hero">
         <div>
-          <p className="eyebrow">AOI 分析 · 课题主战场 · mock 演示</p>
+          <p className="eyebrow">AOI 分析 · mock 盲测口径</p>
           <h2 className="detect-title">检测数据与统计分析</h2>
           <p className="muted" style={{ margin: '6px 0 0' }}>
-            {doc.note} 查全率 / 准确率只在 50 件金标准上点亮，本页用运行快照看分布与复核负荷。
+            {doc.note} 任务书准确率 ≥{pct(proto.taskbookAccuracy, 0)}，内控检测率 ≥{pct(proto.internalRecall, 0)}。区间为
+            Wilson 95% CI。
           </p>
         </div>
         <div className="detect-filters">
@@ -99,7 +118,15 @@ export function DetectPage() {
               </option>
             ))}
           </select>
-          <a className="text-link" href="http://127.0.0.1:5174">
+          <select value={outcome} onChange={(e) => setOutcome(e.target.value)} aria-label="判定">
+            <option value="all">全部判定</option>
+            {(Object.keys(OUTCOME_ZH) as ConfusionKey[]).map((k) => (
+              <option key={k} value={k}>
+                {OUTCOME_ZH[k]}
+              </option>
+            ))}
+          </select>
+          <a className="text-link" href={detectorUiUrl('/')}>
             打开 detector-ui →
           </a>
         </div>
@@ -118,25 +145,166 @@ export function DetectPage() {
           ok={proto.classesHit >= proto.classTarget}
           hint="考核 ≥3 类 · 定义卡七类"
         />
-        <Gate label="查全率 DR" value="待测" pending hint="金标准 50 件盲测后点亮 · 目标 ≥80%" />
-        <Gate label="准确率" value="待测" pending hint="金标准 50 件盲测后点亮 · 目标 ≥85%" />
+        <Gate
+          label="查全率 DR"
+          value={pct(stats.instance.recall)}
+          ok={stats.instance.recall >= proto.internalRecall}
+          hint={`实例 ${stats.instance.ci.recall.k}/${stats.instance.ci.recall.n} · CI ${ciText(stats.instance.ci.recall)} · 内控 ≥${pct(proto.internalRecall, 0)}`}
+        />
+        <Gate
+          label="准确率"
+          value={pct(stats.piece.accuracy)}
+          ok={stats.piece.accuracy >= proto.taskbookAccuracy}
+          hint={`件级 ${stats.piece.ci.accuracy.k}/${stats.piece.ci.accuracy.n} · CI ${ciText(stats.piece.ci.accuracy)} · 任务书 ≥${pct(proto.taskbookAccuracy, 0)}`}
+        />
       </section>
 
       <section className="grid-kpi detect-kpis">
         <Kpi
-          label="良率"
-          value={`${(stats.yieldRate * 100).toFixed(1)}%`}
-          hint={`OK ${stats.ok} · NG ${stats.ng}`}
-          tone={stats.yieldRate >= 0.5 ? 'ok' : 'bad'}
+          label="漏检放行 FAR"
+          value={pct(stats.instance.far)}
+          hint={`FN ${stats.instance.fn} · fail-accepted · CI ${ciText(stats.instance.ci.far)}`}
+          tone={stats.instance.far <= 0.01 ? 'ok' : 'bad'}
+        />
+        <Kpi
+          label="过杀拒收 FRR"
+          value={pct(stats.piece.frr)}
+          hint={`件级 FP ${stats.piece.fp} · fail-rejected · CI ${ciText(stats.piece.ci.frr)}`}
+        />
+        <Kpi
+          label="精确率 PPV"
+          value={pct(stats.instance.precision)}
+          hint={`TP/(TP+FP) · CI ${ciText(stats.instance.ci.precision)}`}
+        />
+        <Kpi
+          label="特异度 TNR"
+          value={pct(stats.piece.specificity)}
+          hint={`件级 TN/(TN+FP) · CI ${ciText(stats.piece.ci.specificity)}`}
+        />
+        <Kpi label="F1" value={stats.instance.f1.toFixed(3)} hint="实例级 2PR/(P+R)" />
+        <Kpi label="MCC" value={stats.piece.mcc.toFixed(3)} hint="件级 Matthews" />
+      </section>
+
+      <section className="detect-grid">
+        <article className="card">
+          <div className="section-head">
+            <h2>件级混淆矩阵</h2>
+            <span className="pill">gold × pred</span>
+          </div>
+          <p className="muted chart-cap">
+            fail-accepted = 真 NG 被放行（FN）；fail-rejected = 真 OK 被拒收（FP）。准确率走这张四格表。
+          </p>
+          <ConfusionMatrix tp={stats.piece.tp} tn={stats.piece.tn} fp={stats.piece.fp} fn={stats.piece.fn} />
+        </article>
+        <article className="card">
+          <div className="section-head">
+            <h2>Wilson 95% CI</h2>
+            <span className="pill">z=1.96</span>
+          </div>
+          <p className="muted chart-cap">橙虚线=门禁（检测率 99% / 准确率 85%）。样本量下下限仍可能跨过任务书 80%。</p>
+          <CiBars
+            rows={[
+              {
+                label: '检测率 DR',
+                p: stats.instance.recall,
+                lo: stats.instance.ci.recall.lo,
+                hi: stats.instance.ci.recall.hi,
+                target: proto.internalRecall,
+              },
+              {
+                label: '准确率 Acc',
+                p: stats.piece.accuracy,
+                lo: stats.piece.ci.accuracy.lo,
+                hi: stats.piece.ci.accuracy.hi,
+                target: proto.taskbookAccuracy,
+              },
+              {
+                label: '精确率 PPV',
+                p: stats.instance.precision,
+                lo: stats.instance.ci.precision.lo,
+                hi: stats.instance.ci.precision.hi,
+              },
+              {
+                label: '特异度 TNR',
+                p: stats.piece.specificity,
+                lo: stats.piece.ci.specificity.lo,
+                hi: stats.piece.ci.specificity.hi,
+              },
+            ]}
+          />
+        </article>
+      </section>
+
+      <section className="detect-grid">
+        <article className="card">
+          <div className="section-head">
+            <h2>分类型查全率</h2>
+            <span className="pill">实例 TP / (TP+FN)</span>
+          </div>
+          <p className="muted chart-cap">漏检 1 例落在脏污。点类别芯片可下钻。</p>
+          <table className="account-table">
+            <thead>
+              <tr>
+                <th>类别</th>
+                <th>TP</th>
+                <th>FP</th>
+                <th>FN</th>
+                <th>查全率</th>
+                <th>95% CI</th>
+                <th>精确率</th>
+              </tr>
+            </thead>
+            <tbody>
+              {stats.byClassEval.map((c) => (
+                <tr key={c.slug}>
+                  <td>
+                    <button type="button" className="legend-btn" onClick={() => toggleClass(c.slug)}>
+                      <i style={{ background: c.color }} />
+                      {c.zh}
+                    </button>
+                  </td>
+                  <td className="num">{c.tp}</td>
+                  <td className="num">{c.fp}</td>
+                  <td className="num">{c.fn}</td>
+                  <td className="num">{pct(c.recall)}</td>
+                  <td className="mono-path">{ciText(c.recallCi)}</td>
+                  <td className="num">{pct(c.precision)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </article>
+        <article className="card">
+          <div className="section-head">
+            <h2>置信度校准</h2>
+            <span className="pill">reliability</span>
+          </div>
+          <p className="muted chart-cap">点落在对角附近表示置信度与经验精确率对齐。圆面积∝该档样本数。</p>
+          <ReliabilityChart bins={stats.reliability} />
+          <ul className="mini-legend">
+            {stats.reliability.filter((b) => b.n).map((b) => (
+              <li key={b.mid}>
+                {b.lo.toFixed(1)}–{b.hi.toFixed(1)} · n={b.n} · PPV {pct(b.empirical)}
+              </li>
+            ))}
+          </ul>
+        </article>
+      </section>
+
+      <section className="grid-kpi detect-kpis">
+        <Kpi
+          label="产线良率"
+          value={pct(stats.yieldRate)}
+          hint={`模型 OK ${stats.ok} · NG ${stats.ng}（非金标准）`}
         />
         <Kpi label="缺陷实例" value={String(stats.defects)} hint={`低置信 ${stats.lowConf}（<0.5）`} />
         <Kpi label="平均置信度" value={stats.avgConf.toFixed(2)} hint="检测原值，未掺复核" />
         <Kpi label="待复核件" value={String(stats.pending)} hint="件级聚合" />
-        <Kpi label="先三类触及" value={String(stats.primaryPieces)} hint="裂纹 / 气泡 / 划伤" />
+        <Kpi label="Youden J" value={stats.piece.youden.toFixed(3)} hint="TPR+TNR−1" />
         <Kpi
-          label="件均缺陷"
-          value={stats.pieces ? (stats.defects / stats.pieces).toFixed(2) : '0'}
-          hint="含 OK 件"
+          label="NPV"
+          value={pct(stats.piece.npv)}
+          hint="OK 判定中真阴占比"
         />
       </section>
 
@@ -182,7 +350,12 @@ export function DetectPage() {
           <span className="pill">bbox 中心 · 3200×1920</span>
         </div>
         <p className="muted chart-cap">投影到压条轮廓，看端部 / 中段聚集。点图例或帕累托可只看一类。</p>
-        <SpatialMap defects={filtered.defects} size={doc.image_size} selectedSlug={classSlug} />
+        <SpatialMap
+          defects={filtered.defects}
+          misses={stats.fnCases}
+          size={doc.image_size}
+          selectedSlug={classSlug}
+        />
         <ul className="class-legend">
           {stats.byClass.map((c) => (
             <li key={c.slug}>
@@ -215,7 +388,7 @@ export function DetectPage() {
             <h2>检测面</h2>
             <span className="pill">face</span>
           </div>
-          <p className="muted chart-cap">当前 mock 多为顶/底；四方位到位后这里会铺开。</p>
+          <p className="muted chart-cap">四方位 mock；轴向仍看长度分区。</p>
           <HBar rows={stats.byFace.map((f) => ({ label: f.zh, value: f.count }))} />
         </article>
       </section>
@@ -340,7 +513,7 @@ export function DetectPage() {
               {stats.topNg.map((j) => (
                 <tr key={j.piece_id}>
                   <td>
-                    <a href={`http://127.0.0.1:5174/jobs/${j.piece_id}`}>{j.piece_id}</a>
+                    <a href={detectorUiUrl(`/jobs/${j.piece_id}`)}>{j.piece_id}</a>
                   </td>
                   <td className="num">{j.defects}</td>
                   <td>{j.classes.map((s) => DETECT_CLASS[s]?.zh ?? s).join(' / ') || '—'}</td>
@@ -369,6 +542,7 @@ export function DetectPage() {
               <tr>
                 <th>样件</th>
                 <th>批次</th>
+                <th>判定</th>
                 <th>缺陷</th>
                 <th>类别</th>
                 <th>最高置信</th>
@@ -380,9 +554,14 @@ export function DetectPage() {
               {tableRows.map((j) => (
                 <tr key={j.piece_id}>
                   <td>
-                    <a href={`http://127.0.0.1:5174/jobs/${j.piece_id}`}>{j.piece_id}</a>
+                    <a href={detectorUiUrl(`/jobs/${j.piece_id}`)}>{j.piece_id}</a>
                   </td>
                   <td>{j.batch_id}</td>
+                  <td>
+                    <span className={`pill outcome-${j.outcome ?? 'na'}`}>
+                      {j.outcome ? OUTCOME_ZH[j.outcome] : '—'}
+                    </span>
+                  </td>
                   <td className="num">{j.defects}</td>
                   <td>
                     {j.classes.length === 0

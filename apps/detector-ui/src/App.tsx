@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import { Shell } from './components/Shell'
 import { loadUiConfig } from './lib/config'
+import { publicUrl } from './lib/paths'
 import type { JobsIndex, UiConfig } from './lib/types'
 import { ExportPage } from './pages/ExportPage'
 import { JobDetailPage } from './pages/JobDetailPage'
@@ -20,7 +21,7 @@ export default function App() {
     let cancelled = false
     async function countPending() {
       try {
-        const res = await fetch('/data/detect/jobs-index.json')
+        const res = await fetch(publicUrl('/data/detect/jobs-index.json'))
         if (!res.ok) return
         const idx = (await res.json()) as JobsIndex
         const n = idx.jobs.filter((j) => j.review_status === 'pending').length

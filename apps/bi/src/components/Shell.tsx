@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
 import { publicUrl } from '../data/load'
+import { detectorUiUrl } from '../lib/urls'
 
 export function Shell() {
   const [syncedAt, setSyncedAt] = useState<string | null>(null)
@@ -42,7 +43,7 @@ export function Shell() {
       <footer className="page-foot">
         数据截至 {syncedAt ?? '未同步，请运行 npm run sync-data'}
         {' · '}
-        <a href="http://127.0.0.1:5174">detector-ui 本地</a>
+        <a href={detectorUiUrl('/')}>detector-ui</a>
       </footer>
     </div>
   )

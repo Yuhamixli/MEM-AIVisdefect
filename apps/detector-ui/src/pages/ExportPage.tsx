@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { downloadCsv, jobsToCsv, stamp } from '../lib/csv'
+import { publicUrl } from '../lib/paths'
 import { mergeJob, overrideMap } from '../lib/reviewStore'
 import type { JobDetail, JobsIndex } from '../lib/types'
 
@@ -11,13 +12,13 @@ export function ExportPage() {
   useEffect(() => {
     let cancelled = false
     async function load() {
-      const idxRes = await fetch('/data/detect/jobs-index.json')
+      const idxRes = await fetch(publicUrl('/data/detect/jobs-index.json'))
       if (!idxRes.ok) throw new Error(`HTTP ${idxRes.status}`)
       const idx = (await idxRes.json()) as JobsIndex
       const loaded = (
         await Promise.all(
           idx.jobs.map(async (row) => {
-            const r = await fetch(`/data/detect/jobs/${row.piece_id}.json`)
+            const r = await fetch(publicUrl(`/data/detect/jobs/${row.piece_id}.json`))
             if (!r.ok) return null
             return mergeJob(await r.json())
           }),

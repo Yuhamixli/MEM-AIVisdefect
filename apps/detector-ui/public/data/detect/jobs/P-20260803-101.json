@@ -1,0 +1,87 @@
+{
+  "piece_id": "P-20260803-101",
+  "batch_id": "B-01",
+  "faces": [
+    {
+      "face": "left",
+      "image": "/data/detect/images/placeholder-3200x1920.svg",
+      "image_size": [
+        3200,
+        1920
+      ],
+      "defects": [
+        {
+          "defect_id": "d-001",
+          "slug": "foreign_matter",
+          "class_name": "异物",
+          "bbox": [
+            915,
+            884,
+            52,
+            72
+          ],
+          "confidence": 0.74,
+          "severity": "medium",
+          "review_status": "pending",
+          "match": "tp"
+        }
+      ]
+    },
+    {
+      "face": "right",
+      "image": "/data/detect/images/placeholder-3200x1920.svg",
+      "image_size": [
+        3200,
+        1920
+      ],
+      "defects": [
+        {
+          "defect_id": "d-002",
+          "slug": "bubble",
+          "class_name": "气泡",
+          "bbox": [
+            1265,
+            956,
+            85,
+            87
+          ],
+          "confidence": 0.86,
+          "severity": "high",
+          "review_status": "pending",
+          "match": "tp"
+        }
+      ]
+    },
+    {
+      "face": "top",
+      "image": "/data/detect/images/placeholder-3200x1920.svg",
+      "image_size": [
+        3200,
+        1920
+      ],
+      "defects": [
+        {
+          "defect_id": "d-003",
+          "slug": "missing_yarn",
+          "class_name": "缺纱",
+          "bbox": [
+            1112,
+            1029,
+            57,
+            91
+          ],
+          "confidence": 0.76,
+          "severity": "medium",
+          "review_status": "confirmed",
+          "match": "tp"
+        }
+      ]
+    }
+  ],
+  "detected_at": "2026-08-03T12:11:00+08:00",
+  "model_version": "yolo11s-seg-mock-v0",
+  "review_status": "pending",
+  "gold_ng": true,
+  "pred_ng": true,
+  "outcome": "tp"
+}

@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react'
 import { NavLink } from 'react-router-dom'
+import { biHomeUrl } from '../lib/paths'
 import type { UiConfig } from '../lib/types'
 
 export function Shell({
@@ -27,7 +28,7 @@ export function Shell({
             复核队列{pendingCount > 0 ? <span className="nav-count">{pendingCount}</span> : null}
           </NavLink>
           <NavLink to="/export">导出</NavLink>
-          <a href={config.bi_url} className="nav-ext">
+          <a href={biHomeUrl(config.bi_url)} className="nav-ext">
             返回管理看板
           </a>
         </nav>
