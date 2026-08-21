@@ -1,7 +1,7 @@
 # ADR-001-four-layer-vis…842f
 
-> 同步自飞书 · token=`HpzYdJpgwo4FYvxMkB4cscSanah` · type=docx · 2026-08-20
-> 链接: https://bcndkrmo7f8n.feishu.cn/docx/HpzYdJpgwo4FYvxMkB4cscSanah
+> 同步自飞书 · token=`ABB4dkBJeoZJp3x9rxOcB6pTnJc` · type=docx · 2026-08-21
+> 链接: https://bcndkrmo7f8n.feishu.cn/docx/ABB4dkBJeoZJp3x9rxOcB6pTnJc
 
 ADR-001-four-layer-vis…842f
 ADR-001：四层视觉检测技术架构评估

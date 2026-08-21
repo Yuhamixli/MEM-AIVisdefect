@@ -1,11 +1,61 @@
 # 飞书同步索引
 
-更新时间：2026-08-20T02:22:24.290Z
+更新时间：2026-08-21T02:27:20.178Z
 根文件夹 token：`JviVfMA56lMkzhdVoZdcEVk9nBd`
 成功：80 / 尝试：80
 
 ## 已同步
 
+- [玻纤拉挤电芯压条AI视觉检测系统设计方案20260801](./03-技术方案/详细方案设计报告/玻纤拉挤电芯压条AI视觉检测系统设计方案20260801.md) (`M7FpdWYgIoL4E1xnwdBcWr4xnng`, 27751 chars)
+- [20260723_基于600万彩色卷帘快门面阵相机的视觉布置方案](./03-技术方案/总布置方案/20260723_基于600万彩色卷帘快门面阵相机的视觉布置方案.md) (`MkKRdFcj7onwh1xgqSTcZ5qfn61`, 948 chars)
+- [检测结果落盘字段清单](./03-技术方案/检测结果落盘字段清单.md) (`LsDBd7pmyoV9G6x9LDQcccC8nIg`, 3294 chars)
+- [软件拓扑图](./03-技术方案/软件拓扑图.md) (`KahMdRXJgonLiXxN08JcmPSIn0g`, 5275 chars)
+- [拉挤表面缺陷离线检测与近线精修实施方案](./03-技术方案/拉挤表面缺陷离线检测与近线精修实施方案.md) (`HR7JduqnyoXYSCxBfk9ceGjOnef`, 4225 chars)
+- [拉挤表面缺陷离线检测与近线精修实施方案](./03-技术方案/拉挤表面缺陷离线检测与近线精修实施方案.md) (`GUYTdyO6Eo56m6xCvaZcADA1nJd`, 4321 chars)
+- [offline-module-interface](./03-技术方案/offline-module-interface.md) (`EOh7dxswjo2cU7xVXd6c42YmncB`, 11627 chars)
+- [ADR-002-reuse-xnoavi-c…69e9](./03-技术方案/ADR-002-reuse-xnoavi-c…69e9.md) (`QB5qd2dMPolPBsxtJpbcrHLNnff`, 5048 chars)
+- [ADR-001-four-layer-vis…842f](./03-技术方案/ADR-001-four-layer-vis…842f.md) (`ABB4dkBJeoZJp3x9rxOcB6pTnJc`, 2500 chars)
+- [03组_玻纤拉挤电芯压条_AI视觉检测_详细…3ed2](./03-技术方案/03组_玻纤拉挤电芯压条_AI视觉检测_详细…3ed2.md) (`RDStdtfEKoKm34xzECtcRvIUnde`, 13380 chars)
+- [离线检测模块接口schema](./03-技术方案/离线检测模块接口schema.md) (`AiX5de564oz0OwxKeG2cA5Crnmg`, 6734 chars)
+- [系统架构设计](./03-技术方案/系统架构设计.md) (`EOhldvBvKoPH5uxig14cxWOQn9c`, 6032 chars)
+- [M币预算表](./08-项目管理/M币/M币预算表.md) (`GeFedI4SQoHabnxa5tLcd4jfn24`, 3879 chars)
+- [首次双周报草稿-Kimi版](./08-项目管理/双周报/首次双周报草稿-Kimi版.md) (`IrlMdsUEcoxz5dx6Zq9cV9dlnxg`, 4823 chars)
+- [首次双周报草稿（截止7-26）](./08-项目管理/双周报/首次双周报草稿（截止7-26）.md) (`Y1pddu5KYo8sb6xIvegc7iL5nVh`, 206 chars)
+- [风险登记册](./08-项目管理/风险台账/风险登记册.md) (`D3rOd2M0boCfO4xyAhzc8acJnld`, 3657 chars)
+- [WBS与双周里程碑](./08-项目管理/WBS/WBS与双周里程碑.md) (`WGXmduRq7oZ6wRxbs9Qcq8p8nuc`, 4425 chars)
+- [wbs-and-schedule](./08-项目管理/wbs-and-schedule.md) (`Qet7d2bUsoSBcTxDaMQc9p6PnSg`, 1762 chars)
+- [team-workstreams](./08-项目管理/team-workstreams.md) (`Kjqud3Kvbop1C2xNBaHciC5inDe`, 2734 chars)
+- [team-roster](./08-项目管理/team-roster.md) (`HMaQdkXB5o5ZurxmVbJc8pV9nBb`, 1383 chars)
+- [team-capability-profile](./08-项目管理/team-capability-profile.md) (`EZJ9dH763ok8OXxpnrXcAmIWn2e`, 2461 chars)
+- [operation-plan-from-pr…a3d3](./08-项目管理/operation-plan-from-pr…a3d3.md) (`SNqVd86kwoYduyxD1CUcJvUhnNb`, 4409 chars)
+- [open-decisions](./08-项目管理/open-decisions.md) (`XIRHdvDPAoZswbxsO7IcevHrnTh`, 2372 chars)
+- [m-coin-ledger](./08-项目管理/m-coin-ledger.md) (`U64udWbfTojvHnxPaQYcpyB0nhb`, 590 chars)
+- [m-coin-cost-system](./08-项目管理/m-coin-cost-system.md) (`ZY6YdyFhromrY7xqcP9cxV6Bnhf`, 1172 chars)
+- [evaluation-principles](./08-项目管理/evaluation-principles.md) (`YEPId9VaUogX2xxqgiYcauwun9c`, 728 chars)
+- [change-control](./08-项目管理/change-control.md) (`SESwdyx9To65t7xic73coIxpnWh`, 1160 chars)
+- [bi-metrics-onepager](./08-项目管理/bi-metrics-onepager.md) (`K2MzddOioo1dgAx39ikc3hKMnLd`, 1588 chars)
+- [TODO](./08-项目管理/TODO.md) (`Bi55ds0l4omWiFxm1P2cbofhnwf`, 5567 chars)
+- [REPO-TODO](./08-项目管理/REPO-TODO.md) (`Oqd5dDLGGoH4AgxJvVfcU5gXn3b`, 4160 chars)
+- [沟通管理计划](./08-项目管理/沟通管理计划.md) (`NNv1dWmjqotfEVxcPN6cPZNwnnf`, 3259 chars)
+- [BP初稿](./01-项目总览/课题全栈市场调研/BP初稿.md) (`Jcf9dZAWBoEFOVxfAMkcy0GInEh`, 2933 chars)
+- [调研报告](./01-项目总览/课题全栈市场调研/调研报告.md) (`AWBvdm1fDobBy7xNAM9cuh3Mnif`, 55342 chars)
+- [商业模式参考案例V1.0](./01-项目总览/课题全栈市场调研/商业模式参考案例V1.0.md) (`KaKgdzG9goStOFxipmEcolp7nde`, 1776 chars)
+- [一种玻纤拉挤电芯压条质量判定方法及系统](./01-项目总览/专利布局/一种玻纤拉挤电芯压条质量判定方法及系统.md) (`PXAbdeFocoNxAYxlc2rcBnl5ntc`, 4734 chars)
+- [任务书_基于机器视觉的复合材料拉挤制品表面缺陷检测（郭小川）](./01-项目总览/任务书与开题评审/任务书_基于机器视觉的复合材料拉挤制品表面缺陷检测（郭小川）.md) (`JdEedm0ROoUTkvxXv9VcL7cpnZd`, 523 chars)
+- [小组数据安全管理任务](./01-项目总览/小组数据安全管理任务.md) (`WotDd2Dj5oyaM2xYvJGcN35Bn4e`, 3144 chars)
+- [项目一页纸](./01-项目总览/项目一页纸.md) (`POsJdvxLson3wlxQuYYcsw9tn2c`, 355 chars)
+- [需求规格书v3](./02-需求与验收/需求规格书v3.md) (`Rib7dN7YfoYskAxrUyxcQGmgnGh`, 5171 chars)
+- [未决事项清单-沟通管理日志](./02-需求与验收/未决事项清单-沟通管理日志.md) (`Nmn6dvjJqoBhMZxBO3ScuJaKnke`, 8704 chars)
+- [未决事项清单@范汝杰](./02-需求与验收/未决事项清单@范汝杰.md) (`FBybdtChroDjezxLhALcocN0nKx`, 504 chars)
+- [26-联调检查单](./06-前端与BI/26-联调检查单.md) (`LSUDdpRxUoLQmZx3NNycU6BNnPg`, 6037 chars)
+- [25-程昱涵两周冲刺任务板](./06-前端与BI/25-程昱涵两周冲刺任务板.md) (`VTj0dzVQ7oqFvyxCiMmceb6lnui`, 4563 chars)
+- [24-技术选型建议](./06-前端与BI/24-技术选型建议.md) (`Vt6Vd3DcoouePrx6x6WcrSaQnog`, 3803 chars)
+- [23-意见箱提交流程](./06-前端与BI/23-意见箱提交流程.md) (`G9okdQ27yoFzeuxICHAcOgXwnNf`, 4004 chars)
+- [22-前后端API契约](./06-前端与BI/22-前后端API契约.md) (`JWcndhT0YoX0QLx9JJkc2Wl5nsh`, 6063 chars)
+- [21-管理看板规格](./06-前端与BI/21-管理看板规格.md) (`VUtud6Z9lo3HapxHuhzckuZEnQe`, 5769 chars)
+- [20-检测结果展示UI规格](./06-前端与BI/20-检测结果展示UI规格.md) (`FEAUdRn6AoiQo7xU2pNcNKjHnsd`, 7311 chars)
+- [19-前端BI产品规格](./06-前端与BI/19-前端BI产品规格.md) (`AudKdVP05oCH5Kxix03cLZ23nWh`, 5771 chars)
+- [程昱涵-前端BI两周冲刺任务板](./06-前端与BI/程昱涵-前端BI两周冲刺任务板.md) (`ZGUDdU23noYqnSx5rXHc6Xsmntg`, 210 chars)
 - [00-从这里开始-文档入口](./00-入口/00-从这里开始-文档入口.md) (`MGW4dZQ7hoovQTxuw8ocpIMSnvb`, 808 chars)
 - [原始资料入库说明-微信与坚果云](./00-入口/原始资料入库说明-微信与坚果云.md) (`WIGnd57Seo1XLuxHeQpc98rOngg`, 504 chars)
 - [文档地图](./00-入口/文档地图.md) (`Ofted42udoDeyPxNAsac9XdhnCg`, 189 chars)
@@ -14,42 +64,10 @@
 - [资料入库规范](./00-入口/资料入库规范.md) (`IVYOdbg4AotekhxDjh2cW6CQn0c`, 2521 chars)
 - [共享简报-写作前必读](./00-入口/共享简报-写作前必读.md) (`Md5fdaEpooxV1ux9YHNcsPb6n0c`, 5588 chars)
 - [README-文档地图与交付勾选清单](./00-入口/README-文档地图与交付勾选清单.md) (`Ixpmd1eeNofj9qxjgDWcYRpEnkc`, 3243 chars)
-- [M币预算表](./08-项目管理/M币/M币预算表.md) (`GeFedI4SQoHabnxa5tLcd4jfn24`, 3879 chars)
-- [首次双周报草稿-Kimi版](./08-项目管理/双周报/首次双周报草稿-Kimi版.md) (`IrlMdsUEcoxz5dx6Zq9cV9dlnxg`, 4823 chars)
-- [首次双周报草稿（截止7-26）](./08-项目管理/双周报/首次双周报草稿（截止7-26）.md) (`Y1pddu5KYo8sb6xIvegc7iL5nVh`, 206 chars)
-- [风险登记册](./08-项目管理/风险台账/风险登记册.md) (`D3rOd2M0boCfO4xyAhzc8acJnld`, 3657 chars)
-- [WBS与双周里程碑](./08-项目管理/WBS/WBS与双周里程碑.md) (`WGXmduRq7oZ6wRxbs9Qcq8p8nuc`, 4425 chars)
-- [TODO](./08-项目管理/TODO.md) (`Tbm8deQj1oK7GkxWNKOcdesYn7d`, 5567 chars)
-- [REPO-TODO](./08-项目管理/REPO-TODO.md) (`EbPLd9eDyoM6ctxjvHNc06igngf`, 4160 chars)
-- [wbs-and-schedule](./08-项目管理/wbs-and-schedule.md) (`HoCCdfmAvoK1lGxUHcuck7pHnwc`, 1762 chars)
-- [team-workstreams](./08-项目管理/team-workstreams.md) (`Dtb7drqANoVfAMxbRylc2O9Xn2y`, 2734 chars)
-- [team-roster](./08-项目管理/team-roster.md) (`RfvWd1QoaoPZxuxqYnYcGdRUntf`, 1383 chars)
-- [operation-plan-from-pr…a3d3](./08-项目管理/operation-plan-from-pr…a3d3.md) (`BTXudruYSovJyCxwfaWcZZsfnlg`, 4409 chars)
-- [m-coin-ledger](./08-项目管理/m-coin-ledger.md) (`LENNdKmQhoHUNTxIoOzcfEBdnZd`, 590 chars)
-- [m-coin-cost-system](./08-项目管理/m-coin-cost-system.md) (`BTN7dBKm6okXg3xsJdacumcmnfe`, 1172 chars)
-- [change-control](./08-项目管理/change-control.md) (`XpHqdNXQ8oK4mMxXNXQcnkQWn3G`, 1160 chars)
-- [沟通管理计划](./08-项目管理/沟通管理计划.md) (`NNv1dWmjqotfEVxcPN6cPZNwnnf`, 3259 chars)
-- [BP初稿](./01-项目总览/课题全栈市场调研/BP初稿.md) (`Jcf9dZAWBoEFOVxfAMkcy0GInEh`, 2933 chars)
-- [调研报告](./01-项目总览/课题全栈市场调研/调研报告.md) (`AWBvdm1fDobBy7xNAM9cuh3Mnif`, 55342 chars)
-- [商业模式参考案例V1.0](./01-项目总览/课题全栈市场调研/商业模式参考案例V1.0.md) (`KaKgdzG9goStOFxipmEcolp7nde`, 1776 chars)
-- [一种玻纤拉挤电芯压条质量判定方法及系统](./01-项目总览/专利布局/一种玻纤拉挤电芯压条质量判定方法及系统.md) (`PXAbdeFocoNxAYxlc2rcBnl5ntc`, 4734 chars)
-- [任务书_基于机器视觉的复合材料拉挤制品表面缺陷检测（郭小川）](./01-项目总览/任务书与开题评审/任务书_基于机器视觉的复合材料拉挤制品表面缺陷检测（郭小川）.md) (`JdEedm0ROoUTkvxXv9VcL7cpnZd`, 523 chars)
-- [小组数据安全管理任务](./01-项目总览/小组数据安全管理任务.md) (`WotDd2Dj5oyaM2xYvJGcN35Bn4e`, 3144 chars)
-- [team-capability-profile](./01-项目总览/team-capability-profile.md) (`EIyEdekfzokz5SxTBlhczoIAnUf`, 2461 chars)
-- [项目一页纸](./01-项目总览/项目一页纸.md) (`POsJdvxLson3wlxQuYYcsw9tn2c`, 355 chars)
 - [【已归档】小组数据安全管理任务-v0.2](./99-归档与原始材料/数据安全管理-旧稿/【已归档】小组数据安全管理任务-v0.2.md) (`Xbgydl8yxowOBmxJHqXcn7f7nKc`, 3141 chars)
 - [【已归档】03组数据安全管理方案-v0.1](./99-归档与原始材料/数据安全管理-旧稿/【已归档】03组数据安全管理方案-v0.1.md) (`BNjcd0JShoOstAxK6CVcHAJCn4b`, 2478 chars)
 - [20260808185008-清华MEM 03组周会-逐字稿文本-1](./09-会议与纪要/会议纪要/20260808185008-清华MEM 03组周会-逐字稿文本-1.md) (`WDHCdYjS0o6dAixADpCcUcBBnHc`, 40545 chars)
 - [20260725194203-转写_清华MEM 03组周会-逐字稿文本-1](./09-会议与纪要/会议纪要/20260725194203-转写_清华MEM 03组周会-逐字稿文本-1.md) (`PhyCdHg5foLz29xGRmxc66wUndh`, 10948 chars)
-- [玻纤拉挤电芯压条AI视觉检测系统设计方案20260801](./03-技术方案/详细方案设计报告/玻纤拉挤电芯压条AI视觉检测系统设计方案20260801.md) (`M7FpdWYgIoL4E1xnwdBcWr4xnng`, 27751 chars)
-- [20260723_基于600万彩色卷帘快门面阵相机的视觉布置方案](./03-技术方案/总布置方案/20260723_基于600万彩色卷帘快门面阵相机的视觉布置方案.md) (`MkKRdFcj7onwh1xgqSTcZ5qfn61`, 948 chars)
-- [软件拓扑图](./03-技术方案/软件拓扑图.md) (`HBRmdnjcLoXGs8xHTuqcbB8En3e`, 5275 chars)
-- [offline-module-interface](./03-技术方案/offline-module-interface.md) (`UymTdIIZ3omxXcxwlWrcOThDnkg`, 9505 chars)
-- [ADR-002-reuse-xnoavi-c…69e9](./03-技术方案/ADR-002-reuse-xnoavi-c…69e9.md) (`NnI6dUp3uorksmxLB9qcXOfBnAd`, 5048 chars)
-- [ADR-001-four-layer-vis…842f](./03-技术方案/ADR-001-four-layer-vis…842f.md) (`HpzYdJpgwo4FYvxMkB4cscSanah`, 2500 chars)
-- [03组_玻纤拉挤电芯压条_AI视觉检测_详细…3ed2](./03-技术方案/03组_玻纤拉挤电芯压条_AI视觉检测_详细…3ed2.md) (`RDStdtfEKoKm34xzECtcRvIUnde`, 13380 chars)
-- [离线检测模块接口schema](./03-技术方案/离线检测模块接口schema.md) (`AiX5de564oz0OwxKeG2cA5Crnmg`, 6734 chars)
-- [系统架构设计](./03-技术方案/系统架构设计.md) (`EOhldvBvKoPH5uxig14cxWOQn9c`, 6032 chars)
 - [工件表面缺陷检测模型测试报告](./04-算法与模型/工件表面缺陷检测模型测试报告.md) (`KigIdf9UUoMsITxF7Ebc36PRnzJ`, 6362 chars)
 - [拉挤表面缺陷离线检测与近线精修实施方案_20260726(2)](./04-算法与模型/拉挤表面缺陷离线检测与近线精修实施方案_20260726(2).md) (`WNaodlWCwo7QAIxOviuc9NO1nQh`, 4248 chars)
 - [拉挤工艺缺陷检测三层智能检测方案](./04-算法与模型/拉挤工艺缺陷检测三层智能检测方案.md) (`Wtz1dmzw0oDOJXxpKLPcFAyQnpf`, 5069 chars)
@@ -62,33 +80,38 @@
 - [行业背景](./10-知识沉淀/行业背景.md) (`O268d25Tio3tujxHJJEcbsFknxg`, 3065 chars)
 - [拉挤工艺基础](./10-知识沉淀/拉挤工艺基础.md) (`RDtHdvYxUou2csxOt1Tcbf1Onfh`, 3488 chars)
 - [onboarding指南v2](./10-知识沉淀/onboarding指南v2.md) (`L74qdpFMQoXOsjx4OgXcpZCvn2d`, 3275 chars)
-- [bi-metrics-onepager](./06-前端与BI/bi-metrics-onepager.md) (`OyvKdfOHIoUmc5xfUNkcxcFDnmh`, 1588 chars)
-- [26-联调检查单](./06-前端与BI/26-联调检查单.md) (`LSUDdpRxUoLQmZx3NNycU6BNnPg`, 6037 chars)
-- [25-程昱涵两周冲刺任务板](./06-前端与BI/25-程昱涵两周冲刺任务板.md) (`VTj0dzVQ7oqFvyxCiMmceb6lnui`, 4563 chars)
-- [24-技术选型建议](./06-前端与BI/24-技术选型建议.md) (`Vt6Vd3DcoouePrx6x6WcrSaQnog`, 3803 chars)
-- [23-意见箱提交流程](./06-前端与BI/23-意见箱提交流程.md) (`G9okdQ27yoFzeuxICHAcOgXwnNf`, 4004 chars)
-- [22-前后端API契约](./06-前端与BI/22-前后端API契约.md) (`JWcndhT0YoX0QLx9JJkc2Wl5nsh`, 6063 chars)
-- [21-管理看板规格](./06-前端与BI/21-管理看板规格.md) (`VUtud6Z9lo3HapxHuhzckuZEnQe`, 5769 chars)
-- [20-检测结果展示UI规格](./06-前端与BI/20-检测结果展示UI规格.md) (`FEAUdRn6AoiQo7xU2pNcNKjHnsd`, 7311 chars)
-- [19-前端BI产品规格](./06-前端与BI/19-前端BI产品规格.md) (`AudKdVP05oCH5Kxix03cLZ23nWh`, 5771 chars)
-- [程昱涵-前端BI两周冲刺任务板](./06-前端与BI/程昱涵-前端BI两周冲刺任务板.md) (`ZGUDdU23noYqnSx5rXHc6Xsmntg`, 210 chars)
-- [open-decisions](./02-需求与验收/open-decisions.md) (`RHVIdjQQhoePuqxLRJTc8OLlnug`, 2372 chars)
-- [evaluation-principles](./02-需求与验收/evaluation-principles.md) (`ATHodjBu6oK5c4xwQlQcOFOSnJc`, 728 chars)
-- [需求规格书v3](./02-需求与验收/需求规格书v3.md) (`Rib7dN7YfoYskAxrUyxcQGmgnGh`, 5171 chars)
-- [未决事项清单-沟通管理日志](./02-需求与验收/未决事项清单-沟通管理日志.md) (`Nmn6dvjJqoBhMZxBO3ScuJaKnke`, 8704 chars)
-- [未决事项清单@范汝杰](./02-需求与验收/未决事项清单@范汝杰.md) (`FBybdtChroDjezxLhALcocN0nKx`, 504 chars)
 - [缺陷定义卡](./05-采集与数据/缺陷定义卡.md) (`JFg2dpFi1oQMSGxPBFPcF9L7n9e`, 3949 chars)
 - [缺陷定义卡](./05-采集与数据/缺陷定义卡.md) (`VT3cdO4iuodgwLxIs2lcuMLJnjh`, 8286 chars)
 - [图像处理方案](./05-采集与数据/图像处理方案.md) (`IYkzdwQpXoeBTgxZMTncyRjFnLB`, 1485 chars)
 - [过程版-600万相机布置要点](./05-采集与数据/过程版-600万相机布置要点.md) (`Y21Gd5br6oDKIBxLUyicP7qrnDb`, 1319 chars)
 - [过程版-600万卷帘面阵相机视觉布置方案](./05-采集与数据/过程版-600万卷帘面阵相机视觉布置方案.md) (`HdlOdomx8om0QExOpVYc5m0Nnxg`, 752 chars)
 - [数据与标注规范](./05-采集与数据/数据与标注规范.md) (`GuqtdPrQzo6VQKxWwficbNHunqf`, 5086 chars)
-- [图像采集方案](./05-采集与数据/图像采集方案.md) (`JudUdMX0pooFSWxv7DXcDHkInvd`, 5696 chars)
-- [论文专利卡片](./11-对外材料/论文专利卡片.md) (`HEx7d9TvpoPj2ixMAeIcUh9TnGh`, 2630 chars)
-- [BP提纲-给王权](./11-对外材料/BP提纲-给王权.md) (`LCfudaHQ7oCsrHxMTPncXqlxndf`, 2750 chars)
 
 ## 跳过 / 失败
 
+- 03组_玻纤拉挤电芯压条_AI视觉检测_详细方案设计_目录大纲.docx (file) — skip type=file
+- 布置方案图2.jpg (file) — skip type=file
+- 布置方案图1.jpg (file) — skip type=file
+- 小组M币分配规则说明书V2.0.pdf (file) — skip type=file
+- 小组M币分配表V2.0.xlsx (file) — skip type=file
+- 小组M币分配规则说明书V3.0 .pdf (file) — skip type=file
+- 小组M币分配规则说明书V3.0 .docx (file) — skip type=file
+- 质量系数打分记录表V3.0.xlsx (file) — skip type=file
+- 小组M币分配表V3.0.xlsx (file) — skip type=file
+- 双周报20260726-第1次.xlsx (file) — skip type=file
+- 项目计划及待办事项跟进表.xlsx (file) — skip type=file
+- 08-工眸方案技术评审.md (file) — skip type=file
+- 07-模型部署与轻量化.md (file) — skip type=file
+- 06-模型选型与训练.md (file) — skip type=file
+- 05-标注体系与数据闭环.md (file) — skip type=file
+- 04-尺寸定量测量方法.md (file) — skip type=file
+- 03-打光方案设计.md (file) — skip type=file
+- 02-图像采集系统设计.md (file) — skip type=file
+- 01-检测对象与缺陷定义标准.md (file) — skip type=file
+- 00-索引与总览.md (file) — skip type=file
+- 机械结构专利.zip (file) — skip type=file
+- 2026-07-12_复合材料拉挤表面缺陷视觉检测专利_成熟案例与路线分析.docx (file) — skip type=file
+- 03基于机器视觉的复合材料拉挤制品表面缺陷检测——以V公司为例4.0 (slides) — skip type=slides
 - 机械结构专利.zip (file) — skip type=file
 - 一种玻纤拉挤电芯压条质量判定方法及系统的相近专利.zip (file) — skip type=file
 - 08-工眸方案技术评审.md (file) — skip type=file
@@ -102,6 +125,7 @@
 - 00-索引与总览.md (file) — skip type=file
 - 玻纤拉挤电芯压条-汇报V2版.pdf (file) — skip type=file
 - T021-玻纤拉挤电芯压条AI视觉检测系统设计方案20260731.docx (file) — skip type=file
+- T025-T029-T030-采购清单&测试细则&硬件交付物.pptx (file) — skip type=file
 - T028-双周报考核0809.png (file) — skip type=file
 - T027-BP初稿.docx (file) — skip type=file
 - T026-03组M币分配规则确认 .xlsx (file) — skip type=file
@@ -125,26 +149,6 @@
 - T004--离线接口草案？需确认-offline-module-interface.docx (file) — skip type=file
 - T003-缺陷定义卡初稿.docx (file) — skip type=file
 - T001-项目计划及待办事项跟进表.xlsx (file) — skip type=file
-- 小组M币分配规则说明书V2.0.pdf (file) — skip type=file
-- 小组M币分配表V2.0.xlsx (file) — skip type=file
-- 小组M币分配规则说明书V3.0 .pdf (file) — skip type=file
-- 小组M币分配规则说明书V3.0 .docx (file) — skip type=file
-- 质量系数打分记录表V3.0.xlsx (file) — skip type=file
-- 小组M币分配表V3.0.xlsx (file) — skip type=file
-- 双周报20260726-第1次.xlsx (file) — skip type=file
-- 项目计划及待办事项跟进表.xlsx (file) — skip type=file
-- 08-工眸方案技术评审.md (file) — skip type=file
-- 07-模型部署与轻量化.md (file) — skip type=file
-- 06-模型选型与训练.md (file) — skip type=file
-- 05-标注体系与数据闭环.md (file) — skip type=file
-- 04-尺寸定量测量方法.md (file) — skip type=file
-- 03-打光方案设计.md (file) — skip type=file
-- 02-图像采集系统设计.md (file) — skip type=file
-- 01-检测对象与缺陷定义标准.md (file) — skip type=file
-- 00-索引与总览.md (file) — skip type=file
-- 机械结构专利.zip (file) — skip type=file
-- 2026-07-12_复合材料拉挤表面缺陷视觉检测专利_成熟案例与路线分析.docx (file) — skip type=file
-- 03基于机器视觉的复合材料拉挤制品表面缺陷检测——以V公司为例4.0 (slides) — skip type=slides
 - 0815清华MEM03组周会-元宝纪要.txt (file) — skip type=file
 - 方案设计评审小组内部讨论-元宝纪要.txt (file) — skip type=file
 - 周会纪要20260718.docx (file) — skip type=file
@@ -261,9 +265,6 @@
 - 2026-07-12_14-30-31.jpg (file) — skip type=file
 - 2026-07-12_13-43-14.jpg (file) — skip type=file
 - 课题全过程影像&资料留存策划.docx (file) — skip type=file
-- 03组_玻纤拉挤电芯压条_AI视觉检测_详细方案设计_目录大纲.docx (file) — skip type=file
-- 布置方案图2.jpg (file) — skip type=file
-- 布置方案图1.jpg (file) — skip type=file
 - MEM分享 脱敏版.pdf (file) — skip type=file
 - MEM-AIVisdefect_行业调研与商业计划书_20260712.docx (file) — skip type=file
 - 2026-07-12_复合材料拉挤表面缺陷视觉检测_成熟案例与路线分析.docx (file) — skip type=file
@@ -297,31 +298,5 @@
 - 相机选型.jpg (file) — skip type=file
 - 过程版-600万相机布置要点.md (file) — skip type=file
 - 过程版_基于600万彩色卷帘快门面阵相机的视觉布置方案.docx (file) — skip type=file
-- ZL13_CN104730092B_缺陷检测方法_结果标识与批次追溯.pdf (file) — skip type=file
-- ZL12_CN116718607B_纤维料带在线质量监测方法.pdf (file) — skip type=file
-- ZL11_CN112907531B_多模态融合铺丝机复合材料表面缺陷检测系统.pdf (file) — skip type=file
-- ZL02A_CN119399092A_同族公开文本_不得作为B版.pdf (file) — skip type=file
-- ZL09_CN119762485B_基于多模态大模型的表观缺陷检测方法及系统.pdf (file) — skip type=file
-- ZL08_CN117854072B_工业视觉缺陷自动标注方法.pdf (file) — skip type=file
-- ZL07_CN116626053B_电芯蓝膜缺陷检测方法及装置.pdf (file) — skip type=file
-- ZL06_CN112630230A_基于光度立体法的在线表面缺陷检测方法.pdf (file) — skip type=file
-- ZL05_CN216525503U_碳纤维预浸料表面缺陷在线检测装置.pdf (file) — skip type=file
-- ZL04_CN219978151U_风电叶片拉挤板表面外观缺陷识别装置_实用新型.pdf (file) — skip type=file
-- ZL03_CN116337877A_风电叶片拉挤板表面外观缺陷识别装置_发明申请.pdf (file) — skip type=file
-- ZL01_CN115524341A_玻璃纤维拉挤板外观质量检测系统及方法.pdf (file) — skip type=file
-- P10_2021_Meister等_AFP合成图像数据增强.pdf (file) — skip type=file
-- P09_2024_Batzner等_EfficientAD毫秒级视觉异常检测_WACV.pdf (file) — skip type=file
-- P08_2022_Roth等_PatchCore工业异常检测_CVPR.pdf (file) — skip type=file
-- P07_2020_Tabernik等_Kolektor小样本表面缺陷分割检测.pdf (file) — skip type=file
-- P06_2023_Peitz等_大批量AFP神经网络机器视觉缺陷检测.pdf (file) — skip type=file
-- P05_2024_Ghamisi等_AFP小数据异常检测.pdf (file) — skip type=file
-- P04_2022_Szarski等_干态碳纤维织物无监督缺陷检测.pdf (file) — skip type=file
-- P03_2025_Su等_碳纤维单向带预浸料增强YOLOv8s缺陷检测.pdf (file) — skip type=file
-- P02_2026_Kandiyil等_CFRP表面缺陷深度学习定位.pdf (file) — skip type=file
-- P01_2023_刘瑞明等_碳纤维拉挤板材表面缺陷检测.pdf (file) — skip type=file
-- 碳纤维拉挤板材表面缺陷检测_NormalPdf.pdf (file) — skip type=file
-- 一种玻璃纤维拉挤板外观质量检测系统及其检测方法.pdf (file) — skip type=file
-- Localisation of defects on carbon fibre surfaces using deep learning.pdf (file) — skip type=file
-- Defect Detection Method of Carbon Fiber Unidirectional Band Prepreg Based on Enhanced YOLOv8s.pdf (file) — skip type=file
 
 > Cloud Agent 只读 GitHub：同步后请 `git add docs/agent-knowledge-base/feishu-sync && git commit && git push`。
