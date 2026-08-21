@@ -1,7 +1,7 @@
 # ADR-002-reuse-xnoavi-c…69e9
 
-> 同步自飞书 · token=`NnI6dUp3uorksmxLB9qcXOfBnAd` · type=docx · 2026-08-20
-> 链接: https://bcndkrmo7f8n.feishu.cn/docx/NnI6dUp3uorksmxLB9qcXOfBnAd
+> 同步自飞书 · token=`QB5qd2dMPolPBsxtJpbcrHLNnff` · type=docx · 2026-08-21
+> 链接: https://bcndkrmo7f8n.feishu.cn/docx/QB5qd2dMPolPBsxtJpbcrHLNnff
 
 ADR-002-reuse-xnoavi-c…69e9
 ADR-002：复用 XnoAvi（小诺）平台能力

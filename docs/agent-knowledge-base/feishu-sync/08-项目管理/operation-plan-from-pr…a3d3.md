@@ -1,7 +1,7 @@
 # operation-plan-from-pr…a3d3
 
-> 同步自飞书 · token=`BTXudruYSovJyCxwfaWcZZsfnlg` · type=docx · 2026-08-20
-> 链接: https://bcndkrmo7f8n.feishu.cn/docx/BTXudruYSovJyCxwfaWcZZsfnlg
+> 同步自飞书 · token=`SNqVd86kwoYduyxD1CUcJvUhnNb` · type=docx · 2026-08-21
+> 链接: https://bcndkrmo7f8n.feishu.cn/docx/SNqVd86kwoYduyxD1CUcJvUhnNb
 
 operation-plan-from-pr…a3d3
 课题运营计划（对齐申报书）

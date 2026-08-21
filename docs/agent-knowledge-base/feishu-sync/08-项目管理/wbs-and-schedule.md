@@ -1,7 +1,7 @@
 # wbs-and-schedule
 
-> 同步自飞书 · token=`HoCCdfmAvoK1lGxUHcuck7pHnwc` · type=docx · 2026-08-20
-> 链接: https://bcndkrmo7f8n.feishu.cn/docx/HoCCdfmAvoK1lGxUHcuck7pHnwc
+> 同步自飞书 · token=`Qet7d2bUsoSBcTxDaMQc9p6PnSg` · type=docx · 2026-08-21
+> 链接: https://bcndkrmo7f8n.feishu.cn/docx/Qet7d2bUsoSBcTxDaMQc9p6PnSg
 
 wbs-and-schedule
 WBS 与 13 周节奏

@@ -1,7 +1,7 @@
 # change-control
 
-> 同步自飞书 · token=`XpHqdNXQ8oK4mMxXNXQcnkQWn3G` · type=docx · 2026-08-20
-> 链接: https://bcndkrmo7f8n.feishu.cn/docx/XpHqdNXQ8oK4mMxXNXQcnkQWn3G
+> 同步自飞书 · token=`SESwdyx9To65t7xic73coIxpnWh` · type=docx · 2026-08-21
+> 链接: https://bcndkrmo7f8n.feishu.cn/docx/SESwdyx9To65t7xic73coIxpnWh
 
 change-control
 变更控制（一页纸）

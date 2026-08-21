@@ -1,7 +1,7 @@
 # m-coin-cost-system
 
-> 同步自飞书 · token=`BTN7dBKm6okXg3xsJdacumcmnfe` · type=docx · 2026-08-20
-> 链接: https://bcndkrmo7f8n.feishu.cn/docx/BTN7dBKm6okXg3xsJdacumcmnfe
+> 同步自飞书 · token=`ZY6YdyFhromrY7xqcP9cxV6Bnhf` · type=docx · 2026-08-21
+> 链接: https://bcndkrmo7f8n.feishu.cn/docx/ZY6YdyFhromrY7xqcP9cxV6Bnhf
 
 m-coin-cost-system
 M币成本管理体系

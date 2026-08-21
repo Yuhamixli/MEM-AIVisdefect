@@ -1,7 +1,7 @@
 # team-workstreams
 
-> 同步自飞书 · token=`Dtb7drqANoVfAMxbRylc2O9Xn2y` · type=docx · 2026-08-20
-> 链接: https://bcndkrmo7f8n.feishu.cn/docx/Dtb7drqANoVfAMxbRylc2O9Xn2y
+> 同步自飞书 · token=`Kjqud3Kvbop1C2xNBaHciC5inDe` · type=docx · 2026-08-21
+> 链接: https://bcndkrmo7f8n.feishu.cn/docx/Kjqud3Kvbop1C2xNBaHciC5inDe
 
 team-workstreams
 团队工作流 / 职能分工
