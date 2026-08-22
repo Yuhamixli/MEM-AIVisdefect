@@ -1,6 +1,6 @@
 # bi-metrics-onepager
 
-> 同步自飞书 · token=`K2MzddOioo1dgAx39ikc3hKMnLd` · type=docx · 2026-08-21
+> 同步自飞书 · token=`K2MzddOioo1dgAx39ikc3hKMnLd` · type=docx · 2026-08-22
 > 链接: https://bcndkrmo7f8n.feishu.cn/docx/K2MzddOioo1dgAx39ikc3hKMnLd
 
 bi-metrics-onepager
