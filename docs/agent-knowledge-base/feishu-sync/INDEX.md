@@ -1,6 +1,6 @@
 # 飞书同步索引
 
-更新时间：2026-08-21T02:27:20.178Z
+更新时间：2026-08-22T02:20:23.763Z
 根文件夹 token：`JviVfMA56lMkzhdVoZdcEVk9nBd`
 成功：80 / 尝试：80
 
@@ -8,11 +8,11 @@
 
 - [玻纤拉挤电芯压条AI视觉检测系统设计方案20260801](./03-技术方案/详细方案设计报告/玻纤拉挤电芯压条AI视觉检测系统设计方案20260801.md) (`M7FpdWYgIoL4E1xnwdBcWr4xnng`, 27751 chars)
 - [20260723_基于600万彩色卷帘快门面阵相机的视觉布置方案](./03-技术方案/总布置方案/20260723_基于600万彩色卷帘快门面阵相机的视觉布置方案.md) (`MkKRdFcj7onwh1xgqSTcZ5qfn61`, 948 chars)
+- [offline-module-interface](./03-技术方案/offline-module-interface.md) (`EOh7dxswjo2cU7xVXd6c42YmncB`, 11652 chars)
 - [检测结果落盘字段清单](./03-技术方案/检测结果落盘字段清单.md) (`LsDBd7pmyoV9G6x9LDQcccC8nIg`, 3294 chars)
 - [软件拓扑图](./03-技术方案/软件拓扑图.md) (`KahMdRXJgonLiXxN08JcmPSIn0g`, 5275 chars)
 - [拉挤表面缺陷离线检测与近线精修实施方案](./03-技术方案/拉挤表面缺陷离线检测与近线精修实施方案.md) (`HR7JduqnyoXYSCxBfk9ceGjOnef`, 4225 chars)
 - [拉挤表面缺陷离线检测与近线精修实施方案](./03-技术方案/拉挤表面缺陷离线检测与近线精修实施方案.md) (`GUYTdyO6Eo56m6xCvaZcADA1nJd`, 4321 chars)
-- [offline-module-interface](./03-技术方案/offline-module-interface.md) (`EOh7dxswjo2cU7xVXd6c42YmncB`, 11627 chars)
 - [ADR-002-reuse-xnoavi-c…69e9](./03-技术方案/ADR-002-reuse-xnoavi-c…69e9.md) (`QB5qd2dMPolPBsxtJpbcrHLNnff`, 5048 chars)
 - [ADR-001-four-layer-vis…842f](./03-技术方案/ADR-001-four-layer-vis…842f.md) (`ABB4dkBJeoZJp3x9rxOcB6pTnJc`, 2500 chars)
 - [03组_玻纤拉挤电芯压条_AI视觉检测_详细…3ed2](./03-技术方案/03组_玻纤拉挤电芯压条_AI视觉检测_详细…3ed2.md) (`RDStdtfEKoKm34xzECtcRvIUnde`, 13380 chars)

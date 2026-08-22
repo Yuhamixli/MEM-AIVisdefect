@@ -1,6 +1,6 @@
 # offline-module-interface
 
-> 同步自飞书 · token=`EOh7dxswjo2cU7xVXd6c42YmncB` · type=docx · 2026-08-21
+> 同步自飞书 · token=`EOh7dxswjo2cU7xVXd6c42YmncB` · type=docx · 2026-08-22
 > 链接: https://bcndkrmo7f8n.feishu.cn/docx/EOh7dxswjo2cU7xVXd6c42YmncB
 
 offline-module-interface
@@ -111,6 +111,7 @@ defects[].review_status 必填，默认 pending；算法禁止预写 confirmed /
 
 件级与缺陷级对不齐；盲测无法逐框对照
 请确认：按上表落 result.json。有异议 48h 内回复，否则按此冻结，再改须升接口文版。
+OK--黄崇发  2026年8月21日13:39
 
 1. 目标与边界
 1.1 要解决什么
