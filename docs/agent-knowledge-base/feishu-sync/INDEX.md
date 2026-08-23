@@ -1,6 +1,6 @@
 # 飞书同步索引
 
-更新时间：2026-08-22T02:20:23.763Z
+更新时间：2026-08-23T02:27:37.124Z
 根文件夹 token：`JviVfMA56lMkzhdVoZdcEVk9nBd`
 成功：80 / 尝试：80
 
@@ -42,8 +42,8 @@
 - [商业模式参考案例V1.0](./01-项目总览/课题全栈市场调研/商业模式参考案例V1.0.md) (`KaKgdzG9goStOFxipmEcolp7nde`, 1776 chars)
 - [一种玻纤拉挤电芯压条质量判定方法及系统](./01-项目总览/专利布局/一种玻纤拉挤电芯压条质量判定方法及系统.md) (`PXAbdeFocoNxAYxlc2rcBnl5ntc`, 4734 chars)
 - [任务书_基于机器视觉的复合材料拉挤制品表面缺陷检测（郭小川）](./01-项目总览/任务书与开题评审/任务书_基于机器视觉的复合材料拉挤制品表面缺陷检测（郭小川）.md) (`JdEedm0ROoUTkvxXv9VcL7cpnZd`, 523 chars)
+- [项目一页纸](./01-项目总览/项目一页纸.md) (`POsJdvxLson3wlxQuYYcsw9tn2c`, 356 chars)
 - [小组数据安全管理任务](./01-项目总览/小组数据安全管理任务.md) (`WotDd2Dj5oyaM2xYvJGcN35Bn4e`, 3144 chars)
-- [项目一页纸](./01-项目总览/项目一页纸.md) (`POsJdvxLson3wlxQuYYcsw9tn2c`, 355 chars)
 - [需求规格书v3](./02-需求与验收/需求规格书v3.md) (`Rib7dN7YfoYskAxrUyxcQGmgnGh`, 5171 chars)
 - [未决事项清单-沟通管理日志](./02-需求与验收/未决事项清单-沟通管理日志.md) (`Nmn6dvjJqoBhMZxBO3ScuJaKnke`, 8704 chars)
 - [未决事项清单@范汝杰](./02-需求与验收/未决事项清单@范汝杰.md) (`FBybdtChroDjezxLhALcocN0nKx`, 504 chars)

@@ -1,6 +1,6 @@
 # evaluation-principles
 
-> 同步自飞书 · token=`YEPId9VaUogX2xxqgiYcauwun9c` · type=docx · 2026-08-22
+> 同步自飞书 · token=`YEPId9VaUogX2xxqgiYcauwun9c` · type=docx · 2026-08-23
 > 链接: https://bcndkrmo7f8n.feishu.cn/docx/YEPId9VaUogX2xxqgiYcauwun9c
 
 evaluation-principles
