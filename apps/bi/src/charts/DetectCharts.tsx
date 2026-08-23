@@ -13,15 +13,15 @@ export function ParetoChart({
 }) {
   const W = 560
   const H = 240
-  const pl = 42
-  const pr = 40
-  const pt = 16
-  const pb = 36
+  const pl = 28
+  const pr = 28
+  const pt = 18
+  const pb = 28
   const iw = W - pl - pr
   const ih = H - pt - pb
   const max = Math.max(1, ...rows.map((r) => r.count))
-  const bw = rows.length ? (iw / rows.length) * 0.62 : 0
-  const gap = rows.length ? (iw / rows.length) * 0.38 : 0
+  const bw = rows.length ? (iw / rows.length) * 0.74 : 0
+  const gap = rows.length ? (iw / rows.length) * 0.26 : 0
   const pts = rows.map((r, i) => {
     const x = pl + i * (bw + gap) + bw / 2
     const y = pt + ih * (1 - r.cumulative)
@@ -29,7 +29,7 @@ export function ParetoChart({
   })
 
   return (
-    <svg viewBox={`0 0 ${W} ${H}`} className="chart-svg" role="img" aria-label="缺陷类别帕累托">
+    <svg viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="none" className="chart-svg" role="img" aria-label="缺陷类别帕累托">
       <line x1={pl} y1={pt} x2={pl} y2={pt + ih} stroke="#c9c2b4" />
       <line x1={pl} y1={pt + ih} x2={W - pr} y2={pt + ih} stroke="#c9c2b4" />
       <line
@@ -94,10 +94,10 @@ export function YieldTrend({
 }) {
   const W = 560
   const H = 240
-  const pl = 36
-  const pr = 12
-  const pt = 16
-  const pb = 32
+  const pl = 28
+  const pr = 10
+  const pt = 18
+  const pb = 26
   const iw = W - pl - pr
   const ih = H - pt - pb
   if (days.length === 0) return null
@@ -110,7 +110,7 @@ export function YieldTrend({
   })
 
   return (
-    <svg viewBox={`0 0 ${W} ${H}`} className="chart-svg" role="img" aria-label="逐日件数与良率">
+    <svg viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="none" className="chart-svg" role="img" aria-label="逐日件数与良率">
       {days.map((d, i) => {
         const h = (d.pieces / maxP) * ih
         const x = pl + (i / days.length) * iw + ((iw / days.length) - barW) / 2
@@ -157,7 +157,7 @@ export function Histogram({ bins }: { bins: { lo: number; hi: number; n: number 
   const max = Math.max(1, ...bins.map((b) => b.n))
   const bw = iw / bins.length
   return (
-    <svg viewBox={`0 0 ${W} ${H}`} className="chart-svg" role="img" aria-label="置信度分布">
+    <svg viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="none" className="chart-svg" role="img" aria-label="置信度分布">
       {bins.map((b, i) => {
         const h = (b.n / max) * ih
         const x = pl + i * bw
@@ -188,16 +188,18 @@ export function Histogram({ bins }: { bins: { lo: number; hi: number; n: number 
 export function Donut({
   slices,
   center,
+  caption,
 }: {
   slices: { label: string; value: number; color: string }[]
   center: string
+  caption?: string
 }) {
   const total = slices.reduce((s, x) => s + x.value, 0) || 1
   let acc = 0
   const r = 42
   const c = 2 * Math.PI * r
-  return (
-    <svg viewBox="0 0 160 160" className="chart-svg donut-svg" role="img" aria-label={center}>
+  const svg = (
+    <svg viewBox="0 0 160 160" className="donut-svg" role="img" aria-label={caption ?? center}>
       <circle cx="80" cy="80" r={r} fill="none" stroke="#e7e2d6" strokeWidth="16" />
       {slices.map((s) => {
         const frac = s.value / total
@@ -224,7 +226,17 @@ export function Donut({
       </text>
     </svg>
   )
+  if (!caption) return svg
+  return (
+    <figure className="donut-figure">
+      {svg}
+      <figcaption>{caption}</figcaption>
+    </figure>
+  )
 }
+
+/** Workpiece in the 3200×1920 mock frame — crop the map to this, not the empty camera. */
+const BAR = { x: 200, y: 700, w: 2800, h: 520 }
 
 export function SpatialMap({
   defects,
@@ -239,21 +251,35 @@ export function SpatialMap({
 }) {
   const [hover, setHover] = useState<DetectDefectRow | null>(null)
   const [iw, ih] = size
+  const pad = 56
+  const vx = Math.max(0, BAR.x - pad)
+  const vy = Math.max(0, BAR.y - pad)
+  const vw = Math.min(iw - vx, BAR.w + pad * 2)
+  const vh = Math.min(ih - vy, BAR.h + pad * 2)
+  const clamp = (v: number, a: number, b: number) => Math.min(b, Math.max(a, v))
+  const plotX = (x: number) => clamp(x, vx + 22, vx + vw - 22)
+  const plotY = (y: number) => clamp(y, vy + 22, vy + vh - 22)
   return (
     <div className="spatial-wrap">
-      <svg viewBox={`0 0 ${iw} ${ih}`} className="spatial-svg" role="img" aria-label="缺陷空间分布">
-        <rect width={iw} height={ih} fill="#161d26" />
-        <rect x="200" y="700" width="2800" height="520" rx="28" fill="#c8b89a" opacity="0.88" />
-        <text x="1600" y="640" textAnchor="middle" fill="#8b9aab" fontSize="48">
-          拉挤件 · 检测面投影（原点左上，像素）
+      <svg
+        viewBox={`${vx} ${vy} ${vw} ${vh}`}
+        preserveAspectRatio="xMidYMid meet"
+        className="spatial-svg"
+        role="img"
+        aria-label="缺陷空间分布"
+      >
+        <rect x={vx} y={vy} width={vw} height={vh} fill="#161d26" />
+        <rect x={BAR.x} y={BAR.y} width={BAR.w} height={BAR.h} rx="28" fill="#c8b89a" opacity="0.92" />
+        <text x={BAR.x + BAR.w / 2} y={BAR.y - 18} textAnchor="middle" fill="#c5d0db" fontSize="36">
+          拉挤件 · 检测面投影
         </text>
         {defects.map((d, i) => {
           const color = DETECT_CLASS[d.slug ?? '']?.color ?? '#94a3b8'
           return (
             <circle
               key={`${d.piece_id}-${d.defect_id}-${i}`}
-              cx={d.cx ?? 0}
-              cy={d.cy ?? 0}
+              cx={plotX(d.cx ?? 0)}
+              cy={plotY(d.cy ?? 0)}
               r={18 + (d.confidence ?? 0.5) * 16}
               fill={color}
               fillOpacity={selectedSlug && selectedSlug !== d.slug ? 0.18 : 0.78}
@@ -267,15 +293,15 @@ export function SpatialMap({
         {(misses ?? []).map((m) => (
           <g key={`fn-${m.piece_id}-${m.slug}`}>
             <circle
-              cx={m.cx}
-              cy={m.cy}
+              cx={plotX(m.cx)}
+              cy={plotY(m.cy)}
               r="28"
               fill="none"
               stroke="#a33b2b"
               strokeWidth="6"
               strokeDasharray="12 8"
             />
-            <text x={m.cx} y={m.cy - 36} textAnchor="middle" fill="#a33b2b" fontSize="32">
+            <text x={plotX(m.cx)} y={plotY(m.cy) - 36} textAnchor="middle" fill="#a33b2b" fontSize="32">
               FN
             </text>
           </g>
@@ -286,7 +312,7 @@ export function SpatialMap({
           {hover.piece_id} · {hover.class_name} · {(hover.confidence ?? 0).toFixed(2)}
         </div>
       ) : (
-        <div className="spatial-tip muted">悬停圆点查看件号 · 半径∝置信度</div>
+        <div className="spatial-tip muted">悬停圆点看件号 · 半径∝置信度</div>
       )}
     </div>
   )
@@ -373,44 +399,32 @@ export function ConfusionMatrix({
   fn: number
 }) {
   return (
-    <div className="cm-wrap">
-      <table className="cm-table">
-        <thead>
-          <tr>
-            <th />
-            <th>模型 NG</th>
-            <th>模型 OK</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>金标准 NG</th>
-            <td className="cm-tp">
-              <span>TP</span>
-              <b>{tp}</b>
-              <em>真检出</em>
-            </td>
-            <td className="cm-fn">
-              <span>FN</span>
-              <b>{fn}</b>
-              <em>fail-accepted 漏检放行</em>
-            </td>
-          </tr>
-          <tr>
-            <th>金标准 OK</th>
-            <td className="cm-fp">
-              <span>FP</span>
-              <b>{fp}</b>
-              <em>fail-rejected 过杀拒收</em>
-            </td>
-            <td className="cm-tn">
-              <span>TN</span>
-              <b>{tn}</b>
-              <em>真阴性</em>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <div className="cm-grid">
+      <span />
+      <span className="cm-h">模型 NG</span>
+      <span className="cm-h">模型 OK</span>
+      <span className="cm-h cm-row">金标准 NG</span>
+      <div className="cm-cell cm-tp">
+        <span>TP</span>
+        <b>{tp}</b>
+        <em>真检出</em>
+      </div>
+      <div className="cm-cell cm-fn">
+        <span>FN</span>
+        <b>{fn}</b>
+        <em>漏检放行</em>
+      </div>
+      <span className="cm-h cm-row">金标准 OK</span>
+      <div className="cm-cell cm-fp">
+        <span>FP</span>
+        <b>{fp}</b>
+        <em>过杀拒收</em>
+      </div>
+      <div className="cm-cell cm-tn">
+        <span>TN</span>
+        <b>{tn}</b>
+        <em>真阴性</em>
+      </div>
     </div>
   )
 }
@@ -420,46 +434,54 @@ export function CiBars({
 }: {
   rows: { label: string; p: number; lo: number; hi: number; target?: number }[]
 }) {
-  const W = 560
-  const H = 28 + rows.length * 36
-  const pl = 118
-  const pr = 56
+  const W = 640
+  const H = 28 + rows.length * 48
+  const pl = 78
+  const pr = 92
   const iw = W - pl - pr
+  const rawMin = Math.min(...rows.flatMap((r) => [r.lo, r.target ?? r.lo]))
+  const x0 = Math.max(0, Math.floor((rawMin - 0.04) * 20) / 20)
+  const x1 = 1
+  const scale = (v: number) => pl + ((v - x0) / (x1 - x0)) * iw
+  const ticks = [x0, 0.85, 0.9, 0.95, 0.99, 1].filter((t, i, a) => t >= x0 && t <= x1 && a.indexOf(t) === i)
   return (
-    <svg viewBox={`0 0 ${W} ${H}`} className="chart-svg" role="img" aria-label="Wilson 95% 置信区间">
-      <line x1={pl} y1={8} x2={pl} y2={H - 8} stroke="#c9c2b4" />
-      {[0, 0.5, 0.8, 0.85, 0.99, 1].map((t) => (
+    <svg viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="none" className="chart-svg" role="img" aria-label="Wilson 95% 置信区间">
+      <rect x={pl} y={6} width={iw} height={H - 22} fill="#f4f0e6" rx="4" />
+      <line x1={pl} y1={8} x2={pl} y2={H - 16} stroke="#c9c2b4" />
+      {ticks.map((t) => (
         <g key={t}>
-          <line x1={pl + t * iw} y1={8} x2={pl + t * iw} y2={H - 8} stroke="#ece8de" />
-          <text x={pl + t * iw} y={H - 2} textAnchor="middle" fontSize="9" fill="#6b7a86">
+          <line x1={scale(t)} y1={8} x2={scale(t)} y2={H - 16} stroke="#e4dfd3" />
+          <text x={scale(t)} y={H - 2} textAnchor="middle" fontSize="10" fill="#6b7a86">
             {(t * 100).toFixed(0)}%
           </text>
         </g>
       ))}
       {rows.map((r, i) => {
-        const y = 18 + i * 36
-        const xLo = pl + r.lo * iw
-        const xHi = pl + r.hi * iw
-        const xP = pl + r.p * iw
+        const y = 22 + i * 48
         return (
           <g key={r.label}>
-            <text x={pl - 8} y={y + 4} textAnchor="end" fontSize="11" fill="#3d4f5c">
+            <text x={pl - 8} y={y + 4} textAnchor="end" fontSize="12" fill="#3d4f5c">
               {r.label}
             </text>
-            <line x1={xLo} y1={y} x2={xHi} y2={y} stroke="#0f6b5c" strokeWidth="3" />
-            <circle cx={xP} cy={y} r="5" fill="#0f6b5c" />
+            <line x1={pl} y1={y} x2={pl + iw} y2={y} stroke="#ddd6c6" strokeWidth="6" strokeLinecap="round" />
+            <line x1={scale(r.lo)} y1={y} x2={scale(r.hi)} y2={y} stroke="#0f6b5c" strokeWidth="6" strokeLinecap="round" />
+            <circle cx={scale(r.p)} cy={y} r="6" fill="#0f6b5c" />
             {r.target != null ? (
               <line
-                x1={pl + r.target * iw}
-                y1={y - 10}
-                x2={pl + r.target * iw}
-                y2={y + 10}
+                x1={scale(r.target)}
+                y1={y - 12}
+                x2={scale(r.target)}
+                y2={y + 12}
                 stroke="#c45c26"
+                strokeWidth="2"
                 strokeDasharray="3 2"
               />
             ) : null}
-            <text x={W - pr + 6} y={y + 4} fontSize="10" fill="#14212b">
+            <text x={W - pr + 8} y={y - 2} fontSize="12" fill="#14212b">
               {(r.p * 100).toFixed(1)}%
+            </text>
+            <text x={W - pr + 8} y={y + 12} fontSize="10" fill="#6b7a86">
+              {(r.lo * 100).toFixed(1)}–{(r.hi * 100).toFixed(1)}
             </text>
           </g>
         )
@@ -471,43 +493,83 @@ export function CiBars({
 export function ReliabilityChart({
   bins,
 }: {
-  bins: { mid: number; empirical: number; n: number }[]
+  bins: { mid: number; empirical: number; n: number; lo?: number; hi?: number }[]
 }) {
-  const W = 400
+  const W = 360
   const H = 220
   const pl = 36
   const pb = 28
-  const pt = 12
-  const pr = 12
+  const pt = 14
+  const pr = 14
+  const used = bins.filter((b) => b.n > 0)
+  const x0 = used.length ? Math.max(0, Math.min(...used.map((b) => b.mid)) - 0.08) : 0
+  const y0 = used.length ? Math.max(0, Math.min(...used.map((b) => b.empirical)) - 0.08) : 0
   const iw = W - pl - pr
   const ih = H - pt - pb
-  const pts = bins
-    .filter((b) => b.n > 0)
-    .map((b) => `${pl + b.mid * iw},${pt + ih * (1 - b.empirical)}`)
+  const sx = (v: number) => pl + ((v - x0) / (1 - x0)) * iw
+  const sy = (v: number) => pt + ih * (1 - (v - y0) / (1 - y0))
+  const pts = used.map((b) => `${sx(b.mid)},${sy(b.empirical)}`)
+  const ticks = [x0, (x0 + 1) / 2, 1]
   return (
-    <svg viewBox={`0 0 ${W} ${H}`} className="chart-svg" role="img" aria-label="置信度校准">
-      <line x1={pl} y1={pt + ih} x2={pl + iw} y2={pt} stroke="#c9c2b4" strokeDasharray="4 4" />
-      <text x={pl + iw - 4} y={pt + 12} textAnchor="end" fontSize="10" fill="#6b7a86">
-        理想校准
-      </text>
-      {pts.length > 1 ? (
-        <polyline points={pts.join(' ')} fill="none" stroke="#0f6b5c" strokeWidth="2" />
-      ) : null}
-      {bins.map((b) =>
-        b.n ? (
+    <div className="reliab-wrap">
+      <svg viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="none" className="chart-svg" role="img" aria-label="置信度校准">
+        <rect x={pl} y={pt} width={iw} height={ih} fill="#f4f0e6" />
+        {ticks.map((t) => (
+          <g key={`x-${t}`}>
+            <line x1={sx(t)} y1={pt} x2={sx(t)} y2={pt + ih} stroke="#e4dfd3" />
+            <text x={sx(t)} y={H - 8} textAnchor="middle" fontSize="10" fill="#6b7a86">
+              {(t * 100).toFixed(0)}%
+            </text>
+          </g>
+        ))}
+        {ticks.map((t) => (
+          <g key={`y-${t}`}>
+            <line x1={pl} y1={sy(t)} x2={pl + iw} y2={sy(t)} stroke="#e4dfd3" />
+            <text x={pl - 4} y={sy(t) + 3} textAnchor="end" fontSize="10" fill="#6b7a86">
+              {(t * 100).toFixed(0)}
+            </text>
+          </g>
+        ))}
+        <line
+          x1={sx(Math.max(x0, y0))}
+          y1={sy(Math.max(x0, y0))}
+          x2={sx(1)}
+          y2={sy(1)}
+          stroke="#c9c2b4"
+          strokeDasharray="4 4"
+        />
+        <text x={pl + iw - 4} y={pt + 12} textAnchor="end" fontSize="10" fill="#6b7a86">
+          理想校准
+        </text>
+        {pts.length > 1 ? (
+          <polyline points={pts.join(' ')} fill="none" stroke="#0f6b5c" strokeWidth="2.4" />
+        ) : null}
+        {used.map((b) => (
           <circle
             key={b.mid}
-            cx={pl + b.mid * iw}
-            cy={pt + ih * (1 - b.empirical)}
-            r={3 + Math.min(6, Math.sqrt(b.n))}
+            cx={sx(b.mid)}
+            cy={sy(b.empirical)}
+            r={4 + Math.min(7, Math.sqrt(b.n))}
             fill="#0f6b5c"
-            fillOpacity={0.85}
+            fillOpacity={0.88}
           />
-        ) : null,
-      )}
-      <text x={pl} y={H - 6} fontSize="10" fill="#6b7a86">
-        横轴=模型置信度 · 纵轴=该档经验精确率
-      </text>
-    </svg>
+        ))}
+      </svg>
+      <ul className="reliab-legend">
+        {used.map((b) => {
+          const lo = b.lo ?? b.mid - 0.1
+          const hi = b.hi ?? b.mid + 0.1
+          return (
+            <li key={b.mid}>
+              <span>
+                {(lo * 100).toFixed(0)}–{(hi * 100).toFixed(0)}%
+              </span>
+              <b>{(b.empirical * 100).toFixed(0)}%</b>
+              <em>n={b.n}</em>
+            </li>
+          )
+        })}
+      </ul>
+    </div>
   )
 }
