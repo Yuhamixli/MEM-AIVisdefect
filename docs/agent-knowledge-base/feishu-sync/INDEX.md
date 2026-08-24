@@ -1,6 +1,6 @@
 # 飞书同步索引
 
-更新时间：2026-08-23T02:27:37.124Z
+更新时间：2026-08-24T02:27:07.877Z
 根文件夹 token：`JviVfMA56lMkzhdVoZdcEVk9nBd`
 成功：80 / 尝试：80
 
@@ -89,29 +89,23 @@
 
 ## 跳过 / 失败
 
-- 03组_玻纤拉挤电芯压条_AI视觉检测_详细方案设计_目录大纲.docx (file) — skip type=file
-- 布置方案图2.jpg (file) — skip type=file
-- 布置方案图1.jpg (file) — skip type=file
-- 小组M币分配规则说明书V2.0.pdf (file) — skip type=file
-- 小组M币分配表V2.0.xlsx (file) — skip type=file
-- 小组M币分配规则说明书V3.0 .pdf (file) — skip type=file
-- 小组M币分配规则说明书V3.0 .docx (file) — skip type=file
-- 质量系数打分记录表V3.0.xlsx (file) — skip type=file
-- 小组M币分配表V3.0.xlsx (file) — skip type=file
-- 双周报20260726-第1次.xlsx (file) — skip type=file
-- 项目计划及待办事项跟进表.xlsx (file) — skip type=file
-- 08-工眸方案技术评审.md (file) — skip type=file
-- 07-模型部署与轻量化.md (file) — skip type=file
-- 06-模型选型与训练.md (file) — skip type=file
-- 05-标注体系与数据闭环.md (file) — skip type=file
-- 04-尺寸定量测量方法.md (file) — skip type=file
-- 03-打光方案设计.md (file) — skip type=file
-- 02-图像采集系统设计.md (file) — skip type=file
-- 01-检测对象与缺陷定义标准.md (file) — skip type=file
-- 00-索引与总览.md (file) — skip type=file
-- 机械结构专利.zip (file) — skip type=file
-- 2026-07-12_复合材料拉挤表面缺陷视觉检测专利_成熟案例与路线分析.docx (file) — skip type=file
-- 03基于机器视觉的复合材料拉挤制品表面缺陷检测——以V公司为例4.0 (slides) — skip type=slides
+- d4e4c96596a21a08dadc4394d6757207.mp4 (file) — skip type=file
+- 87ae3f77a4baa875b3b7124186d84bf6.mp4 (file) — skip type=file
+- 84a323b8936700e4a1789d55dd16dcd7.mp4 (file) — skip type=file
+- 67c99bfc59f1143dafaeb0fb343daed7.mp4 (file) — skip type=file
+- 31a410518a37601f3d16560c1e0874fc.mp4 (file) — skip type=file
+- 094f497b44b47eb305a43c1baccad762.mp4 (file) — skip type=file
+- 微信图片_20260823212824_1189_1394.png (file) — skip type=file
+- 微信图片_20260823212822_1188_1394.png (file) — skip type=file
+- 微信图片_20260823212824_1189_1394.png (file) — skip type=file
+- 微信图片_20260823212822_1188_1394.png (file) — skip type=file
+- 微信图片_20260821170009_370_1435.jpg (file) — skip type=file
+- 微信图片_20260823221412.png (file) — skip type=file
+- 微信图片_20260823221407.jpg (file) — skip type=file
+- 微信图片_20260823221404.png (file) — skip type=file
+- 微信图片_20260823221401.jpg (file) — skip type=file
+- 工件表面缺陷检测第二阶段模型报告.doc (file) — skip type=file
+- 工件表面缺陷检测‑第一阶段模型报告.doc (file) — skip type=file
 - 机械结构专利.zip (file) — skip type=file
 - 一种玻纤拉挤电芯压条质量判定方法及系统的相近专利.zip (file) — skip type=file
 - 08-工眸方案技术评审.md (file) — skip type=file
@@ -125,6 +119,12 @@
 - 00-索引与总览.md (file) — skip type=file
 - 玻纤拉挤电芯压条-汇报V2版.pdf (file) — skip type=file
 - T021-玻纤拉挤电芯压条AI视觉检测系统设计方案20260731.docx (file) — skip type=file
+- T035-中期汇报视频地址.txt (file) — skip type=file
+- T039-双周报.png (file) — skip type=file
+- T038-中期汇报-03组.pptx (file) — skip type=file
+- T037-拉挤制品表面缺陷检测图像处理系统使用说明_目录.docx (file) — skip type=file
+- T036-小组M币分配表V3.0.xlsx (file) — skip type=file
+- T034-棋盘格标定测试报告.doc (file) — skip type=file
 - T025-T029-T030-采购清单&测试细则&硬件交付物.pptx (file) — skip type=file
 - T028-双周报考核0809.png (file) — skip type=file
 - T027-BP初稿.docx (file) — skip type=file
@@ -149,6 +149,39 @@
 - T004--离线接口草案？需确认-offline-module-interface.docx (file) — skip type=file
 - T003-缺陷定义卡初稿.docx (file) — skip type=file
 - T001-项目计划及待办事项跟进表.xlsx (file) — skip type=file
+- 03组_玻纤拉挤电芯压条_AI视觉检测_详细方案设计_目录大纲.docx (file) — skip type=file
+- 布置方案图2.jpg (file) — skip type=file
+- 布置方案图1.jpg (file) — skip type=file
+- 小组M币分配规则说明书V2.0.pdf (file) — skip type=file
+- 小组M币分配表V2.0.xlsx (file) — skip type=file
+- 小组M币分配规则说明书V3.0 .pdf (file) — skip type=file
+- 小组M币分配规则说明书V3.0 .docx (file) — skip type=file
+- 质量系数打分记录表V3.0.xlsx (file) — skip type=file
+- 小组M币分配表V3.0.xlsx (file) — skip type=file
+- 双周报20260726-第1次.xlsx (file) — skip type=file
+- 项目计划及待办事项跟进表.xlsx (file) — skip type=file
+- 08-工眸方案技术评审.md (file) — skip type=file
+- 07-模型部署与轻量化.md (file) — skip type=file
+- 06-模型选型与训练.md (file) — skip type=file
+- 05-标注体系与数据闭环.md (file) — skip type=file
+- 04-尺寸定量测量方法.md (file) — skip type=file
+- 03-打光方案设计.md (file) — skip type=file
+- 02-图像采集系统设计.md (file) — skip type=file
+- 01-检测对象与缺陷定义标准.md (file) — skip type=file
+- 00-索引与总览.md (file) — skip type=file
+- 机械结构专利.zip (file) — skip type=file
+- 2026-07-12_复合材料拉挤表面缺陷视觉检测专利_成熟案例与路线分析.docx (file) — skip type=file
+- 03基于机器视觉的复合材料拉挤制品表面缺陷检测——以V公司为例4.0 (slides) — skip type=slides
+- 0822参会人.png (file) — skip type=file
+- 0815参会人.png (file) — skip type=file
+- 8月8日.png (file) — skip type=file
+- 8月1日.png (file) — skip type=file
+- 7月25日.png (file) — skip type=file
+- 7月18日.png (file) — skip type=file
+- 20260822193922-Iris预定的会议-逐字稿文本-2.docx (file) — skip type=file
+- 20260822193922-Iris预定的会议-纪要文本-2.docx (file) — skip type=file
+- 20260822185512-Iris预定的会议-逐字稿文本-1.docx (file) — skip type=file
+- 20260822185512-Iris预定的会议-纪要文本-1.docx (file) — skip type=file
 - 0815清华MEM03组周会-元宝纪要.txt (file) — skip type=file
 - 方案设计评审小组内部讨论-元宝纪要.txt (file) — skip type=file
 - 周会纪要20260718.docx (file) — skip type=file
@@ -160,11 +193,6 @@
 - 清华MEM03组周会-元宝纪要20260718.txt (file) — skip type=file
 - 文字记录-清华MEM 03组周会_20260718.docx (file) — skip type=file
 - 0722缺陷定义卡、推理模型会议纪要.docx (file) — skip type=file
-- 0815参会人.png (file) — skip type=file
-- 8月8日.png (file) — skip type=file
-- 8月1日.png (file) — skip type=file
-- 7月25日.png (file) — skip type=file
-- 7月18日.png (file) — skip type=file
 - 03_0711讨论材料_逐字稿与详细总结_合订本.docx (file) — skip type=file
 - 00_0711讨论材料_详细总结.docx (file) — skip type=file
 - IMG_7942.JPG (file) — skip type=file
