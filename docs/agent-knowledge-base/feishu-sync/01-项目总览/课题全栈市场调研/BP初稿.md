@@ -1,6 +1,6 @@
 # BP初稿
 
-> 同步自飞书 · token=`Jcf9dZAWBoEFOVxfAMkcy0GInEh` · type=docx · 2026-09-04
+> 同步自飞书 · token=`Jcf9dZAWBoEFOVxfAMkcy0GInEh` · type=docx · 2026-09-05
 > 链接: https://bcndkrmo7f8n.feishu.cn/docx/Jcf9dZAWBoEFOVxfAMkcy0GInEh
 
 BP初稿
