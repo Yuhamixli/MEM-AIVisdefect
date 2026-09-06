@@ -1,6 +1,6 @@
 # m-coin-ledger
 
-> 同步自飞书 · token=`U64udWbfTojvHnxPaQYcpyB0nhb` · type=docx · 2026-09-05
+> 同步自飞书 · token=`U64udWbfTojvHnxPaQYcpyB0nhb` · type=docx · 2026-09-06
 > 链接: https://bcndkrmo7f8n.feishu.cn/docx/U64udWbfTojvHnxPaQYcpyB0nhb
 
 m-coin-ledger
