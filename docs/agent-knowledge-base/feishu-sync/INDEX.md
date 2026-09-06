@@ -1,6 +1,6 @@
 # 飞书同步索引
 
-更新时间：2026-09-05T05:31:37.278Z
+更新时间：2026-09-06T05:45:15.521Z
 根文件夹 token：`JviVfMA56lMkzhdVoZdcEVk9nBd`
 成功：80 / 尝试：80
 
@@ -270,12 +270,16 @@
 - 机械结构专利.zip (file) — skip type=file
 - 2026-07-12_复合材料拉挤表面缺陷视觉检测专利_成熟案例与路线分析.docx (file) — skip type=file
 - 03基于机器视觉的复合材料拉挤制品表面缺陷检测——以V公司为例4.0 (slides) — skip type=slides
+- 0905参会人.png (file) — skip type=file
 - 0822参会人.png (file) — skip type=file
 - 0815参会人.png (file) — skip type=file
 - 8月8日.png (file) — skip type=file
 - 8月1日.png (file) — skip type=file
 - 7月25日.png (file) — skip type=file
 - 7月18日.png (file) — skip type=file
+- 20260905-03组周例会-逐字稿文本-1.docx (file) — skip type=file
+- 20260905-03组周例会-元宝纪要.txt (file) — skip type=file
+- 20260905-03组周例会-纪要文本-1.docx (file) — skip type=file
 - 20260822193922-Iris预定的会议-逐字稿文本-2.docx (file) — skip type=file
 - 20260822193922-Iris预定的会议-纪要文本-2.docx (file) — skip type=file
 - 20260822185512-Iris预定的会议-逐字稿文本-1.docx (file) — skip type=file
