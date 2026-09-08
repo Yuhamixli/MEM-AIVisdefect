@@ -1,6 +1,6 @@
 # change-control
 
-> 同步自飞书 · token=`SESwdyx9To65t7xic73coIxpnWh` · type=docx · 2026-09-07
+> 同步自飞书 · token=`SESwdyx9To65t7xic73coIxpnWh` · type=docx · 2026-09-08
 > 链接: https://bcndkrmo7f8n.feishu.cn/docx/SESwdyx9To65t7xic73coIxpnWh
 
 change-control
