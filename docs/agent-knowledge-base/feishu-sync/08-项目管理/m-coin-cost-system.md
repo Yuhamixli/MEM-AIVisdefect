@@ -1,6 +1,6 @@
 # m-coin-cost-system
 
-> 同步自飞书 · token=`ZY6YdyFhromrY7xqcP9cxV6Bnhf` · type=docx · 2026-09-07
+> 同步自飞书 · token=`ZY6YdyFhromrY7xqcP9cxV6Bnhf` · type=docx · 2026-09-08
 > 链接: https://bcndkrmo7f8n.feishu.cn/docx/ZY6YdyFhromrY7xqcP9cxV6Bnhf
 
 m-coin-cost-system
