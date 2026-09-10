@@ -1,6 +1,6 @@
 # team-roster
 
-> 同步自飞书 · token=`HMaQdkXB5o5ZurxmVbJc8pV9nBb` · type=docx · 2026-09-09
+> 同步自飞书 · token=`HMaQdkXB5o5ZurxmVbJc8pV9nBb` · type=docx · 2026-09-10
 > 链接: https://bcndkrmo7f8n.feishu.cn/docx/HMaQdkXB5o5ZurxmVbJc8pV9nBb
 
 team-roster
