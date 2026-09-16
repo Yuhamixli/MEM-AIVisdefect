@@ -1,6 +1,6 @@
 # team-capability-profile
 
-> 同步自飞书 · token=`EZJ9dH763ok8OXxpnrXcAmIWn2e` · type=docx · 2026-09-15
+> 同步自飞书 · token=`EZJ9dH763ok8OXxpnrXcAmIWn2e` · type=docx · 2026-09-16
 > 链接: https://bcndkrmo7f8n.feishu.cn/docx/EZJ9dH763ok8OXxpnrXcAmIWn2e
 
 team-capability-profile
