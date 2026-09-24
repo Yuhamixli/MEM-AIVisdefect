@@ -1,6 +1,6 @@
 # 飞书同步索引
 
-更新时间：2026-09-23T05:45:46.961Z
+更新时间：2026-09-24T06:01:40.546Z
 根文件夹 token：`JviVfMA56lMkzhdVoZdcEVk9nBd`
 成功：80 / 尝试：80
 
@@ -270,13 +270,10 @@
 - 机械结构专利.zip (file) — skip type=file
 - 2026-07-12_复合材料拉挤表面缺陷视觉检测专利_成熟案例与路线分析.docx (file) — skip type=file
 - 03基于机器视觉的复合材料拉挤制品表面缺陷检测——以V公司为例4.0 (slides) — skip type=slides
-- 0905参会人.png (file) — skip type=file
-- 0822参会人.png (file) — skip type=file
-- 0815参会人.png (file) — skip type=file
-- 8月8日.png (file) — skip type=file
-- 8月1日.png (file) — skip type=file
-- 7月25日.png (file) — skip type=file
-- 7月18日.png (file) — skip type=file
+- 0912-逐字稿文本-1.docx (file) — skip type=file
+- 0912-纪要文本-1.docx (file) — skip type=file
+- 0920周会-逐字稿文本-1.docx (file) — skip type=file
+- 0920周会-纪要文本-1.docx (file) — skip type=file
 - 20260905-03组周例会-逐字稿文本-1.docx (file) — skip type=file
 - 20260905-03组周例会-元宝纪要.txt (file) — skip type=file
 - 20260905-03组周例会-纪要文本-1.docx (file) — skip type=file
@@ -295,6 +292,16 @@
 - 清华MEM03组周会-元宝纪要20260718.txt (file) — skip type=file
 - 文字记录-清华MEM 03组周会_20260718.docx (file) — skip type=file
 - 0722缺陷定义卡、推理模型会议纪要.docx (file) — skip type=file
+- 0912参会人.png (file) — skip type=file
+- 0920参会人2.png (file) — skip type=file
+- 0920参会人.png (file) — skip type=file
+- 0905参会人.png (file) — skip type=file
+- 0822参会人.png (file) — skip type=file
+- 0815参会人.png (file) — skip type=file
+- 8月8日.png (file) — skip type=file
+- 8月1日.png (file) — skip type=file
+- 7月25日.png (file) — skip type=file
+- 7月18日.png (file) — skip type=file
 - 03_0711讨论材料_逐字稿与详细总结_合订本.docx (file) — skip type=file
 - 00_0711讨论材料_详细总结.docx (file) — skip type=file
 - MEM分享 脱敏版.pdf (file) — skip type=file
