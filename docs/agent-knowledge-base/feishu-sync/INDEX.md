@@ -1,11 +1,17 @@
 # 飞书同步索引
 
-更新时间：2026-09-27T06:28:54.898Z
+更新时间：2026-09-28T06:36:10.550Z
 根文件夹 token：`JviVfMA56lMkzhdVoZdcEVk9nBd`
 成功：80 / 尝试：80
 
 ## 已同步
 
+- [工件表面缺陷检测模型测试报告](./04-算法与模型/工件表面缺陷检测模型测试报告.md) (`KigIdf9UUoMsITxF7Ebc36PRnzJ`, 6362 chars)
+- [拉挤表面缺陷离线检测与近线精修实施方案_20260726(2)](./04-算法与模型/拉挤表面缺陷离线检测与近线精修实施方案_20260726(2).md) (`WNaodlWCwo7QAIxOviuc9NO1nQh`, 4248 chars)
+- [拉挤工艺缺陷检测三层智能检测方案](./04-算法与模型/拉挤工艺缺陷检测三层智能检测方案.md) (`Wtz1dmzw0oDOJXxpKLPcFAyQnpf`, 5069 chars)
+- [EfficientAD 完整实操教程](./04-算法与模型/EfficientAD 完整实操教程.md) (`CzEtd1eZYoFECoxgHH2cYVCNnJf`, 2089 chars)
+- [专业课笔记-YOLO-PatchCore-标注](./04-算法与模型/专业课笔记-YOLO-PatchCore-标注.md) (`AbT1dYso1oKzvdxRzPHcT15InPc`, 3095 chars)
+- [算法线包-环境SOP与实验计划](./04-算法与模型/算法线包-环境SOP与实验计划.md) (`MacNdC16PoDte0xItiPca0Lsnej`, 3538 chars)
 - [玻纤拉挤电芯压条AI视觉检测系统设计方案20260801](./03-技术方案/详细方案设计报告/玻纤拉挤电芯压条AI视觉检测系统设计方案20260801.md) (`M7FpdWYgIoL4E1xnwdBcWr4xnng`, 27751 chars)
 - [20260723_基于600万彩色卷帘快门面阵相机的视觉布置方案](./03-技术方案/总布置方案/20260723_基于600万彩色卷帘快门面阵相机的视觉布置方案.md) (`MkKRdFcj7onwh1xgqSTcZ5qfn61`, 948 chars)
 - [offline-module-interface](./03-技术方案/offline-module-interface.md) (`EOh7dxswjo2cU7xVXd6c42YmncB`, 11652 chars)
@@ -68,12 +74,6 @@
 - [【已归档】03组数据安全管理方案-v0.1](./99-归档与原始材料/数据安全管理-旧稿/【已归档】03组数据安全管理方案-v0.1.md) (`BNjcd0JShoOstAxK6CVcHAJCn4b`, 2478 chars)
 - [20260808185008-清华MEM 03组周会-逐字稿文本-1](./09-会议与纪要/会议纪要/20260808185008-清华MEM 03组周会-逐字稿文本-1.md) (`WDHCdYjS0o6dAixADpCcUcBBnHc`, 40545 chars)
 - [20260725194203-转写_清华MEM 03组周会-逐字稿文本-1](./09-会议与纪要/会议纪要/20260725194203-转写_清华MEM 03组周会-逐字稿文本-1.md) (`PhyCdHg5foLz29xGRmxc66wUndh`, 10948 chars)
-- [工件表面缺陷检测模型测试报告](./04-算法与模型/工件表面缺陷检测模型测试报告.md) (`KigIdf9UUoMsITxF7Ebc36PRnzJ`, 6362 chars)
-- [拉挤表面缺陷离线检测与近线精修实施方案_20260726(2)](./04-算法与模型/拉挤表面缺陷离线检测与近线精修实施方案_20260726(2).md) (`WNaodlWCwo7QAIxOviuc9NO1nQh`, 4248 chars)
-- [拉挤工艺缺陷检测三层智能检测方案](./04-算法与模型/拉挤工艺缺陷检测三层智能检测方案.md) (`Wtz1dmzw0oDOJXxpKLPcFAyQnpf`, 5069 chars)
-- [EfficientAD 完整实操教程](./04-算法与模型/EfficientAD 完整实操教程.md) (`CzEtd1eZYoFECoxgHH2cYVCNnJf`, 2089 chars)
-- [专业课笔记-YOLO-PatchCore-标注](./04-算法与模型/专业课笔记-YOLO-PatchCore-标注.md) (`AbT1dYso1oKzvdxRzPHcT15InPc`, 3095 chars)
-- [算法线包-环境SOP与实验计划](./04-算法与模型/算法线包-环境SOP与实验计划.md) (`MacNdC16PoDte0xItiPca0Lsnej`, 3538 chars)
 - [进度状态](./10-知识沉淀/进度状态.md) (`BurTdFv3ooUg1SxD3D9cDRv7n47`, 2577 chars)
 - [视觉技术导读v2](./10-知识沉淀/视觉技术导读v2.md) (`GQlMd98rAoG0RexV74cceyklnbg`, 2802 chars)
 - [行业难点](./10-知识沉淀/行业难点.md) (`MGp7d8k7Qo261WxbMlIcdpLvn3d`, 3642 chars)
@@ -89,6 +89,7 @@
 
 ## 跳过 / 失败
 
+- Python-version.zip (file) — skip type=file
 - IMG_7942.JPG (file) — skip type=file
 - IMG_7941.JPG (file) — skip type=file
 - 检验装置1.JPG (file) — skip type=file
