@@ -1,6 +1,6 @@
 # 飞书同步索引
 
-更新时间：2026-10-01T07:05:34.475Z
+更新时间：2026-10-02T06:54:00.014Z
 根文件夹 token：`JviVfMA56lMkzhdVoZdcEVk9nBd`
 成功：80 / 尝试：80
 
@@ -273,6 +273,8 @@
 - 布置方案图1.jpg (file) — skip type=file
 - 小组M币分配规则说明书V2.0.pdf (file) — skip type=file
 - 小组M币分配表V2.0.xlsx (file) — skip type=file
+- 小组M币分配表V3.0 0930.xlsx (file) — skip type=file
+- 质量系数打分记录表V3.0-0930.xlsx (file) — skip type=file
 - 小组M币分配规则说明书V3.0 .pdf (file) — skip type=file
 - 小组M币分配规则说明书V3.0 .docx (file) — skip type=file
 - 质量系数打分记录表V3.0.xlsx (file) — skip type=file
