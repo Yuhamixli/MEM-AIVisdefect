@@ -62,3 +62,8 @@ apps/bi/nas/cloudflared.exe
 
 # 自定义域名静态包（由 npm run build:web 生成）
 apps/bi/web-dist/
+
+# feishu-cursor-bridge deploy helpers (must not re-enter git)
+apps/feishu-cursor-bridge/_deploy-*
+apps/feishu-cursor-bridge/_chunk_*
+apps/feishu-cursor-bridge/_upload-exprs/
